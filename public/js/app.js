@@ -34074,9 +34074,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mt-12" }, [
-      _c("h2", { staticClass: "py-5" }, [_vm._v("Our Story")]),
+      _c("h2", { staticClass: "py-5  text-grey-darkest" }, [
+        _vm._v("Our Story")
+      ]),
       _vm._v(" "),
-      _c("p", [
+      _c("p", { staticClass: "  text-grey-darkest" }, [
         _vm._v(
           "Our 10 years of successful conservation work in saving birds is based on a holistic model with four key parts: direct, daily protection of birds; scientific research on birds and their ecosystems; educating the next generation of scientists and conservationists in Africa; and helping local people with basic needs, so that communities can thrive and work together with us."
         )
@@ -34088,11 +34090,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "my-12", attrs: { id: "team" } }, [
-      _c("div", { staticClass: "py-12 text-centered" }, [
+      _c("div", { staticClass: "py-12 text-centered  text-grey-darkest" }, [
         _c("h2", [_vm._v("Our Great Team")])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 grid grid-4" }, [
+      _c("div", { staticClass: "w-100 grid grid-4  text-grey-darkest" }, [
         _c("div", [
           _c("div", { staticClass: "w-90 mx-5" }, [
             _c("div", { staticStyle: { width: "200px", height: "200px" } }, [
@@ -34187,7 +34189,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "w-80 mx-auto" }, [
         _c("div", { staticClass: "w-100 flex" }, [
           _c("div", { staticClass: "w-50" }, [
-            _c("div", { staticClass: "py-5" }, [
+            _c("div", { staticClass: "py-5  text-grey-darkest" }, [
               _c("h2", { staticClass: "py-2" }, [
                 _vm._v("Feel Free to Reach Us?")
               ]),
@@ -34340,9 +34342,11 @@ var staticRenderFns = [
           { staticClass: "w-50 mx-auto mt-32 text-black px-5 py-2 rounded" },
           [
             _c("div", { staticClass: " text-black" }, [
-              _c("h1", { staticClass: "pb-3" }, [_vm._v("What We Do")]),
+              _c("h1", { staticClass: "pb-3  text-grey-darkest" }, [
+                _vm._v("What We Do")
+              ]),
               _vm._v(" "),
-              _c("p", [
+              _c("p", { staticClass: "text-grey-darkest" }, [
                 _vm._v(
                   "Our 5 years of successful conservation work in saving gorillas is based on a holistic model with four key parts: direct, daily protection of gorillas; scientific research on gorillas and their ecosystems; educating the next generation of scientists and conservationists in Africa; and helping local people with basic needs, so that communities can thrive and work together with us."
                 )
@@ -34384,7 +34388,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-50 mx-auto mt-12" }, [
+    return _c("div", { staticClass: "w-50 mx-auto mt-12 text-grey-darkest" }, [
       _c("div", { staticClass: "pl-5" }, [
         _c("h2", [_vm._v("Education ")]),
         _vm._v(" "),
@@ -34436,7 +34440,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-50 mx-auto mt-12" }, [
+    return _c("div", { staticClass: "w-50 mx-auto mt-12 text-grey-darkest" }, [
       _c("div", { staticClass: "pl-5" }, [
         _c("h2", [_vm._v("Research ")]),
         _vm._v(" "),
@@ -34488,7 +34492,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-50 mx-auto mt-12" }, [
+    return _c("div", { staticClass: "w-50 mx-auto mt-12  text-grey-darkest" }, [
       _c("div", { staticClass: "pl-5" }, [
         _c("h2", [_vm._v("Daily Protection")]),
         _vm._v(" "),
@@ -35506,7 +35510,7 @@ var render = function() {
                       }
                     },
                     [
-                      _c("div", {}, [
+                      _c("div", { staticClass: " text-grey-darkest" }, [
                         _c("h2", { staticClass: "text-xl px-5 pt-10 pb-3" }, [
                           _vm._v(_vm._s(activity.head))
                         ]),
@@ -35604,7 +35608,7 @@ var render = function() {
           _vm._m(3),
           _vm._v(" "),
           _c("div", [
-            _c("div", { staticClass: "w-100 grid grid-3" }, [
+            _c("div", { staticClass: "w-100 grid grid-3 text-grey-darkest" }, [
               _c("div", { staticClass: "bg-white shadow-lg" }, [
                 _c(
                   "div",
@@ -36081,7 +36085,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: " w-50 my-auto" }, [
-      _c("div", { staticClass: " text-grey-darker text-centered" }, [
+      _c("div", { staticClass: " text-grey-darkest text-centered" }, [
         _c("h3", [_vm._v("Your Support will be Highly appreciated")]),
         _vm._v(" "),
         _c("h5", { staticClass: "pt-5" }, [
@@ -36355,7 +36359,7 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded"
+                        "bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest"
                     },
                     [
                       _c("h3", { staticClass: "text-xl" }, [
@@ -36405,7 +36409,7 @@ var render = function() {
                       {
                         key: project.id,
                         staticClass:
-                          "bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded"
+                          "bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest"
                       },
                       [
                         _c("h3", { staticClass: "text-xl" }, [
@@ -36503,7 +36507,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h2", { staticClass: "text-centered p-5" }, [_vm._v("Our Projects")])
+      _c("h2", { staticClass: "text-centered p-5  text-grey-darkest" }, [
+        _vm._v("Our Projects")
+      ])
     ])
   }
 ]

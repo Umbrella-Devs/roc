@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="bg-white shadow-sm mb-3 mr-4 hover:shadow-lg hover:cursor-pointer" style="border-radius: 40px 0px 40px 0px; margin-top: -30px;">
-                                <div class="">
+                                <div class=" text-grey-darkest">
                                     <h2 class="text-xl px-5 pt-10 pb-3">{{activity.head}}</h2>
                                     <p class="px-5 text-sm">{{activity.body}}</p>
                                 </div>
@@ -148,7 +148,7 @@
                         <h2 class="text-centered py-5 text-white">Our Blog</h2>
                     </div>
                     <div>
-                        <div class="w-100 grid grid-3">
+                        <div class="w-100 grid grid-3 text-grey-darkest">
                             <div class="bg-white shadow-lg">
                                 <div class="">
                                     <v-img src="img/IMG_2802.jpg" width="360" height="250"></v-img>

@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class=" w-50 my-auto">
-                <div class=" text-grey-darker text-centered">
+                <div class=" text-grey-darkest text-centered">
                     <h3>Your Support will be Highly appreciated</h3>
                     <h5 class="pt-5">Together We can conserve birds</h5>
                 </div>

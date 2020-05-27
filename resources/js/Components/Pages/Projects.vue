@@ -18,13 +18,13 @@
         <div>
             <div class="w-100 mb-24" id="projects">
                 <div>
-                    <h2 class="text-centered p-5">Our Projects</h2>
+                    <h2 class="text-centered p-5  text-grey-darkest">Our Projects</h2>
                 </div>
                 <div>
                     <div class="">
                         <div class="w-80 mx-auto">
                             <div class="w-100 grid grid-3 mb-5">
-                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded">
+                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest">
                                     <h3 class="text-xl">Bird Tracking</h3>
                                     <p class="pt-4 text-sm">BirdTrack is a free and convenient way of storing your bird records online. View the latest trends, and contribute your data to ROC science.</p>
                                     <div class="text-right">
@@ -35,7 +35,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded" v-for="project in projects" :key="project.id">
+                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest" v-for="project in projects" :key="project.id">
                                     <h3 class="text-xl">{{project.title}}</h3>
                                     <p class="pt-4 text-sm">{{project.descriptionSum}}</p>
                                     <div class="text-right">
