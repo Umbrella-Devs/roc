@@ -1,0 +1,81 @@
+
+<template>
+    <div class="">
+        <v-dialog v-model="dialog" max-width="600">
+            <template v-slot:activator="{ on }">
+                <button class="btn bg-orange-dark text-white" v-on="on">Bird Track</button>
+            </template>
+            <v-card>
+                <div class="text-centered">
+                    <h3 class="headline grey lighten-2 py-2">Record Birds Here</h3>
+                </div>
+                <v-card-text>
+                    <v-form ref="form">
+                        <div>
+                            <div class="w-100 flex">
+                                <div class="w-60 mr-3">
+                                    <v-text-field label="Bird Name" v-model="birdname" :rules="nameRules"></v-text-field>
+                                </div>
+                                <div>
+                                    <v-text-field label="No of birds" v-model="numBirds"></v-text-field>
+                                </div>
+                            </div>
+                            <div>
+                                <v-text-field label="Activity Birds are doing" v-model="activity" :rules="nameRules"></v-text-field>
+                            </div>
+                            <div>
+                                <v-textarea label="Some description here" v-model="description"></v-textarea>
+                            </div>
+                            <div class="w-100 flex">
+                                <v-text-field label="Location" v-model="location" :rules="nameRules"></v-text-field>
+                            </div>
+                        </div>
+                    </v-form>
+                </v-card-text>
+                <v-divider></v-divider>
+                <v-card-actions>
+                    <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
+                    <v-spacer></v-spacer>
+                    <button @click="reset" class="btn bg-red text-white mx-3">Reset Form</button>
+                    <button @click="submit" class="btn bg-orange-dark text-white">Submit</button>
+                </v-card-actions>
+                
+            </v-card>
+        </v-dialog>
+  </div>
+</template>
+<script>
+  export default {
+    data () {
+      return {
+        dialog: false,
+        birdname:'',
+        numBirds:'',
+        description:'',
+        location:'',
+        submitted:false,
+        nameRules:[
+            v => !!v || 'This field is required',
+        ],
+        
+      }
+    },
+    methods:{
+        submit(){
+            if(this.$refs.form.validate()){
+                this.submitted = true
+                console.log('Done')
+            }
+        },
+        reset () {
+        this.$refs.form.reset()
+            this.submitted = false;
+            console.log('Resetted')
+        
+    },
+    computed:{
+        
+      },
+    }
+  }
+</script>
