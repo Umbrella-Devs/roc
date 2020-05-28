@@ -151,7 +151,7 @@
                         <h2 class="text-centered py-5 text-white">Our Blog</h2>
                     </div>
                     <div>
-                        <div class="w-100 grid grid-3 text-grey-darkest">
+                        <div class="w-100 flex text-grey-darkest">
                             <div class="bg-white shadow-lg">
                                 <div class="">
                                     <v-img src="img/IMG_2802.jpg" width="360" height="250"></v-img>
@@ -169,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="bg-white shadow-lg mx-5">
+                            <div class="bg-white shadow-lg">
                                 <div class="">
                                     <v-img src="img/IMG_1600.jpg" width="360" height="250"></v-img>
                                 </div>

@@ -35581,7 +35581,7 @@ var render = function() {
           _vm._m(9),
           _vm._v(" "),
           _c("div", [
-            _c("div", { staticClass: "w-100 grid grid-3 text-grey-darkest" }, [
+            _c("div", { staticClass: "w-100 flex text-grey-darkest" }, [
               _c("div", { staticClass: "bg-white shadow-lg" }, [
                 _c(
                   "div",
@@ -35601,7 +35601,7 @@ var render = function() {
                 _vm._m(10)
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "bg-white shadow-lg mx-5" }, [
+              _c("div", { staticClass: "bg-white shadow-lg" }, [
                 _c(
                   "div",
                   {},
