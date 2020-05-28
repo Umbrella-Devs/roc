@@ -35447,83 +35447,79 @@ var render = function() {
               "div",
               { staticClass: "w-100 grid grid-3 mb-12 " },
               _vm._l(_vm.activities, function(activity) {
-                return _c(
-                  "div",
-                  { key: activity.id, attrs: { "data-aos": "zoom-in" } },
-                  [
-                    _c("div", { staticClass: "w-100 mx-5" }, [
-                      _c(
-                        "div",
-                        {},
-                        [
-                          _c(
-                            "v-avatar",
-                            {
-                              staticClass: "bg-white shadow-lg",
-                              attrs: { size: "60" }
-                            },
-                            [
-                              _c("div", { staticClass: "w-80" }, [
-                                _c("img", {
-                                  attrs: { src: activity.svg, alt: "svg-icon" }
-                                })
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
+                return _c("div", { key: activity.id }, [
+                  _c("div", { staticClass: "w-100 mx-5" }, [
                     _c(
                       "div",
-                      {
-                        staticClass:
-                          "bg-white shadow-sm mb-3 mr-4 hover:shadow-lg hover:cursor-pointer",
-                        staticStyle: {
-                          "border-radius": "40px 0px 40px 0px",
-                          "margin-top": "-30px"
-                        }
-                      },
+                      {},
                       [
-                        _c("div", { staticClass: " text-grey-darkest" }, [
-                          _c("h2", { staticClass: "text-xl px-5 pt-10 pb-3" }, [
-                            _vm._v(_vm._s(activity.head))
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "px-5 text-sm" }, [
-                            _vm._v(_vm._s(activity.body))
-                          ])
+                        _c(
+                          "v-avatar",
+                          {
+                            staticClass: "bg-white shadow-lg",
+                            attrs: { size: "60" }
+                          },
+                          [
+                            _c("div", { staticClass: "w-80" }, [
+                              _c("img", {
+                                attrs: { src: activity.svg, alt: "svg-icon" }
+                              })
+                            ])
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "bg-white shadow-sm mb-3 mr-4 hover:shadow-lg hover:cursor-pointer",
+                      staticStyle: {
+                        "border-radius": "40px 0px 40px 0px",
+                        "margin-top": "-30px"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: " text-grey-darkest" }, [
+                        _c("h2", { staticClass: "text-xl px-5 pt-10 pb-3" }, [
+                          _vm._v(_vm._s(activity.head))
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "text-centered" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "bg-orange-dark py-1 px-2 mb-2 text-sm text-white"
-                            },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "no-underline",
-                                  attrs: { to: { name: "activity" } }
-                                },
-                                [
-                                  _c("span", { staticClass: "text-white" }, [
-                                    _vm._v("Read More")
-                                  ])
-                                ]
-                              )
-                            ],
-                            1
-                          )
+                        _c("p", { staticClass: "px-5 text-sm" }, [
+                          _vm._v(_vm._s(activity.body))
                         ])
-                      ]
-                    )
-                  ]
-                )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-centered" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-orange-dark py-1 px-2 mb-2 text-sm text-white"
+                          },
+                          [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "no-underline",
+                                attrs: { to: { name: "activity" } }
+                              },
+                              [
+                                _c("span", { staticClass: "text-white" }, [
+                                  _vm._v("Read More")
+                                ])
+                              ]
+                            )
+                          ],
+                          1
+                        )
+                      ])
+                    ]
+                  )
+                ])
               }),
               0
             )

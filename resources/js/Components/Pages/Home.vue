@@ -90,7 +90,7 @@
             <div>
                 <div class="w-80 mx-auto">
                     <div class="w-100 grid grid-3 mb-12 " style="">
-                        <div data-aos="zoom-in" class="" v-for="activity in activities" :key="activity.id">
+                        <div class="" v-for="activity in activities" :key="activity.id">
                             <div class="w-100 mx-5">
                                 <div class="">
                                     <v-avatar class="bg-white shadow-lg" size="60">
