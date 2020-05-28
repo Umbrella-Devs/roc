@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class=" w-100 flex">
+    <div class="pt-5">
+        <div class=" w-100 flex pt-5">
             <div class="w-50 my-12">
                 <div class="w-90 mx-auto">
                     <h3 class="text-centered text-grey-darker">Your gift will give a critical boost to the ROC's work in the areas of:</h3>

@@ -1,63 +1,59 @@
 <template>
     <v-app class="bg-white-smoke">
         <div>
-            <div class="w-100 flex bg-green-darker" >
-                        <div class="w-50">
-                            <div class="w-30 flex">
-                                <div class="w-40">
-                                    <img src="/img/ornithology center.png" alt="" width="90px">
+            <div class="w-100 bg-green-darkest fixed z-9999 shadow-md">
+                <div class="w-90 flex mx-auto py-3">
+                    <div class="w-30">
+                                <div class="">
+                                    <span class="text-white text-xl">Rugezi O.C</span>
                                 </div>
-                                <div class="w-50 py-4 -ml-3">
-                                    <span class="text-white">ROC</span>
-                                </div>
-                            </div>
                         </div>
-                        <div class="w-50 pt-3">
+                        <div class="w-70 text-right">
                             <div class="" style="margin-top:-10px">
                                 <ul class="list inline-block">
-                                    <li class="px-5">
+                                    <li class="mx-3 text-sm">
                                     <router-link :to="{ name: 'home' }" class="no-underline">
                                         <span class="text-white hover:text-orange pb-2 ">Home</span>
                                     </router-link>
                                     </li>
-                                    <li class=" ">
+                                    <li class="mx-3 text-sm">
                                         <router-link :to="{ name: 'activity' }" class="no-underline">
                                             <span class="text-white hover:text-orange">Activities</span>
                                         </router-link>
                                     </li>
-                                    <li class="px-5">
+                                    <li class="mx-3 text-sm">
                                         <router-link :to="{ name: 'projects' }" class="no-underline">
                                             <span class="text-white hover:text-orange">Projects</span>
                                         </router-link>
                                     </li>
-                                    <li class="">
+                                    <li class="mx-3 text-sm">
                                         <router-link :to="{ name: 'about' }" class="no-underline">
                                             <span class="text-white hover:text-orange">About us</span>
                                         </router-link>
                                     </li>
-                                    <li class="px-5">
+                                    <!-- <li class="mx-2 text-sm">
                                         <router-link :to="{ name: 'gallery' }" class="no-underline">
                                             <span class="text-white hover:text-orange">Gallery</span>
                                         </router-link>
-                                    </li>  
-                                    <li class="">
-                                        <button class="px-3 py-1 bg-orange-dark">
-                                            <router-link :to="{ name: 'donate' }" class="no-underline">
-                                                <span class="text-white hover:text-grey-light">Donate</span>
-                                            </router-link>
-                                        </button>
-                                    </li>
-                                    <li class="">
-                                        <button class="px-3 py-1 bg-orange-dark">
+                                    </li>   -->
+                                    <li class="mx-3 text-sm">
                                             <router-link :to="{ name: 'join' }" class="no-underline">
                                                 <span class="text-white hover:text-grey-light">Join Us</span>
+                                            </router-link>
+                                    </li>
+                                    <li class="mx-3 text-sm">
+                                        <button class="px-3 rounded-full py-1 bg-orange-dark">
+                                            <router-link :to="{ name: 'donate' }" class="no-underline">
+                                                <span class="text-white hover:text-grey-light">Donate</span>
                                             </router-link>
                                         </button>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                </div>
+                        
+            </div>
             <!--<div class="">
                 <nav>
                     <v-toolbar app style="height: 30px;" class="bg-black-darker">
@@ -142,58 +138,69 @@
                 <router-view></router-view>
             </div>
             <footer>
-                <div class="bg-green-darker w-100 mx-auto">
-                    <div class="pt-12 w-90 mx-auto">
-                        <div>
+                <div class="bg-green-darkest w-100 py-5">
+                    <div class="py-5 w-80 mx-auto">
+                        <div class="py-5">
                             <div class="w-100 flex">
-                                <div>
+                                <div class="w-30">
                                     <div class="text-white text-sm">
-                                        <h5 class="pl-5">Location</h5>
-                                        <ul class="list py-5">
+                                        <h5 class="text-lg">Location</h5>
+                                        <ul class="list pt-2 p-0">
                                             <li>
-                                                <span>
-                                                    
-                                                </span>
                                                 <span>Musanze, Rwanda</span>
                                             </li>
-                                            <li>+ 250 712 345 567 | + 250 712 345 567 </li>
+                                            <li>+ 250 712 345 567  + 250 712 345 567 </li>
                                             <li>info@roc.rw</li>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <div class="w-100 flex -mt-2 mx-4">
-                                            
-                                        </div>
-                                        
+                                    
+                                </div>
+                                <div class="w-30">
+                                    <div class="text-white text-sm">
+                                        <h5 class="text-lg">Location</h5>
+                                        <ul class="list pt-2 p-0">
+                                            <li>
+                                                <span>Musanze, Rwanda</span>
+                                            </li>
+                                            <li>+ 250 712 345 567  + 250 712 345 567 </li>
+                                            <li>info@roc.rw</li>
+                                        </ul>
                                     </div>
+                                    
+                                </div>
+                                <div class="w-30">
+                                    <div class="text-white text-sm">
+                                        <h5 class="text-lg">Location</h5>
+                                        <ul class="list pt-2 p-0">
+                                            <li>
+                                                <span>Musanze, Rwanda</span>
+                                            </li>
+                                            <li>+ 250 712 345 567  + 250 712 345 567 </li>
+                                            <li>info@roc.rw</li>
+                                        </ul>
+                                    </div>
+                                    
                                 </div>
                                 
-                                <div class="text-white w-30 ml-24 text-sm">
-                                    <h5 class="pl-5">About Us</h5>
-                                    <ul class="list">
-                                        <li>Our Staff</li>
-                                        <li>Terms & Conditions</li>
-                                        <li>Blog</li>
-                                        <li>Activities</li>
-                                        <li>Services</li>
-
-                                    </ul>
-                                </div>
-                                <div class="w-40 mx-auto">
-                                    <form>
+                                
+                                <!-- <div class="w-60 mx-auto">
+                                    <div class="text-center text-white pb-3">
+                                        <h1 class="text-2xl">Get in touch</h1>
+                                    </div>
+                                    <form class="py-3">
                                         <div class="flex w-100">
                                             <div class="w-50 xs:w-100 md:w-100 xs:mb-4 p-0 mr-4 md:mr-2 sm:mr-2 xs:mr-2  relative border-1 border-solid border-white">
-                                                <label class="text-sm absolute -mt-3 ml-1 px-2 bg-green-darker text-white">Names</label>
+                                                <label class="text-sm absolute -mt-3 ml-1 px-2 bg-green-darkest text-white">Names</label>
                                                 <input type="text" name="name" class="form-input bg-transparent outline-none mt-2 my-0 py-2 xs:py-1 border-0 focus:shadow-none  outline-none rounded-none text-white relative">
                                             </div>
                                             <div class="w-50 xs:w-100 md:w-100 xs:mb-4 p-0 mr-4 md:mr-2 sm:mr-2 xs:mr-2  relative border-1 border-solid border-white">
-                                                <label class="text-sm absolute -mt-3 ml-1 px-2 bg-green-darker text-white">E-mail</label>
+                                                <label class="text-sm absolute -mt-3 ml-1 px-2 bg-green-darkest text-white">E-mail</label>
                                                 <input type="text" name="email" class="form-input bg-transparent outline-none mt-2 my-0 py-2 xs:py-1 border-0 focus:shadow-none  outline-none rounded-none text-white relative">
                                             </div>
                                         </div>
                                         <div class="mt-3 xs:w-100 xl:pt-3 md:pt-3 sm:pt-4 pb-2 xs:w-95 mx-auto xl:pr-4">
                                             <div class="w-97 xs:w-100 p-0 xs:mr-0  relative border-1 border-solid border-white">
-                                                <label class="text-sm absolute -mt-3 ml-1 px-2 bg-green-darker text-white">Message</label>
+                                                <label class="text-sm absolute -mt-3 ml-1 px-2 bg-green-darkest text-white">Message</label>
                                                 <textarea name="message" class="form-input bg-transparent outline-none mt-2 my-0 py-2 xs:py-1 border-0 focus:shadow-none  outline-none rounded-none text-white relative"></textarea>
                                             </div>
                                         </div>
@@ -201,22 +208,27 @@
                                             <input class="px-3 py-1 bg-orange-dark text-white" type="submit" value="Send">
                                         </div>
                                     </form>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="pt-10">
-                            <h4 class="text-sm text-white text-centered">All rights reserved © 2020 ROC.</h4>
-                        </div>
+                        
+                        
                     </div>
-                <div class="pt-4 pb-2 px-4 text-right">
-                    <h4 class="text-sm text-white">
-                        <span>
-                            <a href="https://umbrellagrp.rw/" target="_blank">Umbrella</a>
-                        </span>
-                        <span>Developed it</span>
-                    </h4>
-                </div>
+                    <div class="flex w-80 mx-auto text-sm pt-5">
+                            <div class="w-50">
+                            <h4 class="text-xs text-white-50 text-left">All rights reserved © 2020 ROC.</h4>
+                            </div>
+                            <div class="w-50 text-right pr-1">
+                                <h4 class="text-xs text-white-50">
+                                    <span>
+                                        Developed by <a class="text-orange-dark" href="https://umbrellagrp.rw/" target="_blank">Umbrella</a>
+                                    </span>
+                                </h4>
+                            </div>
+                        </div>
+                
             </div>
+            
             </footer>
             
         </div>

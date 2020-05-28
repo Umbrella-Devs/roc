@@ -2132,6 +2132,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2538,6 +2550,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Popup_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popup.vue */ "./resources/js/Components/Pages/Popup.vue");
+//
 //
 //
 //
@@ -39668,353 +39681,248 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("v-app", { staticClass: "bg-white-smoke" }, [
     _c("div", [
-      _c("div", { staticClass: "w-100 flex bg-green-darker" }, [
-        _c("div", { staticClass: "w-50" }, [
-          _c("div", { staticClass: "w-30 flex" }, [
-            _c("div", { staticClass: "w-40" }, [
-              _c("img", {
-                attrs: {
-                  src: "/img/ornithology center.png",
-                  alt: "",
-                  width: "90px"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "w-50 py-4 -ml-3" }, [
-              _c("span", { staticClass: "text-white" }, [_vm._v("ROC")])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-50 pt-3" }, [
-          _c("div", { staticStyle: { "margin-top": "-10px" } }, [
-            _c("ul", { staticClass: "list inline-block" }, [
-              _c(
-                "li",
-                { staticClass: "px-5" },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "no-underline",
-                      attrs: { to: { name: "home" } }
-                    },
-                    [
-                      _c(
-                        "span",
-                        { staticClass: "text-white hover:text-orange pb-2 " },
-                        [_vm._v("Home")]
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: " " },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "no-underline",
-                      attrs: { to: { name: "activity" } }
-                    },
-                    [
-                      _c(
-                        "span",
-                        { staticClass: "text-white hover:text-orange" },
-                        [_vm._v("Activities")]
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "px-5" },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "no-underline",
-                      attrs: { to: { name: "projects" } }
-                    },
-                    [
-                      _c(
-                        "span",
-                        { staticClass: "text-white hover:text-orange" },
-                        [_vm._v("Projects")]
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {},
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "no-underline",
-                      attrs: { to: { name: "about" } }
-                    },
-                    [
-                      _c(
-                        "span",
-                        { staticClass: "text-white hover:text-orange" },
-                        [_vm._v("About us")]
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "px-5" },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "no-underline",
-                      attrs: { to: { name: "gallery" } }
-                    },
-                    [
-                      _c(
-                        "span",
-                        { staticClass: "text-white hover:text-orange" },
-                        [_vm._v("Gallery")]
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("li", {}, [
-                _c(
-                  "button",
-                  { staticClass: "px-3 py-1 bg-orange-dark" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "no-underline",
-                        attrs: { to: { name: "donate" } }
-                      },
-                      [
-                        _c(
-                          "span",
-                          { staticClass: "text-white hover:text-grey-light" },
-                          [_vm._v("Donate")]
-                        )
-                      ]
-                    )
-                  ],
-                  1
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", {}, [
-                _c(
-                  "button",
-                  { staticClass: "px-3 py-1 bg-orange-dark" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "no-underline",
-                        attrs: { to: { name: "join" } }
-                      },
-                      [
-                        _c(
-                          "span",
-                          { staticClass: "text-white hover:text-grey-light" },
-                          [_vm._v("Join Us")]
-                        )
-                      ]
-                    )
-                  ],
-                  1
-                )
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", {}, [_c("router-view")], 1),
-      _vm._v(" "),
-      _c("footer", [
-        _c("div", { staticClass: "bg-green-darker w-100 mx-auto" }, [
-          _c("div", { staticClass: "pt-12 w-90 mx-auto" }, [
-            _c("div", [
-              _c("div", { staticClass: "w-100 flex" }, [
-                _c("div", [
-                  _c("div", { staticClass: "text-white text-sm" }, [
-                    _c("h5", { staticClass: "pl-5" }, [_vm._v("Location")]),
-                    _vm._v(" "),
-                    _c("ul", { staticClass: "list py-5" }, [
-                      _c("li", [
-                        _c("span"),
-                        _vm._v(" "),
-                        _c("span", [_vm._v("Musanze, Rwanda")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _vm._v("+ 250 712 345 567 | + 250 712 345 567 ")
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [_vm._v("info@roc.rw")])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c("div", { staticClass: "w-100 flex -mt-2 mx-4" })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "text-white w-30 ml-24 text-sm" }, [
-                  _c("h5", { staticClass: "pl-5" }, [_vm._v("About Us")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "list" }, [
-                    _c("li", [_vm._v("Our Staff")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Terms & Conditions")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Blog")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Activities")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Services")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "w-40 mx-auto" }, [
-                  _c("form", [
-                    _c("div", { staticClass: "flex w-100" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "w-50 xs:w-100 md:w-100 xs:mb-4 p-0 mr-4 md:mr-2 sm:mr-2 xs:mr-2  relative border-1 border-solid border-white"
-                        },
-                        [
-                          _c(
-                            "label",
-                            {
-                              staticClass:
-                                "text-sm absolute -mt-3 ml-1 px-2 bg-green-darker text-white"
-                            },
-                            [_vm._v("Names")]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass:
-                              "form-input bg-transparent outline-none mt-2 my-0 py-2 xs:py-1 border-0 focus:shadow-none  outline-none rounded-none text-white relative",
-                            attrs: { type: "text", name: "name" }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "w-50 xs:w-100 md:w-100 xs:mb-4 p-0 mr-4 md:mr-2 sm:mr-2 xs:mr-2  relative border-1 border-solid border-white"
-                        },
-                        [
-                          _c(
-                            "label",
-                            {
-                              staticClass:
-                                "text-sm absolute -mt-3 ml-1 px-2 bg-green-darker text-white"
-                            },
-                            [_vm._v("E-mail")]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass:
-                              "form-input bg-transparent outline-none mt-2 my-0 py-2 xs:py-1 border-0 focus:shadow-none  outline-none rounded-none text-white relative",
-                            attrs: { type: "text", name: "email" }
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "mt-3 xs:w-100 xl:pt-3 md:pt-3 sm:pt-4 pb-2 xs:w-95 mx-auto xl:pr-4"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "w-97 xs:w-100 p-0 xs:mr-0  relative border-1 border-solid border-white"
-                          },
-                          [
-                            _c(
-                              "label",
-                              {
-                                staticClass:
-                                  "text-sm absolute -mt-3 ml-1 px-2 bg-green-darker text-white"
-                              },
-                              [_vm._v("Message")]
-                            ),
-                            _vm._v(" "),
-                            _c("textarea", {
-                              staticClass:
-                                "form-input bg-transparent outline-none mt-2 my-0 py-2 xs:py-1 border-0 focus:shadow-none  outline-none rounded-none text-white relative",
-                              attrs: { name: "message" }
-                            })
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "w-100 text-center mt-2" }, [
-                      _c("input", {
-                        staticClass: "px-3 py-1 bg-orange-dark text-white",
-                        attrs: { type: "submit", value: "Send" }
-                      })
-                    ])
-                  ])
+      _c(
+        "div",
+        { staticClass: "w-100 bg-green-darkest fixed z-9999 shadow-md" },
+        [
+          _c("div", { staticClass: "w-90 flex mx-auto py-3" }, [
+            _c("div", { staticClass: "w-30" }, [
+              _c("div", {}, [
+                _c("span", { staticClass: "text-white text-xl" }, [
+                  _vm._v("Rugezi O.C")
                 ])
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "pt-10" }, [
-              _c("h4", { staticClass: "text-sm text-white text-centered" }, [
-                _vm._v("All rights reserved © 2020 ROC.")
+            _c("div", { staticClass: "w-70 text-right" }, [
+              _c("div", { staticStyle: { "margin-top": "-10px" } }, [
+                _c("ul", { staticClass: "list inline-block" }, [
+                  _c(
+                    "li",
+                    { staticClass: "mx-3 text-sm" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "no-underline",
+                          attrs: { to: { name: "home" } }
+                        },
+                        [
+                          _c(
+                            "span",
+                            {
+                              staticClass: "text-white hover:text-orange pb-2 "
+                            },
+                            [_vm._v("Home")]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "mx-3 text-sm" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "no-underline",
+                          attrs: { to: { name: "activity" } }
+                        },
+                        [
+                          _c(
+                            "span",
+                            { staticClass: "text-white hover:text-orange" },
+                            [_vm._v("Activities")]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "mx-3 text-sm" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "no-underline",
+                          attrs: { to: { name: "projects" } }
+                        },
+                        [
+                          _c(
+                            "span",
+                            { staticClass: "text-white hover:text-orange" },
+                            [_vm._v("Projects")]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "mx-3 text-sm" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "no-underline",
+                          attrs: { to: { name: "about" } }
+                        },
+                        [
+                          _c(
+                            "span",
+                            { staticClass: "text-white hover:text-orange" },
+                            [_vm._v("About us")]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "mx-3 text-sm" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "no-underline",
+                          attrs: { to: { name: "join" } }
+                        },
+                        [
+                          _c(
+                            "span",
+                            { staticClass: "text-white hover:text-grey-light" },
+                            [_vm._v("Join Us")]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "mx-3 text-sm" }, [
+                    _c(
+                      "button",
+                      { staticClass: "px-3 rounded-full py-1 bg-orange-dark" },
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "no-underline",
+                            attrs: { to: { name: "donate" } }
+                          },
+                          [
+                            _c(
+                              "span",
+                              {
+                                staticClass: "text-white hover:text-grey-light"
+                              },
+                              [_vm._v("Donate")]
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", {}, [_c("router-view")], 1),
+      _vm._v(" "),
+      _c("footer", [
+        _c("div", { staticClass: "bg-green-darkest w-100 py-5" }, [
+          _c("div", { staticClass: "py-5 w-80 mx-auto" }, [
+            _c("div", { staticClass: "py-5" }, [
+              _c("div", { staticClass: "w-100 flex" }, [
+                _c("div", { staticClass: "w-30" }, [
+                  _c("div", { staticClass: "text-white text-sm" }, [
+                    _c("h5", { staticClass: "text-lg" }, [_vm._v("Location")]),
+                    _vm._v(" "),
+                    _c("ul", { staticClass: "list pt-2 p-0" }, [
+                      _c("li", [_c("span", [_vm._v("Musanze, Rwanda")])]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v("+ 250 712 345 567  + 250 712 345 567 ")
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("info@roc.rw")])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "w-30" }, [
+                  _c("div", { staticClass: "text-white text-sm" }, [
+                    _c("h5", { staticClass: "text-lg" }, [_vm._v("Location")]),
+                    _vm._v(" "),
+                    _c("ul", { staticClass: "list pt-2 p-0" }, [
+                      _c("li", [_c("span", [_vm._v("Musanze, Rwanda")])]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v("+ 250 712 345 567  + 250 712 345 567 ")
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("info@roc.rw")])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "w-30" }, [
+                  _c("div", { staticClass: "text-white text-sm" }, [
+                    _c("h5", { staticClass: "text-lg" }, [_vm._v("Location")]),
+                    _vm._v(" "),
+                    _c("ul", { staticClass: "list pt-2 p-0" }, [
+                      _c("li", [_c("span", [_vm._v("Musanze, Rwanda")])]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v("+ 250 712 345 567  + 250 712 345 567 ")
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("info@roc.rw")])
+                    ])
+                  ])
+                ])
               ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "pt-4 pb-2 px-4 text-right" }, [
-            _c("h4", { staticClass: "text-sm text-white" }, [
-              _c("span", [
-                _c(
-                  "a",
-                  {
-                    attrs: { href: "https://umbrellagrp.rw/", target: "_blank" }
-                  },
-                  [_vm._v("Umbrella")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("span", [_vm._v("Developed it")])
+          _c("div", { staticClass: "flex w-80 mx-auto text-sm pt-5" }, [
+            _c("div", { staticClass: "w-50" }, [
+              _c("h4", { staticClass: "text-xs text-white-50 text-left" }, [
+                _vm._v("All rights reserved © 2020 ROC.")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "w-50 text-right pr-1" }, [
+              _c("h4", { staticClass: "text-xs text-white-50" }, [
+                _c("span", [
+                  _vm._v("\n                                    Developed by "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "text-orange-dark",
+                      attrs: {
+                        href: "https://umbrellagrp.rw/",
+                        target: "_blank"
+                      }
+                    },
+                    [_vm._v("Umbrella")]
+                  )
+                ])
+              ])
             ])
           ])
         ])
@@ -40080,10 +39988,10 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "w-45 mx-auto mt-24 bg-black opacity-75 text-white px-5 py-2 text-centered rounded"
+              "w-45 mx-auto mt-24 bg-black opacity-75 text-white px-5 py-5 text-centered rounded"
           },
           [
-            _c("h1", { staticClass: "py-2" }, [
+            _c("h1", { staticClass: "pb-3 text-3xl" }, [
               _vm._v("Rugezi Ornithology Center")
             ]),
             _vm._v(" "),
@@ -40115,7 +40023,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-centered my-5" }, [
-      _c("h2", { staticClass: "p-5" }, [_vm._v("Our Great Story")])
+      _c("h2", { staticClass: "py-5 text-grey-darkest text-3xl" }, [
+        _vm._v("Our Great Story")
+      ])
     ])
   },
   function() {
@@ -40123,7 +40033,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mt-12" }, [
-      _c("h2", { staticClass: "py-5  text-grey-darkest" }, [
+      _c("h2", { staticClass: "py-5 text-2xl text-grey-darkest" }, [
         _vm._v("Our Story")
       ]),
       _vm._v(" "),
@@ -40140,13 +40050,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "my-12", attrs: { id: "team" } }, [
       _c("div", { staticClass: "py-12 text-centered  text-grey-darkest" }, [
-        _c("h2", [_vm._v("Our Great Team")])
+        _c("h2", { staticClass: "text-3xl" }, [_vm._v("Our Great Team")])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 grid grid-4  text-grey-darkest" }, [
-        _c("div", [
+      _c("div", { staticClass: "w-100 flex text-grey-darkest" }, [
+        _c("div", { staticClass: "bg-white w-25 p-4 mx-3" }, [
           _c("div", { staticClass: "w-90 mx-5" }, [
-            _c("div", { staticStyle: { width: "200px", height: "200px" } }, [
+            _c("div", { staticStyle: { width: "150px", height: "150px" } }, [
               _c("img", {
                 staticClass: "clip-full rounded-full shadow-md",
                 attrs: { src: "/img/teamphoto2.jpg" }
@@ -40155,7 +40065,7 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "pt-5" }, [
-            _c("h4", { staticClass: "text-centered" }, [
+            _c("h4", { staticClass: "text-xl text-centered" }, [
               _vm._v("Dufitumukiza Joseph")
             ]),
             _vm._v(" "),
@@ -40165,9 +40075,9 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", [
+        _c("div", { staticClass: "bg-white w-25 p-4 mx-3" }, [
           _c("div", { staticClass: "w-90 mx-5" }, [
-            _c("div", { staticStyle: { width: "200px", height: "200px" } }, [
+            _c("div", { staticStyle: { width: "150px", height: "150px" } }, [
               _c("img", {
                 staticClass: "clip-full rounded-full shadow-md",
                 attrs: { src: "/img/teamphoto2.jpg" }
@@ -40176,7 +40086,7 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "pt-5" }, [
-            _c("h4", { staticClass: "text-centered" }, [
+            _c("h4", { staticClass: "text-xl text-centered" }, [
               _vm._v("Dufitumukiza Olivier")
             ]),
             _vm._v(" "),
@@ -40186,9 +40096,9 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", [
+        _c("div", { staticClass: "bg-white w-25 p-4 mx-3" }, [
           _c("div", { staticClass: "w-90 mx-5" }, [
-            _c("div", { staticStyle: { width: "200px", height: "200px" } }, [
+            _c("div", { staticStyle: { width: "150px", height: "150px" } }, [
               _c("img", {
                 staticClass: "clip-full rounded-full shadow-md",
                 attrs: { src: "/img/teamphoto2.jpg" }
@@ -40197,7 +40107,7 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "pt-5" }, [
-            _c("h4", { staticClass: "text-centered" }, [
+            _c("h4", { staticClass: "text-xl text-centered" }, [
               _vm._v("Dufitumukiza Joseph")
             ]),
             _vm._v(" "),
@@ -40207,9 +40117,9 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", [
+        _c("div", { staticClass: "bg-white w-25 p-4 mx-3" }, [
           _c("div", { staticClass: "w-90 mx-5" }, [
-            _c("div", { staticStyle: { width: "200px", height: "200px" } }, [
+            _c("div", { staticStyle: { width: "150px", height: "150px" } }, [
               _c("img", {
                 staticClass: "clip-full rounded-full shadow-md",
                 attrs: { src: "/img/teamphoto2.jpg" }
@@ -40218,7 +40128,7 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "pt-5" }, [
-            _c("h4", { staticClass: "text-centered" }, [
+            _c("h4", { staticClass: "text-xl text-centered" }, [
               _vm._v("Dufitumukiza Joseph")
             ]),
             _vm._v(" "),
@@ -40234,12 +40144,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-100 bg-white" }, [
+    return _c("div", { staticClass: "w-100 bg-white py-5" }, [
       _c("div", { staticClass: "w-80 mx-auto" }, [
         _c("div", { staticClass: "w-100 flex" }, [
           _c("div", { staticClass: "w-50" }, [
             _c("div", { staticClass: "py-5 text-grey-darkest" }, [
-              _c("h2", { staticClass: "py-2" }, [
+              _c("h2", { staticClass: "py-2 text-2xl" }, [
                 _vm._v("Feel Free to Reach Us?")
               ]),
               _vm._v(" "),
@@ -40252,11 +40162,9 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "my-auto mx-auto" }, [
-            _c(
-              "button",
-              { staticClass: "px-2 py-1 bg-orange-dark text-white" },
-              [_vm._v("Contact Us")]
-            )
+            _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
+              _vm._v("Contact Us")
+            ])
           ])
         ])
       ])
@@ -40290,14 +40198,17 @@ var render = function() {
     _c("div", [
       _c(
         "div",
-        { staticClass: "w-80 mx-auto mb-5", attrs: { id: "activities" } },
+        {
+          staticClass: "w-80 mx-auto mb-5 text-grey-darkest",
+          attrs: { id: "activities" }
+        },
         [
           _vm._m(1),
           _vm._v(" "),
           _c("div", { staticClass: "w-100 flex mb-5" }, [
             _c(
               "div",
-              { staticClass: "w-45" },
+              { staticClass: "w-45 mb-5" },
               [_c("v-img", { attrs: { src: "/img/IMG_4694.jpg" } })],
               1
             ),
@@ -40307,8 +40218,8 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100  bg-white" }, [
-        _c("div", { staticClass: "w-80 mx-auto py-4" }, [
+      _c("div", { staticClass: "w-100 py-5 bg-white" }, [
+        _c("div", { staticClass: "w-80 mx-auto py-5" }, [
           _c("div", { staticClass: "w-100 flex" }, [
             _vm._m(3),
             _vm._v(" "),
@@ -40327,8 +40238,8 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 py-4" }, [
-        _c("div", { staticClass: "w-80 mx-auto" }, [
+      _c("div", { staticClass: "w-100 py-5" }, [
+        _c("div", { staticClass: "w-80 py-5 mx-auto" }, [
           _c("div", { staticClass: "w-100 flex mb-5" }, [
             _c(
               "div",
@@ -40342,8 +40253,8 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 bg-white" }, [
-        _c("div", { staticClass: "w-80 mx-auto py-4" }, [
+      _c("div", { staticClass: "w-100 py-5 bg-white" }, [
+        _c("div", { staticClass: "w-80 mx-auto py-5" }, [
           _c("div", { staticClass: "w-100 flex" }, [
             _vm._m(5),
             _vm._v(" "),
@@ -40362,8 +40273,8 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 py-4" }, [
-        _c("div", { staticClass: "w-80 mx-auto" }, [
+      _c("div", { staticClass: "w-100 py-5" }, [
+        _c("div", { staticClass: "w-80 mx-auto py-5" }, [
           _c("div", { staticClass: "w-100 flex mb-5" }, [
             _c(
               "div",
@@ -40390,11 +40301,13 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "w-45 mx-auto mt-24 text-black px-5 py-2 rounded bg-black opacity-75"
+              "w-45 mx-auto mt-24 text-black px-5 py-5 rounded bg-black opacity-75"
           },
           [
             _c("div", { staticClass: "text-centered text-white" }, [
-              _c("h1", { staticClass: "pb-3" }, [_vm._v("What We Do")]),
+              _c("h1", { staticClass: "pb-3 text-3xl" }, [
+                _vm._v("What We Do")
+              ]),
               _vm._v(" "),
               _c("p", {}, [
                 _vm._v(
@@ -40428,8 +40341,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-centered my-5" }, [
-      _c("h2", { staticClass: "p-5" }, [_vm._v("Our Activities")])
+    return _c("div", { staticClass: "text-centered py-5" }, [
+      _c("h2", { staticClass: "text-3xl py-5" }, [_vm._v("Our Activities")])
     ])
   },
   function() {
@@ -40438,7 +40351,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mx-auto mt-12 text-grey-darkest" }, [
       _c("div", { staticClass: "pl-5" }, [
-        _c("h2", [_vm._v("Education ")]),
+        _c("h2", { staticClass: "text-2xl" }, [_vm._v("Education ")]),
         _vm._v(" "),
         _c("p", { staticClass: "pt-10" }, [
           _vm._v(
@@ -40448,9 +40361,11 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-centered" }, [
-        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
-          _vm._v("View More")
-        ])
+        _c(
+          "button",
+          { staticClass: "btn border-orange-dark text-orange-dark" },
+          [_vm._v("View More")]
+        )
       ])
     ])
   },
@@ -40460,7 +40375,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mt-12" }, [
       _c("div", { staticClass: "text-grey-darkest" }, [
-        _c("h2", [_vm._v("Bird Conservation")]),
+        _c("h2", { staticClass: "text-2xl" }, [_vm._v("Bird Conservation")]),
         _vm._v(" "),
         _c("p", { staticClass: "pt-10" }, [
           _vm._v(
@@ -40470,9 +40385,11 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-centered" }, [
-        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
-          _vm._v("View More")
-        ])
+        _c(
+          "button",
+          { staticClass: "btn border-orange-dark text-orange-dark" },
+          [_vm._v("View More")]
+        )
       ])
     ])
   },
@@ -40482,7 +40399,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mx-auto mt-12 text-grey-darkest" }, [
       _c("div", { staticClass: "pl-5" }, [
-        _c("h2", [_vm._v("Research ")]),
+        _c("h2", { staticClass: "text-2xl" }, [_vm._v("Research ")]),
         _vm._v(" "),
         _c("p", { staticClass: "pt-10" }, [
           _vm._v(
@@ -40492,9 +40409,11 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-centered" }, [
-        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
-          _vm._v("View More")
-        ])
+        _c(
+          "button",
+          { staticClass: "btn border-orange-dark text-orange-dark" },
+          [_vm._v("View More")]
+        )
       ])
     ])
   },
@@ -40504,7 +40423,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mt-12" }, [
       _c("div", { staticClass: "text-grey-darkest" }, [
-        _c("h2", [_vm._v("Events")]),
+        _c("h2", { staticClass: "text-2xl" }, [_vm._v("Events")]),
         _vm._v(" "),
         _c("p", { staticClass: "pt-10" }, [
           _vm._v(
@@ -40514,9 +40433,11 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-centered" }, [
-        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
-          _vm._v("View More")
-        ])
+        _c(
+          "button",
+          { staticClass: "btn border-orange-dark text-orange-dark" },
+          [_vm._v("View More")]
+        )
       ])
     ])
   },
@@ -40526,7 +40447,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mx-auto mt-12  text-grey-darkest" }, [
       _c("div", { staticClass: "pl-5" }, [
-        _c("h2", [_vm._v("Daily Protection")]),
+        _c("h2", { staticClass: "text-2xl" }, [_vm._v("Daily Protection")]),
         _vm._v(" "),
         _c("p", { staticClass: "pt-10" }, [
           _vm._v(
@@ -40536,9 +40457,11 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-centered" }, [
-        _c("button", { staticClass: "btn shadow-sm bg-orange text-white" }, [
-          _vm._v("View More")
-        ])
+        _c(
+          "button",
+          { staticClass: "btn shadow-sm border-orange text-orange-dark" },
+          [_vm._v("View More")]
+        )
       ])
     ])
   }
@@ -40627,8 +40550,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: " w-100 flex" }, [
+  return _c("div", { staticClass: "pt-5" }, [
+    _c("div", { staticClass: " w-100 flex pt-5" }, [
       _vm._m(0),
       _vm._v(" "),
       _c(
@@ -41322,13 +41245,13 @@ var render = function() {
             "div",
             {
               staticClass: " mx-auto w-90",
-              staticStyle: { "margin-top": "100px" }
+              staticStyle: { "margin-top": "120px" }
             },
             [
               _c("div", { staticClass: "w-100 flex" }, [
                 _vm._m(0),
                 _vm._v(" "),
-                _c("div", { staticClass: "w-70" }, [
+                _c("div", { staticClass: "w-75 pt-5" }, [
                   _c("div", { staticClass: "text-white" }, [
                     _vm._m(1),
                     _vm._v(" "),
@@ -41336,7 +41259,7 @@ var render = function() {
                     _vm._v(" "),
                     _vm._m(3),
                     _vm._v(" "),
-                    _c("div", { staticClass: "flex" }, [
+                    _c("div", { staticClass: "flex relative z-999" }, [
                       _vm._m(4),
                       _vm._v(" "),
                       _c("div", {}, [_c("Popup")], 1)
@@ -41349,7 +41272,7 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "w-100 flex -mt-12" }, [
+          _c("div", { staticClass: "w-100 flex -mt-16" }, [
             _c("div", { staticClass: "w-50" }),
             _vm._v(" "),
             _c("div", [
@@ -41428,12 +41351,15 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "relative mx-auto mt-5", attrs: { id: "activity" } },
+      {
+        staticClass: "bg-white-smoke relative mx-auto mt-5",
+        attrs: { id: "activity" }
+      },
       [
         _vm._m(6),
         _vm._v(" "),
         _c("div", [
-          _c("div", { staticClass: "w-80 mx-auto" }, [
+          _c("div", { staticClass: "w-80 mx-auto py-3" }, [
             _c(
               "div",
               { staticClass: "w-100 grid grid-3 mb-12 " },
@@ -41467,7 +41393,7 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "bg-white shadow-sm mb-3 mr-4 hover:shadow-lg hover:cursor-pointer",
+                        "bg-white pb-4 shadow-sm mb-3 mr-4 hover:shadow-md hover:cursor-pointer",
                       staticStyle: {
                         "border-radius": "40px 0px 40px 0px",
                         "margin-top": "-30px"
@@ -41479,34 +41405,9 @@ var render = function() {
                           _vm._v(_vm._s(activity.head))
                         ]),
                         _vm._v(" "),
-                        _c("p", { staticClass: "px-5 text-sm" }, [
+                        _c("p", { staticClass: "px-5 text-xs" }, [
                           _vm._v(_vm._s(activity.body))
                         ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "text-centered" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "bg-orange-dark py-1 px-2 mb-2 text-sm text-white"
-                          },
-                          [
-                            _c(
-                              "router-link",
-                              {
-                                staticClass: "no-underline",
-                                attrs: { to: { name: "activity" } }
-                              },
-                              [
-                                _c("span", { staticClass: "text-white" }, [
-                                  _vm._v("Read More")
-                                ])
-                              ]
-                            )
-                          ],
-                          1
-                        )
                       ])
                     ]
                   )
@@ -41519,43 +41420,51 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "w-100 bg-green-darker" }, [
-      _c("div", { staticClass: "w-80 mx-auto" }, [
+    _c("div", { staticClass: "w-100 bg-green-darkest py-3" }, [
+      _c("div", { staticClass: "w-80 mx-auto py-5" }, [
         _vm._m(7),
         _vm._v(" "),
-        _c("div", { staticClass: "w-100 flex" }, [
-          _vm._m(8),
+        _c("div", { staticClass: "w-100 flex pb-4" }, [
+          _c(
+            "div",
+            { staticClass: "w-50 mx-2", staticStyle: { "margin-top": "0px" } },
+            [
+              _c("v-img", {
+                staticClass: "w-100",
+                attrs: { src: "/img/IMG_1600.jpg" }
+              })
+            ],
+            1
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "w-50 pt-12 text-centered" }, [
-            _c("p", { staticClass: "text-white" }, [
-              _vm._v(
-                "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-centered" }, [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "bg-orange-dark px-2 py-1 text-sm  mb-5 text-white"
-                },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "no-underline",
-                      attrs: { to: { name: "about" } }
-                    },
-                    [
-                      _c("span", { staticClass: "text-white" }, [
-                        _vm._v("More About Us")
-                      ])
-                    ]
-                  )
-                ],
-                1
-              )
+          _c("div", { staticClass: "w-50  mx-2" }, [
+            _c("div", { staticClass: "mt-16" }, [
+              _c("p", { staticClass: "text-white" }, [
+                _vm._v(
+                  "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "py-3 text-center" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "border-orange-dark w-35 btn text-sm text-white"
+                  },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "no-underline text-white",
+                        attrs: { to: { name: "join" } }
+                      },
+                      [_vm._v("Join Us")]
+                    )
+                  ],
+                  1
+                )
+              ])
             ])
           ])
         ])
@@ -41565,15 +41474,15 @@ var render = function() {
     _c("div", [
       _c("div", { staticClass: "w-100 bg-pjt" }),
       _vm._v(" "),
-      _c("div", { staticClass: "opacity bg-green-darker opacity-70" }),
+      _c("div", { staticClass: "opacity bg-green-darker opacity-80" }),
       _vm._v(" "),
       _c("div", { staticClass: "content w-80 mx-auto" }, [
-        _c("div", {}, [
-          _vm._m(9),
+        _c("div", { staticClass: "py-5" }, [
+          _vm._m(8),
           _vm._v(" "),
-          _c("div", [
-            _c("div", { staticClass: "w-100 grid grid-3 text-grey-darkest" }, [
-              _c("div", { staticClass: "bg-white shadow-lg" }, [
+          _c("div", { staticClass: "py-5" }, [
+            _c("div", { staticClass: "w-100 flex text-grey-darkest" }, [
+              _c("div", { staticClass: "bg-white w-30 mx-3" }, [
                 _c(
                   "div",
                   {},
@@ -41582,7 +41491,26 @@ var render = function() {
                       attrs: {
                         src: "img/IMG_2802.jpg",
                         width: "360",
-                        height: "250"
+                        height: "200"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _vm._m(9)
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "bg-white w-30 mx-3" }, [
+                _c(
+                  "div",
+                  {},
+                  [
+                    _c("v-img", {
+                      attrs: {
+                        src: "img/IMG_1600.jpg",
+                        width: "360",
+                        height: "200"
                       }
                     })
                   ],
@@ -41592,16 +41520,16 @@ var render = function() {
                 _vm._m(10)
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "bg-white shadow-lg mx-5" }, [
+              _c("div", { staticClass: "bg-white w-30 mx-3" }, [
                 _c(
                   "div",
-                  {},
+                  { staticClass: "py-2" },
                   [
                     _c("v-img", {
                       attrs: {
-                        src: "img/IMG_1600.jpg",
+                        src: "img/IMG_4782.jpg",
                         width: "360",
-                        height: "250"
+                        height: "200"
                       }
                     })
                   ],
@@ -41609,25 +41537,6 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _vm._m(11)
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "bg-white shadow-lg" }, [
-                _c(
-                  "div",
-                  {},
-                  [
-                    _c("v-img", {
-                      attrs: {
-                        src: "img/IMG_4782.jpg",
-                        width: "360",
-                        height: "250"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _vm._m(12)
               ])
             ])
           ])
@@ -41641,8 +41550,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-10" }, [
-      _c("div", { staticClass: "w-20 " }, [
+    return _c("div", { staticClass: "w-5" }, [
+      _c("div", { staticClass: "w-30 " }, [
         _c("div", { staticClass: "line" }),
         _vm._v(" "),
         _c("div", { staticClass: "-ml-3 my-2" }, [
@@ -41686,7 +41595,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-60 py-5" }, [
-      _c("p", { staticClass: "text-lg" }, [
+      _c("p", { staticClass: "text-sm" }, [
         _vm._v(
           "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
         )
@@ -41697,8 +41606,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("button", { staticClass: "btn px-5 bg-orange-dark text-white mr-2" }, [
+    return _c("div", {}, [
+      _c("button", { staticClass: "btn px-5 border-white text-orange mr-2" }, [
         _c(
           "a",
           {
@@ -41714,16 +41623,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h2", { staticClass: "text-white" }, [_vm._v("Gallery")])
+    return _c("div", { staticClass: "pb-2" }, [
+      _c("h2", { staticClass: "text-white text-2xl" }, [_vm._v("Gallery")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "py-12 text-centered text-grey-darkest" }, [
-      _c("h2", [_vm._v("Our Special Activities")])
+    return _c("div", { staticClass: "py-5 text-centered text-grey-darkest" }, [
+      _c("h2", { staticClass: "text-3xl" }, [_vm._v("Our Special Activities")])
     ])
   },
   function() {
@@ -41731,7 +41640,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h2", { staticClass: "text-white text-center py-5" }, [
+      _c("h2", { staticClass: "text-white text-3xl text-center py-5" }, [
         _vm._v("Who are we?")
       ])
     ])
@@ -41740,18 +41649,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "w-50", staticStyle: { "margin-top": "-50px" } },
-      [_c("img", { attrs: { src: "/img/ornithology center.png", alt: "" } })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h2", { staticClass: "text-centered py-5 text-white" }, [
+    return _c("div", { staticClass: "py-4 pl-2 pb-5" }, [
+      _c("h2", { staticClass: "text-center text-3xl text-white" }, [
         _vm._v("Our Blog")
       ])
     ])
@@ -41761,32 +41660,28 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", {}, [
-      _c("div", [
-        _c(
-          "h4",
-          { staticClass: "text-lg py-2 text-right px-2 text-orange-dark" },
-          [_vm._v("Fri, May 23, 2020")]
-        )
+      _c("div", { staticClass: "py-2" }, [
+        _c("h4", { staticClass: "text-xs text-right px-2 text-orange-dark" }, [
+          _vm._v("Fri, May 23, 2020")
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "px-4" }, [
-        _c("h3", { staticClass: "text-xl py-4" }, [
+        _c("h3", { staticClass: "text-sm py-2" }, [
           _vm._v("Birds Day in Rugezi Center")
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "text-sm" }, [
+        _c("p", { staticClass: "text-xs" }, [
           _vm._v(
-            "Just like in humans, birds communication can occur through a variety of methods—body postures, facial expressions, vocalizations.  Communicating Dominance."
+            "Just like in humans, birds communication can occur through a variety of methods—body postures..."
           )
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-right mx-5 mb-4" }, [
-        _c(
-          "button",
-          { staticClass: "py-1 px-2 bg-orange-dark text-sm text-white" },
-          [_vm._v("Read More")]
-        )
+        _c("button", { staticClass: "text-sm btn border-orange-darker" }, [
+          _vm._v("Read More")
+        ])
       ])
     ])
   },
@@ -41794,33 +41689,29 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", {}, [
+    return _c("div", { staticClass: "py-2" }, [
       _c("div", [
-        _c(
-          "h4",
-          { staticClass: "text-lg py-2 text-right px-2 text-orange-dark" },
-          [_vm._v("Thur, Jan 01, 2020")]
-        )
+        _c("h4", { staticClass: "text-xs text-right px-2 text-orange-dark" }, [
+          _vm._v("Thur, Jan 01, 2020")
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "px-4" }, [
-        _c("h3", { staticClass: "text-xl py-4" }, [
+        _c("h3", { staticClass: "text-sm py-2" }, [
           _vm._v("Bird Watching the great thing")
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "text-sm" }, [
+        _c("p", { staticClass: "text-xs" }, [
           _vm._v(
-            "Just like in humans, birds communication can occur through a variety of methods—body postures, facial expressions, vocalizations.  Communicating Dominance."
+            "Just like in humans, birds communication can occur through a variety of methods—body postures..."
           )
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-right mx-5 mb-4" }, [
-        _c(
-          "button",
-          { staticClass: "py-1 px-2 bg-orange-dark text-sm text-white" },
-          [_vm._v("Read More")]
-        )
+        _c("button", { staticClass: "text-sm btn border-orange-darker" }, [
+          _vm._v("Read More")
+        ])
       ])
     ])
   },
@@ -41830,31 +41721,27 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", {}, [
       _c("div", [
-        _c(
-          "h4",
-          { staticClass: "text-lg py-2 text-right px-2 text-orange-dark" },
-          [_vm._v("Wed, Jun 12, 2020")]
-        )
+        _c("h4", { staticClass: "text-xs text-right px-2 text-orange-dark" }, [
+          _vm._v("Wed, Jun 12, 2020")
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "px-4" }, [
-        _c("h3", { staticClass: "text-xl py-4" }, [
+        _c("h3", { staticClass: "text-sm py-2" }, [
           _vm._v("Internship to students ")
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "text-sm" }, [
+        _c("p", { staticClass: "text-xs" }, [
           _vm._v(
-            "Just like in humans, birds communication can occur through a variety of methods—body postures, facial expressions, vocalizations.  Communicating Dominance."
+            "Just like in humans, birds communication can occur through a variety of methods—body postures..."
           )
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "text-right mx-5 mb-4" }, [
-        _c(
-          "button",
-          { staticClass: "py-1 px-2 bg-orange-dark text-sm text-white" },
-          [_vm._v("Read More")]
-        )
+        _c("button", { staticClass: "text-sm btn border-orange-darker" }, [
+          _vm._v("Read More")
+        ])
       ])
     ])
   }
@@ -41880,8 +41767,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "w-100 flex" }, [
+  return _c("div", { staticClass: "pt-5" }, [
+    _c("div", { staticClass: "w-100 flex py-5" }, [
       _c("div", { staticClass: "w-50 bg-white-smoke text-white my-5" }, [
         _c("div", [
           _vm._m(0),
@@ -42517,11 +42404,13 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "w-45 mx-auto mt-24 text-grey-darkest bg-black px-5 py-2 opacity-75 rounded"
+              "w-45 mx-auto mt-24 text-grey-darkest bg-black px-5 py-5 opacity-75 rounded"
           },
           [
             _c("div", { staticClass: " text-white text-centered" }, [
-              _c("h1", { staticClass: "pb-3" }, [_vm._v("Our Projects")]),
+              _c("h1", { staticClass: "pb-3 text-3xl" }, [
+                _vm._v("Our Projects")
+              ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
@@ -42531,7 +42420,7 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "text-centered" }, [
-              _c("button", { staticClass: "btn bg-orange text-white" }, [
+              _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
                 _c(
                   "a",
                   {

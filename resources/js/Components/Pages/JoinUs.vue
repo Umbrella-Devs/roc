@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="w-100 flex">
+    <div class="pt-5">
+        <div class="w-100 flex py-5">
             <div class="w-50 bg-white-smoke text-white my-5">
                 <div>
                     <div class="text-centered py-5">
