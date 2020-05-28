@@ -81,7 +81,7 @@
             </div>
         </div>
         <div class="relative mx-auto mt-5" id="activity">
-            <div class="py-12 text-centered">
+            <div class="py-12 text-centered text-grey-darkest">
                 <h2>Our Special Activities</h2>
             </div>
             <div>
