@@ -188,7 +188,7 @@
                                 </div>
                             </div>
                             <div class="bg-white w-30 mx-3">
-                                <div class="py-2">
+                                <div class="">
                                     <v-img src="img/IMG_4782.jpg" width="360" height="200"></v-img>
                                 </div>
                                 <div class="">

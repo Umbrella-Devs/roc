@@ -41523,7 +41523,7 @@ var render = function() {
               _c("div", { staticClass: "bg-white w-30 mx-3" }, [
                 _c(
                   "div",
-                  { staticClass: "py-2" },
+                  {},
                   [
                     _c("v-img", {
                       attrs: {

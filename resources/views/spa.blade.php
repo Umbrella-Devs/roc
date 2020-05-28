@@ -6,7 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>ROC | Rugezi Ornithology Center</title>
+    <style>
+        span, h1, h2, h5{
+            font-family: 'Roboto', sans-serif;
+        }
+        p, h4, li{
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
