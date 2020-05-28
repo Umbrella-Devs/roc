@@ -25,7 +25,9 @@
                                 </div>
                                 
                             </div>
-                            <div class="w-75 pt-5">
+                            <div class="w-75 pt-5"
+                            data-aos="fade-down"
+                            data-aos-duration="1500">
                                 <div class="text-white">
                                     <div>
                                         <h1 style="font-size:100px;">Rugezi</h1>
@@ -41,7 +43,7 @@
                                     <div class="flex relative z-999">
                                         <div class="">
                                             <button class="btn px-5 border-white text-orange mr-2">
-                                                <a class="text-white no-underline" href="#activity">Explore More</a>
+                                                <a class="text-white no-underline" href="#activity">Explore </a>
                                             </button>
                                         </div>
                                         <div class="">
@@ -64,17 +66,25 @@
                                 <h2 class="text-white text-2xl">Gallery</h2>
                             </div>
                             <div class="grid grid-4">
-                                <div class="mr-3">
-                                    <v-img class="rounded shadow-xl" src="/img/IMG_8805.jpg" height="190" width="150"></v-img>
+                                <div class="mr-3"
+                                data-aos="fade-up"
+                                data-aos-duration="1500">
+                                    <v-img class="rounded shadow-md" src="/img/IMG_8805.jpg" height="190" width="150"></v-img>
                                 </div>
-                                <div class="mr-3">
-                                    <v-img class="rounded shadow-xl" src="/img/IMG_8827.jpg" height="190" width="150"></v-img>
+                                <div class="mr-3"
+                                data-aos="fade-up"
+                                data-aos-duration="1500">
+                                    <v-img class="rounded shadow-md" src="/img/IMG_8827.jpg" height="190" width="150"></v-img>
                                 </div>
-                                <div class="mr-3">
-                                    <v-img class="rounded shadow-xl" src="/img/IMG_2004.jpg" height="190" width="150"></v-img>
+                                <div class="mr-3"
+                                data-aos="fade-up"
+                                data-aos-duration="1500">
+                                    <v-img class="rounded shadow-md" src="/img/IMG_2004.jpg" height="190" width="150"></v-img>
                                 </div>
-                                <div class="mr-3">
-                                    <v-img class="rounded shadow-xl" src="/img/IMG_1973.jpg" height="190" width="150"></v-img>
+                                <div class="mr-3"
+                                data-aos="fade-up"
+                                data-aos-duration="1500">
+                                    <v-img class="rounded shadow-md" src="/img/IMG_1973.jpg" height="190" width="150"></v-img>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +100,9 @@
             <div>
                 <div class="w-80 mx-auto py-3">
                     <div class="w-100 grid grid-3 mb-12 " style="">
-                        <div class="" v-for="activity in activities" :key="activity.id">
+                        <div class="" v-for="activity in activities" :key="activity.id"
+                         data-aos="zoom-in"
+                         data-aos-duration="2000">
                             <div class="w-100 mx-5">
                                 <div class="">
                                     <v-avatar class="bg-white shadow-lg" size="60">
@@ -100,7 +112,9 @@
                                     </v-avatar>
                                 </div>
                             </div>
-                            <div class="bg-white pb-4 shadow-sm mb-3 mr-4 hover:shadow-md hover:cursor-pointer" style="border-radius: 40px 0px 40px 0px; margin-top: -30px;">
+                            <div class="bg-white pb-4 shadow-sm mb-3 mr-4 hover:shadow-md hover:cursor-pointer" 
+                            style="border-radius: 40px 0px 40px 0px; margin-top: -30px;"
+                            >
                                 <div class=" text-grey-darkest">
                                     <h2 class="text-xl px-5 pt-10 pb-3">{{activity.head}}</h2>
                                     <p class="px-5 text-xs">{{activity.body}}</p>
@@ -118,17 +132,22 @@
                 </div>
             </div>
         </div>
-        <div class="w-100 bg-green-darkest py-3">
+        <div class="w-100 bg-green-darkest py-3 pt-5">
             <div class="w-80 mx-auto py-5">
-                <div>
-                    <h2 class="text-white text-3xl text-center py-5">Who are we?</h2>
-                </div>
+                
                 <div class="w-100 flex pb-4">
-                    <div class="w-50 mx-2" style="margin-top: 0px">
+                    <div class="w-50 mx-2" style="margin-top: 0px"
+                    data-aos="fade-right"
+                    data-aos-duration="2000">
                          <v-img src="/img/IMG_1600.jpg" class="w-100"></v-img>
                     </div>
-                    <div class="w-50  mx-2">
-                        <div class="mt-16">
+                    <div class="w-50  mx-2 pt-5 mt-5"
+                    data-aos="fade-left"
+                    data-aos-duration="2000">
+                        <div>
+                            <h2 class="text-white text-3xl text-center py-5">Who are we?</h2>
+                        </div>
+                        <div class="pt-4 text-center">
                             <p class="text-white">
                            Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
                         </p>
@@ -191,7 +210,7 @@
                                 <div class="">
                                     <v-img src="img/IMG_4782.jpg" width="360" height="200"></v-img>
                                 </div>
-                                <div class="">
+                                <div class="py-2">
                                     <div>
                                         <h4 class="text-xs text-right px-2 text-orange-dark">Wed, Jun 12, 2020</h4>
                                     </div>
@@ -237,7 +256,7 @@ export default {
 <style scoped>
 
     .bg{
-        background-image: url('/img/IMG_1973.jpg');
+        background-image: url('/img/cropped_1973.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;

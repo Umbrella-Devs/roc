@@ -5,7 +5,9 @@
                 <div class="w-90 flex mx-auto py-3">
                     <div class="w-30">
                                 <div class="">
+                                    <router-link :to="{ name: 'home' }" class="no-underline">
                                     <span class="text-white text-xl">Rugezi O.C</span>
+                                    </router-link>
                                 </div>
                         </div>
                         <div class="w-70 text-right">
@@ -142,41 +144,57 @@
                     <div class="py-5 w-80 mx-auto">
                         <div class="py-5">
                             <div class="w-100 flex">
-                                <div class="w-30">
-                                    <div class="text-white text-sm">
-                                        <h5 class="text-lg">Location</h5>
+                                <div class="w-25">
+                                    <div class="text-white text-xs">
+                                        <h5 class="text-lg">Contact Us</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
-                                                <span>Musanze, Rwanda</span>
+                                                + 250 712 345 567
                                             </li>
-                                            <li>+ 250 712 345 567  + 250 712 345 567 </li>
+                                            <li>+ 250 712 345 567  </li>
                                             <li>info@roc.rw</li>
                                         </ul>
                                     </div>
                                     
                                 </div>
-                                <div class="w-30">
-                                    <div class="text-white text-sm">
+                                <div class="w-25">
+                                    <div class="text-white text-xs">
                                         <h5 class="text-lg">Location</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
                                                 <span>Musanze, Rwanda</span>
                                             </li>
-                                            <li>+ 250 712 345 567  + 250 712 345 567 </li>
+                                            <li>NR 100 kv </li>
                                             <li>info@roc.rw</li>
                                         </ul>
                                     </div>
                                     
                                 </div>
-                                <div class="w-30">
-                                    <div class="text-white text-sm">
-                                        <h5 class="text-lg">Location</h5>
+                                <div class="w-25">
+                                    <div class="text-white text-xs">
+                                        <h5 class="text-lg">Quick links</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
-                                                <span>Musanze, Rwanda</span>
+                                                Blog
                                             </li>
-                                            <li>+ 250 712 345 567  + 250 712 345 567 </li>
-                                            <li>info@roc.rw</li>
+                                            <li>Team </li>
+                                            <li>Our story</li>
+                                            <li>Bird Track</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class="w-25">
+                                    <div class="text-white text-xs">
+                                        <h5 class="text-lg">Activities</h5>
+                                        <ul class="list pt-2 p-0">
+                                            <li>
+                                                Education
+                                            </li>
+                                            <li>Research </li>
+                                            <li>Bird Conservation</li>
+                                            <li>Daily Protection</li>
+
                                         </ul>
                                     </div>
                                     
