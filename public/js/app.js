@@ -14228,6 +14228,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -14521,6 +14524,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Popup_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popup.vue */ "./resources/js/Components/Pages/Popup.vue");
+//
+//
+//
 //
 //
 //
@@ -15278,6 +15284,25 @@ exports.push([module.i, "@charset \"UTF-8\";\n/*!\n* Vuetify v2.2.30\n* Forged b
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.bg[data-v-78171b67]{\n    background-image: url('/img/IMG_1973.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}   \n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/Activities.vue?vue&type=style&index=0&id=a94334fa&scoped=true&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Components/Pages/Activities.vue?vue&type=style&index=0&id=a94334fa&scoped=true&lang=css& ***!
@@ -15290,7 +15315,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.bg[data-v-a94334fa]{\n    background-image: url('/img/IMG_2004.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 615px;\n}\n.opacity[data-v-a94334fa]{\n    width: 100%;\n    height: 615px;\n    background-color: black;\n    opacity: 0.5;\n    \n    margin-top: -615px;\n}\n", ""]);
+exports.push([module.i, "\n.bg[data-v-a94334fa]{\n    background-image: url('/img/IMG_2004.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}\n.opacity[data-v-a94334fa]{\n    width: 100%;\n    height: 615px;\n    background-color: black;\n    opacity: 0.5;\n    \n    margin-top: -615px;\n}\n", ""]);
 
 // exports
 
@@ -15309,7 +15334,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.bg-pjt[data-v-2d306816]{\n    background-image: url('/img/lake.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 615px;\n}\n.opacity[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n    margin-top: -615px;\n}\n.content[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n    margin-top: -615px;\n    position: relative;\n}\n.line[data-v-2d306816]{\n    height: 100px;\n    border-left: 2px solid white;\n}\n", ""]);
+exports.push([module.i, "\n.bg[data-v-2d306816]{\n    background-image: url('/img/IMG_1973.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 615px;\n}\n.bg-pjt[data-v-2d306816]{\n    background-image: url('/img/lake.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 615px;\n}\n.opacity[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n    margin-top: -615px;\n}\n.content[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n    margin-top: -615px;\n    position: relative;\n}\n.line[data-v-2d306816]{\n    height: 100px;\n    border-left: 2px solid white;\n}\n", ""]);
 
 // exports
 
@@ -32931,6 +32956,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/Activities.vue?vue&type=style&index=0&id=a94334fa&scoped=true&lang=css&":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Components/Pages/Activities.vue?vue&type=style&index=0&id=a94334fa&scoped=true&lang=css& ***!
@@ -33964,7 +34019,7 @@ var render = function() {
                   {
                     attrs: { href: "https://umbrellagrp.rw/", target: "_blank" }
                   },
-                  [_vm._v("UmbrellaGrp")]
+                  [_vm._v("Umbrella")]
                 )
               ]),
               _vm._v(" "),
@@ -33999,59 +34054,14 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c(
-      "div",
-      {},
-      [
-        _c("v-img", { attrs: { src: "/img/IMG_1973.jpg", height: "500" } }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "w-40 mt-32 bg-black opacity-70 text-white px-5 py-5",
-              staticStyle: {
-                "margin-left": "100px",
-                "border-radius": "10px 10px 10px 10px"
-              }
-            },
-            [
-              _c("h1", { staticClass: "py-2" }, [
-                _vm._v("Rugezi Ornithology Center")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats."
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", {}, [
-                _c(
-                  "button",
-                  { staticClass: "bg-orange-dark px-2 py-1 hover:text-black" },
-                  [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "no-underline text-white",
-                        attrs: { href: "#team" }
-                      },
-                      [_vm._v("Our Staff")]
-                    )
-                  ]
-                )
-              ])
-            ]
-          )
-        ])
-      ],
-      1
-    ),
+    _vm._m(0),
     _vm._v(" "),
     _c("div", [
       _c("div", { staticClass: "w-80 mx-auto" }, [
+        _vm._m(1),
+        _vm._v(" "),
         _c("div", { staticClass: "w-100 flex my-12" }, [
-          _vm._m(0),
+          _vm._m(2),
           _vm._v(" "),
           _c(
             "div",
@@ -34061,14 +34071,62 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _vm._m(1)
+        _vm._m(3)
       ]),
       _vm._v(" "),
-      _vm._m(2)
+      _vm._m(4)
     ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "bg" }, [
+      _c("div", { staticClass: "w-100 flex" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "w-45 mx-auto mt-24 bg-black opacity-75 text-white px-5 py-2 text-centered rounded"
+          },
+          [
+            _c("h1", { staticClass: "py-2" }, [
+              _vm._v("Rugezi Ornithology Center")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats."
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", {}, [
+              _c("button", { staticClass: "bg-orange-dark btn" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "no-underline text-white",
+                    attrs: { href: "#team" }
+                  },
+                  [_vm._v("Our Staff")]
+                )
+              ])
+            ])
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-centered my-5" }, [
+      _c("h2", { staticClass: "p-5" }, [_vm._v("Our Great Story")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -34189,7 +34247,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "w-80 mx-auto" }, [
         _c("div", { staticClass: "w-100 flex" }, [
           _c("div", { staticClass: "w-50" }, [
-            _c("div", { staticClass: "py-5  text-grey-darkest" }, [
+            _c("div", { staticClass: "py-5 text-grey-darkest" }, [
               _c("h2", { staticClass: "py-2" }, [
                 _vm._v("Feel Free to Reach Us?")
               ]),
@@ -34258,7 +34316,7 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100  bg-grey-darkest" }, [
+      _c("div", { staticClass: "w-100  bg-white" }, [
         _c("div", { staticClass: "w-80 mx-auto py-4" }, [
           _c("div", { staticClass: "w-100 flex" }, [
             _vm._m(3),
@@ -34278,7 +34336,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 bg-grey py-4" }, [
+      _c("div", { staticClass: "w-100 py-4" }, [
         _c("div", { staticClass: "w-80 mx-auto" }, [
           _c("div", { staticClass: "w-100 flex mb-5" }, [
             _c(
@@ -34293,7 +34351,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100  bg-grey-darkest" }, [
+      _c("div", { staticClass: "w-100 bg-white" }, [
         _c("div", { staticClass: "w-80 mx-auto py-4" }, [
           _c("div", { staticClass: "w-100 flex" }, [
             _vm._m(5),
@@ -34313,7 +34371,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 bg-grey py-4" }, [
+      _c("div", { staticClass: "w-100 py-4" }, [
         _c("div", { staticClass: "w-80 mx-auto" }, [
           _c("div", { staticClass: "w-100 flex mb-5" }, [
             _c(
@@ -34339,21 +34397,22 @@ var staticRenderFns = [
       _c("div", { staticClass: "w-100 flex" }, [
         _c(
           "div",
-          { staticClass: "w-50 mx-auto mt-32 text-black px-5 py-2 rounded" },
+          {
+            staticClass:
+              "w-45 mx-auto mt-24 text-black px-5 py-2 rounded bg-black opacity-75"
+          },
           [
-            _c("div", { staticClass: " text-black" }, [
-              _c("h1", { staticClass: "pb-3  text-grey-darkest" }, [
-                _vm._v("What We Do")
-              ]),
+            _c("div", { staticClass: "text-centered text-white" }, [
+              _c("h1", { staticClass: "pb-3" }, [_vm._v("What We Do")]),
               _vm._v(" "),
-              _c("p", { staticClass: "text-grey-darkest" }, [
+              _c("p", {}, [
                 _vm._v(
-                  "Our 5 years of successful conservation work in saving gorillas is based on a holistic model with four key parts: direct, daily protection of gorillas; scientific research on gorillas and their ecosystems; educating the next generation of scientists and conservationists in Africa; and helping local people with basic needs, so that communities can thrive and work together with us."
+                  "Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us."
                 )
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "text-left" }, [
+            _c("div", { staticClass: "text-centered" }, [
               _c(
                 "button",
                 { staticClass: "btn bg-orange-dark text-white hover:bg-green" },
@@ -34370,9 +34429,7 @@ var staticRenderFns = [
               )
             ])
           ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-40" })
+        )
       ])
     ])
   },
@@ -34381,7 +34438,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-centered my-5" }, [
-      _c("h2", { staticClass: "py-5" }, [_vm._v("Our Activities")])
+      _c("h2", { staticClass: "p-5" }, [_vm._v("Our Activities")])
     ])
   },
   function() {
@@ -34399,14 +34456,10 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "text-right" }, [
-        _c(
-          "button",
-          {
-            staticClass: "py-2 px-2 rounded shadow-sm bg-orange-dark text-white"
-          },
-          [_vm._v("View More")]
-        )
+      _c("div", { staticClass: "text-centered" }, [
+        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
+          _vm._v("View More")
+        ])
       ])
     ])
   },
@@ -34415,7 +34468,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mt-12" }, [
-      _c("div", { staticClass: "text-grey" }, [
+      _c("div", { staticClass: "text-grey-darkest" }, [
         _c("h2", [_vm._v("Bird Conservation")]),
         _vm._v(" "),
         _c("p", { staticClass: "pt-10" }, [
@@ -34425,14 +34478,10 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "text-left " }, [
-        _c(
-          "button",
-          {
-            staticClass: "py-2 px-2 rounded shadow-sm bg-orange-dark text-white"
-          },
-          [_vm._v("View More")]
-        )
+      _c("div", { staticClass: "text-centered" }, [
+        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
+          _vm._v("View More")
+        ])
       ])
     ])
   },
@@ -34451,14 +34500,10 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "text-right" }, [
-        _c(
-          "button",
-          {
-            staticClass: "py-2 px-2 rounded shadow-sm bg-orange-dark text-white"
-          },
-          [_vm._v("View More")]
-        )
+      _c("div", { staticClass: "text-centered" }, [
+        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
+          _vm._v("View More")
+        ])
       ])
     ])
   },
@@ -34467,7 +34512,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-50 mt-12" }, [
-      _c("div", { staticClass: "text-grey" }, [
+      _c("div", { staticClass: "text-grey-darkest" }, [
         _c("h2", [_vm._v("Events")]),
         _vm._v(" "),
         _c("p", { staticClass: "pt-10" }, [
@@ -34477,14 +34522,10 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "text-left " }, [
-        _c(
-          "button",
-          {
-            staticClass: "py-2 px-2 rounded shadow-sm bg-orange-dark text-white"
-          },
-          [_vm._v("View More")]
-        )
+      _c("div", { staticClass: "text-centered" }, [
+        _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
+          _vm._v("View More")
+        ])
       ])
     ])
   },
@@ -34503,12 +34544,10 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "text-right" }, [
-        _c(
-          "button",
-          { staticClass: "py-2 px-2 rounded shadow-sm bg-orange text-white" },
-          [_vm._v("View More")]
-        )
+      _c("div", { staticClass: "text-centered" }, [
+        _c("button", { staticClass: "btn shadow-sm bg-orange text-white" }, [
+          _vm._v("View More")
+        ])
       ])
     ])
   }
@@ -35284,189 +35323,123 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", [
-      _c(
-        "div",
-        { staticClass: "w-100" },
-        [
-          _c("v-img", { attrs: { src: "/img/IMG_1973.jpg", height: "670" } }, [
-            _c("div", { staticClass: "text-right" }, [_c("Popup")], 1),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "mx-auto w-90",
-                staticStyle: { "margin-top": "90px" }
-              },
-              [
-                _c("div", { staticClass: "w-100 flex" }, [
-                  _c("div", { staticClass: "w-10" }, [
-                    _c("div", { staticClass: "w-20 " }, [
-                      _c("div", { staticClass: "line" }),
+      _c("div", { staticClass: "w-100" }, [
+        _c("div", { staticClass: "bg" }, [
+          _c("div", { staticClass: "flex w-100 " }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: " mx-auto w-90",
+              staticStyle: { "margin-top": "100px" }
+            },
+            [
+              _c("div", { staticClass: "w-100 flex" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { staticClass: "w-70" }, [
+                  _c("div", { staticClass: "text-white" }, [
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex" }, [
+                      _vm._m(4),
                       _vm._v(" "),
-                      _c("div", { staticClass: "-ml-3 my-2" }, [
-                        _c("img", {
-                          attrs: { src: "/img/svg/whitefb.svg", alt: "" }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "-ml-3 my-4" }, [
-                        _c("img", {
-                          attrs: { src: "/img/svg/whiteig.svg", alt: "" }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "-ml-3 my-2" }, [
-                        _c("img", {
-                          attrs: { src: "/img/svg/whitetwi.svg", alt: "" }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "line" }),
-                      _vm._v(" "),
-                      _c("div")
+                      _c("div", {}, [_c("Popup")], 1)
                     ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-70" }, [
-                    _c("div", { staticClass: "text-white" }, [
-                      _c("div", [
-                        _c("h1", { staticStyle: { "font-size": "100px" } }, [
-                          _vm._v("Rugezi")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticStyle: {
-                            "margin-top": "-28px",
-                            "margin-left": "170px"
-                          }
-                        },
-                        [_c("span", [_vm._v("Ornithology Center")])]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "w-60 py-5" }, [
-                        _c("p", { staticClass: "text-lg" }, [
-                          _vm._v(
-                            "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "btn px-5 bg-orange-dark text-white rounded"
-                          },
-                          [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "text-white no-underline",
-                                attrs: { href: "#activity" }
-                              },
-                              [_vm._v("Explore More")]
-                            )
-                          ]
-                        )
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-20" })
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "w-100 flex -mt-12" }, [
-              _c("div", { staticClass: "w-50" }),
-              _vm._v(" "),
-              _c("div", [
-                _c("div", [
-                  _c("h2", { staticClass: "text-white" }, [_vm._v("Gallery")])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "grid grid-4" }, [
-                  _c(
-                    "div",
-                    { staticClass: "mr-3" },
-                    [
-                      _c("v-img", {
-                        staticClass: "rounded shadow-xl",
-                        attrs: {
-                          src: "/img/IMG_8805.jpg",
-                          height: "190",
-                          width: "150"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "mr-3" },
-                    [
-                      _c("v-img", {
-                        staticClass: "rounded shadow-xl",
-                        attrs: {
-                          src: "/img/IMG_8827.jpg",
-                          height: "190",
-                          width: "150"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "mr-3" },
-                    [
-                      _c("v-img", {
-                        staticClass: "rounded shadow-xl",
-                        attrs: {
-                          src: "/img/IMG_2004.jpg",
-                          height: "190",
-                          width: "150"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "mr-3" },
-                    [
-                      _c("v-img", {
-                        staticClass: "rounded shadow-xl",
-                        attrs: {
-                          src: "/img/IMG_1973.jpg",
-                          height: "190",
-                          width: "150"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ])
+                _c("div", { staticClass: "w-20" })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "w-100 flex -mt-12" }, [
+            _c("div", { staticClass: "w-50" }),
+            _vm._v(" "),
+            _c("div", [
+              _vm._m(5),
+              _vm._v(" "),
+              _c("div", { staticClass: "grid grid-4" }, [
+                _c(
+                  "div",
+                  { staticClass: "mr-3" },
+                  [
+                    _c("v-img", {
+                      staticClass: "rounded shadow-xl",
+                      attrs: {
+                        src: "/img/IMG_8805.jpg",
+                        height: "190",
+                        width: "150"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "mr-3" },
+                  [
+                    _c("v-img", {
+                      staticClass: "rounded shadow-xl",
+                      attrs: {
+                        src: "/img/IMG_8827.jpg",
+                        height: "190",
+                        width: "150"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "mr-3" },
+                  [
+                    _c("v-img", {
+                      staticClass: "rounded shadow-xl",
+                      attrs: {
+                        src: "/img/IMG_2004.jpg",
+                        height: "190",
+                        width: "150"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "mr-3" },
+                  [
+                    _c("v-img", {
+                      staticClass: "rounded shadow-xl",
+                      attrs: {
+                        src: "/img/IMG_1973.jpg",
+                        height: "190",
+                        width: "150"
+                      }
+                    })
+                  ],
+                  1
+                )
               ])
             ])
           ])
-        ],
-        1
-      )
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c(
       "div",
       { staticClass: "relative mx-auto mt-5", attrs: { id: "activity" } },
       [
-        _vm._m(0),
+        _vm._m(6),
         _vm._v(" "),
         _c("div", [
           _c("div", { staticClass: "w-80 mx-auto" }, [
@@ -35474,79 +35447,83 @@ var render = function() {
               "div",
               { staticClass: "w-100 grid grid-3 mb-12 " },
               _vm._l(_vm.activities, function(activity) {
-                return _c("div", { key: activity.id }, [
-                  _c("div", { staticClass: "w-100 mx-5" }, [
+                return _c(
+                  "div",
+                  { key: activity.id, attrs: { "data-aos": "zoom-in" } },
+                  [
+                    _c("div", { staticClass: "w-100 mx-5" }, [
+                      _c(
+                        "div",
+                        {},
+                        [
+                          _c(
+                            "v-avatar",
+                            {
+                              staticClass: "bg-white shadow-lg",
+                              attrs: { size: "60" }
+                            },
+                            [
+                              _c("div", { staticClass: "w-80" }, [
+                                _c("img", {
+                                  attrs: { src: activity.svg, alt: "svg-icon" }
+                                })
+                              ])
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]),
+                    _vm._v(" "),
                     _c(
                       "div",
-                      {},
+                      {
+                        staticClass:
+                          "bg-white shadow-sm mb-3 mr-4 hover:shadow-lg hover:cursor-pointer",
+                        staticStyle: {
+                          "border-radius": "40px 0px 40px 0px",
+                          "margin-top": "-30px"
+                        }
+                      },
                       [
-                        _c(
-                          "v-avatar",
-                          {
-                            staticClass: "bg-white shadow-lg",
-                            attrs: { size: "60" }
-                          },
-                          [
-                            _c("div", { staticClass: "w-80" }, [
-                              _c("img", {
-                                attrs: { src: activity.svg, alt: "svg-icon" }
-                              })
-                            ])
-                          ]
-                        )
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "bg-white shadow-sm mb-3 mr-4 hover:shadow-lg hover:cursor-pointer",
-                      staticStyle: {
-                        "border-radius": "40px 0px 40px 0px",
-                        "margin-top": "-30px"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: " text-grey-darkest" }, [
-                        _c("h2", { staticClass: "text-xl px-5 pt-10 pb-3" }, [
-                          _vm._v(_vm._s(activity.head))
+                        _c("div", { staticClass: " text-grey-darkest" }, [
+                          _c("h2", { staticClass: "text-xl px-5 pt-10 pb-3" }, [
+                            _vm._v(_vm._s(activity.head))
+                          ]),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "px-5 text-sm" }, [
+                            _vm._v(_vm._s(activity.body))
+                          ])
                         ]),
                         _vm._v(" "),
-                        _c("p", { staticClass: "px-5 text-sm" }, [
-                          _vm._v(_vm._s(activity.body))
+                        _c("div", { staticClass: "text-centered" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "bg-orange-dark py-1 px-2 mb-2 text-sm text-white"
+                            },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "no-underline",
+                                  attrs: { to: { name: "activity" } }
+                                },
+                                [
+                                  _c("span", { staticClass: "text-white" }, [
+                                    _vm._v("Read More")
+                                  ])
+                                ]
+                              )
+                            ],
+                            1
+                          )
                         ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "text-centered" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "bg-orange-dark py-1 px-2 mb-2 text-sm text-white"
-                          },
-                          [
-                            _c(
-                              "router-link",
-                              {
-                                staticClass: "no-underline",
-                                attrs: { to: { name: "activity" } }
-                              },
-                              [
-                                _c("span", { staticClass: "text-white" }, [
-                                  _vm._v("Read More")
-                                ])
-                              ]
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ]
-                  )
-                ])
+                      ]
+                    )
+                  ]
+                )
               }),
               0
             )
@@ -35557,10 +35534,10 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "w-100 bg-green-darker" }, [
       _c("div", { staticClass: "w-80 mx-auto" }, [
-        _vm._m(1),
+        _vm._m(7),
         _vm._v(" "),
         _c("div", { staticClass: "w-100 flex" }, [
-          _vm._m(2),
+          _vm._m(8),
           _vm._v(" "),
           _c("div", { staticClass: "w-50 pt-12 text-centered" }, [
             _c("p", { staticClass: "text-white" }, [
@@ -35605,7 +35582,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "content w-80 mx-auto" }, [
         _c("div", {}, [
-          _vm._m(3),
+          _vm._m(9),
           _vm._v(" "),
           _c("div", [
             _c("div", { staticClass: "w-100 grid grid-3 text-grey-darkest" }, [
@@ -35625,7 +35602,7 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _vm._m(4)
+                _vm._m(10)
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "bg-white shadow-lg mx-5" }, [
@@ -35644,7 +35621,7 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _vm._m(5)
+                _vm._m(11)
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "bg-white shadow-lg" }, [
@@ -35663,7 +35640,7 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _vm._m(6)
+                _vm._m(12)
               ])
             ])
           ])
@@ -35673,6 +35650,87 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "w-10" }, [
+      _c("div", { staticClass: "w-20 " }, [
+        _c("div", { staticClass: "line" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "-ml-3 my-2" }, [
+          _c("img", { attrs: { src: "/img/svg/whitefb.svg", alt: "" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "-ml-3 my-4" }, [
+          _c("img", { attrs: { src: "/img/svg/whiteig.svg", alt: "" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "-ml-3 my-2" }, [
+          _c("img", { attrs: { src: "/img/svg/whitetwi.svg", alt: "" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "line" }),
+        _vm._v(" "),
+        _c("div")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h1", { staticStyle: { "font-size": "100px" } }, [_vm._v("Rugezi")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticStyle: { "margin-top": "-28px", "margin-left": "170px" } },
+      [_c("span", [_vm._v("Ornithology Center")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "w-60 py-5" }, [
+      _c("p", { staticClass: "text-lg" }, [
+        _vm._v(
+          "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("button", { staticClass: "btn px-5 bg-orange-dark text-white mr-2" }, [
+        _c(
+          "a",
+          {
+            staticClass: "text-white no-underline",
+            attrs: { href: "#activity" }
+          },
+          [_vm._v("Explore More")]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h2", { staticClass: "text-white" }, [_vm._v("Gallery")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -36472,10 +36530,10 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "w-45 mx-5 mt-24 text-grey-darkest bg-black px-5 py-2 opacity-75 rounded"
+              "w-45 mx-auto mt-24 text-grey-darkest bg-black px-5 py-2 opacity-75 rounded"
           },
           [
-            _c("div", { staticClass: " text-white" }, [
+            _c("div", { staticClass: " text-white text-centered" }, [
               _c("h1", { staticClass: "pb-3" }, [_vm._v("Our Projects")]),
               _vm._v(" "),
               _c("p", [
@@ -36485,7 +36543,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "text-right" }, [
+            _c("div", { staticClass: "text-centered" }, [
               _c("button", { staticClass: "btn bg-orange text-white" }, [
                 _c(
                   "a",
@@ -81848,7 +81906,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _About_vue_vue_type_template_id_78171b67_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./About.vue?vue&type=template&id=78171b67&scoped=true& */ "./resources/js/Components/Pages/About.vue?vue&type=template&id=78171b67&scoped=true&");
 /* harmony import */ var _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About.vue?vue&type=script&lang=js& */ "./resources/js/Components/Pages/About.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _About_vue_vue_type_style_index_0_id_78171b67_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css& */ "./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -81856,7 +81916,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _About_vue_vue_type_template_id_78171b67_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _About_vue_vue_type_template_id_78171b67_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -81885,6 +81945,22 @@ component.options.__file = "resources/js/Components/Pages/About.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./About.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/About.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css& ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_id_78171b67_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/About.vue?vue&type=style&index=0&id=78171b67&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_id_78171b67_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_id_78171b67_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_id_78171b67_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_id_78171b67_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_id_78171b67_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

@@ -211,7 +211,7 @@
                 <div class="pt-4 pb-2 px-4 text-right">
                     <h4 class="text-sm text-white">
                         <span>
-                            <a href="https://umbrellagrp.rw/" target="_blank">UmbrellaGrp</a>
+                            <a href="https://umbrellagrp.rw/" target="_blank">Umbrella</a>
                         </span>
                         <span>Developed it</span>
                     </h4>
