@@ -2,12 +2,12 @@
     <div>
         <div class="bg">
             <div class="w-100 flex">
-                <div class="w-45 mx-5 mt-24 text-grey-darkest bg-black px-5 py-2 opacity-75 rounded">
-                    <div class=" text-white">
+                <div class="w-45 mx-auto mt-24 text-grey-darkest bg-black px-5 py-2 opacity-75 rounded">
+                    <div class=" text-white text-centered">
                         <h1 class="pb-3">Our Projects</h1>
                         <p>Saving Birds is an important mission, but the value of this work is even more far reaching. When birds are protected, so are their  forest habitats, which are critical ecosystems that support our planet and all life on earth.</p>
                     </div>
-                    <div class="text-right">
+                    <div class="text-centered">
                         <button class="btn bg-orange text-white">
                             <a href="#projects" class="no-underline text-white">Explore</a>
                         </button>

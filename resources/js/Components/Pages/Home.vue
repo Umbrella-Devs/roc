@@ -3,11 +3,9 @@
         <div>
             
             <div class="w-100">
-                <v-img src="/img/IMG_1973.jpg" height="670">
-                    <div class="text-right">
-                       <Popup/>
-                    </div>
-                    <div class="mx-auto w-90" style="margin-top:90px">
+                <div class="bg">
+                    <div class="flex w-100 "></div>
+                    <div class=" mx-auto w-90" style=" margin-top:100px;">
                         <div class="w-100 flex">
                             <div class="w-10">
                                 <div class="w-20 ">
@@ -40,10 +38,15 @@
                                             Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
                                         </p>
                                     </div>
-                                    <div>
-                                        <button class="btn px-5 bg-orange-dark text-white rounded">
-                                            <a class="text-white no-underline" href="#activity">Explore More</a>
-                                        </button>
+                                    <div class="flex">
+                                        <div>
+                                            <button class="btn px-5 bg-orange-dark text-white mr-2">
+                                                <a class="text-white no-underline" href="#activity">Explore More</a>
+                                            </button>
+                                        </div>
+                                        <div class="">
+                                            <Popup/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +80,7 @@
                         </div>
                         
                     </div>
-                </v-img>
+                </div>
             </div>
         </div>
         <div class="relative mx-auto mt-5" id="activity">
@@ -231,6 +234,15 @@ export default {
 }
 </script>
 <style scoped>
+
+    .bg{
+        background-image: url('/img/IMG_1973.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 615px;
+        
+    }
     .bg-pjt{
         background-image: url('/img/lake.jpg');
         background-repeat: no-repeat;

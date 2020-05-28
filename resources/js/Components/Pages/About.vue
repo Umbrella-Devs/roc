@@ -1,20 +1,23 @@
 <template>
     <div>
-        <div class="">
-            <v-img src="/img/IMG_1973.jpg" height="500">
-                <div class="w-40 mt-32 bg-black opacity-70 text-white px-5 py-5" style="margin-left:100px;border-radius: 10px 10px 10px 10px;">
+        <div class="bg">
+            <div class="w-100 flex">
+                <div class="w-45 mx-auto mt-24 bg-black opacity-75 text-white px-5 py-2 text-centered rounded">
                     <h1 class="py-2">Rugezi Ornithology Center</h1>
                     <p>Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.</p>
                     <div class="">
-                        <button class="bg-orange-dark px-2 py-1 hover:text-black">
+                        <button class="bg-orange-dark btn">
                             <a class="no-underline text-white" href="#team">Our Staff</a>
                         </button>
                     </div>
                 </div>
-            </v-img>
+            </div>
         </div>
         <div>
             <div class="w-80 mx-auto">
+                <div class="text-centered my-5">
+                    <h2 class="p-5">Our Great Story</h2>
+                </div>
                 <div class="w-100 flex my-12">
                     <div class="w-50 mt-12">
                         <h2 class="py-5  text-grey-darkest">Our Story</h2>
@@ -81,7 +84,7 @@
                 <div class="w-80 mx-auto">
                     <div class="w-100 flex">
                         <div class="w-50">
-                            <div class="py-5  text-grey-darkest">
+                            <div class="py-5 text-grey-darkest">
                                 <h2 class="py-2">Feel Free to Reach Us?</h2>
                                 <p>Rugezi Ornithology Center the birding watching company in Rwanda you can reach us now.</p>
                             </div>
@@ -102,5 +105,11 @@ export default {
 </script>
 
 <style scoped>
-    
+    .bg{
+        background-image: url('/img/IMG_1973.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 470px;
+    }   
 </style>
