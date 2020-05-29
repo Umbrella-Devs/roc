@@ -42,6 +42,7 @@ class RocController extends Controller
         $bird->location = $request->location;
         $bird->activity = $request->activity;
         $bird->description = $request->description;
+        $bird->save();
 
         return response()->json([
             'message' => 'New bird Added'
@@ -61,6 +62,7 @@ class RocController extends Controller
         $donor->city = $request->city;
         $donor->country = $request->country;
         $donor->project_id = $request->project_id;
+        $donor->save();
 
 
         return response()->json([
@@ -81,7 +83,7 @@ class RocController extends Controller
         $joiner->city = $request->city;
         $joiner->country = $request->country;
         $joiner->project_id = $request->project_id;
-        
+        $joiner->save();
 
         return response()->json([
             'message' => 'New Joiner joined'
@@ -91,11 +93,12 @@ class RocController extends Controller
 
     public function project_store(Request $request)
     {
-        $joiner = new Project;
+        $project = new Project;
 
-        $joiner->name = $request->name;
-        $joiner->image = $request->image; 
-        $joiner->description = $request->description;
+        $project->name = $request->name;
+        $project->image = $request->image; 
+        $project->description = $request->description;
+        $project->save();
         
 
         return response()->json([
