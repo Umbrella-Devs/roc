@@ -2890,16 +2890,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -41932,7 +41922,7 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("v-divider"),
-              _vm._v("\n<<<<<<< HEAD\n                "),
+              _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "text-center" },
@@ -41982,51 +41972,6 @@ var render = function() {
                   )
                 ],
                 1
-              ),
-              _vm._v("\n=======\n                "),
-              _c(
-                "v-card-actions",
-                [
-                  _c(
-                    "h4",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: (_vm.submitted = _vm.submitted),
-                          expression: "submitted = submitted"
-                        }
-                      ],
-                      staticClass: "text-sm text-green"
-                    },
-                    [_vm._v("Data Succesfully submitted")]
-                  ),
-                  _vm._v(" "),
-                  _c("v-spacer"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn bg-orange-dark text-white mx-3",
-                      on: { click: _vm.reset }
-                    },
-                    [_vm._v("Reset Form")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn bg-green-dark text-white",
-                      on: { click: _vm.submit }
-                    },
-                    [_vm._v("Submit")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(
-                "\n                \n>>>>>>> 9d5d52fe8e7f172bcd6da7d45adc251b4c098523\n            "
               )
             ],
             1

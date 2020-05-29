@@ -39,7 +39,6 @@
                     </v-form>
                 </v-card-text>
                 <v-divider></v-divider>
-<<<<<<< HEAD
                 <div class="text-center">
                     <v-card-actions>
                         <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
@@ -48,15 +47,6 @@
                         <button @click="reset" class="btn border-red text-center text-red mx-3">Reset Form</button>
                     </v-card-actions>
                 </div>
-=======
-                <v-card-actions>
-                    <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
-                    <v-spacer></v-spacer>
-                    <button @click="reset" class="btn bg-orange-dark text-white mx-3">Reset Form</button>
-                    <button @click="submit" class="btn bg-green-dark text-white">Submit</button>
-                </v-card-actions>
-                
->>>>>>> 9d5d52fe8e7f172bcd6da7d45adc251b4c098523
             </v-card>
         </v-dialog>
   </div>
