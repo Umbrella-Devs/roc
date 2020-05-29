@@ -43132,7 +43132,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-60 py-5" }, [
-      _c("p", { staticClass: "text-sm" }, [
+      _c("p", { staticClass: "text-lg" }, [
         _vm._v(
           "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
         )
