@@ -36,7 +36,7 @@
                                         <span>Ornithology Center</span>
                                     </div>
                                     <div class="w-60 py-5">
-                                        <p class="text-sm">
+                                        <p class="text-lg">
                                             Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
                                         </p>
                                     </div>
