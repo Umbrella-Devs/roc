@@ -31,7 +31,7 @@
                                 <span class="text-xl">Rugezi O.C</span></a>
                         </div>
                 </div>
-                <div class="w-70 text-right">
+                <div class="w-70 text-right pt-1">
                     <div class="" style="margin-top:-10px">
                         <ul class="list inline-block">
                             <li class="mx-3 text-sm">
@@ -55,9 +55,7 @@
                                 <a class="text-white no-underline" href="{{ route('join_us') }}">Join Us</a>
                             </li>
                             <li class="mx-3 text-sm">
-                                <button class="px-3 rounded-full py-1 bg-orange-dark">
-                                    <a class="text-white no-underline" href="{{ route('donate') }}">Donate</a>
-                                </button>
+                                    <a class="rounded-full bg-orange-dark px-3 py-2 text-white no-underline" href="{{ route('donate') }}">Donate</a>
                             </li>
                         </ul>
                     </div>

@@ -5,13 +5,13 @@
                 <button class="btn bg-orange-dark text-white" v-on="on">Send Message</button>
             </template>
             <v-card>
-                <div class="flex grey">
-                    <div class="w-100">
+                <div class="flex bg-green-darkest">
+                    <div class="w-100 bg-green-darkest">
                         <h3 class="text-centered headline text-white lighten-2 py-2">Send A Message</h3>
                     </div>
                     <v-spacer></v-spacer>
-                    <div class="">
-                        <button @click="dialog = false" class="bg-red rounded-full px-2 text-white">X</button>
+                    <div class="pt-3">
+                        <button @click="dialog = false" class="rounded-full px-2 text-white">X</button>
                     </div> 
                 </div>
                 <v-card-text>

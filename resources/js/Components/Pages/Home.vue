@@ -5,7 +5,7 @@
             <div class="w-100">
                 <div class="bg">
                     <div class="flex w-100 "></div>
-                    <div class=" mx-auto w-90" style=" margin-top: 90px;">
+                    <div class=" mx-auto w-90" style=" margin-top: 120px;">
                         <div class="w-100 flex">
                             <div class="w-5 pt-5 relative">
                                 <div class="w-30 ">
@@ -93,7 +93,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-white-smoke relative mx-auto pt-3" id="activity">
+        <div class="bg-white-smoke relative mx-auto pt-5" id="activity">
             <div class="py-5 text-centered text-grey-darkest">
                 <h2 class="text-3xl">Our Special Activities</h2>
             </div>
@@ -113,9 +113,9 @@
                                 </div>
                             </div>
                             <div class="bg-white pb-4 -mt-6 shadow-sm mb-3 mr-4 pt hover:shadow-md" 
-                            style="border-radius: 40px 0px 40px 0px; padding-top: 30px;">
+                            style="border-radius: 40px 0px 40px 0px; padding-top: 0px;">
                                 <div class=" text-grey-darkest">
-                                    <h2 class="text-xl px-5 pt-10 pb-3">{{activity.head}}</h2>
+                                    <h2 class="text-xl px-5 pt-8 pb-3">{{activity.head}}</h2>
                                     <p class="px-5 text-sm">{{activity.body}}</p>
                                 </div>
                                 <!-- <div class="text-centered">
@@ -131,10 +131,10 @@
                 </div>
             </div>
         </div>
-        <div class="w-100 bg-green-darkest py-3 ">
+        <div class="w-100 bg-green-darkest py-5 ">
             <div class="w-90 mx-auto py-5">
                 
-                <div class="w-100 flex pb-2">
+                <div class="w-100 flex pt-2 pb-2">
                     <div class="w-50 mx-2" style="margin-top: 0px"
                     data-aos="fade-right"
                     data-aos-duration="2000">
@@ -166,7 +166,7 @@
             <div class="opacity bg-green-darker opacity-80"></div>
             <div class="content w-90 mx-auto">
                 <div class="py-5">
-                    <div class="pl-2">
+                    <div class="pl-2 py-5">
                         <h2 class="text-center text-3xl text-white">Our Blog</h2>
                     </div>
                     <div class="py-5">

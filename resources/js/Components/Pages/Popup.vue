@@ -1,18 +1,18 @@
 
 <template>
-    <div class="w-100">
+    <div class="w-100 t">
         <v-dialog v-model="dialog" max-width="600">
             <template v-slot:activator="{ on }">
                 <button class="btn bg-orange-dark text-white" v-on="on">Bird Track</button>
             </template>
             <v-card>
-                <div class="flex grey">
-                    <div class="w-100">
+                <div class="flex bg-green-darkest">
+                    <div class="w-100 bg-green-darkest">
                         <h3 class="text-centered headline text-white lighten-2 py-2">Record Birds Here</h3>
                     </div>
                     <v-spacer></v-spacer>
-                    <div class="">
-                        <button @click="dialog = false" class="bg-red rounded-full px-2 text-white">X</button>
+                    <div class="pt-3">
+                        <button @click="dialog = false" class="text-white rounded-full px-2 text-white">X</button>
                     </div> 
                 </div>
                 <v-card-text>
@@ -39,13 +39,14 @@
                     </v-form>
                 </v-card-text>
                 <v-divider></v-divider>
-                <v-card-actions>
-                    <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
-                    <v-spacer></v-spacer>
-                    <button @click="reset" class="btn bg-red text-white mx-3">Reset Form</button>
-                    <button @click="submit" class="btn bg-orange-dark text-white">Submit</button>
-                </v-card-actions>
-                
+                <div class="text-center">
+                    <v-card-actions>
+                        <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
+                        <v-spacer></v-spacer>
+                        <button @click="submit" class="btn bg-orange-dark text-center text-white">Submit</button>
+                        <button @click="reset" class="btn border-red text-center text-red mx-3">Reset Form</button>
+                    </v-card-actions>
+                </div>
             </v-card>
         </v-dialog>
   </div>

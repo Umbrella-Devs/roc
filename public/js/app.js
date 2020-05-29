@@ -2885,6 +2885,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -40894,7 +40895,7 @@ var render = function() {
             "div",
             {
               staticClass: " mx-auto w-90",
-              staticStyle: { "margin-top": "90px" }
+              staticStyle: { "margin-top": "120px" }
             },
             [
               _c("div", { staticClass: "w-100 flex" }, [
@@ -41040,7 +41041,7 @@ var render = function() {
     _c(
       "div",
       {
-        staticClass: "bg-white-smoke relative mx-auto pt-3",
+        staticClass: "bg-white-smoke relative mx-auto pt-5",
         attrs: { id: "activity" }
       },
       [
@@ -41093,12 +41094,12 @@ var render = function() {
                           "bg-white pb-4 -mt-6 shadow-sm mb-3 mr-4 pt hover:shadow-md",
                         staticStyle: {
                           "border-radius": "40px 0px 40px 0px",
-                          "padding-top": "30px"
+                          "padding-top": "0px"
                         }
                       },
                       [
                         _c("div", { staticClass: " text-grey-darkest" }, [
-                          _c("h2", { staticClass: "text-xl px-5 pt-10 pb-3" }, [
+                          _c("h2", { staticClass: "text-xl px-5 pt-8 pb-3" }, [
                             _vm._v(_vm._s(activity.head))
                           ]),
                           _vm._v(" "),
@@ -41118,9 +41119,9 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "w-100 bg-green-darkest py-3 " }, [
+    _c("div", { staticClass: "w-100 bg-green-darkest py-5 " }, [
       _c("div", { staticClass: "w-90 mx-auto py-5" }, [
-        _c("div", { staticClass: "w-100 flex pb-2" }, [
+        _c("div", { staticClass: "w-100 flex pt-2 pb-2" }, [
           _c(
             "div",
             {
@@ -41355,7 +41356,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pl-2" }, [
+    return _c("div", { staticClass: "pl-2 py-5" }, [
       _c("h2", { staticClass: "text-center text-3xl text-white" }, [
         _vm._v("Our Blog")
       ])
@@ -41754,7 +41755,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "w-100" },
+    { staticClass: "w-100 t" },
     [
       _c(
         "v-dialog",
@@ -41793,9 +41794,9 @@ var render = function() {
             [
               _c(
                 "div",
-                { staticClass: "flex grey" },
+                { staticClass: "flex bg-green-darkest" },
                 [
-                  _c("div", { staticClass: "w-100" }, [
+                  _c("div", { staticClass: "w-100 bg-green-darkest" }, [
                     _c(
                       "h3",
                       {
@@ -41808,11 +41809,11 @@ var render = function() {
                   _vm._v(" "),
                   _c("v-spacer"),
                   _vm._v(" "),
-                  _c("div", {}, [
+                  _c("div", { staticClass: "pt-3" }, [
                     _c(
                       "button",
                       {
-                        staticClass: "bg-red rounded-full px-2 text-white",
+                        staticClass: "text-white rounded-full px-2 text-white",
                         on: {
                           click: function($event) {
                             _vm.dialog = false
@@ -41934,42 +41935,51 @@ var render = function() {
               _c("v-divider"),
               _vm._v(" "),
               _c(
-                "v-card-actions",
+                "div",
+                { staticClass: "text-center" },
                 [
                   _c(
-                    "h4",
-                    {
-                      directives: [
+                    "v-card-actions",
+                    [
+                      _c(
+                        "h4",
                         {
-                          name: "show",
-                          rawName: "v-show",
-                          value: (_vm.submitted = _vm.submitted),
-                          expression: "submitted = submitted"
-                        }
-                      ],
-                      staticClass: "text-sm text-green"
-                    },
-                    [_vm._v("Data Succesfully submitted")]
-                  ),
-                  _vm._v(" "),
-                  _c("v-spacer"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn bg-red text-white mx-3",
-                      on: { click: _vm.reset }
-                    },
-                    [_vm._v("Reset Form")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn bg-orange-dark text-white",
-                      on: { click: _vm.submit }
-                    },
-                    [_vm._v("Submit")]
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: (_vm.submitted = _vm.submitted),
+                              expression: "submitted = submitted"
+                            }
+                          ],
+                          staticClass: "text-sm text-green"
+                        },
+                        [_vm._v("Data Succesfully submitted")]
+                      ),
+                      _vm._v(" "),
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn bg-orange-dark text-center text-white",
+                          on: { click: _vm.submit }
+                        },
+                        [_vm._v("Submit")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn border-red text-center text-red mx-3",
+                          on: { click: _vm.reset }
+                        },
+                        [_vm._v("Reset Form")]
+                      )
+                    ],
+                    1
                   )
                 ],
                 1
@@ -42484,9 +42494,9 @@ var render = function() {
             [
               _c(
                 "div",
-                { staticClass: "flex grey" },
+                { staticClass: "flex bg-green-darkest" },
                 [
-                  _c("div", { staticClass: "w-100" }, [
+                  _c("div", { staticClass: "w-100 bg-green-darkest" }, [
                     _c(
                       "h3",
                       {
@@ -42499,11 +42509,11 @@ var render = function() {
                   _vm._v(" "),
                   _c("v-spacer"),
                   _vm._v(" "),
-                  _c("div", {}, [
+                  _c("div", { staticClass: "pt-3" }, [
                     _c(
                       "button",
                       {
-                        staticClass: "bg-red rounded-full px-2 text-white",
+                        staticClass: "rounded-full px-2 text-white",
                         on: {
                           click: function($event) {
                             _vm.dialog = false
@@ -100905,8 +100915,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
