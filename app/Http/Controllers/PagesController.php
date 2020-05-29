@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function index(){
+        return view('home');
+    }
+        
     public function projects(){
         return view('projects');
     }
@@ -27,6 +31,6 @@ class PagesController extends Controller
     public function donate(){
         return view('donate');
     }
-    
+
 
 }
