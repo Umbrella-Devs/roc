@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any}', 'SpaController@index')->where('any', '.*');
+//Route::get('/{any}', 'SpaController@index')->where('any', '.*');
 
 Route::get('/activities', 'PagesController@activities')->name('activities');
 Route::get('/projects', 'PagesController@projects')->name('projects');
@@ -24,6 +24,6 @@ Route::get('/donate', 'PagesController@donate')->name('donate');
 
 
 
-// Route::group(['prefix' => 'admin'], function () {
-//     Voyager::routes();
-// });
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
