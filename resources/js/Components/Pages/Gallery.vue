@@ -1,16 +1,33 @@
 <template>
-  <div class="mb-24">
-      <div class="w-50 mx-auto text-centered" style="margin-top:150px">
-          <h4 class="">GalleryPage</h4>
-      </div>
-      <div class="w-50 border-1  mx-auto rounded bg-white hover:shadow-lg hover:cursor-pointer">
-          <div>
-              
-          </div>
-          <div class="p-5">
-              <h1 class="text-centered py-5">This Page is under Construction</h1>
-              <h2 class="text-centered py-5">404 | Page Loading...</h2>
-          </div>
-      </div>
+  <div id="app">
+    <CoolLightBox 
+      :items="items" 
+      :index="index"
+      @close="index = null">
+    </CoolLightBox>
+
+    <div class="images-wrapper">
+      <div
+        class="image"
+        v-for="(image, imageIndex) in items"
+        :key="imageIndex"
+        @click="index = imageIndex"
+        :style="{ backgroundImage: 'url(' + image + ')' }"
+      ></div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      items: [
+        'https://cosmos-images2.imgix.net/file/spina/photo/20565/191010_nature.jpg?ixlib=rails-2.1.4&auto=format&ch=Width%2CDPR&fit=max&w=835',
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*',
+      ],
+      index: null
+    };
+  },
+};
+</script>

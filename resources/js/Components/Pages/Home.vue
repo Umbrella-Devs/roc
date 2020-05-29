@@ -117,7 +117,7 @@
                             >
                                 <div class=" text-grey-darkest">
                                     <h2 class="text-xl px-5 pt-10 pb-3">{{activity.head}}</h2>
-                                    <p class="px-5 text-xs">{{activity.body}}</p>
+                                    <p class="px-5 text-sm">{{activity.body}}</p>
                                 </div>
                                 <!-- <div class="text-centered">
                                     <button class="bg-orange-dark py-1 px-2 mb-2 text-sm text-white">
@@ -182,7 +182,7 @@
                                     </div>
                                     <div class="px-4">
                                         <h3 class="text-sm py-2">Birds Day in Rugezi Center</h3>
-                                        <p class="text-xs">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
+                                        <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
                                     </div>
                                     <div class="text-right mx-5 mb-4">
                                         <button class="text-sm btn border-orange-darker">Read More</button>
@@ -199,7 +199,7 @@
                                     </div>
                                     <div class="px-4">
                                         <h3 class="text-sm py-2">Bird Watching the great thing</h3>
-                                        <p class="text-xs">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
+                                        <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
                                     </div>
                                     <div class="text-right mx-5 mb-4">
                                         <button class="text-sm btn border-orange-darker">Read More</button>
@@ -216,7 +216,7 @@
                                     </div>
                                     <div class="px-4">
                                         <h3 class="text-sm py-2">Internship to students </h3>
-                                        <p class="text-xs">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
+                                        <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
                                     </div>
                                     <div class="text-right mx-5 mb-4">
                                         <button class="text-sm btn border-orange-darker">Read More</button>
@@ -232,6 +232,7 @@
 </template>
 <script>
 import Popup from './Popup.vue'
+
 export default {
     components:{Popup},
     data(){

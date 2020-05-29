@@ -4,6 +4,13 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router'
 import vuetify from './vuetify'
 
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
+
+Vue.use(CoolLightBox)
+
+
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -49,7 +56,7 @@ const router = new VueRouter({
         {path: '/gallery', name: 'gallery', component: Gallery,},
         {path: '/donate', name: 'donate', component: Donate,},
         {path: '/join-us', name: 'join', component: Join,},
-        {path: '/join-us', name: 'blog', component: Blog,},
+        {path: '/blog', name: 'blog', component: Blog,},
         {path: '/projects/:slug', name: 'singleProject', component: singleProject,},
         {path: '/project/bird-tracking', name: 'birdTrack', component: birdTrack,},
     ],
@@ -62,7 +69,7 @@ const router = new VueRouter({
 
 const app = new Vue({
     el: '#app',
-    components: { App },
+    components: { App,About,Activites,Projects,Gallery,Home,Donate,Join,Blog,singleProject,birdTrack },
     router,
     vuetify,
 });

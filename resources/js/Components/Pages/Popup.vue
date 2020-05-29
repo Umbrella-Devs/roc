@@ -6,8 +6,14 @@
                 <button class="btn bg-orange-dark text-white" v-on="on">Bird Track</button>
             </template>
             <v-card>
-                <div class="text-centered">
-                    <h3 class="headline grey lighten-2 py-2">Record Birds Here</h3>
+                <div class="flex grey">
+                    <div class="w-100">
+                        <h3 class="text-centered headline text-white lighten-2 py-2">Record Birds Here</h3>
+                    </div>
+                    <v-spacer></v-spacer>
+                    <div class="">
+                        <button @click="dialog = false" class="bg-red rounded-full px-2 text-white">X</button>
+                    </div> 
                 </div>
                 <v-card-text>
                     <v-form ref="form">
@@ -52,6 +58,7 @@
         birdname:'',
         numBirds:'',
         description:'',
+        activity:'',
         location:'',
         submitted:false,
         nameRules:[
@@ -70,12 +77,8 @@
         reset () {
         this.$refs.form.reset()
             this.submitted = false;
-            console.log('Resetted')
-        
-    },
-    computed:{
-        
-      },
+            console.log('Resetted')  
+        },
     }
   }
 </script>
