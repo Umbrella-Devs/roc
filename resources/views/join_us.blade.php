@@ -1,4 +1,4 @@
 @extends('spa')
 @section('content')
-<Home/>
+<Join/>
 @endsection

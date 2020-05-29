@@ -4,10 +4,6 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router'
 import vuetify from './vuetify'
 
-import CoolLightBox from 'vue-cool-lightbox'
-import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
-
-Vue.use(CoolLightBox)
 
 
 
@@ -46,6 +42,10 @@ import birdTrack from './Components/Pages/Projects/birdTrack.vue'
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+
+// Vue.component('Home', require('./Components/Pages/Home.vue').default)
+
+
 const router = new VueRouter({
     mode: 'history',
     routes: [
@@ -61,6 +61,7 @@ const router = new VueRouter({
         {path: '/project/bird-tracking', name: 'birdTrack', component: birdTrack,},
     ],
 });
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

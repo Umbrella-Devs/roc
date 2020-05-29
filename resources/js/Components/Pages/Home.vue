@@ -4,7 +4,10 @@
             
             <div class="w-100">
                 <div class="bg">
-                    <div class="flex w-100 "></div>
+                    
+                    <div class="flex w-100 ">
+                        
+                    </div>
                     <div class=" mx-auto w-90" style=" margin-top:120px;">
                         <div class="w-100 flex">
                             <div class="w-5">
@@ -43,10 +46,10 @@
                                     <div class="flex relative z-999">
                                         <div class="">
                                             <button class="btn px-5 border-white text-orange mr-2">
-                                                <a class="text-white no-underline" href="#activity">Explore </a>
+                                                <a class="text-white no-underline" href="">Explore </a>
                                             </button>
                                         </div>
-                                        <div class="">
+                                        <div data-app class="">
                                             <Popup/>
                                         </div>
                                     </div>
@@ -244,11 +247,6 @@ export default {
                 {id:'4', head:'Daily Protection', slug:'daily-protection', body:'The most-effective conservation strategy is direct, sustained protection of wild animal populations. This is the foundation of our work.', svg:'/img/svg/protection.svg'},
                 {id:'5', head:'Events', slug:'events', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/calendar.svg'},
                 {id:'6', head:'Helping Community', slug:'community', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/conservation.svg'},
-            ],
-            data: [
-                '<div class="example-slide"><v-img src="/img/IMG_2900.jpg" height="585"></v-img></div>',
-                '<div class="example-slide"><v-img src="/img/IMG_1973.jpg" height="585"></v-img></div>',
-                '<div class="example-slide"><v-img src="/img/IMG_9069.jpg" height="585"></v-img></div>',
             ],
         }
     }

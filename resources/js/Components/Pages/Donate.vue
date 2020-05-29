@@ -6,23 +6,23 @@
                     <h3 class="text-centered text-grey-darkest">Your gift will give a critical boost to the ROC's work in the areas of:</h3>
                 </div>
                 <div class="text-centered my-12 w-40 mx-auto text-grey-darkest">
-                    <h5 class="py-5 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Educating next generation</h5>
-                    <h5 class="py-5 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Bird Track</h5>
-                    <h5 class="py-5 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Conservation of Birds</h5>
-                    <h5 class="py-5 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Green Birding</h5> 
+                    <h5 class="py-3 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Educating next generation</h5>
+                    <h5 class="py-3 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Bird Track</h5>
+                    <h5 class="py-3 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Conservation of Birds</h5>
+                    <h5 class="py-3 bg-white-smoke border-1 border-solid border-grey rounded mb-3">Green Birding</h5> 
                 </div>
                 <div class="w-90 mx-auto text-centered text-grey-darkest">
                     <h3>We cannot reverse extinction,but together,</h3><h3> we CAN prevent it.</h3>
                 </div>
             </div>
-            <div class="my-12 w-40 mx-12 " v-show="!submitted">
+            <div class=" w-40 " v-show="!submitted">
                 <div class="py-3 text-centered">
                     <h3 class="text-grey-darkest">Donate Here</h3>
                 </div>
-                <div class="mx-5 bg-white shadow-lg px-5 pt-5 rounded">
+                <div class="mx-5 bg-white shadow-lg rounded">
                     <v-form ref="form">
-                        <div class="w-100 flex  mt-5">
-                            <div class="w-50 mr-5">
+                        <div class="w-100 flex">
+                            <div class="w-50">
                                 <v-text-field outlined label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
                             </div>
                             <div class="w-50">
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="w-100 flex">
-                            <div class="w-50 mr-5">
+                            <div class="w-50">
                                 <v-select outlined v-model="country" label="Country" :items="countries" :rules="countryRules"></v-select>
                             </div>
                             <div class="w-50">
@@ -51,7 +51,7 @@
                         <div>
                             <v-textarea outlined label="Leave a comment"></v-textarea>
                         </div>
-                        <div class="text-centered py-5">
+                        <div class="text-centered">
                             <button v-on:click.prevent="submit" class="bg-orange-dark btn text-white">Donate Now</button>
                         </div>
                     </v-form>
