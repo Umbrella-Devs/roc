@@ -40308,7 +40308,7 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-3 mx-auto mt-12 text-grey-darkest",
+        staticClass: "w-50 px-3 mx-auto my-auto text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
@@ -40328,7 +40328,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-50 mt-12 px-5" }, [
+    return _c("div", { staticClass: "w-50 my-auto px-5" }, [
       _c(
         "div",
         {
@@ -40354,7 +40354,7 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-3 mx-auto mt-12 text-grey-darkest",
+        staticClass: "w-50 px-3 mx-auto my-auto text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
@@ -40377,7 +40377,7 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-5 mt-12",
+        staticClass: "w-50 px-5 my-auto",
         attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
       },
       [
@@ -40400,7 +40400,7 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-3 mx-auto mt-12  text-grey-darkest",
+        staticClass: "w-50 px-3 mx-auto my-auto  text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
@@ -41140,7 +41140,7 @@ var render = function() {
           _c(
             "div",
             {
-              staticClass: "w-50  mx-2 py-5",
+              staticClass: "w-50  mx-2 my-auto",
               attrs: { "data-aos": "fade-left", "data-aos-duration": "2000" }
             },
             [

@@ -140,7 +140,7 @@
                     data-aos-duration="2000">
                          <v-img src="/img/IMG_1600.jpg" class="w-100"></v-img>
                     </div>
-                    <div class="w-50  mx-2 py-5"
+                    <div class="w-50  mx-2 my-auto"
                     data-aos="fade-left"
                     data-aos-duration="2000">
                         <div class="pt-3">
