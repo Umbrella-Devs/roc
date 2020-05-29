@@ -24,6 +24,13 @@ Route::get('/donate', 'PagesController@donate')->name('donate');
 
 
 
+// store route keep it in your mind
+
+
+Route::post('/', 'RocController@bird_store')->name('bird');
+Route::post('/join', 'RocController@join_store')->name('join');
+Route::post('/donate', 'RocController@donate_store')->name('donate');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

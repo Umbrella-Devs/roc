@@ -2131,6 +2131,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -39816,21 +39818,23 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", [
-      _c("div", { staticClass: "w-90 mx-auto py-3" }, [
-        _vm._m(1),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-100 flex pt-2 pb-4" }, [
-          _vm._m(2),
+      _c("div", { staticClass: "bg-white" }, [
+        _c("div", { staticClass: "w-90 mx-auto py-5" }, [
+          _vm._m(1),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "w-50 ml-12",
-              attrs: { "data-aos": "fade-left", "data-aos-duration": "2000" }
-            },
-            [_c("v-img", { attrs: { src: "/img/IMG_1536.jpg" } })],
-            1
-          )
+          _c("div", { staticClass: "w-100 flex pt-5 pb-5" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "w-50 ml-12",
+                attrs: { "data-aos": "fade-left", "data-aos-duration": "2000" }
+              },
+              [_c("v-img", { attrs: { src: "/img/IMG_1536.jpg" } })],
+              1
+            )
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -39899,7 +39903,7 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 ",
+        staticClass: "w-50 mt-12",
         attrs: { "data-aos": "fade-right", "data-aos-duration": "2000" }
       },
       [
@@ -39921,163 +39925,165 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "py-3 bg-white-smoke pb-5", attrs: { id: "team" } },
+      { staticClass: "py-5 bg-white-smoke pb-5", attrs: { id: "team" } },
       [
+        _c("div", { staticClass: "py-5 text-centered  text-grey-darkest" }, [
+          _c("h2", { staticClass: "text-3xl" }, [_vm._v("Our Great Team")])
+        ]),
+        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "py-3 pb-4 text-centered  text-grey-darkest" },
-          [_c("h2", { staticClass: "text-3xl" }, [_vm._v("Our Great Team")])]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-90 mx-auto flex text-grey-darkest" }, [
-          _c(
-            "div",
-            {
-              staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
-              attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
-            },
-            [
-              _c("div", { staticClass: "w-100" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "mx-auto",
-                    staticStyle: { width: "200px", height: "200px" }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "clip-full rounded-full shadow-md",
-                      attrs: { src: "/img/teamphoto2.jpg" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "pt-3" }, [
-                _c("h4", { staticClass: "text-xl text-centered" }, [
-                  _vm._v("Dufitumukiza Joseph")
+          { staticClass: "w-90 mx-auto pt-2 pb-5 flex text-grey-darkest" },
+          [
+            _c(
+              "div",
+              {
+                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
+              },
+              [
+                _c("div", { staticClass: "w-100" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "mx-auto",
+                      staticStyle: { width: "200px", height: "200px" }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "clip-full rounded-full shadow-md",
+                        attrs: { src: "/img/teamphoto2.jpg" }
+                      })
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "p",
-                  { staticClass: "font-weight-light text-centered pt-3" },
-                  [_vm._v("CEO")]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
-              attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
-            },
-            [
-              _c("div", { staticClass: "w-100" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "mx-auto",
-                    staticStyle: { width: "200px", height: "200px" }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "clip-full rounded-full shadow-md",
-                      attrs: { src: "/img/teamphoto2.jpg" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "pt-3" }, [
-                _c("h4", { staticClass: "text-xl text-centered" }, [
-                  _vm._v("Dufitumukiza Joseph")
+                _c("div", { staticClass: "pt-3" }, [
+                  _c("h4", { staticClass: "text-xl text-centered" }, [
+                    _vm._v("Dufitumukiza Joseph")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "font-weight-light text-centered pt-3" },
+                    [_vm._v("CEO")]
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
+              },
+              [
+                _c("div", { staticClass: "w-100" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "mx-auto",
+                      staticStyle: { width: "200px", height: "200px" }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "clip-full rounded-full shadow-md",
+                        attrs: { src: "/img/teamphoto2.jpg" }
+                      })
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "p",
-                  { staticClass: "font-weight-light text-centered pt-3" },
-                  [_vm._v("CEO")]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
-              attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
-            },
-            [
-              _c("div", { staticClass: "w-100" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "mx-auto",
-                    staticStyle: { width: "200px", height: "200px" }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "clip-full rounded-full shadow-md",
-                      attrs: { src: "/img/teamphoto2.jpg" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "pt-3" }, [
-                _c("h4", { staticClass: "text-xl text-centered" }, [
-                  _vm._v("Dufitumukiza Joseph")
+                _c("div", { staticClass: "pt-3" }, [
+                  _c("h4", { staticClass: "text-xl text-centered" }, [
+                    _vm._v("Dufitumukiza Joseph")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "font-weight-light text-centered pt-3" },
+                    [_vm._v("CEO")]
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
+              },
+              [
+                _c("div", { staticClass: "w-100" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "mx-auto",
+                      staticStyle: { width: "200px", height: "200px" }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "clip-full rounded-full shadow-md",
+                        attrs: { src: "/img/teamphoto2.jpg" }
+                      })
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "p",
-                  { staticClass: "font-weight-light text-centered pt-3" },
-                  [_vm._v("CEO")]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
-              attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
-            },
-            [
-              _c("div", { staticClass: "w-100" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "mx-auto",
-                    staticStyle: { width: "200px", height: "200px" }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "clip-full rounded-full shadow-md",
-                      attrs: { src: "/img/teamphoto2.jpg" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "pt-3" }, [
-                _c("h4", { staticClass: "text-xl text-centered" }, [
-                  _vm._v("Dufitumukiza Joseph")
+                _c("div", { staticClass: "pt-3" }, [
+                  _c("h4", { staticClass: "text-xl text-centered" }, [
+                    _vm._v("Dufitumukiza Joseph")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "font-weight-light text-centered pt-3" },
+                    [_vm._v("CEO")]
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
+              },
+              [
+                _c("div", { staticClass: "w-100" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "mx-auto",
+                      staticStyle: { width: "200px", height: "200px" }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "clip-full rounded-full shadow-md",
+                        attrs: { src: "/img/teamphoto2.jpg" }
+                      })
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "p",
-                  { staticClass: "font-weight-light text-centered pt-3" },
-                  [_vm._v("CEO")]
-                )
-              ])
-            ]
-          )
-        ])
+                _c("div", { staticClass: "pt-3" }, [
+                  _c("h4", { staticClass: "text-xl text-centered" }, [
+                    _vm._v("Dufitumukiza Joseph")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "font-weight-light text-centered pt-3" },
+                    [_vm._v("CEO")]
+                  )
+                ])
+              ]
+            )
+          ]
+        )
       ]
     )
   },

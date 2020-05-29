@@ -14,27 +14,29 @@
             </div>
         </div>
         <div>
-            <div class="w-90 mx-auto py-3">
-                <div class="text-centered py-3 pb-4">
-                    <h2 class=" text-grey-darkest text-3xl">Our Great Story</h2>
-                </div>
-                <div class="w-100 flex pt-2 pb-4">
-                    <div class="w-50 " data-aos="fade-right" data-aos-duration="2000">
-                        <h2 class="py-5 text-2xl text-grey-darkest">Our Story</h2>
-                        <p class="  text-grey-darkest">Our 10 years of successful conservation work in saving birds is based on a holistic model with four key parts: direct, daily protection of birds; scientific research on birds and their ecosystems; educating the next generation of scientists and conservationists in Africa; and helping local people with basic needs, so that communities can thrive and work together with us.</p>
-                         
+            <div class="bg-white">
+                <div class="w-90 mx-auto py-5">
+                    <div class="text-centered py-3 pb-4">
+                        <h2 class=" text-grey-darkest text-3xl">Our Great Story</h2>
                     </div>
-                    <div class="w-50 ml-12" data-aos="fade-left" data-aos-duration="2000">
-                        <v-img src="/img/IMG_1536.jpg"></v-img>
+                    <div class="w-100 flex pt-5 pb-5">
+                        <div class="w-50 mt-12" data-aos="fade-right" data-aos-duration="2000">
+                            <h2 class="py-5 text-2xl text-grey-darkest">Our Story</h2>
+                            <p class="  text-grey-darkest">Our 10 years of successful conservation work in saving birds is based on a holistic model with four key parts: direct, daily protection of birds; scientific research on birds and their ecosystems; educating the next generation of scientists and conservationists in Africa; and helping local people with basic needs, so that communities can thrive and work together with us.</p>
+                            
+                        </div>
+                        <div class="w-50 ml-12" data-aos="fade-left" data-aos-duration="2000">
+                            <v-img src="/img/IMG_1536.jpg"></v-img>
+                        </div>
                     </div>
                 </div>
             </div>
         
-                <div class="py-3 bg-white-smoke pb-5"  id="team">
-                    <div class="py-3 pb-4 text-centered  text-grey-darkest">
+                <div class="py-5 bg-white-smoke pb-5"  id="team">
+                    <div class="py-5 text-centered  text-grey-darkest">
                         <h2 class="text-3xl">Our Great Team</h2>
                     </div>
-                    <div class="w-90 mx-auto flex text-grey-darkest">
+                    <div class="w-90 mx-auto pt-2 pb-5 flex text-grey-darkest">
 
 
                         <div class="bg-white w-25 p-4 mx-2 shadow-sm" data-aos="zoom-in" data-aos-duration="2000">
