@@ -40509,7 +40509,11 @@ var render = function() {
                     { staticClass: "w-50" },
                     [
                       _c("v-text-field", {
-                        attrs: { label: "First Name", rules: _vm.nameRules },
+                        attrs: {
+                          outlined: "",
+                          label: "First Name",
+                          rules: _vm.nameRules
+                        },
                         model: {
                           value: _vm.firstname,
                           callback: function($$v) {
