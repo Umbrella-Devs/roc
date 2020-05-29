@@ -42,8 +42,8 @@
                 <v-card-actions>
                     <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
                     <v-spacer></v-spacer>
-                    <button @click="reset" class="btn bg-red text-white mx-3">Reset Form</button>
-                    <button @click="submit" class="btn bg-orange-dark text-white">Submit</button>
+                    <button @click="reset" class="btn bg-orange-dark text-white mx-3">Reset Form</button>
+                    <button @click="submit" class="btn bg-green-dark text-white">Submit</button>
                 </v-card-actions>
                 
             </v-card>

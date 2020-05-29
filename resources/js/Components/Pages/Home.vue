@@ -115,7 +115,7 @@
                             <div class="bg-white pb-4 -mt-6 shadow-sm mb-3 mr-4 pt hover:shadow-md" 
                             style="border-radius: 40px 0px 40px 0px; padding-top: 30px;">
                                 <div class=" text-grey-darkest">
-                                    <h2 class="text-xl px-5 pt-10 pb-3">{{activity.head}}</h2>
+                                    <h2 class="text-xl px-5 pb-3">{{activity.head}}</h2>
                                     <p class="px-5 text-sm">{{activity.body}}</p>
                                 </div>
                                 <!-- <div class="text-centered">
