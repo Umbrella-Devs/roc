@@ -27,7 +27,8 @@
         <div class="w-90 flex mx-auto py-3">
             <div class="w-30">
                         <div class="">
-                            <a class="text-white no-underline" href="{{ route('home') }}">Rugezi O.C</a>
+                            <a class="text-white no-underline" href="{{ route('home') }}">
+                                <span class="text-xl">Rugezi O.C</span></a>
                         </div>
                 </div>
                 <div class="w-70 text-right">
@@ -69,8 +70,8 @@
         @yield('content')
         
     </div>
-    <!--{{-- <div>
-            <div class="bg-green-darkest w-100 pb-3 pt-5">
+    <!--<div>
+            <div class="bg-green-darkest z-99 relative w-100 pb-3 pt-5">
                 <div class="w-80 mx-auto">
                     <div class="">
                         <div class="w-100 flex">
@@ -152,8 +153,7 @@
             
         </div>
         
-    </div> --}}-->
-    
+    </div>-->
     <script src="{{ mix('js/app.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     

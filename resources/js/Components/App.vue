@@ -42,7 +42,7 @@
                                             <li>
                                                 Blog
                                             </li>
-                                            <li>Team </li>
+                                            <li>Team</li>
                                             <li>Our story</li>
                                             <li>Bird Track</li>
                                         </ul>

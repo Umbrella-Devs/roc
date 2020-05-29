@@ -1,12 +1,22 @@
 <template>
     <div class="pt-5">
-        <div class="w-100 flex py-5">
-            <div class="w-50 bg-white-smoke text-white my-5">
-                <div>
+        <div class="w-100 flex">
+            <div class="relative w-50 z-0">
+                <div class="absolute bg-black z-0" style="height: 100vh">
+                     <v-img src="/img/IMG_2663.jpg" class="w-100 opacity-50 clip-full"></v-img>
+                </div>
+                <div class="relative w-100 text-white mt-24 text-grey-darkest text-centered z-9999">
+                    <h1>Your Support will be Highly appreciated</h1>
+                    <p class="text-2xl">Together We can conserve birds</p>
+                </div>
+                
+            </div>
+            <div class="w-50 bg-white text-white py-2">
+                <div class="pt-3">
                     <div class="text-centered py-5">
                         <h3 class="text-grey-darkest">Together We can protect the Birds </h3>
                     </div>
-                    <div class="w-80 mx-auto border-1 border-solid border-grey rounded px-5">
+                    <div class="w-90 mx-auto px-5">
                         <div>
                             <v-form ref="form">
                                 <div class="w-100 flex">
@@ -29,14 +39,11 @@
                                     <v-select label="Country" :items="items" class="" :rules="countryRules"></v-select>
                                 </div>
                                 <div class="w-100 flex">
-                                    <div class="w-40">
-                                        <v-text-field label="State" v-model="state" :rules="otherRules"></v-text-field>
+                                    <div class="w-50 mr-5">
+                                        <v-text-field label="State" v-model="state" :rules="otherRules" color="red"></v-text-field>
                                     </div>
-                                    <div class="w-40 mx-4">
+                                    <div class="w-50">
                                         <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
-                                    </div>
-                                    <div class="w-20">
-                                        <v-text-field label="Zip Code" v-model="zipcode" :rules="otherRules"></v-text-field>
                                     </div> 
                                 </div>
                                 <div class="text-grey-darker">
@@ -46,18 +53,13 @@
                                 <div class="text-centered py-5">
                                     <button v-on:click.prevent="submit" class="bg-orange-dark btn text-white">Join Us Now</button>
                                 </div>
+                                
                             </v-form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class=" w-50 my-auto">
-                <div class=" text-grey-darkest text-centered">
-                    <h3>Your Support will be Highly appreciated</h3>
-                    <h5 class="pt-5">Together We can conserve birds</h5>
-                </div>
-                
-            </div>
+            
         </div>
     </div>
 </template>
@@ -73,7 +75,7 @@ export default {
             country:'',
             state:'',
             city:'',
-            zipcode:'',
+            option:'',
             projects:[],
             select:null,
             items:['Rwanda','Uganda','United States of America'],

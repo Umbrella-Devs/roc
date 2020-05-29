@@ -26,7 +26,7 @@ class PagesController extends Controller
         return view('activities');
     }
     public function join_us(){
-        return view('projects');
+        return view('joinus');
     }
     public function donate(){
         return view('donate');

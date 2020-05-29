@@ -24,6 +24,6 @@
     </style>
 </head>
 <body>        
-</App/>
+
 @yield('content')
 

@@ -7,6 +7,7 @@ import vuetify from './vuetify'
 
 
 
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -69,8 +70,10 @@ const router = new VueRouter({
  */
 
 const app = new Vue({
+    vuetify,
     el: '#app',
+    render: h => h(App),
     components: { App,About,Activites,Projects,Gallery,Home,Donate,Join,Blog,singleProject,birdTrack },
     router,
-    vuetify,
+    
 });
