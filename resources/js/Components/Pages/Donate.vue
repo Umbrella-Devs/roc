@@ -37,33 +37,33 @@
                     <v-form ref="form" @submit.prevent="addDonate">
                         <div class="w-100 flex  mt-5">
                             <div class="w-50 mr-2">
-                                <v-text-field outlined label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
+                                <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
                             </div>
                             <div class="w-50">
-                                <v-text-field outlined label="Last Name" v-model="lastname" :rules="nameRules"></v-text-field>
+                                <v-text-field label="Last Name" v-model="lastname" :rules="nameRules"></v-text-field>
                             </div>
                         </div>
                         <div class="w-100 flex ">
                             <div class="w-100">
-                                <v-text-field outlined label="Email" v-model="email" :rules="emailRules"></v-text-field>
+                                <v-text-field label="Email" v-model="email" :rules="emailRules"></v-text-field>
                             </div>
                         </div>
                         <div class="w-100 flex">
                             <div class="w-50 mr-2">
-                                <v-select outlined v-model="country" label="Country" :items="countries" :rules="countryRules"></v-select>
+                                <v-select v-model="country" label="Country" :items="countries" :rules="countryRules"></v-select>
                             </div>
                             <div class="w-50">
-                                <v-text-field outlined label="City" v-model="city" :rules="otherRules"></v-text-field>
+                                <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
                             </div>
                         </div>
                         <div class="w-100">
-                            <v-text-field outlined label="Phone" v-model="phone" :rules="otherRules"></v-text-field>
+                            <v-text-field label="Phone" v-model="phone" :rules="otherRules"></v-text-field>
                         </div>
                         <div class="">
-                            <v-select v-model="project" outlined chips attach multiple :items="projects" label="Where to donate"></v-select>
+                            <v-select v-model="project" chips attach multiple :items="projects" label="Where to donate"></v-select>
                         </div>
                         <div class="">
-                            <v-textarea outlined label="Leave a comment"></v-textarea>
+                            <v-textarea label="Leave a comment"></v-textarea>
                         </div>
                         <div class="text-centered">
                             <input type="submit" class="bg-orange-dark btn text-white" value="Donate Now"/>

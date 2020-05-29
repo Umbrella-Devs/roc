@@ -2656,6 +2656,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2833,6 +2837,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -40561,11 +40575,7 @@ var render = function() {
                       { staticClass: "w-50 mr-2" },
                       [
                         _c("v-text-field", {
-                          attrs: {
-                            outlined: "",
-                            label: "First Name",
-                            rules: _vm.nameRules
-                          },
+                          attrs: { label: "First Name", rules: _vm.nameRules },
                           model: {
                             value: _vm.firstname,
                             callback: function($$v) {
@@ -40583,11 +40593,7 @@ var render = function() {
                       { staticClass: "w-50" },
                       [
                         _c("v-text-field", {
-                          attrs: {
-                            outlined: "",
-                            label: "Last Name",
-                            rules: _vm.nameRules
-                          },
+                          attrs: { label: "Last Name", rules: _vm.nameRules },
                           model: {
                             value: _vm.lastname,
                             callback: function($$v) {
@@ -40607,11 +40613,7 @@ var render = function() {
                       { staticClass: "w-100" },
                       [
                         _c("v-text-field", {
-                          attrs: {
-                            outlined: "",
-                            label: "Email",
-                            rules: _vm.emailRules
-                          },
+                          attrs: { label: "Email", rules: _vm.emailRules },
                           model: {
                             value: _vm.email,
                             callback: function($$v) {
@@ -40632,7 +40634,6 @@ var render = function() {
                       [
                         _c("v-select", {
                           attrs: {
-                            outlined: "",
                             label: "Country",
                             items: _vm.countries,
                             rules: _vm.countryRules
@@ -40654,11 +40655,7 @@ var render = function() {
                       { staticClass: "w-50" },
                       [
                         _c("v-text-field", {
-                          attrs: {
-                            outlined: "",
-                            label: "City",
-                            rules: _vm.otherRules
-                          },
+                          attrs: { label: "City", rules: _vm.otherRules },
                           model: {
                             value: _vm.city,
                             callback: function($$v) {
@@ -40677,11 +40674,7 @@ var render = function() {
                     { staticClass: "w-100" },
                     [
                       _c("v-text-field", {
-                        attrs: {
-                          outlined: "",
-                          label: "Phone",
-                          rules: _vm.otherRules
-                        },
+                        attrs: { label: "Phone", rules: _vm.otherRules },
                         model: {
                           value: _vm.phone,
                           callback: function($$v) {
@@ -40700,7 +40693,6 @@ var render = function() {
                     [
                       _c("v-select", {
                         attrs: {
-                          outlined: "",
                           chips: "",
                           attach: "",
                           multiple: "",
@@ -40722,11 +40714,7 @@ var render = function() {
                   _c(
                     "div",
                     {},
-                    [
-                      _c("v-textarea", {
-                        attrs: { outlined: "", label: "Leave a comment" }
-                      })
-                    ],
+                    [_c("v-textarea", { attrs: { label: "Leave a comment" } })],
                     1
                   ),
                   _vm._v(" "),
@@ -41099,10 +41087,21 @@ var render = function() {
                       },
                       [
                         _c("div", { staticClass: " text-grey-darkest" }, [
+                          _vm._v(
+                            "\n<<<<<<< HEAD\n                                    "
+                          ),
                           _c("h2", { staticClass: "text-xl px-5 pt-8 pb-3" }, [
                             _vm._v(_vm._s(activity.head))
                           ]),
-                          _vm._v(" "),
+                          _vm._v(
+                            "\n=======\n                                    "
+                          ),
+                          _c("h2", { staticClass: "text-xl px-5 pb-3" }, [
+                            _vm._v(_vm._s(activity.head))
+                          ]),
+                          _vm._v(
+                            "\n>>>>>>> 9d5d52fe8e7f172bcd6da7d45adc251b4c098523\n                                    "
+                          ),
                           _c("p", { staticClass: "px-5 text-sm" }, [
                             _vm._v(_vm._s(activity.body))
                           ])
@@ -41150,7 +41149,7 @@ var render = function() {
               _c("div", { staticClass: "text-center pt-3" }, [
                 _c("p", { staticClass: "text-white" }, [
                   _vm._v(
-                    "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
+                    "\n                           Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                        "
                   )
                 ]),
                 _vm._v(" "),
@@ -41307,7 +41306,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "w-60 py-2 pb-3" }, [
       _c("p", { staticClass: "text-lg" }, [
         _vm._v(
-          "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
+          "\n                                            Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                        "
         )
       ])
     ])
@@ -41933,7 +41932,7 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("v-divider"),
-              _vm._v(" "),
+              _vm._v("\n<<<<<<< HEAD\n                "),
               _c(
                 "div",
                 { staticClass: "text-center" },
@@ -41983,6 +41982,51 @@ var render = function() {
                   )
                 ],
                 1
+              ),
+              _vm._v("\n=======\n                "),
+              _c(
+                "v-card-actions",
+                [
+                  _c(
+                    "h4",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: (_vm.submitted = _vm.submitted),
+                          expression: "submitted = submitted"
+                        }
+                      ],
+                      staticClass: "text-sm text-green"
+                    },
+                    [_vm._v("Data Succesfully submitted")]
+                  ),
+                  _vm._v(" "),
+                  _c("v-spacer"),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn bg-orange-dark text-white mx-3",
+                      on: { click: _vm.reset }
+                    },
+                    [_vm._v("Reset Form")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn bg-green-dark text-white",
+                      on: { click: _vm.submit }
+                    },
+                    [_vm._v("Submit")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(
+                "\n                \n>>>>>>> 9d5d52fe8e7f172bcd6da7d45adc251b4c098523\n            "
               )
             ],
             1
