@@ -2656,10 +2656,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -41077,21 +41073,10 @@ var render = function() {
                       },
                       [
                         _c("div", { staticClass: " text-grey-darkest" }, [
-                          _vm._v(
-                            "\n<<<<<<< HEAD\n                                    "
-                          ),
                           _c("h2", { staticClass: "text-xl px-5 pt-8 pb-3" }, [
                             _vm._v(_vm._s(activity.head))
                           ]),
-                          _vm._v(
-                            "\n=======\n                                    "
-                          ),
-                          _c("h2", { staticClass: "text-xl px-5 pb-3" }, [
-                            _vm._v(_vm._s(activity.head))
-                          ]),
-                          _vm._v(
-                            "\n>>>>>>> 9d5d52fe8e7f172bcd6da7d45adc251b4c098523\n                                    "
-                          ),
+                          _vm._v(" "),
                           _c("p", { staticClass: "px-5 text-sm" }, [
                             _vm._v(_vm._s(activity.body))
                           ])
@@ -41139,7 +41124,7 @@ var render = function() {
               _c("div", { staticClass: "text-center pt-3" }, [
                 _c("p", { staticClass: "text-white" }, [
                   _vm._v(
-                    "\n                           Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                        "
+                    "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
                   )
                 ]),
                 _vm._v(" "),
@@ -41296,7 +41281,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "w-60 py-2 pb-3" }, [
       _c("p", { staticClass: "text-lg" }, [
         _vm._v(
-          "\n                                            Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                        "
+          "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
         )
       ])
     ])
