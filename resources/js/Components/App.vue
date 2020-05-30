@@ -5,7 +5,7 @@
                 <div>
                    <router-view></router-view>
                 </div>      
-                <div class="bg-green-darkest w-100 py-5">
+                <div class="bg-green-darkest w-100 py-5 z-999 relative">
                     <div class="py-5 w-80 mx-auto">
                         <div class="py-5">
                             <div class="w-100 flex">

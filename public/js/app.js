@@ -39684,7 +39684,7 @@ var render = function() {
     _c("div", [
       _c("div", [_c("router-view")], 1),
       _vm._v(" "),
-      _c("div", { staticClass: "bg-green-darkest w-100 py-5" }, [
+      _c("div", { staticClass: "bg-green-darkest w-100 py-5 z-999 relative" }, [
         _c("div", { staticClass: "py-5 w-80 mx-auto" }, [
           _c("div", { staticClass: "py-5" }, [
             _c("div", { staticClass: "w-100 flex" }, [
@@ -41127,7 +41127,7 @@ var render = function() {
             [
               _vm._m(7),
               _vm._v(" "),
-              _c("div", { staticClass: "text-center pt-3" }, [
+              _c("div", { staticClass: "text-center pt-2" }, [
                 _c("p", { staticClass: "text-white" }, [
                   _vm._v(
                     "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
@@ -41326,7 +41326,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pt-3" }, [
+    return _c("div", { staticClass: "pt-2" }, [
       _c("h2", { staticClass: "text-white text-3xl text-center " }, [
         _vm._v("Who are we?")
       ])
@@ -41475,8 +41475,8 @@ var render = function() {
         _vm._m(0)
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-50 bg-white text-white py-2" }, [
-        _c("div", { staticClass: "pt-3" }, [
+      _c("div", { staticClass: "w-50 bg-white text-white py-5" }, [
+        _c("div", { staticClass: "pt-5" }, [
           _vm._m(1),
           _vm._v(" "),
           _c("div", { staticClass: "w-90 mx-auto px-5" }, [

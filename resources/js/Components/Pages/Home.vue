@@ -143,10 +143,10 @@
                     <div class="w-50  mx-2 my-auto"
                     data-aos="fade-left"
                     data-aos-duration="2000">
-                        <div class="pt-3">
+                        <div class="pt-2">
                             <h2 class="text-white text-3xl text-center ">Who are we?</h2>
                         </div>
-                        <div class="text-center pt-3">
+                        <div class="text-center pt-2">
                             <p class="text-white">
                            Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
                         </p>

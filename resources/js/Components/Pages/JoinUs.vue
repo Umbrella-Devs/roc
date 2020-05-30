@@ -11,8 +11,8 @@
                 </div>
                 
             </div>
-            <div class="w-50 bg-white text-white py-2">
-                <div class="pt-3">
+            <div class="w-50 bg-white text-white py-5">
+                <div class="pt-5">
                     <div class="text-centered py-5">
                         <h3 class="text-grey-darkest">Together We can protect the Birds </h3>
                     </div>
