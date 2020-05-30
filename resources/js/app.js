@@ -27,7 +27,6 @@ import Projects from './Components/Pages/Projects.vue'
 import Gallery from './Components/Pages/Gallery.vue'
 import Donate from './Components/Pages/Donate.vue'
 import Join from './Components/Pages/JoinUs.vue'
-import Blog from './Components/Pages/Blog.vue'
 import singleProject from './Components/Pages/Projects/singleProject.vue'
 import birdTrack from './Components/Pages/Projects/birdTrack.vue'
 /**
@@ -57,7 +56,6 @@ const router = new VueRouter({
         {path: '/gallery', name: 'gallery', component: Gallery,},
         {path: '/donate', name: 'donate', component: Donate,},
         {path: '/join-us', name: 'join', component: Join,},
-        {path: '/blog', name: 'blog', component: Blog,},
         {path: '/projects/:slug', name: 'singleProject', component: singleProject,},
         {path: '/project/bird-tracking', name: 'birdTrack', component: birdTrack,},
     ],
@@ -73,7 +71,7 @@ const app = new Vue({
     vuetify,
     el: '#app',
     render: h => h(App),
-    components: { App,About,Activites,Projects,Gallery,Home,Donate,Join,Blog,singleProject,birdTrack },
+    components: { App,About,Activites,Projects,Gallery,Home,Donate,Join,singleProject,birdTrack },
     router,
     
 });

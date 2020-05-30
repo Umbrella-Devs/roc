@@ -18,7 +18,7 @@
                     <v-form ref="form">
                         <div>
                             <div class="flex xs:block w-100 mt-5">
-                                <div class="xl:w-50 xs:w-100  xl:mr-5">
+                                <div class="xl:w-50 xs:w-100  xl:mr-3">
                                     <v-text-field outlined label="E-mail" v-model="email" :rules="emailRules"></v-text-field>
                                 </div>
                                 <div class="xl:w-50 xs:w-100 ">

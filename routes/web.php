@@ -23,6 +23,10 @@ Route::get('/join-us', 'PagesController@join_us')->name('join_us');
 Route::get('/donate', 'PagesController@donate')->name('donate');
 
 
+// blog's routes 
+
+Route::get('/blog', 'PostsController@index')->name('blog');
+Route::get('/post/{id}', 'PostsController@show')->name('post.view');
 
 // store route keep it in your mind
 
