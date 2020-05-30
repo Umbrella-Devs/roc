@@ -29,15 +29,21 @@
                 </div>
                 
             </div>
-            <div class="my-12 xl:w-50 xs:w-100 xl:mx-12 " v-show="!submitted">
-                <div class="py-3 text-centered">
-                    <h3 class="text-grey-darkest">Donate Here</h3>
-                </div>
-                <div class="mx-5 bg-white shadow-lg rounded p-3">
-                    <v-form ref="form" @submit.prevent="addDonate">
-                        <div class="w-100 flex  mt-5">
-                            <div class="w-50 mr-2">
-                                <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
+            <div class="my-12 xl:w-50 xs:w-100 xl:mx-12 ">
+               
+                <div>
+                    <div class="py-3 text-centered">
+                        <h3 class="text-grey-darkest">Donate Here</h3>
+                    </div>
+                    <div class="mx-5 bg-white shadow-lg rounded p-3">
+                        <v-form ref="form" @submit.once="addDonate">
+                            <div class="w-100 flex  mt-5">
+                                <div class="w-50 mr-2">
+                                    <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
+                                </div>
+                                <div class="w-50">
+                                    <v-text-field label="Last Name" v-model="lastname" :rules="nameRules"></v-text-field>
+                                </div>
                             </div>
                             <div class="w-100 flex ">
                                 <div class="w-100">
@@ -73,6 +79,8 @@
             </div>
             
         </div>
+        
+    </div>
 </template>
 <script>
 export default {

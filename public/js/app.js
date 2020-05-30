@@ -2413,6 +2413,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var _ref;
@@ -40833,8 +40841,272 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
-var staticRenderFns = []
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "pt-5" }, [
+    _c("div", { staticClass: " w-100 xs:block flex" }, [
+      _c("div", { staticClass: "w-50 relative xs:hidden" }, [
+        _c(
+          "div",
+          {
+            staticClass: "absolute bg-black z-0",
+            staticStyle: { height: "100vh" }
+          },
+          [
+            _c("v-img", {
+              staticClass: "w-100 opacity-50 clip-full",
+              attrs: { src: "/img/IMG_2663.jpg" }
+            })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(0)
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "my-12 xl:w-50 xs:w-100 xl:mx-12 " }, [
+        _c("div", [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "mx-5 bg-white shadow-lg rounded p-3" },
+            [
+              _c(
+                "v-form",
+                {
+                  ref: "form",
+                  on: {
+                    "~submit": function($event) {
+                      return _vm.addDonate($event)
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "w-100 flex  mt-5" }, [
+                    _c(
+                      "div",
+                      { staticClass: "w-50 mr-2" },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "First Name", rules: _vm.nameRules },
+                          model: {
+                            value: _vm.firstname,
+                            callback: function($$v) {
+                              _vm.firstname = $$v
+                            },
+                            expression: "firstname"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "w-50" },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "Last Name", rules: _vm.nameRules },
+                          model: {
+                            value: _vm.lastname,
+                            callback: function($$v) {
+                              _vm.lastname = $$v
+                            },
+                            expression: "lastname"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-100 flex " }, [
+                    _c(
+                      "div",
+                      { staticClass: "w-100" },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "Email", rules: _vm.emailRules },
+                          model: {
+                            value: _vm.email,
+                            callback: function($$v) {
+                              _vm.email = $$v
+                            },
+                            expression: "email"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-100 flex" }, [
+                    _c(
+                      "div",
+                      { staticClass: "w-50 mr-2" },
+                      [
+                        _c("v-select", {
+                          attrs: {
+                            label: "Country",
+                            items: _vm.countries,
+                            rules: _vm.countryRules
+                          },
+                          model: {
+                            value: _vm.country,
+                            callback: function($$v) {
+                              _vm.country = $$v
+                            },
+                            expression: "country"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "w-50" },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "City", rules: _vm.otherRules },
+                          model: {
+                            value: _vm.city,
+                            callback: function($$v) {
+                              _vm.city = $$v
+                            },
+                            expression: "city"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-100" },
+                    [
+                      _c("v-text-field", {
+                        attrs: { label: "Phone", rules: _vm.otherRules },
+                        model: {
+                          value: _vm.phone,
+                          callback: function($$v) {
+                            _vm.phone = $$v
+                          },
+                          expression: "phone"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {},
+                    [
+                      _c("v-select", {
+                        attrs: {
+                          chips: "",
+                          attach: "",
+                          multiple: "",
+                          items: _vm.projects,
+                          label: "Where to donate"
+                        },
+                        model: {
+                          value: _vm.project,
+                          callback: function($$v) {
+                            _vm.project = $$v
+                          },
+                          expression: "project"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {},
+                    [_c("v-textarea", { attrs: { label: "Leave a comment" } })],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "text-centered" }, [
+                    _c("input", {
+                      staticClass: "bg-orange-dark btn text-white",
+                      attrs: { type: "submit", value: "Donate Now" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.validate($event)
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [_c("p", { attrs: { id: "success" } })])
+                ]
+              )
+            ],
+            1
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "text-centered relative w-100 mx-auto text-grey-darkest mt-16"
+      },
+      [
+        _c("div", { staticClass: "w-90 mx-auto text-centered text-white" }, [
+          _c("h3", [_vm._v("We cannot reverse extinction,but together,")]),
+          _c("h3", [_vm._v(" we CAN prevent it.")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex w-90 mx-auto pt-5" }, [
+          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
+            _c("p", {}, [_vm._v("Educating next generation")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
+            _c("p", {}, [_vm._v("Bird Track")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex w-90 mx-auto pt-5" }, [
+          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
+            _c("p", {}, [_vm._v("Conservation of Birds")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
+            _c("p", {}, [_vm._v("Green Birding")])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "py-3 text-centered" }, [
+      _c("h3", { staticClass: "text-grey-darkest" }, [_vm._v("Donate Here")])
+    ])
+  }
+]
+render._withStripped = true
 
 
 
@@ -42647,11 +42919,10 @@ var render = function() {
                         _c("div", { staticClass: "flex xs:block w-100 mt-5" }, [
                           _c(
                             "div",
-                            { staticClass: "xl:w-50 xs:w-100  xl:mr-5" },
+                            { staticClass: "xl:w-50 xs:w-100  xl:mr-5 mr-5" },
                             [
                               _c("v-text-field", {
                                 attrs: {
-                                  outlined: "",
                                   label: "E-mail",
                                   rules: _vm.emailRules
                                 },
@@ -42672,11 +42943,7 @@ var render = function() {
                             { staticClass: "xl:w-50 xs:w-100 " },
                             [
                               _c("v-text-field", {
-                                attrs: {
-                                  outlined: "",
-                                  label: "Name",
-                                  rules: _vm.nameRules
-                                },
+                                attrs: { label: "Name", rules: _vm.nameRules },
                                 model: {
                                   value: _vm.name,
                                   callback: function($$v) {
