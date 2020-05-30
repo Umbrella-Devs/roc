@@ -22,7 +22,7 @@
                                 <div class="w-60 mr-3">
                                     <v-text-field label="Bird Name" v-model="birdname" :rules="nameRules"></v-text-field>
                                 </div>
-                                <div>
+                                <div class="w-40">
                                     <v-text-field label="No of birds" v-model="numBirds"></v-text-field>
                                 </div>
                             </div>
@@ -33,10 +33,15 @@
                                 <v-textarea label="Some description here" v-model="description"></v-textarea>
                             </div>
                             <div class="w-100 flex">
-                                <v-text-field label="Location" v-model="location" :rules="nameRules"></v-text-field>
+                                <div class="w-50 mr-5">
+                                    <v-text-field label="Your Names" v-model="username" :rules="nameRules"></v-text-field>
+                                </div>
+                                <div class="w-50">
+                                    <v-text-field label="Location" v-model="location" :rules="nameRules"></v-text-field>
+                                </div>
                             </div>
                         </div>
-                        <input type="submit" class="btn bg-orange-dark text-center text-white" value="Submit">
+                        
                     </v-form>
                 </v-card-text>
                 <v-divider></v-divider>
@@ -44,7 +49,7 @@
                     <v-card-actions>
                         <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
                         <v-spacer></v-spacer>
-                        <input type="submit" class="btn bg-orange-dark text-center text-white" value="Submit">
+                        <input type="submit" @click.prevent="validate" class="btn bg-orange-dark text-center text-white" value="Submit">       
                         <button @click="reset" class="btn border-red text-center text-red mx-3">Reset Form</button>
                     </v-card-actions>
                 </div>
@@ -57,6 +62,7 @@
     data () {
       return {
         dialog: false,
+        username:'',
         birdname:'',
         numBirds:'',
         description:'',
@@ -70,19 +76,28 @@
       }
     },
     methods:{
-        //submit(){
-            //if(this.$refs.form.validate()){
-                //this.submitted = true
-                //console.log('Done')
-            //}
-        //},
+        validate(){
+            if(this.$refs.form.validate()){
+                this.submitted = true
+                this.addBird()
+            }
+        },
         reset () {
         this.$refs.form.reset()
             this.submitted = false;
             console.log('Resetted')  
         },
         addBird (){
-            alert('Added Bird')
+            axios.post('/',{
+                username: this.username,
+                name: this.birdname,
+                number: this.numBirds,
+                location: this.location,
+                activity: this.activity,
+                description: this.description
+            }).then(response =>{
+                $('#success').html(response.data.message)
+            })
         }
     }
   }

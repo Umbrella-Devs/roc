@@ -18,7 +18,10 @@
                     </div>
                     <div class="w-90 mx-auto px-5">
                         <div>
-                            <v-form ref="form">
+                            <v-form ref="form" @submit.once="addMember">
+                                <div>
+                                    <p id="success" class="text-black"></p>
+                                </div>
                                 <div class="w-100 flex">
                                     <div class="w-50 mr-5">
                                         <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
@@ -28,30 +31,28 @@
                                     </div>
                                 </div>
                                 <div class="w-100 flex">
-                                    <div class="w-60 mr-5">
+                                    <div class="w-100">
                                         <v-text-field label="Email" v-model="email" :rules="emailRules"></v-text-field>
                                     </div>
-                                    <div class="w-40">
-                                        <v-text-field label="Phone" v-model="phone"></v-text-field>
-                                    </div>
-                                </div>
-                                <div>
-                                    <v-select label="Country" :items="items" class="" :rules="countryRules"></v-select>
                                 </div>
                                 <div class="w-100 flex">
                                     <div class="w-50 mr-5">
-                                        <v-text-field label="State" v-model="state" :rules="otherRules" color="red"></v-text-field>
+                                        <v-select v-model="country" label="Country" :items="items" class="" :rules="countryRules"></v-select>
                                     </div>
                                     <div class="w-50">
                                         <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
                                     </div> 
+                                </div>
+                                
+                                <div class="w-100 flex">
+                                    <v-text-field label="Phone" v-model="phone"></v-text-field>
                                 </div>
                                 <div class="text-grey-darker">
                                     <input type="radio" v-model="option" value="Member" ><span class="px-2">Member</span>
                                     <input type="radio" v-model="option" value="Volunteer" ><span class="px-2">Volunteer</span>
                                 </div>
                                 <div class="text-centered py-5">
-                                    <button v-on:click.prevent="submit" class="bg-orange-dark btn text-white">Join Us Now</button>
+                                    <input type="submit" v-on:click.prevent="validate" class="bg-orange-dark btn text-white" value="Join Us Now">
                                 </div>
                                 
                             </v-form>
@@ -76,7 +77,6 @@ export default {
             state:'',
             city:'',
             option:'',
-            projects:[],
             select:null,
             items:['Rwanda','Uganda','United States of America'],
             submitted: false,
@@ -96,13 +96,27 @@ export default {
         }
     },
     methods:{
-        submit(){
+        validate(){
             if(this.$refs.form.validate()){
                 console.log(this.email)
                 this.submitted = true
+                this.addMember()
             }
-            
+        },
+        addMember(){
+            axios.post('/join-us',{
+                first_name: this.firstname,
+                last_name: this.lastname,
+                email: this.email,
+                phone: this.phone,
+                city: this.city,
+                country: this.country,
+                
+            }).then(response =>{
+                $('#success').html(response.data.message)
+            })
         }
+
     }
 }
 </script>

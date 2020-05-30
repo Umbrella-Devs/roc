@@ -19,14 +19,14 @@
                         <div>
                             <div class="flex w-100 mt-5">
                                 <div class="w-50 mr-5">
-                                    <v-text-field outlined label="E-mail" v-model="email" :rules="emailRules"></v-text-field>
+                                    <v-text-field label="E-mail" v-model="email" :rules="emailRules"></v-text-field>
                                 </div>
                                 <div class="w-50">
-                                    <v-text-field outlined label="Name" v-model="name" :rules="nameRules"></v-text-field>
+                                    <v-text-field label="Name" v-model="name" :rules="nameRules"></v-text-field>
                                 </div>
                             </div>
                             <div>
-                                <v-textarea outlined label="Message" v-model="message" :rules="nameRules"></v-textarea>
+                                <v-textarea label="Message" v-model="message" :rules="nameRules"></v-textarea>
                             </div>
                             <v-divider></v-divider>
                             <div class="text-centered py-3">

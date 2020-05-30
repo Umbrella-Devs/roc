@@ -2360,20 +2360,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var _ref;
@@ -2388,6 +2374,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       city: '',
       zipcode: '',
       project: '',
+      project_id: 1,
       projects: [],
       select: null,
       countries: ['Rwanda', 'Uganda', 'United States of America']
@@ -2404,18 +2391,24 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }]), _ref;
   },
   methods: {
-    submit: function submit() {
+    validate: function validate() {
       if (this.$refs.form.validate()) {
         console.log(this.email);
         this.submitted = true;
+        this.addDonate();
       }
     },
     addDonate: function addDonate() {
       axios.post('/donate', {
-        first_name: this.firstname
+        first_name: this.firstname,
+        last_name: this.lastname,
+        email: this.email,
+        phone: this.phone,
+        city: this.city,
+        country: this.country,
+        project_id: this.project_id
       }).then(function (response) {
-        //$('#success').html(response.data.message)
-        alert('Donation Addee');
+        $('#success').html(response.data.message);
       });
     }
   }
@@ -2790,6 +2783,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2801,7 +2795,6 @@ __webpack_require__.r(__webpack_exports__);
       state: '',
       city: '',
       option: '',
-      projects: [],
       select: null,
       items: ['Rwanda', 'Uganda', 'United States of America'],
       submitted: false,
@@ -2822,11 +2815,24 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    submit: function submit() {
+    validate: function validate() {
       if (this.$refs.form.validate()) {
         console.log(this.email);
         this.submitted = true;
+        this.addMember();
       }
+    },
+    addMember: function addMember() {
+      axios.post('/join-us', {
+        first_name: this.firstname,
+        last_name: this.lastname,
+        email: this.email,
+        phone: this.phone,
+        city: this.city,
+        country: this.country
+      }).then(function (response) {
+        $('#success').html(response.data.message);
+      });
     }
   }
 });
@@ -2896,10 +2902,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       dialog: false,
+      username: '',
       birdname: '',
       numBirds: '',
       description: '',
@@ -2912,19 +2924,28 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    //submit(){
-    //if(this.$refs.form.validate()){
-    //this.submitted = true
-    //console.log('Done')
-    //}
-    //},
+    validate: function validate() {
+      if (this.$refs.form.validate()) {
+        this.submitted = true;
+        this.addBird();
+      }
+    },
     reset: function reset() {
       this.$refs.form.reset();
       this.submitted = false;
       console.log('Resetted');
     },
     addBird: function addBird() {
-      alert('Added Bird');
+      axios.post('/', {
+        username: this.username,
+        name: this.birdname,
+        number: this.numBirds,
+        location: this.location,
+        activity: this.activity,
+        description: this.description
+      }).then(function (response) {
+        $('#success').html(response.data.message);
+      });
     }
   }
 });
@@ -3001,58 +3022,23 @@ __webpack_require__.r(__webpack_exports__);
   components: {},
   data: function data() {
     return {
-      projects: [{
-        id: '1',
-        slug: 'link-bird-to-community',
-        title: 'Link Birds with the Community',
-        descriptionSum: 'Bird ringing generates information on the survival, productivity and movements of birds, helping us to understand why populations are changing.',
-        coverImg: '/img/IMG_9069.jpg',
-        descriptionFull: 'Whilst ringers collect data on survival, volunteers for the Nest Record Scheme collect information on productivity. The results can be analysed in combination with population trend data, such as that collected through the BTO/JNCC/RSPB Breeding Bird Survey, to determine at which stage of a bird’s life cycle there might be a problem. This enables scientists and conservationists to target appropriate mitigation measures.',
-        descriptionIntro: 'Ringing data make a major contribution to the study of population changes and to our understanding of species declines. Bird populations are determined by the number of fledglings raised and the survival of both juveniles and adults.',
-        img1: '/img/IMG_1536.jpg',
-        img2: '/img/IMG_1600.jpg'
-      }, {
-        id: '2',
-        slug: 'green-birding',
-        title: 'Green Birding',
-        descriptionSum: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        coverImg: '/img/IMG_8827.jpg',
-        descriptionIntro: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).',
-        descriptionFull: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?',
-        img1: '/img/IMG_8805.jpg',
-        img2: '/img/IMG_2835.jpg'
-      }, {
-        id: '3',
-        slug: 'endemic-survey',
-        title: 'Endemics Survey',
-        descriptionSum: 'The Waterways Breeding Bird Survey is an annual survey of breeding birds along rivers and canals.',
-        coverImg: '/img/IMG_2669.jpg',
-        descriptionIntro: 'Rivers and canals are great places for birds and birdwatchers, creating wildlife corridors that strike into the heart of our cities and stretch from moorland to estuary. The Waterways Breeding Bird Survey (WBBS) provides both a great excuse for a summer morning walk and an effective way to monitor the health of the species that live by our waterways.',
-        descriptionFull: 'The WBBS uses transect methods akin to those of the Breeding Bird Survey (BBS) but with minor adaptations to a linear habitat. Volunteers walk along from just 500 metres to a maximum of 5 km of waterway, making a note of all of the birds that they see and hear. Surveys are conducted twice a year, between April and June, along with a reconnaissance before that to check the route. Data is then submitted by the end of August, via field recording forms or to submit your data on BBS-Online.',
-        img1: '/img/IMG_1734.jpg',
-        img2: '/img/IMG_2738.jpg'
-      }, {
-        id: '4',
-        slug: 'bird-ringing-&-banding',
-        title: 'Bird Ringing & Banding',
-        descriptionSum: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        coverImg: '/img/IMG_1973.jpg',
-        descriptionIntro: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).',
-        descriptionFull: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?',
-        img1: '/img/IMG_2004.jpg',
-        img2: '/img/IMG_2807.jpg'
-      }, {
-        id: '5',
-        slug: 'bird-ringing-&-banding',
-        title: 'Bird Ringing Scheme',
-        descriptionSum: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        coverImg: '/img/IMG_1973.jpg',
-        descriptionIntro: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).',
-        descriptionFull: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?',
-        img1: '/img/IMG_2004.jpg',
-        img2: '/img/IMG_2807.jpg'
-      }]
+      projects: [],
+      birds: []
     };
+  },
+  created: function created() {
+    this.fetchBirds();
+  },
+  methods: {
+    fetchBirds: function fetchBirds() {
+      var _this = this;
+
+      fetch('api/projects').then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        _this.projects = res.data;
+      });
+    }
   }
 });
 
@@ -3074,7 +3060,62 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      birds: {},
+      bird: {
+        name: '',
+        activity: '',
+        description: '',
+        number: ''
+      }
+    };
+  },
+  created: function created() {
+    this.fetchBirds();
+  },
+  methods: {
+    fetchBirds: function fetchBirds() {
+      fetch('api/birds').then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        console.log(res.data);
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -7856,6 +7897,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, "\n.bg[data-v-459c7b10]{\n    background-image: url('/img/IMG_2808.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}\n.opacity[data-v-459c7b10]{\n    width: 100%;\n    height: 615px;\n    background-color: black;\n    opacity: 0.5;\n    \n    margin-top: -615px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.bg[data-v-b5744f5a]{\n    background-image: url('/img/IMG_1973.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}\n", ""]);
 
 // exports
 
@@ -39092,6 +39152,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -40540,20 +40630,8 @@ var render = function() {
         _vm._m(0)
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: !_vm.submitted,
-              expression: "!submitted"
-            }
-          ],
-          staticClass: "my-12 w-50 mx-12 "
-        },
-        [
+      _c("div", { staticClass: "my-12 w-50 mx-12 " }, [
+        _c("div", [
           _vm._m(1),
           _vm._v(" "),
           _c(
@@ -40565,8 +40643,7 @@ var render = function() {
                 {
                   ref: "form",
                   on: {
-                    submit: function($event) {
-                      $event.preventDefault()
+                    "~submit": function($event) {
                       return _vm.addDonate($event)
                     }
                   }
@@ -40724,75 +40801,25 @@ var render = function() {
                   _c("div", { staticClass: "text-centered" }, [
                     _c("input", {
                       staticClass: "bg-orange-dark btn text-white",
-                      attrs: { type: "submit", value: "Donate Now" }
+                      attrs: { type: "submit", value: "Donate Now" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.validate($event)
+                        }
+                      }
                     })
                   ]),
                   _vm._v(" "),
-                  _c("p", { attrs: { id: "success" } })
+                  _c("div", [_c("p", { attrs: { id: "success" } })])
                 ]
               )
             ],
             1
           )
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", {})
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        directives: [
-          {
-            name: "show",
-            rawName: "v-show",
-            value: (_vm.submitted = _vm.submitted),
-            expression: "submitted = submitted"
-          }
-        ]
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "w-40 mx-auto border-1 border-solid border-grey mb-12"
-          },
-          [
-            _c(
-              "div",
-              { staticClass: "w-30 mx-auto" },
-              [_c("v-img", { attrs: { src: "/img/svg/correct.svg" } })],
-              1
-            ),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-centered py-3" }, [
-              _c(
-                "button",
-                { staticClass: "px-2 py-1 rounded bg-green" },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "no-underline",
-                      attrs: { to: { name: "home" } }
-                    },
-                    [
-                      _c("span", { staticClass: "text-white" }, [
-                        _vm._v("Return to Home")
-                      ])
-                    ]
-                  )
-                ],
-                1
-              )
-            ])
-          ]
-        )
-      ]
-    )
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -40840,20 +40867,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "py-3 text-centered" }, [
       _c("h3", { staticClass: "text-grey-darkest" }, [_vm._v("Donate Here")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-centered w-80 mx-auto" }, [
-      _c("h2", { staticClass: "py-2" }, [_vm._v("Thanks for Helping Us")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "You will receive an email with an account to deposit the donation"
-        )
-      ])
     ])
   }
 ]
@@ -41496,67 +41509,130 @@ var render = function() {
             _c(
               "div",
               [
-                _c("v-form", { ref: "form" }, [
-                  _c("div", { staticClass: "w-100 flex" }, [
-                    _c(
-                      "div",
-                      { staticClass: "w-50 mr-5" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "First Name", rules: _vm.nameRules },
-                          model: {
-                            value: _vm.firstname,
-                            callback: function($$v) {
-                              _vm.firstname = $$v
+                _c(
+                  "v-form",
+                  {
+                    ref: "form",
+                    on: {
+                      "~submit": function($event) {
+                        return _vm.addMember($event)
+                      }
+                    }
+                  },
+                  [
+                    _c("div", [
+                      _c("p", {
+                        staticClass: "text-black",
+                        attrs: { id: "success" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-100 flex" }, [
+                      _c(
+                        "div",
+                        { staticClass: "w-50 mr-5" },
+                        [
+                          _c("v-text-field", {
+                            attrs: {
+                              label: "First Name",
+                              rules: _vm.nameRules
                             },
-                            expression: "firstname"
-                          }
-                        })
-                      ],
-                      1
-                    ),
+                            model: {
+                              value: _vm.firstname,
+                              callback: function($$v) {
+                                _vm.firstname = $$v
+                              },
+                              expression: "firstname"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "w-50" },
+                        [
+                          _c("v-text-field", {
+                            attrs: { label: "Last Name", rules: _vm.nameRules },
+                            model: {
+                              value: _vm.lastname,
+                              callback: function($$v) {
+                                _vm.lastname = $$v
+                              },
+                              expression: "lastname"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-100 flex" }, [
+                      _c(
+                        "div",
+                        { staticClass: "w-100" },
+                        [
+                          _c("v-text-field", {
+                            attrs: { label: "Email", rules: _vm.emailRules },
+                            model: {
+                              value: _vm.email,
+                              callback: function($$v) {
+                                _vm.email = $$v
+                              },
+                              expression: "email"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "w-100 flex" }, [
+                      _c(
+                        "div",
+                        { staticClass: "w-50 mr-5" },
+                        [
+                          _c("v-select", {
+                            attrs: {
+                              label: "Country",
+                              items: _vm.items,
+                              rules: _vm.countryRules
+                            },
+                            model: {
+                              value: _vm.country,
+                              callback: function($$v) {
+                                _vm.country = $$v
+                              },
+                              expression: "country"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "w-50" },
+                        [
+                          _c("v-text-field", {
+                            attrs: { label: "City", rules: _vm.otherRules },
+                            model: {
+                              value: _vm.city,
+                              callback: function($$v) {
+                                _vm.city = $$v
+                              },
+                              expression: "city"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ]),
                     _vm._v(" "),
                     _c(
                       "div",
-                      { staticClass: "w-50" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "Last Name", rules: _vm.nameRules },
-                          model: {
-                            value: _vm.lastname,
-                            callback: function($$v) {
-                              _vm.lastname = $$v
-                            },
-                            expression: "lastname"
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-100 flex" }, [
-                    _c(
-                      "div",
-                      { staticClass: "w-60 mr-5" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "Email", rules: _vm.emailRules },
-                          model: {
-                            value: _vm.email,
-                            callback: function($$v) {
-                              _vm.email = $$v
-                            },
-                            expression: "email"
-                          }
-                        })
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "w-40" },
+                      { staticClass: "w-100 flex" },
                       [
                         _c("v-text-field", {
                           attrs: { label: "Phone" },
@@ -41570,121 +41646,62 @@ var render = function() {
                         })
                       ],
                       1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    [
-                      _c("v-select", {
-                        attrs: {
-                          label: "Country",
-                          items: _vm.items,
-                          rules: _vm.countryRules
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-100 flex" }, [
-                    _c(
-                      "div",
-                      { staticClass: "w-50 mr-5" },
-                      [
-                        _c("v-text-field", {
-                          attrs: {
-                            label: "State",
-                            rules: _vm.otherRules,
-                            color: "red"
-                          },
-                          model: {
-                            value: _vm.state,
-                            callback: function($$v) {
-                              _vm.state = $$v
-                            },
-                            expression: "state"
-                          }
-                        })
-                      ],
-                      1
                     ),
                     _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "w-50" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "City", rules: _vm.otherRules },
-                          model: {
-                            value: _vm.city,
-                            callback: function($$v) {
-                              _vm.city = $$v
-                            },
-                            expression: "city"
+                    _c("div", { staticClass: "text-grey-darker" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.option,
+                            expression: "option"
                           }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "text-grey-darker" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.option,
-                          expression: "option"
+                        ],
+                        attrs: { type: "radio", value: "Member" },
+                        domProps: { checked: _vm._q(_vm.option, "Member") },
+                        on: {
+                          change: function($event) {
+                            _vm.option = "Member"
+                          }
                         }
-                      ],
-                      attrs: { type: "radio", value: "Member" },
-                      domProps: { checked: _vm._q(_vm.option, "Member") },
-                      on: {
-                        change: function($event) {
-                          _vm.option = "Member"
+                      }),
+                      _c("span", { staticClass: "px-2" }, [_vm._v("Member")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.option,
+                            expression: "option"
+                          }
+                        ],
+                        attrs: { type: "radio", value: "Volunteer" },
+                        domProps: { checked: _vm._q(_vm.option, "Volunteer") },
+                        on: {
+                          change: function($event) {
+                            _vm.option = "Volunteer"
+                          }
                         }
-                      }
-                    }),
-                    _c("span", { staticClass: "px-2" }, [_vm._v("Member")]),
+                      }),
+                      _c("span", { staticClass: "px-2" }, [_vm._v("Volunteer")])
+                    ]),
                     _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.option,
-                          expression: "option"
-                        }
-                      ],
-                      attrs: { type: "radio", value: "Volunteer" },
-                      domProps: { checked: _vm._q(_vm.option, "Volunteer") },
-                      on: {
-                        change: function($event) {
-                          _vm.option = "Volunteer"
-                        }
-                      }
-                    }),
-                    _c("span", { staticClass: "px-2" }, [_vm._v("Volunteer")])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "text-centered py-5" }, [
-                    _c(
-                      "button",
-                      {
+                    _c("div", { staticClass: "text-centered py-5" }, [
+                      _c("input", {
                         staticClass: "bg-orange-dark btn text-white",
+                        attrs: { type: "submit", value: "Join Us Now" },
                         on: {
                           click: function($event) {
                             $event.preventDefault()
-                            return _vm.submit($event)
+                            return _vm.validate($event)
                           }
                         }
-                      },
-                      [_vm._v("Join Us Now")]
-                    )
-                  ])
-                ])
+                      })
+                    ])
+                  ]
+                )
               ],
               1
             )
@@ -41849,6 +41866,7 @@ var render = function() {
                         _vm._v(" "),
                         _c(
                           "div",
+                          { staticClass: "w-40" },
                           [
                             _c("v-text-field", {
                               attrs: { label: "No of birds" },
@@ -41902,29 +41920,50 @@ var render = function() {
                         1
                       ),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "w-100 flex" },
-                        [
-                          _c("v-text-field", {
-                            attrs: { label: "Location", rules: _vm.nameRules },
-                            model: {
-                              value: _vm.location,
-                              callback: function($$v) {
-                                _vm.location = $$v
+                      _c("div", { staticClass: "w-100 flex" }, [
+                        _c(
+                          "div",
+                          { staticClass: "w-50 mr-5" },
+                          [
+                            _c("v-text-field", {
+                              attrs: {
+                                label: "Your Names",
+                                rules: _vm.nameRules
                               },
-                              expression: "location"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "btn bg-orange-dark text-center text-white",
-                      attrs: { type: "submit", value: "Submit" }
-                    })
+                              model: {
+                                value: _vm.username,
+                                callback: function($$v) {
+                                  _vm.username = $$v
+                                },
+                                expression: "username"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "w-50" },
+                          [
+                            _c("v-text-field", {
+                              attrs: {
+                                label: "Location",
+                                rules: _vm.nameRules
+                              },
+                              model: {
+                                value: _vm.location,
+                                callback: function($$v) {
+                                  _vm.location = $$v
+                                },
+                                expression: "location"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ])
+                    ])
                   ])
                 ],
                 1
@@ -41960,7 +41999,13 @@ var render = function() {
                       _c("input", {
                         staticClass:
                           "btn bg-orange-dark text-center text-white",
-                        attrs: { type: "submit", value: "Submit" }
+                        attrs: { type: "submit", value: "Submit" },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.validate($event)
+                          }
+                        }
                       }),
                       _vm._v(" "),
                       _c(
@@ -42041,7 +42086,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("p", { staticClass: "pt-4 text-sm" }, [
                         _vm._v(
-                          "BirdTrack is a free and convenient way of storing your bird records online. View the latest trends, and contribute your data to ROC science."
+                          "BirdTrack is a free and convenient way of storing your bird records online. View the latest trends..."
                         )
                       ]),
                       _vm._v(" "),
@@ -42090,11 +42135,11 @@ var render = function() {
                       },
                       [
                         _c("h3", { staticClass: "text-xl" }, [
-                          _vm._v(_vm._s(project.title))
+                          _vm._v(_vm._s(project.name))
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "pt-4 text-sm" }, [
-                          _vm._v(_vm._s(project.descriptionSum))
+                          _vm._v(_vm._s(_vm._f("snippet")(project.description)))
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "text-right" }, [
@@ -42214,20 +42259,71 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      {},
-      [
-        _c("v-img", {
-          attrs: { src: "/img/IMG_1973.jpg", "max-height": "500" }
-        })
-      ],
-      1
-    )
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "bg" }, [
+        _c("div", { staticClass: "w-100 flex" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "w-45 mx-auto  text-grey-darkest bg-black px-5 py-5 opacity-75 rounded",
+              staticStyle: { "margin-top": "250px" },
+              attrs: { "data-aos": "fade-down", "data-aos-duration": "2000" }
+            },
+            [
+              _c("div", { staticClass: " text-white text-centered" }, [
+                _c("h1", { staticClass: "pb-3 text-3xl" }, [
+                  _vm._v("Our Projects")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Saving Birds is an important mission, but the value of this work is even more far reaching. When birds are protected, so are their  forest habitats, which are critical ecosystems that support our planet and all life on earth."
+                  )
+                ])
+              ])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "w-80 mx-auto" }, [
+        _c("div", { staticClass: "text-centered py-12" }, [
+          _c("h2", [_vm._v("Birds Tracked")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-100 grid grid-4" }, [
+          _c("div", { staticClass: "shadow-md rounded bg-white mr-3" }, [
+            _c("div", { staticClass: "w-100 flex  py-2 px-2" }, [
+              _c("div", { staticClass: "w-50" }, [
+                _c("h5", { staticClass: "text-sm" }, [_vm._v("Bird Name")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "w-50 text-right" }, [
+                _c("p", [_vm._v("45")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "py-1 px-2" }, [
+              _c("p", [_vm._v("Actvity:hhhhhhhhh")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "py-1 px-2" }, [
+              _c("p", [_vm._v("descripption")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -42535,7 +42631,6 @@ var render = function() {
                             [
                               _c("v-text-field", {
                                 attrs: {
-                                  outlined: "",
                                   label: "E-mail",
                                   rules: _vm.emailRules
                                 },
@@ -42556,11 +42651,7 @@ var render = function() {
                             { staticClass: "w-50" },
                             [
                               _c("v-text-field", {
-                                attrs: {
-                                  outlined: "",
-                                  label: "Name",
-                                  rules: _vm.nameRules
-                                },
+                                attrs: { label: "Name", rules: _vm.nameRules },
                                 model: {
                                   value: _vm.name,
                                   callback: function($$v) {
@@ -42578,11 +42669,7 @@ var render = function() {
                           "div",
                           [
                             _c("v-textarea", {
-                              attrs: {
-                                outlined: "",
-                                label: "Message",
-                                rules: _vm.nameRules
-                              },
+                              attrs: { label: "Message", rules: _vm.nameRules },
                               model: {
                                 value: _vm.message,
                                 callback: function($$v) {
@@ -100423,7 +100510,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _birdTrack_vue_vue_type_template_id_b5744f5a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./birdTrack.vue?vue&type=template&id=b5744f5a&scoped=true& */ "./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=template&id=b5744f5a&scoped=true&");
 /* harmony import */ var _birdTrack_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./birdTrack.vue?vue&type=script&lang=js& */ "./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _birdTrack_vue_vue_type_style_index_0_id_b5744f5a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css& */ "./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -100431,7 +100520,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _birdTrack_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _birdTrack_vue_vue_type_template_id_b5744f5a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _birdTrack_vue_vue_type_template_id_b5744f5a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -100460,6 +100549,22 @@ component.options.__file = "resources/js/Components/Pages/Projects/birdTrack.vue
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./birdTrack.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css&":
+/*!***********************************************************************************************************************!*\
+  !*** ./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css& ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_style_index_0_id_b5744f5a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Components/Pages/Projects/birdTrack.vue?vue&type=style&index=0&id=b5744f5a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_style_index_0_id_b5744f5a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_style_index_0_id_b5744f5a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_style_index_0_id_b5744f5a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_style_index_0_id_b5744f5a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_birdTrack_vue_vue_type_style_index_0_id_b5744f5a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -100722,6 +100827,9 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
     name: 'birdTrack',
     component: _Components_Pages_Projects_birdTrack_vue__WEBPACK_IMPORTED_MODULE_12__["default"]
   }]
+});
+Vue.filter('snippet', function (value) {
+  return value.slice(0, 100) + '...';
 });
 /**
  * Next, we will create a fresh Vue application instance and attach it to

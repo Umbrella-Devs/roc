@@ -62,7 +62,9 @@ const router = new VueRouter({
         {path: '/project/bird-tracking', name: 'birdTrack', component: birdTrack,},
     ],
 });
-
+Vue.filter('snippet', function(value){
+    return value.slice(0,100)+ '...'
+  });
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

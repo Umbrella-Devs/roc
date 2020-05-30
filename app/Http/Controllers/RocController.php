@@ -66,7 +66,7 @@ class RocController extends Controller
 
 
         return response()->json([
-            'message' => 'New Donation Added'
+            'message' => 'Thanks for your Gift'
         ]);
 
     }
@@ -82,7 +82,7 @@ class RocController extends Controller
         $joiner->phone = $request->phone;
         $joiner->city = $request->city;
         $joiner->country = $request->country;
-        $joiner->project_id = $request->project_id;
+        
         $joiner->save();
 
         return response()->json([
