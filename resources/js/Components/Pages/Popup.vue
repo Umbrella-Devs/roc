@@ -16,7 +16,7 @@
                     </div> 
                 </div>
                 <v-card-text>
-                    <v-form ref="form">
+                    <v-form ref="form" @submit="addBird">
                         <div>
                             <div class="w-100 flex">
                                 <div class="w-60 mr-3">
@@ -36,6 +36,7 @@
                                 <v-text-field label="Location" v-model="location" :rules="nameRules"></v-text-field>
                             </div>
                         </div>
+                        <input type="submit" class="btn bg-orange-dark text-center text-white" value="Submit">
                     </v-form>
                 </v-card-text>
                 <v-divider></v-divider>
@@ -43,7 +44,7 @@
                     <v-card-actions>
                         <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
                         <v-spacer></v-spacer>
-                        <button @click="submit" class="btn bg-orange-dark text-center text-white">Submit</button>
+                        <input type="submit" class="btn bg-orange-dark text-center text-white" value="Submit">
                         <button @click="reset" class="btn border-red text-center text-red mx-3">Reset Form</button>
                     </v-card-actions>
                 </div>
@@ -69,17 +70,20 @@
       }
     },
     methods:{
-        submit(){
-            if(this.$refs.form.validate()){
-                this.submitted = true
-                console.log('Done')
-            }
-        },
+        //submit(){
+            //if(this.$refs.form.validate()){
+                //this.submitted = true
+                //console.log('Done')
+            //}
+        //},
         reset () {
         this.$refs.form.reset()
             this.submitted = false;
             console.log('Resetted')  
         },
+        addBird (){
+            alert('Added Bird')
+        }
     }
   }
 </script>

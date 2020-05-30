@@ -68,6 +68,7 @@
                         <div class="text-centered">
                             <input type="submit" class="bg-orange-dark btn text-white" value="Donate Now"/>
                         </div>
+                        <p id="success"></p>
                     </v-form>
                 </div>
             </div>
@@ -107,6 +108,7 @@ export default {
             state:'',
             city:'',
             zipcode:'',
+            project:'',
             projects:[],
             select:null,
             countries:['Rwanda','Uganda','United States of America'],
@@ -137,7 +139,12 @@ export default {
             } 
         },
         addDonate(){ 
-            alert('Adding Donate')
+            axios.post('/donate', {
+                first_name: this.firstname,
+            }).then(response => {
+                //$('#success').html(response.data.message)
+                alert('Donation Addee')
+            })
         }
 
     }

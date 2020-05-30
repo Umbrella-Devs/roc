@@ -2373,6 +2373,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var _ref;
@@ -2386,6 +2387,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       state: '',
       city: '',
       zipcode: '',
+      project: '',
       projects: [],
       select: null,
       countries: ['Rwanda', 'Uganda', 'United States of America']
@@ -2409,7 +2411,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     },
     addDonate: function addDonate() {
-      alert('Adding Donate');
+      axios.post('/donate', {
+        first_name: this.firstname
+      }).then(function (response) {
+        //$('#success').html(response.data.message)
+        alert('Donation Addee');
+      });
     }
   }
 });
@@ -2888,6 +2895,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2904,16 +2912,19 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    submit: function submit() {
-      if (this.$refs.form.validate()) {
-        this.submitted = true;
-        console.log('Done');
-      }
-    },
+    //submit(){
+    //if(this.$refs.form.validate()){
+    //this.submitted = true
+    //console.log('Done')
+    //}
+    //},
     reset: function reset() {
       this.$refs.form.reset();
       this.submitted = false;
       console.log('Resetted');
+    },
+    addBird: function addBird() {
+      alert('Added Bird');
     }
   }
 });
@@ -40715,7 +40726,9 @@ var render = function() {
                       staticClass: "bg-orange-dark btn text-white",
                       attrs: { type: "submit", value: "Donate Now" }
                     })
-                  ])
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { attrs: { id: "success" } })
                 ]
               )
             ],
@@ -41810,7 +41823,7 @@ var render = function() {
               _c(
                 "v-card-text",
                 [
-                  _c("v-form", { ref: "form" }, [
+                  _c("v-form", { ref: "form", on: { submit: _vm.addBird } }, [
                     _c("div", [
                       _c("div", { staticClass: "w-100 flex" }, [
                         _c(
@@ -41906,7 +41919,12 @@ var render = function() {
                         ],
                         1
                       )
-                    ])
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "btn bg-orange-dark text-center text-white",
+                      attrs: { type: "submit", value: "Submit" }
+                    })
                   ])
                 ],
                 1
@@ -41939,15 +41957,11 @@ var render = function() {
                       _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn bg-orange-dark text-center text-white",
-                          on: { click: _vm.submit }
-                        },
-                        [_vm._v("Submit")]
-                      ),
+                      _c("input", {
+                        staticClass:
+                          "btn bg-orange-dark text-center text-white",
+                        attrs: { type: "submit", value: "Submit" }
+                      }),
                       _vm._v(" "),
                       _c(
                         "button",
@@ -100895,8 +100909,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
