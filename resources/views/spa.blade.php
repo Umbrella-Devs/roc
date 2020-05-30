@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>ROC | Rugezi Ornithology Center</title>
     <style>
@@ -20,10 +21,58 @@
         p, h4, li{
             font-family: 'Nunito', sans-serif;
         }
+        .topnav {
+        overflow: hidden;
+        position: relative;
+        }
+
+        .topnav #myLinks {
+        display: none;
+        }
+
+        .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        }
+
+        .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+
+        .topnav a:hover {
+        background-color: rgb(29, 56, 17);
+        }
+
+        .active {
+        color: white;
+        }
     </style>
 </head>
-<body>
-    <div class="w-100 bg-green-darkest fixed z-9999 shadow-md">
+<body class="w-100 overflow-x-hidden">
+    {{-- mobile nav --}}
+        <div class="topnav shadow-md bg-green-darkest fixed xs:w-100 xl:hidden md:hidden z-9999">
+            <a href="{{ route('home') }}" class="active  bg-green-darkest">ROC</a>
+            <div id="myLinks">
+            <a href="{{ route('home') }}">Home</a>
+            <a href="{{ route('activities') }}">Activities</a>
+            <a href="{{ route('projects') }}">Projects</a>
+            <a href="{{ route('about_us') }}">About Us</a>
+            <a href="{{ route('join_us') }}">Join us</a>
+            <a href="{{ route('join_us') }}">Gallery</a>
+            <a href="{{ route('donate') }}">Donate</a>
+            </div>
+            <a href="javascript:void(0);" class="icon bg-orange-dark" onclick="myFunction()">
+            <i class="fa fa-bars text-white"></i>
+            </a>
+        </div>
+    {{-- end mobile nav --}}
+    <div class="w-100 bg-green-darkest fixed z-9999 shadow-md xs:hidden">
         <div class="w-90 flex mx-auto py-3">
             <div class="w-30">
                         <div class="">
@@ -63,97 +112,25 @@
         </div>
     </div>
     
-    <div class="xs:hidden md:hidden" id="app">
+    <div class="md:hidden w-100" id="app">
         
         @yield('content')
         
     </div>
-    <!--<div>
-            <div class="bg-green-darkest z-99 relative w-100 pb-3 pt-5">
-                <div class="w-80 mx-auto">
-                    <div class="">
-                        <div class="w-100 flex">
-                            <div class="w-25">
-                                <div class="text-white text-xs">
-                                    <h5 class="text-lg">Contact Us</h5>
-                                    <ul class="list pt-2 p-0">
-                                        <li>
-                                            + 250 712 345 567
-                                        </li>
-                                        <li>+ 250 712 345 567  </li>
-                                        <li>info@roc.rw</li>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-                            <div class="w-25">
-                                <div class="text-white text-xs">
-                                    <h5 class="text-lg">Location</h5>
-                                    <ul class="list pt-2 p-0">
-                                        <li>
-                                            <span>Musanze, Rwanda</span>
-                                        </li>
-                                        <li>NR 100 kv </li>
-                                        <li>info@roc.rw</li>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-                            <div class="w-25">
-                                <div class="text-white text-xs">
-                                    <h5 class="text-lg">Quick links</h5>
-                                    <ul class="list pt-2 p-0">
-                                        <li>
-                                            Blog
-                                        </li>
-                                        <li>Team </li>
-                                        <li>Our story</li>
-                                        <li>Bird Track</li>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-                            <div class="w-25">
-                                <div class="text-white text-xs">
-                                    <h5 class="text-lg">Activities</h5>
-                                    <ul class="list pt-2 p-0">
-                                        <li>
-                                            Education
-                                        </li>
-                                        <li>Research </li>
-                                        <li>Bird Conservation</li>
-                                        <li>Daily Protection</li>
-
-                                    </ul>
-                                </div>
-                                
-                            </div>
-                            <div class="my-auto">
-                                <Message/>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="flex w-80 mx-auto text-sm pt-5">
-                        <div class="w-50">
-                        <h4 class="text-xs text-white-50 text-left">All rights reserved © 2020 ROC.</h4>
-                        </div>
-                        <div class="w-50 text-right pr-1">
-                            <h4 class="text-xs text-white-50">
-                                <span>
-                                    Developed by <a class="text-orange-dark" href="https://umbrellagrp.rw/" target="_blank">Umbrella</a>
-                                </span>
-                            </h4>
-                        </div>
-                    </div>
-            
-        </div>
-        
-    </div>-->
+    
     <script src="{{ mix('js/app.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
     
     <script>
         AOS.init();

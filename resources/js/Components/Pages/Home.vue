@@ -3,12 +3,12 @@
         <div>
             
             <div class="w-100">
-                <div class="bg">
+                <div class="bg w-100 xs:h-px-300-i">
                     <div class="flex w-100 "></div>
-                    <div class=" mx-auto w-90" style=" margin-top: 120px;">
+                    <div class="mx-auto w-90 xs:mt-16" style=" margin-top: 120px;">
                         <div class="w-100 flex">
-                            <div class="w-5 pt-5 relative">
-                                <div class="w-30 ">
+                            <div class="xl:w-5 xs:w-10 pt-5 relative">
+                                <div class="xl:w-30 xs:w-60">
                                     <div class="line"></div>
                                     <div class="-ml-3 my-2">
                                         <img src="/img/svg/whitefb.svg" alt="">
@@ -25,39 +25,39 @@
                                 </div>
                                 
                             </div>
-                            <div class="w-75 pt-5"
+                            <div class="xl:w-75 xs:w-85 pt-5"
                             data-aos="fade-down"
                             data-aos-duration="1500">
-                                <div class="text-white">
+                                <div class="text-white xs:pt-5">
                                     <div>
-                                        <h1 style="font-size:100px;">Rugezi</h1>
+                                        <h1 class="xs:text-5xl" style="font-size:100px;">Rugezi</h1>
                                     </div>
-                                    <div style="margin-top:-28px; margin-left:170px;">
+                                    <div class="xs:mt-0 xs:ml-0" style="margin-top:-28px; margin-left:170px;">
                                         <span>Ornithology Center</span>
                                     </div>
-                                    <div class="w-60 py-2 pb-3"> 
-                                        <p class="text-lg">
+                                    <div class="xl:w-60 xs:w-100 py-2 pb-3"> 
+                                        <p class="xl:text-lg xs:text-sm">
                                             Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
                                         </p>
                                     </div>
-                                    <div class="flex relative z-999">
-                                        <div class="">
-                                            <button class="btn px-5 border-white text-orange mr-2">
+                                    <div class="flex xl:w-40 relative z-999">
+                                        <div class="xs:w-50 w-50 mx-1">
+                                            <button class="btn xs:w-100 w-100 xl:px-5 border-white text-orange xl:mr-2">
                                                 <a class="text-white no-underline" href="">Explore </a>
                                             </button>
                                         </div>
-                                        <div data-app class="">
+                                        <div data-app class="xs:w-50 mx-1 w-50">
                                             <Popup/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-20">
+                            <div class="w-20 xs:hidden">
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 flex -mt-24">
+                    <div class="w-100 flex -mt-24 xs:hidden">
                         <div class="w-50">
 
                         </div>
@@ -94,15 +94,13 @@
             </div>
         </div>
         <div class="bg-white-smoke relative mx-auto pt-5" id="activity">
-            <div class="py-5 text-centered text-grey-darkest">
-                <h2 class="text-3xl">Our Special Activities</h2>
+            <div class="xl:py-5 xs:py-2 text-centered text-grey-darkest">
+                <h2 class="text-3xl xs:text-2xl">Our Special Activities</h2>
             </div>
             <div>
                 <div class="w-90 mx-auto py-3">
-                    <div class="w-100 grid grid-3 mb-12 " style="">
-                        <div class="" v-for="activity in activities" :key="activity.id"
-                         data-aos="zoom-in"
-                         data-aos-duration="2000">
+                    <div class="w-100 grid xl:grid-3 mb-12 " style="">
+                        <div class="" v-for="activity in activities" :key="activity.id">
                             <div class="w-100 mx-5">
                                 <div class="">
                                     <v-avatar class="bg-orange-dark shadow-lg" size="60">
@@ -112,7 +110,7 @@
                                     </v-avatar>
                                 </div>
                             </div>
-                            <div class="bg-white pb-4 -mt-6 shadow-sm mb-3 mr-4 pt hover:shadow-md" 
+                            <div class="bg-white pb-4 -mt-6 shadow-sm mb-3 xl:mr-4 pt hover:shadow-md" 
                             style="border-radius: 40px 0px 40px 0px; padding-top: 0px;">
                                 <div class=" text-grey-darkest">
                                     <h2 class="text-xl px-5 pt-8 pb-3">{{activity.head}}</h2>
@@ -134,20 +132,16 @@
         <div class="w-100 bg-green-darkest py-5 ">
             <div class="w-90 mx-auto py-5">
                 
-                <div class="w-100 flex pt-2 pb-2">
-                    <div class="w-50 mx-2" style="margin-top: 0px"
-                    data-aos="fade-right"
-                    data-aos-duration="2000">
+                <div class="w-100 xs:block flex pt-2 pb-2">
+                    <div class="w-50 xs:w-100 xl:mx-2" style="margin-top: 0px">
                          <v-img src="/img/IMG_1600.jpg" class="w-100"></v-img>
                     </div>
-                    <div class="w-50  mx-2 my-auto"
-                    data-aos="fade-left"
-                    data-aos-duration="2000">
+                    <div class="w-50 xs:w-100 mx-2 my-auto">
                         <div class="pt-2">
-                            <h2 class="text-white text-3xl text-center ">Who are we?</h2>
+                            <h2 class="text-white xl:text-3xl xs:text-2xl text-center ">Who are we?</h2>
                         </div>
                         <div class="text-center pt-2">
-                            <p class="text-white">
+                            <p class="text-white xs:text-sm">
                            Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
                         </p>
                         <div class="py-3 text-center">
@@ -162,66 +156,71 @@
             </div>
         </div>
         <div>
-            <div class="w-100 bg-pjt"> </div>
-            <div class="opacity bg-green-darker opacity-80"></div>
-            <div class="content w-90 mx-auto">
+            <!-- <div class="w-100 bg-green-darker bg-pjt"> </div>
+            <div class="opacity bg-green-darker opacity-80"></div> -->
+            <div class="bg-pjt w-100  mx-auto xs:py-5">
                 <div class="py-5">
-                    <div class="pl-2 py-5">
-                        <h2 class="text-center text-3xl text-white">Our Blog</h2>
+                    <div class="pl-2 xl:py-5">
+                        <h2 class="text-center xl:text-3xl xs:text-2xl text-white">Our Blog</h2>
                     </div>
                     <div class="py-5">
-                        <div class="w-100 flex text-grey-darkest">
-                            <div class="bg-white w-30 mx-3" >
-                                <div class="">
-                                    <v-img src="img/IMG_2802.jpg" width="360" height="200"></v-img>
+                        <div class="w-100   text-grey-darkest">
+                            <div class="w-90 xs:block flex mx-auto">
+                                <div class="w-5 xs:hidden"></div>
+                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md" >
+                                    <div class="">
+                                        <v-img src="img/IMG_2802.jpg" width="100%" height="200"></v-img>
+                                    </div>
+                                    <div class="xs:pb-2">
+                                        <div class="py-2">
+                                            <h4 class="text-xs text-right px-2 text-orange-dark">Fri, May 23, 2020</h4>
+                                        </div>
+                                        <div class="px-4">
+                                            <h3 class="text-sm py-2">Birds Day in Rugezi Center</h3>
+                                            <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
+                                        </div>
+                                        <div class="text-right mx-5 mb-4">
+                                            <button class="text-sm btn border-orange-darker">Read More</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="">
+                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
+                                    <div class="">
+                                        <v-img src="img/IMG_1600.jpg" width="100%" height="200"></v-img>
+                                    </div>
                                     <div class="py-2">
-                                        <h4 class="text-xs text-right px-2 text-orange-dark">Fri, May 23, 2020</h4>
-                                    </div>
-                                    <div class="px-4">
-                                        <h3 class="text-sm py-2">Birds Day in Rugezi Center</h3>
-                                        <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
-                                    </div>
-                                    <div class="text-right mx-5 mb-4">
-                                        <button class="text-sm btn border-orange-darker">Read More</button>
+                                        <div>
+                                            <h4 class="text-xs text-right px-2 text-orange-dark">Thur, Jan 01, 2020</h4>
+                                        </div>
+                                        <div class="px-4">
+                                            <h3 class="text-sm py-2">Bird Watching the great thing</h3>
+                                            <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
+                                        </div>
+                                        <div class="text-right mx-5 mb-4">
+                                            <button class="text-sm btn border-orange-darker">Read More</button>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
+                                    <div class="">
+                                        <v-img src="img/IMG_4782.jpg" width="100%" height="200"></v-img>
+                                    </div>
+                                    <div class="py-2">
+                                        <div>
+                                            <h4 class="text-xs text-right px-2 text-orange-dark">Wed, Jun 12, 2020</h4>
+                                        </div>
+                                        <div class="px-4">
+                                            <h3 class="text-sm py-2">Internship to students </h3>
+                                            <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
+                                        </div>
+                                        <div class="text-right mx-5 mb-4">
+                                            <button class="text-sm btn border-orange-darker">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-5 xs:hidden"></div>
                             </div>
-                            <div class="bg-white w-30 mx-3">
-                                <div class="">
-                                    <v-img src="img/IMG_1600.jpg" width="360" height="200"></v-img>
-                                </div>
-                                <div class="py-2">
-                                    <div>
-                                        <h4 class="text-xs text-right px-2 text-orange-dark">Thur, Jan 01, 2020</h4>
-                                    </div>
-                                    <div class="px-4">
-                                        <h3 class="text-sm py-2">Bird Watching the great thing</h3>
-                                        <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
-                                    </div>
-                                    <div class="text-right mx-5 mb-4">
-                                        <button class="text-sm btn border-orange-darker">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white w-30 mx-3">
-                                <div class="">
-                                    <v-img src="img/IMG_4782.jpg" width="360" height="200"></v-img>
-                                </div>
-                                <div class="py-2">
-                                    <div>
-                                        <h4 class="text-xs text-right px-2 text-orange-dark">Wed, Jun 12, 2020</h4>
-                                    </div>
-                                    <div class="px-4">
-                                        <h3 class="text-sm py-2">Internship to students </h3>
-                                        <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
-                                    </div>
-                                    <div class="text-right mx-5 mb-4">
-                                        <button class="text-sm btn border-orange-darker">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -264,19 +263,16 @@ export default {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        height: 615px;
         
     }
     .opacity{
         width: 100%;
         height: 615px;
-        margin-top: -615px;
 
     }
     .content{
         width: 100%;
         height: 615px;
-        margin-top: -615px;
         position: relative;
     }
     .line{

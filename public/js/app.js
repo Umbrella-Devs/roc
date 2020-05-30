@@ -2001,6 +2001,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2019,6 +2050,14 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2261,6 +2300,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2276,14 +2337,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -2657,7 +2710,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2717,6 +2769,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -2961,6 +3016,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -7877,7 +7933,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.bg[data-v-2d306816]{\n    background-image: url('/img/cropped_1973.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 615px;\n}\n.bg-pjt[data-v-2d306816]{\n    background-image: url('/img/lake.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 615px;\n}\n.opacity[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n    margin-top: -615px;\n}\n.content[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n    margin-top: -615px;\n    position: relative;\n}\n.line[data-v-2d306816]{\n    height: 100px;\n    border-left: 2px solid white;\n}\n", ""]);
+exports.push([module.i, "\n.bg[data-v-2d306816]{\n    background-image: url('/img/cropped_1973.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 615px;\n}\n.bg-pjt[data-v-2d306816]{\n    background-image: url('/img/lake.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n}\n.opacity[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n}\n.content[data-v-2d306816]{\n    width: 100%;\n    height: 615px;\n    position: relative;\n}\n.line[data-v-2d306816]{\n    height: 100px;\n    border-left: 2px solid white;\n}\n", ""]);
 
 // exports
 
@@ -39785,98 +39841,168 @@ var render = function() {
     _c("div", [
       _c("div", [_c("router-view")], 1),
       _vm._v(" "),
-      _c("div", { staticClass: "bg-green-darkest w-100 py-5 z-999 relative" }, [
-        _c("div", { staticClass: "py-5 w-80 mx-auto" }, [
-          _c("div", { staticClass: "py-5" }, [
-            _c("div", { staticClass: "w-100 flex" }, [
-              _c("div", { staticClass: "w-25" }, [
-                _c("div", { staticClass: "text-white text-xs" }, [
-                  _c("h5", { staticClass: "text-lg" }, [_vm._v("Contact Us")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "list pt-2 p-0" }, [
-                    _c("li", [
-                      _vm._v(
-                        "\n                                            + 250 712 345 567\n                                        "
-                      )
+      _c(
+        "div",
+        { staticClass: "bg-green-darkest w-100 py-5 z-999 relative xs:hidden" },
+        [
+          _c("div", { staticClass: "py-5 w-85 mx-auto" }, [
+            _c("div", { staticClass: "py-5" }, [
+              _c("div", { staticClass: "w-100 flex" }, [
+                _c("div", { staticClass: "w-25" }, [
+                  _c("div", { staticClass: "text-white text-xs" }, [
+                    _c("h5", { staticClass: "text-lg" }, [
+                      _vm._v("Contact Us")
                     ]),
                     _vm._v(" "),
-                    _c("li", [_vm._v("+ 250 712 345 567  ")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("info@roc.rw")])
+                    _c("ul", { staticClass: "list pt-2 p-0" }, [
+                      _c("li", [
+                        _vm._v(
+                          "\n                                            + 250 712 345 567\n                                        "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("+ 250 712 345 567  ")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("info@roc.rw")])
+                    ])
                   ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "w-25" }, [
-                _c("div", { staticClass: "text-white text-xs" }, [
-                  _c("h5", { staticClass: "text-lg" }, [_vm._v("Location")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "list pt-2 p-0" }, [
-                    _c("li", [_c("span", [_vm._v("Musanze, Rwanda")])]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "w-25" }, [
+                  _c("div", { staticClass: "text-white text-xs" }, [
+                    _c("h5", { staticClass: "text-lg" }, [_vm._v("Location")]),
                     _vm._v(" "),
-                    _c("li", [_vm._v("NR 100 kv ")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("info@roc.rw")])
+                    _c("ul", { staticClass: "list pt-2 p-0" }, [
+                      _c("li", [_c("span", [_vm._v("Musanze, Rwanda")])]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("NR 100 kv ")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("info@roc.rw")])
+                    ])
                   ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "w-25" }, [
-                _c("div", { staticClass: "text-white text-xs" }, [
-                  _c("h5", { staticClass: "text-lg" }, [_vm._v("Quick links")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "list pt-2 p-0" }, [
-                    _c("li", [
-                      _vm._v(
-                        "\n                                            Blog\n                                        "
-                      )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "w-25" }, [
+                  _c("div", { staticClass: "text-white text-xs" }, [
+                    _c("h5", { staticClass: "text-lg" }, [
+                      _vm._v("Quick links")
                     ]),
                     _vm._v(" "),
-                    _c("li", [_vm._v("Team")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Our story")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Bird Track")])
+                    _c("ul", { staticClass: "list pt-2 p-0" }, [
+                      _c("li", [
+                        _vm._v(
+                          "\n                                            Blog\n                                        "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Team")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Our story")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Bird Track")])
+                    ])
                   ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "w-25" }, [
-                _c("div", { staticClass: "text-white text-xs" }, [
-                  _c("h5", { staticClass: "text-lg" }, [_vm._v("Activities")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "list pt-2 p-0" }, [
-                    _c("li", [
-                      _vm._v(
-                        "\n                                            Education\n                                        "
-                      )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "w-25" }, [
+                  _c("div", { staticClass: "text-white text-xs" }, [
+                    _c("h5", { staticClass: "text-lg" }, [
+                      _vm._v("Activities")
                     ]),
                     _vm._v(" "),
-                    _c("li", [_vm._v("Research ")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Bird Conservation")]),
-                    _vm._v(" "),
-                    _c("li", [_vm._v("Daily Protection")])
+                    _c("ul", { staticClass: "list pt-2 p-0" }, [
+                      _c("li", [
+                        _vm._v(
+                          "\n                                            Education\n                                        "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Research ")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Bird Conservation")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Daily Protection")])
+                    ])
                   ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "my-auto" }, [_c("Message")], 1)
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "flex w-85 mx-auto text-sm pt-5" }, [
+            _c("div", { staticClass: "w-50" }, [
+              _c("h4", { staticClass: "text-xs text-white-50 text-left" }, [
+                _vm._v("All rights reserved © 2020 ROC.")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "w-50 text-right pr-1" }, [
+              _c("h4", { staticClass: "text-xs text-white-50" }, [
+                _c("span", [
+                  _vm._v("\n                                    Developed by "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "text-orange-dark",
+                      attrs: {
+                        href: "https://umbrellagrp.rw/",
+                        target: "_blank"
+                      }
+                    },
+                    [_vm._v("Umbrella")]
+                  )
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "my-auto" }, [_c("Message")], 1)
+              ])
             ])
           ])
+        ]
+      )
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "w-100 relative z-999 bg-green-darkest md:hidden xl:hidden"
+      },
+      [
+        _c("div", { staticClass: "w-95 mx-auto flex py-3" }, [
+          _c("div", { staticClass: "w-50 text-white text-xs" }, [
+            _c("h5", { staticClass: "text-lg" }, [_vm._v("Contact Us")]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "list pt-1 p-0" }, [
+              _c("li", [
+                _vm._v(
+                  "\n                        + 250 712 345 567\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [_vm._v("+ 250 712 345 567  ")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("info@roc.rw")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "my-auto text-center w-50" },
+            [_c("Message")],
+            1
+          )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "flex w-80 mx-auto text-sm pt-5" }, [
+        _c("div", { staticClass: "flex w-90 mx-auto text-sm pt-3 pb-4" }, [
           _c("div", { staticClass: "w-50" }, [
             _c("h4", { staticClass: "text-xs text-white-50 text-left" }, [
-              _vm._v("All rights reserved © 2020 ROC.")
+              _vm._v("All © 2020 ROC.")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "w-50 text-right pr-1" }, [
             _c("h4", { staticClass: "text-xs text-white-50" }, [
               _c("span", [
-                _vm._v("\n                                    Developed by "),
+                _vm._v("\n                        Developed by "),
                 _c(
                   "a",
                   {
@@ -39889,8 +40015,8 @@ var render = function() {
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   ])
 }
 var staticRenderFns = []
@@ -39923,13 +40049,23 @@ var render = function() {
         _c("div", { staticClass: "w-90 mx-auto py-5" }, [
           _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "w-100 flex pt-5 pb-5" }, [
+          _c("div", { staticClass: "w-100 xs:block flex pt-5 pb-5" }, [
+            _c(
+              "div",
+              {
+                staticClass: "w-50 xs:w-100 xl:hidden md:hidden",
+                attrs: { "data-aos": "fade-left", "data-aos-duration": "2000" }
+              },
+              [_c("v-img", { attrs: { src: "/img/IMG_1536.jpg" } })],
+              1
+            ),
+            _vm._v(" "),
             _vm._m(2),
             _vm._v(" "),
             _c(
               "div",
               {
-                staticClass: "w-50 ml-12",
+                staticClass: "w-50 xs:w-100 ml-12 xs:hidden",
                 attrs: { "data-aos": "fade-left", "data-aos-duration": "2000" }
               },
               [_c("v-img", { attrs: { src: "/img/IMG_1536.jpg" } })],
@@ -39950,37 +40086,43 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "bg" }, [
+    return _c("div", { staticClass: "bg xs:h-84" }, [
       _c("div", { staticClass: "w-100 flex" }, [
         _c(
           "div",
           {
             staticClass:
-              "w-45 mx-auto mt-24 bg-black opacity-75 text-white px-5 py-4 text-centered rounded",
-            attrs: { "data-aos": "fade-down", "data-aos-duration": "2000" }
+              "xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
+            attrs: { "data-aos": "fade-down", "data-aos-duration": "1500" }
           },
           [
-            _c("h1", { staticClass: "pb-3 text-3xl" }, [
-              _vm._v("Rugezi Ornithology Center")
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats."
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "py-3" }, [
-              _c("button", { staticClass: "bg-orange-dark btn" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "no-underline text-white",
-                    attrs: { href: "#team" }
-                  },
-                  [_vm._v("Our Staff")]
+            _c("div", { staticClass: "text-centered text-white" }, [
+              _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
+                _vm._v("What We Do")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "xs:text-sm" }, [
+                _vm._v(
+                  "Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us."
                 )
               ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-centered py-3" }, [
+              _c(
+                "button",
+                { staticClass: "btn bg-orange-dark text-white hover:bg-green" },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "no-underline text-white",
+                      attrs: { href: "#activities" }
+                    },
+                    [_vm._v("Explore")]
+                  )
+                ]
+              )
             ])
           ]
         )
@@ -39992,7 +40134,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-centered py-3 pb-4" }, [
-      _c("h2", { staticClass: " text-grey-darkest text-3xl" }, [
+      _c("h2", { staticClass: "text-grey-darkest text-3xl xs:text-2xl" }, [
         _vm._v("Our Great Story")
       ])
     ])
@@ -40004,7 +40146,7 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 mt-12",
+        staticClass: "w-50 xs:w-100 xl:mt-12",
         attrs: { "data-aos": "fade-right", "data-aos-duration": "2000" }
       },
       [
@@ -40029,17 +40171,23 @@ var staticRenderFns = [
       { staticClass: "py-5 bg-white-smoke pb-5", attrs: { id: "team" } },
       [
         _c("div", { staticClass: "py-5 text-centered  text-grey-darkest" }, [
-          _c("h2", { staticClass: "text-3xl" }, [_vm._v("Our Great Team")])
+          _c("h2", { staticClass: "text-3xl xs:text-2xl" }, [
+            _vm._v("Our Great Team")
+          ])
         ]),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "w-90 mx-auto pt-2 pb-5 flex text-grey-darkest" },
+          {
+            staticClass:
+              "w-90 mx-auto pt-2 pb-5 xs:block flex text-grey-darkest"
+          },
           [
             _c(
               "div",
               {
-                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                staticClass:
+                  "bg-white xl:w-25 xs:w-100 p-4 xl:mx-2 xs:my-2 shadow-sm",
                 attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
               },
               [
@@ -40076,7 +40224,8 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                staticClass:
+                  "bg-white xl:w-25 xs:w-100 p-4 xl:mx-2 xs:my-2 shadow-sm",
                 attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
               },
               [
@@ -40113,7 +40262,8 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                staticClass:
+                  "bg-white xl:w-25 xs:w-100 p-4 xl:mx-2 xs:my-2 shadow-sm",
                 attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
               },
               [
@@ -40150,7 +40300,8 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "bg-white w-25 p-4 mx-2 shadow-sm",
+                staticClass:
+                  "bg-white xl:w-25 xs:w-100 p-4 xl:mx-2 xs:my-2 shadow-sm",
                 attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
               },
               [
@@ -40194,8 +40345,8 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-100 bg-white py-3" }, [
       _c("div", { staticClass: "w-80 mx-auto" }, [
-        _c("div", { staticClass: "w-100 flex" }, [
-          _c("div", { staticClass: "w-50" }, [
+        _c("div", { staticClass: "w-100 xs:block flex" }, [
+          _c("div", { staticClass: "xl:w-50 xs:w-100" }, [
             _c("div", { staticClass: "py-5 text-grey-darkest" }, [
               _c("h2", { staticClass: "py-2 text-2xl" }, [
                 _vm._v("Feel Free to Reach Us?")
@@ -40247,17 +40398,17 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "w-90 mx-auto pb-5 text-grey-darkest",
+          staticClass: "w-90 mx-auto xl:pb-5 text-grey-darkest",
           attrs: { id: "activities" }
         },
         [
           _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "w-100 flex pb-3" }, [
+          _c("div", { staticClass: "w-100 flex xs:block pb-3" }, [
             _c(
               "div",
               {
-                staticClass: "w-45",
+                staticClass: "xl:w-45 xs:w-100",
                 attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
               },
               [_c("v-img", { attrs: { src: "/img/IMG_4694.jpg" } })],
@@ -40271,13 +40422,13 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "w-100 py-5 bg-white-smoke" }, [
         _c("div", { staticClass: "w-90 mx-auto py-2" }, [
-          _c("div", { staticClass: "w-100 flex" }, [
+          _c("div", { staticClass: "w-100 xs:block flex" }, [
             _vm._m(3),
             _vm._v(" "),
             _c(
               "div",
               {
-                staticClass: "w-45",
+                staticClass: "xl:w-45 xs:w-100",
                 attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
               },
               [
@@ -40286,22 +40437,6 @@ var render = function() {
                   attrs: { src: "/img/IMG_1600.jpg" }
                 })
               ],
-              1
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "w-100 py-5" }, [
-        _c("div", { staticClass: "w-90 py-2 mx-auto" }, [
-          _c("div", { staticClass: "w-100 flex" }, [
-            _c(
-              "div",
-              {
-                staticClass: "w-45",
-                attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
-              },
-              [_c("v-img", { attrs: { src: "/img/IMG_1734.jpg" } })],
               1
             ),
             _vm._v(" "),
@@ -40310,15 +40445,33 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
+      _c("div", { staticClass: "w-100 xl:py-5 xs:py-3" }, [
+        _c("div", { staticClass: "w-90 py-2 mx-auto" }, [
+          _c("div", { staticClass: "w-100 xs:block flex" }, [
+            _c(
+              "div",
+              {
+                staticClass: "xl:w-45 xs:w-100",
+                attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
+              },
+              [_c("v-img", { attrs: { src: "/img/IMG_1734.jpg" } })],
+              1
+            ),
+            _vm._v(" "),
+            _vm._m(5)
+          ])
+        ])
+      ]),
+      _vm._v(" "),
       _c("div", { staticClass: "w-100 py-5 bg-white-smoke" }, [
         _c("div", { staticClass: "w-90 mx-auto py-2" }, [
-          _c("div", { staticClass: "w-100 flex" }, [
-            _vm._m(5),
+          _c("div", { staticClass: "w-100 xs:block flex" }, [
+            _vm._m(6),
             _vm._v(" "),
             _c(
               "div",
               {
-                staticClass: "w-45",
+                staticClass: "xl:w-45 xs:w-100",
                 attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
               },
               [
@@ -40328,25 +40481,27 @@ var render = function() {
                 })
               ],
               1
-            )
+            ),
+            _vm._v(" "),
+            _vm._m(7)
           ])
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "w-100 py-5" }, [
         _c("div", { staticClass: "w-90 mx-auto py-2" }, [
-          _c("div", { staticClass: "w-100 flex" }, [
+          _c("div", { staticClass: "w-100 xs:block flex" }, [
             _c(
               "div",
               {
-                staticClass: "w-45",
+                staticClass: "xl:w-45 xs:w-100",
                 attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
               },
               [_c("v-img", { attrs: { src: "/img/IMG_1608.jpg" } })],
               1
             ),
             _vm._v(" "),
-            _vm._m(6)
+            _vm._m(8)
           ])
         ])
       ])
@@ -40358,22 +40513,22 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "bg" }, [
+    return _c("div", { staticClass: "bg xs:h-84" }, [
       _c("div", { staticClass: "w-100 flex" }, [
         _c(
           "div",
           {
             staticClass:
-              "w-45 mx-auto mt-24 text-black px-5 py-4 rounded bg-black opacity-75",
+              "xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
             attrs: { "data-aos": "fade-down", "data-aos-duration": "1500" }
           },
           [
             _c("div", { staticClass: "text-centered text-white" }, [
-              _c("h1", { staticClass: "pb-3 text-3xl" }, [
+              _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
                 _vm._v("What We Do")
               ]),
               _vm._v(" "),
-              _c("p", {}, [
+              _c("p", { staticClass: "xs:text-sm" }, [
                 _vm._v(
                   "Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us."
                 )
@@ -40406,7 +40561,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-centered py-5" }, [
-      _c("h2", { staticClass: "text-3xl" }, [_vm._v("Our Activities")])
+      _c("h2", { staticClass: "xl:text-3xl xs:text-xl" }, [
+        _vm._v("Our Activities")
+      ])
     ])
   },
   function() {
@@ -40416,14 +40573,19 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-3 mx-auto my-auto text-grey-darkest",
+        staticClass:
+          "xl:w-50 xs:w-100 xl:px-3 mx-auto my-auto text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
-        _c("div", { staticClass: "pl-5" }, [
-          _c("h2", { staticClass: "text-2xl" }, [_vm._v("Education ")]),
+        _c("div", { staticClass: "xl:pl-5 xs:pt-3" }, [
+          _c(
+            "h2",
+            { staticClass: "xl:text-2xl xs:text-center xs:text-xl xs:pb-2" },
+            [_vm._v("Education ")]
+          ),
           _vm._v(" "),
-          _c("p", { staticClass: "pt-10" }, [
+          _c("p", { staticClass: "xl:pt-3" }, [
             _vm._v(
               "Education is key to empowering people and creating the next generation of conservationists. We work directly with local educational institutions and partner organizations to strengthen their programs and capacity, training hundreds of young scientists each year."
             )
@@ -40436,24 +40598,61 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-50 my-auto px-5" }, [
-      _c(
-        "div",
-        {
-          staticClass: "text-grey-darkest px-3",
-          attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
-        },
-        [
-          _c("h2", { staticClass: "text-2xl" }, [_vm._v("Bird Conservation")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "pt-10" }, [
-            _vm._v(
-              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quos impedit excepturi error placeat exercitationem atque, nulla odit reiciendis quis blanditiis obcaecati officiis vel perspiciatis fuga incidunt alias voluptate quo?"
-            )
-          ])
-        ]
-      )
-    ])
+    return _c(
+      "div",
+      { staticClass: "xl:w-50 xs:w-100 my-auto px-5 xs:hidden" },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "text-grey-darkest px-3",
+            attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
+          },
+          [
+            _c("h2", { staticClass: "text-2xl" }, [
+              _vm._v("Bird Conservation")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "pt-10" }, [
+              _vm._v(
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quos impedit excepturi error placeat exercitationem atque, nulla odit reiciendis quis blanditiis obcaecati officiis vel perspiciatis fuga incidunt alias voluptate quo?"
+              )
+            ])
+          ]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "xl:w-50 xs:w-100 my-auto xl:hidden md:hidden" },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "text-grey-darkest xs:pt-3",
+            attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
+          },
+          [
+            _c(
+              "h2",
+              { staticClass: "xl:text-2xl xs:text-center xs:text-xl xs:pb-2" },
+              [_vm._v("Bird Conservation")]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "pt-3" }, [
+              _vm._v(
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quos impedit excepturi error placeat exercitationem atque, nulla odit reiciendis quis blanditiis obcaecati officiis vel perspiciatis fuga incidunt alias voluptate quo?"
+              )
+            ])
+          ]
+        )
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -40462,14 +40661,16 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-3 mx-auto my-auto text-grey-darkest",
+        staticClass: "w-50 xs:w-100 xl:px-3 mx-auto my-auto text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
-        _c("div", { staticClass: "pl-5" }, [
-          _c("h2", { staticClass: "text-2xl" }, [_vm._v("Research ")]),
+        _c("div", { staticClass: "xl:pl-5 xs:pt-3" }, [
+          _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
+            _vm._v("Research ")
+          ]),
           _vm._v(" "),
-          _c("p", { staticClass: "pt-10" }, [
+          _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
               "We operate the longest-running gorilla research site in the world, the Karisoke Research Center. Most of what is known about gorillas is based on studies conducted at Karisoke over the past 50 years.  Our research also focuses on understanding many of the unique animals and plants that also call these forests home."
             )
@@ -40485,7 +40686,7 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-5 my-auto",
+        staticClass: "w-50 px-5 my-auto xs:hidden",
         attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
       },
       [
@@ -40508,14 +40709,41 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "w-50 px-3 mx-auto my-auto  text-grey-darkest",
+        staticClass: "w-50 xs:w-100 xl:px-5 my-auto xl:hidden md:hidden",
+        attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
+      },
+      [
+        _c("div", { staticClass: "text-grey-darkest xs:pt-3" }, [
+          _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
+            _vm._v("Events")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
+            _vm._v(
+              "We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can gorillas, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”"
+            )
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "xl:w-50 xs:w-100 px-3 mx-auto my-auto  text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
-        _c("div", { staticClass: "pl-5" }, [
-          _c("h2", { staticClass: "text-2xl" }, [_vm._v("Daily Protection")]),
+        _c("div", { staticClass: "xl:pl-5 xs:pt-3" }, [
+          _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
+            _vm._v("Daily Protection")
+          ]),
           _vm._v(" "),
-          _c("p", { staticClass: "pt-10" }, [
+          _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
               "The best way to save endangered species and conduct effective conservation is with direct, sustained protection in the wild. This is the foundation of our work and why mountain gorillas are the only wild ape whose population is growing."
             )
@@ -40605,272 +40833,8 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "pt-5" }, [
-    _c("div", { staticClass: " w-100 flex" }, [
-      _c("div", { staticClass: "w-50 relative" }, [
-        _c(
-          "div",
-          {
-            staticClass: "absolute bg-black z-0",
-            staticStyle: { height: "100vh" }
-          },
-          [
-            _c("v-img", {
-              staticClass: "w-100 opacity-50 clip-full",
-              attrs: { src: "/img/IMG_2663.jpg" }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(0)
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "my-12 w-50 mx-12 " }, [
-        _c("div", [
-          _vm._m(1),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "mx-5 bg-white shadow-lg rounded p-3" },
-            [
-              _c(
-                "v-form",
-                {
-                  ref: "form",
-                  on: {
-                    "~submit": function($event) {
-                      return _vm.addDonate($event)
-                    }
-                  }
-                },
-                [
-                  _c("div", { staticClass: "w-100 flex  mt-5" }, [
-                    _c(
-                      "div",
-                      { staticClass: "w-50 mr-2" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "First Name", rules: _vm.nameRules },
-                          model: {
-                            value: _vm.firstname,
-                            callback: function($$v) {
-                              _vm.firstname = $$v
-                            },
-                            expression: "firstname"
-                          }
-                        })
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "w-50" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "Last Name", rules: _vm.nameRules },
-                          model: {
-                            value: _vm.lastname,
-                            callback: function($$v) {
-                              _vm.lastname = $$v
-                            },
-                            expression: "lastname"
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-100 flex " }, [
-                    _c(
-                      "div",
-                      { staticClass: "w-100" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "Email", rules: _vm.emailRules },
-                          model: {
-                            value: _vm.email,
-                            callback: function($$v) {
-                              _vm.email = $$v
-                            },
-                            expression: "email"
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-100 flex" }, [
-                    _c(
-                      "div",
-                      { staticClass: "w-50 mr-2" },
-                      [
-                        _c("v-select", {
-                          attrs: {
-                            label: "Country",
-                            items: _vm.countries,
-                            rules: _vm.countryRules
-                          },
-                          model: {
-                            value: _vm.country,
-                            callback: function($$v) {
-                              _vm.country = $$v
-                            },
-                            expression: "country"
-                          }
-                        })
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "w-50" },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "City", rules: _vm.otherRules },
-                          model: {
-                            value: _vm.city,
-                            callback: function($$v) {
-                              _vm.city = $$v
-                            },
-                            expression: "city"
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-100" },
-                    [
-                      _c("v-text-field", {
-                        attrs: { label: "Phone", rules: _vm.otherRules },
-                        model: {
-                          value: _vm.phone,
-                          callback: function($$v) {
-                            _vm.phone = $$v
-                          },
-                          expression: "phone"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {},
-                    [
-                      _c("v-select", {
-                        attrs: {
-                          chips: "",
-                          attach: "",
-                          multiple: "",
-                          items: _vm.projects,
-                          label: "Where to donate"
-                        },
-                        model: {
-                          value: _vm.project,
-                          callback: function($$v) {
-                            _vm.project = $$v
-                          },
-                          expression: "project"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {},
-                    [_c("v-textarea", { attrs: { label: "Leave a comment" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "text-centered" }, [
-                    _c("input", {
-                      staticClass: "bg-orange-dark btn text-white",
-                      attrs: { type: "submit", value: "Donate Now" },
-                      on: {
-                        click: function($event) {
-                          $event.preventDefault()
-                          return _vm.validate($event)
-                        }
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [_c("p", { attrs: { id: "success" } })])
-                ]
-              )
-            ],
-            1
-          )
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "text-centered relative w-100 mx-auto text-grey-darkest mt-16"
-      },
-      [
-        _c("div", { staticClass: "w-90 mx-auto text-centered text-white" }, [
-          _c("h3", [_vm._v("We cannot reverse extinction,but together,")]),
-          _c("h3", [_vm._v(" we CAN prevent it.")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex w-90 mx-auto pt-5" }, [
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Educating next generation")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Bird Track")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex w-90 mx-auto pt-5" }, [
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Conservation of Birds")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Green Birding")])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "py-3 text-centered" }, [
-      _c("h3", { staticClass: "text-grey-darkest" }, [_vm._v("Donate Here")])
-    ])
-  }
-]
-render._withStripped = true
+var render = function () {}
+var staticRenderFns = []
 
 
 
@@ -40894,13 +40858,13 @@ var render = function() {
   return _c("div", [
     _c("div", [
       _c("div", { staticClass: "w-100" }, [
-        _c("div", { staticClass: "bg" }, [
+        _c("div", { staticClass: "bg w-100 xs:h-px-300-i" }, [
           _c("div", { staticClass: "flex w-100 " }),
           _vm._v(" "),
           _c(
             "div",
             {
-              staticClass: " mx-auto w-90",
+              staticClass: "mx-auto w-90 xs:mt-16",
               staticStyle: { "margin-top": "120px" }
             },
             [
@@ -40910,40 +40874,47 @@ var render = function() {
                 _c(
                   "div",
                   {
-                    staticClass: "w-75 pt-5",
+                    staticClass: "xl:w-75 xs:w-85 pt-5",
                     attrs: {
                       "data-aos": "fade-down",
                       "data-aos-duration": "1500"
                     }
                   },
                   [
-                    _c("div", { staticClass: "text-white" }, [
+                    _c("div", { staticClass: "text-white xs:pt-5" }, [
                       _vm._m(1),
                       _vm._v(" "),
                       _vm._m(2),
                       _vm._v(" "),
                       _vm._m(3),
                       _vm._v(" "),
-                      _c("div", { staticClass: "flex relative z-999" }, [
-                        _vm._m(4),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { attrs: { "data-app": "" } },
-                          [_c("Popup")],
-                          1
-                        )
-                      ])
+                      _c(
+                        "div",
+                        { staticClass: "flex xl:w-40 relative z-999" },
+                        [
+                          _vm._m(4),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "xs:w-50 mx-1 w-50",
+                              attrs: { "data-app": "" }
+                            },
+                            [_c("Popup")],
+                            1
+                          )
+                        ]
+                      )
                     ])
                   ]
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "w-20" })
+                _c("div", { staticClass: "w-20 xs:hidden" })
               ])
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "w-100 flex -mt-24" }, [
+          _c("div", { staticClass: "w-100 flex -mt-24 xs:hidden" }, [
             _c("div", { staticClass: "w-50" }),
             _vm._v(" "),
             _c("div", [
@@ -41057,66 +41028,56 @@ var render = function() {
           _c("div", { staticClass: "w-90 mx-auto py-3" }, [
             _c(
               "div",
-              { staticClass: "w-100 grid grid-3 mb-12 " },
+              { staticClass: "w-100 grid xl:grid-3 mb-12 " },
               _vm._l(_vm.activities, function(activity) {
-                return _c(
-                  "div",
-                  {
-                    key: activity.id,
-                    attrs: {
-                      "data-aos": "zoom-in",
-                      "data-aos-duration": "2000"
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "w-100 mx-5" }, [
-                      _c(
-                        "div",
-                        {},
-                        [
-                          _c(
-                            "v-avatar",
-                            {
-                              staticClass: "bg-orange-dark shadow-lg",
-                              attrs: { size: "60" }
-                            },
-                            [
-                              _c("div", { staticClass: "w-80" }, [
-                                _c("img", {
-                                  attrs: { src: activity.svg, alt: "svg-icon" }
-                                })
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
+                return _c("div", { key: activity.id }, [
+                  _c("div", { staticClass: "w-100 mx-5" }, [
                     _c(
                       "div",
-                      {
-                        staticClass:
-                          "bg-white pb-4 -mt-6 shadow-sm mb-3 mr-4 pt hover:shadow-md",
-                        staticStyle: {
-                          "border-radius": "40px 0px 40px 0px",
-                          "padding-top": "0px"
-                        }
-                      },
+                      {},
                       [
-                        _c("div", { staticClass: " text-grey-darkest" }, [
-                          _c("h2", { staticClass: "text-xl px-5 pt-8 pb-3" }, [
-                            _vm._v(_vm._s(activity.head))
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "px-5 text-sm" }, [
-                            _vm._v(_vm._s(activity.body))
-                          ])
-                        ])
-                      ]
+                        _c(
+                          "v-avatar",
+                          {
+                            staticClass: "bg-orange-dark shadow-lg",
+                            attrs: { size: "60" }
+                          },
+                          [
+                            _c("div", { staticClass: "w-80" }, [
+                              _c("img", {
+                                attrs: { src: activity.svg, alt: "svg-icon" }
+                              })
+                            ])
+                          ]
+                        )
+                      ],
+                      1
                     )
-                  ]
-                )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "bg-white pb-4 -mt-6 shadow-sm mb-3 xl:mr-4 pt hover:shadow-md",
+                      staticStyle: {
+                        "border-radius": "40px 0px 40px 0px",
+                        "padding-top": "0px"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: " text-grey-darkest" }, [
+                        _c("h2", { staticClass: "text-xl px-5 pt-8 pb-3" }, [
+                          _vm._v(_vm._s(activity.head))
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "px-5 text-sm" }, [
+                          _vm._v(_vm._s(activity.body))
+                        ])
+                      ])
+                    ]
+                  )
+                ])
               }),
               0
             )
@@ -41127,13 +41088,12 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "w-100 bg-green-darkest py-5 " }, [
       _c("div", { staticClass: "w-90 mx-auto py-5" }, [
-        _c("div", { staticClass: "w-100 flex pt-2 pb-2" }, [
+        _c("div", { staticClass: "w-100 xs:block flex pt-2 pb-2" }, [
           _c(
             "div",
             {
-              staticClass: "w-50 mx-2",
-              staticStyle: { "margin-top": "0px" },
-              attrs: { "data-aos": "fade-right", "data-aos-duration": "2000" }
+              staticClass: "w-50 xs:w-100 xl:mx-2",
+              staticStyle: { "margin-top": "0px" }
             },
             [
               _c("v-img", {
@@ -41144,115 +41104,131 @@ var render = function() {
             1
           ),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "w-50  mx-2 my-auto",
-              attrs: { "data-aos": "fade-left", "data-aos-duration": "2000" }
-            },
-            [
-              _vm._m(7),
+          _c("div", { staticClass: "w-50 xs:w-100 mx-2 my-auto" }, [
+            _vm._m(7),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-center pt-2" }, [
+              _c("p", { staticClass: "text-white xs:text-sm" }, [
+                _vm._v(
+                  "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
+                )
+              ]),
               _vm._v(" "),
-              _c("div", { staticClass: "text-center pt-2" }, [
-                _c("p", { staticClass: "text-white" }, [
-                  _vm._v(
-                    "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "py-3 text-center" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass:
-                        "border-orange-dark w-35 btn text-sm text-white"
-                    },
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          staticClass: "no-underline text-white",
-                          attrs: { to: { name: "join" } }
-                        },
-                        [_vm._v("Join Us")]
-                      )
-                    ],
-                    1
-                  )
-                ])
+              _c("div", { staticClass: "py-3 text-center" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "border-orange-dark w-35 btn text-sm text-white"
+                  },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "no-underline text-white",
+                        attrs: { to: { name: "join" } }
+                      },
+                      [_vm._v("Join Us")]
+                    )
+                  ],
+                  1
+                )
               ])
-            ]
-          )
+            ])
+          ])
         ])
       ])
     ]),
     _vm._v(" "),
     _c("div", [
-      _c("div", { staticClass: "w-100 bg-pjt" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "opacity bg-green-darker opacity-80" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "content w-90 mx-auto" }, [
+      _c("div", { staticClass: "bg-pjt w-100  mx-auto xs:py-5" }, [
         _c("div", { staticClass: "py-5" }, [
           _vm._m(8),
           _vm._v(" "),
           _c("div", { staticClass: "py-5" }, [
-            _c("div", { staticClass: "w-100 flex text-grey-darkest" }, [
-              _c("div", { staticClass: "bg-white w-30 mx-3" }, [
+            _c("div", { staticClass: "w-100   text-grey-darkest" }, [
+              _c("div", { staticClass: "w-90 xs:block flex mx-auto" }, [
+                _c("div", { staticClass: "w-5 xs:hidden" }),
+                _vm._v(" "),
                 _c(
                   "div",
-                  {},
+                  {
+                    staticClass:
+                      "bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
+                  },
                   [
-                    _c("v-img", {
-                      attrs: {
-                        src: "img/IMG_2802.jpg",
-                        width: "360",
-                        height: "200"
-                      }
-                    })
-                  ],
-                  1
+                    _c(
+                      "div",
+                      {},
+                      [
+                        _c("v-img", {
+                          attrs: {
+                            src: "img/IMG_2802.jpg",
+                            width: "100%",
+                            height: "200"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _vm._m(9)
+                  ]
                 ),
                 _vm._v(" "),
-                _vm._m(9)
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "bg-white w-30 mx-3" }, [
                 _c(
                   "div",
-                  {},
+                  {
+                    staticClass:
+                      "bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
+                  },
                   [
-                    _c("v-img", {
-                      attrs: {
-                        src: "img/IMG_1600.jpg",
-                        width: "360",
-                        height: "200"
-                      }
-                    })
-                  ],
-                  1
+                    _c(
+                      "div",
+                      {},
+                      [
+                        _c("v-img", {
+                          attrs: {
+                            src: "img/IMG_1600.jpg",
+                            width: "100%",
+                            height: "200"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _vm._m(10)
+                  ]
                 ),
                 _vm._v(" "),
-                _vm._m(10)
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "bg-white w-30 mx-3" }, [
                 _c(
                   "div",
-                  {},
+                  {
+                    staticClass:
+                      "bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
+                  },
                   [
-                    _c("v-img", {
-                      attrs: {
-                        src: "img/IMG_4782.jpg",
-                        width: "360",
-                        height: "200"
-                      }
-                    })
-                  ],
-                  1
+                    _c(
+                      "div",
+                      {},
+                      [
+                        _c("v-img", {
+                          attrs: {
+                            src: "img/IMG_4782.jpg",
+                            width: "100%",
+                            height: "200"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _vm._m(11)
+                  ]
                 ),
                 _vm._v(" "),
-                _vm._m(11)
+                _c("div", { staticClass: "w-5 xs:hidden" })
               ])
             ])
           ])
@@ -41266,8 +41242,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-5 pt-5 relative" }, [
-      _c("div", { staticClass: "w-30 " }, [
+    return _c("div", { staticClass: "xl:w-5 xs:w-10 pt-5 relative" }, [
+      _c("div", { staticClass: "xl:w-30 xs:w-60" }, [
         _c("div", { staticClass: "line" }),
         _vm._v(" "),
         _c("div", { staticClass: "-ml-3 my-2" }, [
@@ -41293,7 +41269,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h1", { staticStyle: { "font-size": "100px" } }, [_vm._v("Rugezi")])
+      _c(
+        "h1",
+        { staticClass: "xs:text-5xl", staticStyle: { "font-size": "100px" } },
+        [_vm._v("Rugezi")]
+      )
     ])
   },
   function() {
@@ -41302,7 +41282,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticStyle: { "margin-top": "-28px", "margin-left": "170px" } },
+      {
+        staticClass: "xs:mt-0 xs:ml-0",
+        staticStyle: { "margin-top": "-28px", "margin-left": "170px" }
+      },
       [_c("span", [_vm._v("Ornithology Center")])]
     )
   },
@@ -41310,8 +41293,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-60 py-2 pb-3" }, [
-      _c("p", { staticClass: "text-lg" }, [
+    return _c("div", { staticClass: "xl:w-60 xs:w-100 py-2 pb-3" }, [
+      _c("p", { staticClass: "xl:text-lg xs:text-sm" }, [
         _vm._v(
           "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
         )
@@ -41322,14 +41305,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", {}, [
-      _c("button", { staticClass: "btn px-5 border-white text-orange mr-2" }, [
-        _c(
-          "a",
-          { staticClass: "text-white no-underline", attrs: { href: "" } },
-          [_vm._v("Explore ")]
-        )
-      ])
+    return _c("div", { staticClass: "xs:w-50 w-50 mx-1" }, [
+      _c(
+        "button",
+        {
+          staticClass:
+            "btn xs:w-100 w-100 xl:px-5 border-white text-orange xl:mr-2"
+        },
+        [
+          _c(
+            "a",
+            { staticClass: "text-white no-underline", attrs: { href: "" } },
+            [_vm._v("Explore ")]
+          )
+        ]
+      )
     ])
   },
   function() {
@@ -41344,35 +41334,45 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "py-5 text-centered text-grey-darkest" }, [
-      _c("h2", { staticClass: "text-3xl" }, [_vm._v("Our Special Activities")])
-    ])
+    return _c(
+      "div",
+      { staticClass: "xl:py-5 xs:py-2 text-centered text-grey-darkest" },
+      [
+        _c("h2", { staticClass: "text-3xl xs:text-2xl" }, [
+          _vm._v("Our Special Activities")
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "pt-2" }, [
-      _c("h2", { staticClass: "text-white text-3xl text-center " }, [
-        _vm._v("Who are we?")
-      ])
+      _c(
+        "h2",
+        { staticClass: "text-white xl:text-3xl xs:text-2xl text-center " },
+        [_vm._v("Who are we?")]
+      )
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pl-2 py-5" }, [
-      _c("h2", { staticClass: "text-center text-3xl text-white" }, [
-        _vm._v("Our Blog")
-      ])
+    return _c("div", { staticClass: "pl-2 xl:py-5" }, [
+      _c(
+        "h2",
+        { staticClass: "text-center xl:text-3xl xs:text-2xl text-white" },
+        [_vm._v("Our Blog")]
+      )
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", {}, [
+    return _c("div", { staticClass: "xs:pb-2" }, [
       _c("div", { staticClass: "py-2" }, [
         _c("h4", { staticClass: "text-xs text-right px-2 text-orange-dark" }, [
           _vm._v("Fri, May 23, 2020")
@@ -41481,8 +41481,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "pt-5" }, [
-    _c("div", { staticClass: "w-100 flex" }, [
-      _c("div", { staticClass: "relative w-50 z-0" }, [
+    _c("div", { staticClass: "w-100 xs:block flex" }, [
+      _c("div", { staticClass: "relative w-50 z-0 xs:hidden" }, [
         _c(
           "div",
           {
@@ -41501,7 +41501,7 @@ var render = function() {
         _vm._m(0)
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-50 bg-white text-white py-5" }, [
+      _c("div", { staticClass: "xl:w-50 xs:w-100 bg-white text-white py-5" }, [
         _c("div", { staticClass: "pt-5" }, [
           _vm._m(1),
           _vm._v(" "),
@@ -41509,130 +41509,67 @@ var render = function() {
             _c(
               "div",
               [
-                _c(
-                  "v-form",
-                  {
-                    ref: "form",
-                    on: {
-                      "~submit": function($event) {
-                        return _vm.addMember($event)
-                      }
-                    }
-                  },
-                  [
-                    _c("div", [
-                      _c("p", {
-                        staticClass: "text-black",
-                        attrs: { id: "success" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "w-100 flex" }, [
-                      _c(
-                        "div",
-                        { staticClass: "w-50 mr-5" },
-                        [
-                          _c("v-text-field", {
-                            attrs: {
-                              label: "First Name",
-                              rules: _vm.nameRules
+                _c("v-form", { ref: "form" }, [
+                  _c("div", { staticClass: "w-100 xs:block flex" }, [
+                    _c(
+                      "div",
+                      { staticClass: "xl:w-50 xs:w-100 mr-5" },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "First Name", rules: _vm.nameRules },
+                          model: {
+                            value: _vm.firstname,
+                            callback: function($$v) {
+                              _vm.firstname = $$v
                             },
-                            model: {
-                              value: _vm.firstname,
-                              callback: function($$v) {
-                                _vm.firstname = $$v
-                              },
-                              expression: "firstname"
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "w-50" },
-                        [
-                          _c("v-text-field", {
-                            attrs: { label: "Last Name", rules: _vm.nameRules },
-                            model: {
-                              value: _vm.lastname,
-                              callback: function($$v) {
-                                _vm.lastname = $$v
-                              },
-                              expression: "lastname"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "w-100 flex" }, [
-                      _c(
-                        "div",
-                        { staticClass: "w-100" },
-                        [
-                          _c("v-text-field", {
-                            attrs: { label: "Email", rules: _vm.emailRules },
-                            model: {
-                              value: _vm.email,
-                              callback: function($$v) {
-                                _vm.email = $$v
-                              },
-                              expression: "email"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "w-100 flex" }, [
-                      _c(
-                        "div",
-                        { staticClass: "w-50 mr-5" },
-                        [
-                          _c("v-select", {
-                            attrs: {
-                              label: "Country",
-                              items: _vm.items,
-                              rules: _vm.countryRules
-                            },
-                            model: {
-                              value: _vm.country,
-                              callback: function($$v) {
-                                _vm.country = $$v
-                              },
-                              expression: "country"
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "w-50" },
-                        [
-                          _c("v-text-field", {
-                            attrs: { label: "City", rules: _vm.otherRules },
-                            model: {
-                              value: _vm.city,
-                              callback: function($$v) {
-                                _vm.city = $$v
-                              },
-                              expression: "city"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    ]),
+                            expression: "firstname"
+                          }
+                        })
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
                     _c(
                       "div",
-                      { staticClass: "w-100 flex" },
+                      { staticClass: "xl:w-50 xs:w-100 " },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "Last Name", rules: _vm.nameRules },
+                          model: {
+                            value: _vm.lastname,
+                            callback: function($$v) {
+                              _vm.lastname = $$v
+                            },
+                            expression: "lastname"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-100 flex xs:block" }, [
+                    _c(
+                      "div",
+                      { staticClass: "xl:w-50 xs:w-100  mr-5" },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "Email", rules: _vm.emailRules },
+                          model: {
+                            value: _vm.email,
+                            callback: function($$v) {
+                              _vm.email = $$v
+                            },
+                            expression: "email"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "xl:w-50 xs:w-100 " },
                       [
                         _c("v-text-field", {
                           attrs: { label: "Phone" },
@@ -41646,62 +41583,136 @@ var render = function() {
                         })
                       ],
                       1
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "text-grey-darker" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.option,
-                            expression: "option"
-                          }
-                        ],
-                        attrs: { type: "radio", value: "Member" },
-                        domProps: { checked: _vm._q(_vm.option, "Member") },
-                        on: {
-                          change: function($event) {
-                            _vm.option = "Member"
-                          }
-                        }
-                      }),
-                      _c("span", { staticClass: "px-2" }, [_vm._v("Member")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.option,
-                            expression: "option"
-                          }
-                        ],
-                        attrs: { type: "radio", value: "Volunteer" },
-                        domProps: { checked: _vm._q(_vm.option, "Volunteer") },
-                        on: {
-                          change: function($event) {
-                            _vm.option = "Volunteer"
-                          }
-                        }
-                      }),
-                      _c("span", { staticClass: "px-2" }, [_vm._v("Volunteer")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "text-centered py-5" }, [
-                      _c("input", {
-                        staticClass: "bg-orange-dark btn text-white",
-                        attrs: { type: "submit", value: "Join Us Now" },
-                        on: {
-                          click: function($event) {
-                            $event.preventDefault()
-                            return _vm.validate($event)
-                          }
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    [
+                      _c("v-select", {
+                        attrs: {
+                          label: "Country",
+                          items: _vm.items,
+                          rules: _vm.countryRules
                         }
                       })
-                    ])
-                  ]
-                )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-100 flex xs:block" }, [
+                    _c(
+                      "div",
+                      { staticClass: "xl:w-50 xs:w-100  mr-5" },
+                      [
+                        _c("v-text-field", {
+                          attrs: {
+                            label: "State",
+                            rules: _vm.otherRules,
+                            color: "red"
+                          },
+                          model: {
+                            value: _vm.state,
+                            callback: function($$v) {
+                              _vm.state = $$v
+                            },
+                            expression: "state"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "xl:w-50 xs:w-100 " },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "City", rules: _vm.otherRules },
+                          model: {
+                            value: _vm.city,
+                            callback: function($$v) {
+                              _vm.city = $$v
+                            },
+                            expression: "city"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-100 flex" },
+                    [
+                      _c("v-text-field", {
+                        attrs: { label: "Phone" },
+                        model: {
+                          value: _vm.phone,
+                          callback: function($$v) {
+                            _vm.phone = $$v
+                          },
+                          expression: "phone"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "text-grey-darker" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.option,
+                          expression: "option"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "Member" },
+                      domProps: { checked: _vm._q(_vm.option, "Member") },
+                      on: {
+                        change: function($event) {
+                          _vm.option = "Member"
+                        }
+                      }
+                    }),
+                    _c("span", { staticClass: "px-2" }, [_vm._v("Member")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.option,
+                          expression: "option"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "Volunteer" },
+                      domProps: { checked: _vm._q(_vm.option, "Volunteer") },
+                      on: {
+                        change: function($event) {
+                          _vm.option = "Volunteer"
+                        }
+                      }
+                    }),
+                    _c("span", { staticClass: "px-2" }, [_vm._v("Volunteer")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "text-centered py-5" }, [
+                    _c("input", {
+                      staticClass: "bg-orange-dark btn text-white",
+                      attrs: { type: "submit", value: "Join Us Now" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.validate($event)
+                        }
+                      }
+                    })
+                  ])
+                ])
               ],
               1
             )
@@ -41736,7 +41747,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-centered py-5" }, [
-      _c("h3", { staticClass: "text-grey-darkest" }, [
+      _c("h3", { staticClass: "text-grey-darkest xs:text-xl" }, [
         _vm._v("Together We can protect the Birds ")
       ])
     ])
@@ -41765,7 +41776,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "w-100 t" },
+    { staticClass: "w-100" },
     [
       _c(
         "v-dialog",
@@ -41780,7 +41791,10 @@ var render = function() {
                   _c(
                     "button",
                     _vm._g(
-                      { staticClass: "btn bg-orange-dark text-white" },
+                      {
+                        staticClass:
+                          "btn bg-orange-dark w-100 text-white xs:w-100"
+                      },
                       on
                     ),
                     [_vm._v("Bird Track")]
@@ -42067,13 +42081,13 @@ var render = function() {
             _c("div", { staticClass: "w-80 mx-auto" }, [
               _c(
                 "div",
-                { staticClass: "w-100 grid grid-3 mb-5" },
+                { staticClass: "w-100 grid xl:grid-3 mb-5" },
                 [
                   _c(
                     "div",
                     {
                       staticClass:
-                        "bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest",
+                        "bg-white shadow-md px-4 py-3 hover:shadow-lg xl:mr-2 mb-3 rounded  text-grey-darkest",
                       attrs: {
                         "data-aos": "zoom-in",
                         "data-aos-duration": "2000"
@@ -42188,39 +42202,43 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "bg" }, [
+    return _c("div", { staticClass: "bg xs:h-84" }, [
       _c("div", { staticClass: "w-100 flex" }, [
         _c(
           "div",
           {
             staticClass:
-              "w-45 mx-auto mt-24 text-grey-darkest bg-black px-5 py-5 opacity-75 rounded",
-            attrs: { "data-aos": "fade-down", "data-aos-duration": "2000" }
+              "xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
+            attrs: { "data-aos": "fade-down", "data-aos-duration": "1500" }
           },
           [
-            _c("div", { staticClass: " text-white text-centered" }, [
-              _c("h1", { staticClass: "pb-3 text-3xl" }, [
-                _vm._v("Our Projects")
+            _c("div", { staticClass: "text-centered text-white" }, [
+              _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
+                _vm._v("What We Do")
               ]),
               _vm._v(" "),
-              _c("p", [
+              _c("p", { staticClass: "xs:text-sm" }, [
                 _vm._v(
-                  "Saving Birds is an important mission, but the value of this work is even more far reaching. When birds are protected, so are their  forest habitats, which are critical ecosystems that support our planet and all life on earth."
+                  "Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us."
                 )
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "text-centered" }, [
-              _c("button", { staticClass: "btn bg-orange-dark text-white" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "no-underline text-white",
-                    attrs: { href: "#projects" }
-                  },
-                  [_vm._v("Explore")]
-                )
-              ])
+            _c("div", { staticClass: "text-centered py-3" }, [
+              _c(
+                "button",
+                { staticClass: "btn bg-orange-dark text-white hover:bg-green" },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "no-underline text-white",
+                      attrs: { href: "#activities" }
+                    },
+                    [_vm._v("Explore")]
+                  )
+                ]
+              )
             ])
           ]
         )
@@ -42231,10 +42249,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h2", { staticClass: "text-centered p-5  text-grey-darkest" }, [
-        _vm._v("Our Projects")
-      ])
+    return _c("div", { staticClass: "xs:py-4" }, [
+      _c(
+        "h2",
+        { staticClass: "text-centered xl:p-5 xs:text-2xl text-grey-darkest" },
+        [_vm._v("Our Projects")]
+      )
     ])
   }
 ]
@@ -42624,13 +42644,14 @@ var render = function() {
                     _c(
                       "div",
                       [
-                        _c("div", { staticClass: "flex w-100 mt-5" }, [
+                        _c("div", { staticClass: "flex xs:block w-100 mt-5" }, [
                           _c(
                             "div",
-                            { staticClass: "w-50 mr-5" },
+                            { staticClass: "xl:w-50 xs:w-100  xl:mr-5" },
                             [
                               _c("v-text-field", {
                                 attrs: {
+                                  outlined: "",
                                   label: "E-mail",
                                   rules: _vm.emailRules
                                 },
@@ -42648,10 +42669,14 @@ var render = function() {
                           _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "w-50" },
+                            { staticClass: "xl:w-50 xs:w-100 " },
                             [
                               _c("v-text-field", {
-                                attrs: { label: "Name", rules: _vm.nameRules },
+                                attrs: {
+                                  outlined: "",
+                                  label: "Name",
+                                  rules: _vm.nameRules
+                                },
                                 model: {
                                   value: _vm.name,
                                   callback: function($$v) {

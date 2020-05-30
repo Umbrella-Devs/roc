@@ -1,7 +1,7 @@
 <template>
     <div class="pt-5">
-        <div class=" w-100 flex">
-            <div class="w-50 relative">
+        <div class=" w-100 xs:block flex">
+            <div class="w-50 relative xs:hidden">
                 <div class="absolute bg-black z-0" style="height: 100vh">
                      <v-img src="/img/IMG_2663.jpg" class="w-100 opacity-50 clip-full"></v-img>
                 </div>
@@ -29,21 +29,15 @@
                 </div>
                 
             </div>
-            <div class="my-12 w-50 mx-12 ">
-               
-                <div>
-                    <div class="py-3 text-centered">
-                        <h3 class="text-grey-darkest">Donate Here</h3>
-                    </div>
-                    <div class="mx-5 bg-white shadow-lg rounded p-3">
-                        <v-form ref="form" @submit.once="addDonate">
-                            <div class="w-100 flex  mt-5">
-                                <div class="w-50 mr-2">
-                                    <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
-                                </div>
-                                <div class="w-50">
-                                    <v-text-field label="Last Name" v-model="lastname" :rules="nameRules"></v-text-field>
-                                </div>
+            <div class="my-12 xl:w-50 xs:w-100 xl:mx-12 " v-show="!submitted">
+                <div class="py-3 text-centered">
+                    <h3 class="text-grey-darkest">Donate Here</h3>
+                </div>
+                <div class="mx-5 bg-white shadow-lg rounded p-3">
+                    <v-form ref="form" @submit.prevent="addDonate">
+                        <div class="w-100 flex  mt-5">
+                            <div class="w-50 mr-2">
+                                <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
                             </div>
                             <div class="w-100 flex ">
                                 <div class="w-100">
@@ -79,8 +73,6 @@
             </div>
             
         </div>
-        
-    </div>
 </template>
 <script>
 export default {

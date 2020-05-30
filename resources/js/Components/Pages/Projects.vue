@@ -1,30 +1,31 @@
 <template>
     <div>
-        <div class="bg">
+        <div class="bg xs:h-84">
             <div class="w-100 flex">
-                <div class="w-45 mx-auto mt-24 text-grey-darkest bg-black px-5 py-5 opacity-75 rounded" data-aos="fade-down" data-aos-duration="2000">
-                    <div class=" text-white text-centered">
-                        <h1 class="pb-3 text-3xl">Our Projects</h1>
-                        <p>Saving Birds is an important mission, but the value of this work is even more far reaching. When birds are protected, so are their  forest habitats, which are critical ecosystems that support our planet and all life on earth.</p>
+                <div class="xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="text-centered text-white">
+                        <h1 class="pb-3 xl:text-3xl xs:text-xl">What We Do</h1>
+                        <p class="xs:text-sm">Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us.</p>
                     </div>
-                    <div class="text-centered">
-                        <button class="btn bg-orange-dark text-white">
-                            <a href="#projects" class="no-underline text-white">Explore</a>
+                    <div class="text-centered py-3">
+                        <button class="btn bg-orange-dark text-white hover:bg-green">
+                            <a class="no-underline text-white" href="#activities">Explore</a>  
                         </button>
                     </div>
                 </div>
+                
             </div>
         </div>
         <div>
             <div class="w-100 mb-24" id="projects">
-                <div>
-                    <h2 class="text-centered p-5  text-grey-darkest">Our Projects</h2>
+                <div class="xs:py-4">
+                    <h2 class="text-centered xl:p-5 xs:text-2xl text-grey-darkest">Our Projects</h2>
                 </div>
                 <div>
                     <div class="">
                         <div class="w-80 mx-auto">
-                            <div class="w-100 grid grid-3 mb-5">
-                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="w-100 grid xl:grid-3 mb-5">
+                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg xl:mr-2 mb-3 rounded  text-grey-darkest" data-aos="zoom-in" data-aos-duration="2000">
                                     <h3 class="text-xl">Bird Tracking</h3>
                                     <p class="pt-4 text-sm">BirdTrack is a free and convenient way of storing your bird records online. View the latest trends...</p>
                                     <div class="text-right">

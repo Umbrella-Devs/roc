@@ -17,12 +17,12 @@
                 <v-card-text>
                     <v-form ref="form">
                         <div>
-                            <div class="flex w-100 mt-5">
-                                <div class="w-50 mr-5">
-                                    <v-text-field label="E-mail" v-model="email" :rules="emailRules"></v-text-field>
+                            <div class="flex xs:block w-100 mt-5">
+                                <div class="xl:w-50 xs:w-100  xl:mr-5">
+                                    <v-text-field outlined label="E-mail" v-model="email" :rules="emailRules"></v-text-field>
                                 </div>
-                                <div class="w-50">
-                                    <v-text-field label="Name" v-model="name" :rules="nameRules"></v-text-field>
+                                <div class="xl:w-50 xs:w-100 ">
+                                    <v-text-field outlined label="Name" v-model="name" :rules="nameRules"></v-text-field>
                                 </div>
                             </div>
                             <div>
