@@ -1,7 +1,7 @@
 <template>
     <div class="pt-5">
-        <div class=" w-100 flex">
-            <div class="w-50 relative">
+        <div class=" w-100 xs:block flex">
+            <div class="w-50 relative xs:hidden">
                 <div class="absolute bg-black z-0" style="height: 100vh">
                      <v-img src="/img/IMG_2663.jpg" class="w-100 opacity-50 clip-full"></v-img>
                 </div>
@@ -29,7 +29,7 @@
                 </div>
                 
             </div>
-            <div class="my-12 w-50 mx-12 " v-show="!submitted">
+            <div class="my-12 xl:w-50 xs:w-100 xl:mx-12 " v-show="!submitted">
                 <div class="py-3 text-centered">
                     <h3 class="text-grey-darkest">Donate Here</h3>
                 </div>

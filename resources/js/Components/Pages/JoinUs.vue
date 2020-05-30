@@ -1,7 +1,7 @@
 <template>
     <div class="pt-5">
-        <div class="w-100 flex">
-            <div class="relative w-50 z-0">
+        <div class="w-100 xs:block flex">
+            <div class="relative w-50 z-0 xs:hidden">
                 <div class="absolute bg-black z-0" style="height: 100vh">
                      <v-img src="/img/IMG_2663.jpg" class="w-100 opacity-50 clip-full"></v-img>
                 </div>
@@ -11,38 +11,38 @@
                 </div>
                 
             </div>
-            <div class="w-50 bg-white text-white py-5">
+            <div class="xl:w-50 xs:w-100 bg-white text-white py-5">
                 <div class="pt-5">
                     <div class="text-centered py-5">
-                        <h3 class="text-grey-darkest">Together We can protect the Birds </h3>
+                        <h3 class="text-grey-darkest xs:text-xl">Together We can protect the Birds </h3>
                     </div>
                     <div class="w-90 mx-auto px-5">
                         <div>
                             <v-form ref="form">
-                                <div class="w-100 flex">
-                                    <div class="w-50 mr-5">
+                                <div class="w-100 xs:block flex">
+                                    <div class="xl:w-50 xs:w-100 mr-5">
                                         <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
                                     </div>
-                                    <div class="w-50">
+                                    <div class="xl:w-50 xs:w-100 ">
                                         <v-text-field label="Last Name" v-model="lastname" :rules="nameRules"></v-text-field>
                                     </div>
                                 </div>
-                                <div class="w-100 flex">
-                                    <div class="w-60 mr-5">
+                                <div class="w-100 flex xs:block">
+                                    <div class="xl:w-50 xs:w-100  mr-5">
                                         <v-text-field label="Email" v-model="email" :rules="emailRules"></v-text-field>
                                     </div>
-                                    <div class="w-40">
+                                    <div class="xl:w-50 xs:w-100 ">
                                         <v-text-field label="Phone" v-model="phone"></v-text-field>
                                     </div>
                                 </div>
                                 <div>
                                     <v-select label="Country" :items="items" class="" :rules="countryRules"></v-select>
                                 </div>
-                                <div class="w-100 flex">
-                                    <div class="w-50 mr-5">
+                                <div class="w-100 flex xs:block">
+                                    <div class="xl:w-50 xs:w-100  mr-5">
                                         <v-text-field label="State" v-model="state" :rules="otherRules" color="red"></v-text-field>
                                     </div>
-                                    <div class="w-50">
+                                    <div class="xl:w-50 xs:w-100 ">
                                         <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
                                     </div> 
                                 </div>

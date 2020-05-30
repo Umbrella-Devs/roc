@@ -1,9 +1,9 @@
 
 <template>
-    <div class="w-100 t">
+    <div class="w-100">
         <v-dialog v-model="dialog" max-width="600">
             <template v-slot:activator="{ on }">
-                <button class="btn bg-orange-dark text-white" v-on="on">Bird Track</button>
+                <button class="btn bg-orange-dark w-100 text-white xs:w-100" v-on="on">Bird Track</button>
             </template>
             <v-card>
                 <div class="flex bg-green-darkest">

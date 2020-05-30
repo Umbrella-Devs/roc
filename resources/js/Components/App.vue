@@ -5,8 +5,8 @@
                 <div>
                    <router-view></router-view>
                 </div>      
-                <div class="bg-green-darkest w-100 py-5 z-999 relative">
-                    <div class="py-5 w-80 mx-auto">
+                <div class="bg-green-darkest w-100 py-5 z-999 relative xs:hidden">
+                    <div class="py-5 w-85 mx-auto">
                         <div class="py-5">
                             <div class="w-100 flex">
                                 <div class="w-25">
@@ -72,7 +72,7 @@
                         
                         
                     </div>
-                    <div class="flex w-80 mx-auto text-sm pt-5">
+                        <div class="flex w-85 mx-auto text-sm pt-5">
                             <div class="w-50">
                             <h4 class="text-xs text-white-50 text-left">All rights reserved © 2020 ROC.</h4>
                             </div>
@@ -87,6 +87,37 @@
                 
             </div>
          </div>   
+
+         <div class="w-100 relative z-999 bg-green-darkest md:hidden xl:hidden">
+             <div class="w-95 mx-auto flex py-3">
+                 <div class="w-50 text-white text-xs">
+                    <h5 class="text-lg">Contact Us</h5>
+                    <ul class="list pt-1 p-0">
+                        <li>
+                            + 250 712 345 567
+                        </li>
+                        <li>+ 250 712 345 567  </li>
+                        <li>info@roc.rw</li>
+                    </ul>
+                </div>
+                <div class="my-auto text-center w-50">
+                    <Message/>
+                </div>
+             </div>
+             
+             <div class="flex w-90 mx-auto text-sm pt-3 pb-4">
+                <div class="w-50">
+                <h4 class="text-xs text-white-50 text-left">All © 2020 ROC.</h4>
+                </div>
+                <div class="w-50 text-right pr-1">
+                    <h4 class="text-xs text-white-50">
+                        <span>
+                            Developed by <a class="text-orange-dark" href="https://umbrellagrp.rw/" target="_blank">Umbrella</a>
+                        </span>
+                    </h4>
+                </div>
+            </div>
+         </div>
        
     </v-app>
 </template>
