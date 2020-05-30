@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/birds', 'ApiController@bird')->name('bird.api');
+Route::get('/projects', 'ApiController@project')->name('project.api');
+Route::get('/gallery', 'ApiController@gallery')->name('gallery.api');
