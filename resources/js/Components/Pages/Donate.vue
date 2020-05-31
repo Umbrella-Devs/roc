@@ -38,6 +38,9 @@
                         <h3 class="text-grey-darkest">Donate Here</h3>
                         </div>
                         <v-form ref="form" @submit.once="addDonate">
+                            <div class="text-center">
+                                    <p class="px-3 bg-green-dark rounded-r-full text-white w-60" id="success"></p>
+                                </div>
                             <div class="w-100 flex  mt-5">
                                 <div class="w-50 mr-2">
                                     <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
@@ -72,9 +75,7 @@
                             <div class="text-centered">
                                 <input type="submit" @click.prevent="validate" class="bg-orange-dark btn text-white" value="Donate Now"/>
                             </div>
-                            <div>
-                                <p id="success"></p>
-                            </div>
+                            
                         </v-form> 
                     </div>
                 </div>
@@ -140,6 +141,7 @@ export default {
                 project_id: this.project_id
             }).then(response => {
                 $('#success').html(response.data.message)
+                this.$refs.form.reset()
             })
         },
     }

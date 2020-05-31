@@ -17,6 +17,9 @@
                 </div>
                 <v-card-text>
                     <v-form ref="form" @submit="addBird">
+                        <div class="text-center mt-2">
+                            <p class="px-3 bg-green-dark rounded-r-full text-white w-60" v-show="submitted = submitted">Added Succesfully !</p>
+                        </div>
                         <div>
                             <div class="w-100 flex">
                                 <div class="w-60 mr-3">
@@ -47,10 +50,10 @@
                 <v-divider></v-divider>
                 <div class="text-center">
                     <v-card-actions>
-                        <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
+                        
+                        <!-- <h4  class="text-sm text-green">Data  submitted</h4> -->
                         <v-spacer></v-spacer>
                         <input type="submit" @click.prevent="validate" class="btn bg-orange-dark text-center text-white" value="Submit">       
-                        <button @click="reset" class="btn border-red text-center text-red mx-3">Reset Form</button>
                     </v-card-actions>
                 </div>
             </v-card>
@@ -97,6 +100,8 @@
                 description: this.description
             }).then(response =>{
                 $('#success').html(response.data.message)
+                this.$refs.form.reset()
+                this.submitted = false
             })
         }
     }

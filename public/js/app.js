@@ -2435,6 +2435,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var _ref;
@@ -2474,6 +2475,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     },
     addDonate: function addDonate() {
+      var _this = this;
+
       axios.post('/donate', {
         first_name: this.firstname,
         last_name: this.lastname,
@@ -2484,6 +2487,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         project_id: this.project_id
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
       });
     }
   }
@@ -2897,6 +2902,8 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     addMember: function addMember() {
+      var _this = this;
+
       axios.post('/join-us', {
         first_name: this.firstname,
         last_name: this.lastname,
@@ -2906,6 +2913,8 @@ __webpack_require__.r(__webpack_exports__);
         country: this.country
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
       });
     }
   }
@@ -2922,6 +2931,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -3010,6 +3022,8 @@ __webpack_require__.r(__webpack_exports__);
       console.log('Resetted');
     },
     addBird: function addBird() {
+      var _this = this;
+
       axios.post('/', {
         username: this.username,
         name: this.birdname,
@@ -3019,6 +3033,10 @@ __webpack_require__.r(__webpack_exports__);
         description: this.description
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
+
+        _this.submitted = false;
       });
     }
   }
@@ -3462,6 +3480,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3488,12 +3511,16 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     sendMessage: function sendMessage() {
+      var _this = this;
+
       axios.post('/message', {
         name: this.name,
         email: this.email,
         message: this.message
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
       });
     }
   }
@@ -7995,7 +8022,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.bg[data-v-78171b67]{\n    background-image: url('/img/IMG_1973.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}   \n", ""]);
+exports.push([module.i, "\n.bg[data-v-78171b67]{\n    background-image: url('/img/IMG_2004.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}   \n", ""]);
 
 // exports
 
@@ -41024,6 +41051,14 @@ var render = function() {
                   }
                 },
                 [
+                  _c("div", { staticClass: "text-center" }, [
+                    _c("p", {
+                      staticClass:
+                        "px-3 bg-green-dark rounded-r-full text-white w-60",
+                      attrs: { id: "success" }
+                    })
+                  ]),
+                  _vm._v(" "),
                   _c("div", { staticClass: "w-100 flex  mt-5" }, [
                     _c(
                       "div",
@@ -41180,9 +41215,7 @@ var render = function() {
                         }
                       }
                     })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [_c("p", { attrs: { id: "success" } })])
+                  ])
                 ]
               )
             ],
@@ -41818,7 +41851,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pl-2 xl:py-5" }, [
+    return _c("div", { staticClass: "pl-2 xl:py-3" }, [
       _c(
         "h2",
         { staticClass: "text-center xl:text-3xl xs:text-2xl text-white" },
@@ -41888,9 +41921,10 @@ var render = function() {
               "div",
               [
                 _c("v-form", { ref: "form", on: { submit: _vm.addMember } }, [
-                  _c("div", [
+                  _c("div", { staticClass: "text-center" }, [
                     _c("p", {
-                      staticClass: "text-black",
+                      staticClass:
+                        "px-3 bg-green-dark rounded-r-full text-white w-60",
                       attrs: { id: "success" }
                     })
                   ]),
@@ -42211,6 +42245,25 @@ var render = function() {
                 "v-card-text",
                 [
                   _c("v-form", { ref: "form", on: { submit: _vm.addBird } }, [
+                    _c("div", { staticClass: "text-center mt-2" }, [
+                      _c(
+                        "p",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: (_vm.submitted = _vm.submitted),
+                              expression: "submitted = submitted"
+                            }
+                          ],
+                          staticClass:
+                            "px-3 bg-green-dark rounded-r-full text-white w-60"
+                        },
+                        [_vm._v("Added Succesfully !")]
+                      )
+                    ]),
+                    _vm._v(" "),
                     _c("div", [
                       _c("div", { staticClass: "w-100 flex" }, [
                         _c(
@@ -42354,22 +42407,6 @@ var render = function() {
                   _c(
                     "v-card-actions",
                     [
-                      _c(
-                        "h4",
-                        {
-                          directives: [
-                            {
-                              name: "show",
-                              rawName: "v-show",
-                              value: (_vm.submitted = _vm.submitted),
-                              expression: "submitted = submitted"
-                            }
-                          ],
-                          staticClass: "text-sm text-green"
-                        },
-                        [_vm._v("Data Succesfully submitted")]
-                      ),
-                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("input", {
@@ -42382,17 +42419,7 @@ var render = function() {
                             return _vm.validate($event)
                           }
                         }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn border-red text-center text-red mx-3",
-                          on: { click: _vm.reset }
-                        },
-                        [_vm._v("Reset Form")]
-                      )
+                      })
                     ],
                     1
                   )
@@ -43092,6 +43119,25 @@ var render = function() {
                     "v-form",
                     { ref: "form", on: { submit: _vm.sendMessage } },
                     [
+                      _c("div", { staticClass: "text-center mt-2" }, [
+                        _c(
+                          "p",
+                          {
+                            directives: [
+                              {
+                                name: "show",
+                                rawName: "v-show",
+                                value: (_vm.submitted = _vm.submitted),
+                                expression: "submitted = submitted"
+                              }
+                            ],
+                            staticClass:
+                              "px-3 bg-green-dark rounded-r-full text-white w-60"
+                          },
+                          [_vm._v("Message Delivered")]
+                        )
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "div",
                         [
@@ -43189,21 +43235,17 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("div", { staticClass: "text-centered py-2" }, [
-                _c(
-                  "h4",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: (_vm.submitted = _vm.submitted),
-                        expression: "submitted = submitted"
-                      }
-                    ],
-                    staticClass: "text-sm text-green"
-                  },
-                  [_vm._v("Message Delivered")]
-                )
+                _c("h4", {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: (_vm.submitted = _vm.submitted),
+                      expression: "submitted = submitted"
+                    }
+                  ],
+                  staticClass: "text-sm text-green"
+                })
               ])
             ],
             1

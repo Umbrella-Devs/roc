@@ -19,8 +19,8 @@
                     <div class="w-90 mx-auto px-5">
                         <div>
                             <v-form ref="form" @submit="addMember">
-                                <div>
-                                    <p id="success" class="text-black"></p>
+                                <div class="text-center">
+                                    <p class="px-3 bg-green-dark rounded-r-full text-white w-60" id="success"></p>
                                 </div>
                                 <div class="w-100 xs:block flex">
                                     <div class="xl:w-50 xs:w-100 mr-5">
@@ -116,6 +116,7 @@ export default {
                 
             }).then(response =>{
                 $('#success').html(response.data.message)
+                this.$refs.form.reset()
             })
         }
 

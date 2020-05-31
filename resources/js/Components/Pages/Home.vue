@@ -167,7 +167,7 @@
             <div class="opacity bg-green-darker opacity-80"></div> -->
             <div class="bg-pjt w-100  mx-auto xs:py-5">
                 <div class="py-5">
-                    <div class="pl-2 xl:py-5">
+                    <div class="pl-2 xl:py-3">
                         <h2 class="text-center xl:text-3xl xs:text-2xl text-white">Our Blog</h2>
                     </div>
                     <div class="py-5">

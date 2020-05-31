@@ -22,7 +22,7 @@ class ApiController extends Controller
     
     public function bird(){
 
-        $bird = Bird::all();
+        $bird = Bird::orderBy('created_at', 'desc')->get();
         return BirdResource::collection($bird);
 
     }

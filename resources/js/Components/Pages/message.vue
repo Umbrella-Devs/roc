@@ -16,6 +16,11 @@
                 </div>
                 <v-card-text>
                     <v-form ref="form" @submit="sendMessage">
+
+                        <div class="text-center mt-2">
+                            <p class="px-3 bg-green-dark rounded-r-full text-white w-60" v-show="submitted = submitted">Message Delivered</p>
+                        </div>
+
                         <div>
                             <div class="flex xs:block w-100 mt-5">
                                 <div class="xl:w-50 xs:w-100  xl:mr-5 mr-5">
@@ -36,7 +41,7 @@
                     </v-form>
                 </v-card-text>
                 <div class="text-centered py-2">
-                    <h4 v-show="submitted = submitted" class="text-sm text-green">Message Delivered</h4>
+                    <h4 v-show="submitted = submitted" class="text-sm text-green"></h4>
                 </div>
             </v-card>
         </v-dialog>
@@ -74,6 +79,7 @@
                 message: this.message,
             }).then(response => {
                 $('#success').html(response.data.message)
+                this.$refs.form.reset()
             })
         }
     }
