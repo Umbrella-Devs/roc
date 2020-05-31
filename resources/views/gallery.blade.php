@@ -8,7 +8,7 @@
 
 
         <div class="w-90 mx-auto pb-5">
-            <div class="grid xl:grid-4">
+            <div class="grid xl:grid-4 md:grid-3">
                 @foreach ($images as $image)
                     <div id="myImg" class="mx-2 my-2" style="height: 250px">
                         <img class="clip-full" src="/storage/{{ $image->image }}" alt="{{ $image->caption }}">

@@ -6,7 +6,7 @@
                    <router-view></router-view>
                 </div>      
                 <div class="bg-green-darkest w-100 py-5 z-999 relative xs:hidden">
-                    <div class="py-5 w-85 mx-auto">
+                    <div class="py-5 xl:w-85  md:w-90 mx-auto">
                         <div class="py-5">
                             <div class="w-100 flex">
                                 <div class="w-25">
