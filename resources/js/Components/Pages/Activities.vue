@@ -21,7 +21,7 @@
                 <div class="text-centered py-5">
                     <h2 class="xl:text-3xl xs:text-xl">Our Activities</h2>
                 </div>
-                <div class="w-100 flex xs:block pb-3">
+                <div class="w-100 flex xs:block pb-3" id="education">
                     <div class="xl:w-45 xs:w-100" data-aos="fade-right" data-aos-duration="1500">
                         <v-img class="" src="/img/IMG_4694.jpg"></v-img>
                     </div>
@@ -36,7 +36,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="w-100 py-5 bg-white-smoke"> 
+            <div class="w-100 py-5 bg-white-smoke" id="bird-conservation"> 
                 <div class="w-90 mx-auto py-2">
                     <div class="w-100 xs:block flex">
                     <div class="xl:w-50 xs:w-100 my-auto px-5 xs:hidden">
@@ -66,7 +66,7 @@
                 </div>
                 </div>
             </div>
-            <div class="w-100 xl:py-5 xs:py-3">
+            <div class="w-100 xl:py-5 xs:py-3" id="research">
                 <div class="w-90 py-2 mx-auto">
                     <div class="w-100 xs:block flex">
                     <div class="xl:w-45 xs:w-100" data-aos="fade-right" data-aos-duration="1500">
@@ -84,7 +84,7 @@
                 </div>
                 </div>
             </div>
-            <div class="w-100 py-5 bg-white-smoke"> 
+            <div class="w-100 py-5 bg-white-smoke" id="events"> 
                 <div class="w-90 mx-auto py-2">
                     <div class="w-100 xs:block flex">
                     <div class="w-50 px-5 my-auto xs:hidden" data-aos="fade-right" data-aos-duration="1500">
@@ -114,7 +114,7 @@
                 </div>
                 </div>
             </div>
-            <div class="w-100 py-5">
+            <div class="w-100 py-5" id="daily-protection">
                 <div class="w-90 mx-auto py-2">
                     <div class="w-100 xs:block flex">
                     <div class="xl:w-45 xs:w-100" data-aos="fade-right" data-aos-duration="1500">

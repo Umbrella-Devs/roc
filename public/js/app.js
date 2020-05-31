@@ -2034,6 +2034,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2720,6 +2730,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2732,37 +2750,43 @@ __webpack_require__.r(__webpack_exports__);
         head: 'Education',
         slug: 'education',
         body: 'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education.',
-        svg: '/img/svg/hat.svg'
+        svg: '/img/svg/hat.svg',
+        href: '/activities#education'
       }, {
         id: '2',
         head: 'Research',
         slug: 'research',
         body: 'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share.',
-        svg: '/img/svg/research.svg'
+        svg: '/img/svg/research.svg',
+        href: '/activities#research'
       }, {
         id: '3',
         head: 'Bird Conservation',
         slug: 'bird-conservation',
         body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim. Ullam placeat facere esse. Ipsum, a quidem. Error!',
-        svg: '/img/svg/peace.svg'
+        svg: '/img/svg/peace.svg',
+        href: '/activities#bird-conservation'
       }, {
         id: '4',
         head: 'Daily Protection',
         slug: 'daily-protection',
         body: 'The most-effective conservation strategy is direct, sustained protection of wild animal populations. This is the foundation of our work.',
-        svg: '/img/svg/protection.svg'
+        svg: '/img/svg/protection.svg',
+        href: '/activities#daily-protection'
       }, {
         id: '5',
         head: 'Events',
         slug: 'events',
         body: 'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.',
-        svg: '/img/svg/calendar.svg'
+        svg: '/img/svg/calendar.svg',
+        href: '/activities#events'
       }, {
         id: '6',
         head: 'Helping Community',
         slug: 'community',
         body: 'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.',
-        svg: '/img/svg/conservation.svg'
+        svg: '/img/svg/conservation.svg',
+        href: '/activities#education'
       }]
     };
   }
@@ -2779,6 +2803,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -39942,7 +39968,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("li", [_vm._v("+ 250 712 345 567  ")]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("info@roc.rw")])
+                      _c("li", [_vm._v("roc@gmail.com")])
                     ])
                   ])
                 ]),
@@ -39956,7 +39982,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("li", [_vm._v("NR 100 kv ")]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("info@roc.rw")])
+                      _c("li", [_vm._v("roc@gmail.com")])
                     ])
                   ])
                 ]),
@@ -39969,8 +39995,13 @@ var render = function() {
                     _vm._v(" "),
                     _c("ul", { staticClass: "list pt-2 p-0" }, [
                       _c("li", [
-                        _vm._v(
-                          "\n                                            Blog\n                                        "
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/blog" }
+                          },
+                          [_vm._v("Blog")]
                         )
                       ]),
                       _vm._v(" "),
@@ -39979,15 +40010,33 @@ var render = function() {
                           "a",
                           {
                             staticClass: "text-white no-underline",
-                            attrs: { href: "/about/" }
+                            attrs: { href: "/about#team" }
                           },
                           [_vm._v("Team")]
                         )
                       ]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("Our story")]),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/about#our-story" }
+                          },
+                          [_vm._v("Our story")]
+                        )
+                      ]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("Bird Track")])
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/projects#bird-track" }
+                          },
+                          [_vm._v("Bird Track")]
+                        )
+                      ])
                     ])
                   ])
                 ]),
@@ -40000,16 +40049,48 @@ var render = function() {
                     _vm._v(" "),
                     _c("ul", { staticClass: "list pt-2 p-0" }, [
                       _c("li", [
-                        _vm._v(
-                          "\n                                            Education\n                                        "
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/actvities#education" }
+                          },
+                          [_vm._v("Education")]
                         )
                       ]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("Research ")]),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/activities#research" }
+                          },
+                          [_vm._v("Research")]
+                        )
+                      ]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("Bird Conservation")]),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/activities#bird-conservation" }
+                          },
+                          [_vm._v("Bird Conservation")]
+                        )
+                      ]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("Daily Protection")])
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/activities#daily-protection" }
+                          },
+                          [_vm._v("Daily Protection")]
+                        )
+                      ])
                     ])
                   ])
                 ]),
@@ -40133,7 +40214,7 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", [
-      _c("div", { staticClass: "bg-white" }, [
+      _c("div", { staticClass: "bg-white", attrs: { id: "our-story" } }, [
         _c("div", { staticClass: "w-90 mx-auto py-5" }, [
           _vm._m(1),
           _vm._v(" "),
@@ -40186,7 +40267,7 @@ var staticRenderFns = [
           [
             _c("div", { staticClass: "text-centered text-white" }, [
               _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
-                _vm._v("What We Do")
+                _vm._v("Rugezi Ornithology Center")
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "xs:text-sm" }, [
@@ -40205,7 +40286,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass: "no-underline text-white",
-                      attrs: { href: "#activities" }
+                      attrs: { href: "#our-story" }
                     },
                     [_vm._v("Explore")]
                   )
@@ -40492,107 +40573,148 @@ var render = function() {
         [
           _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "w-100 flex xs:block pb-3" }, [
-            _c(
-              "div",
-              {
-                staticClass: "xl:w-45 xs:w-100",
-                attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
-              },
-              [_c("v-img", { attrs: { src: "/img/IMG_4694.jpg" } })],
-              1
-            ),
-            _vm._v(" "),
-            _vm._m(2)
+          _c(
+            "div",
+            {
+              staticClass: "w-100 flex xs:block pb-3",
+              attrs: { id: "education" }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "xl:w-45 xs:w-100",
+                  attrs: {
+                    "data-aos": "fade-right",
+                    "data-aos-duration": "1500"
+                  }
+                },
+                [_c("v-img", { attrs: { src: "/img/IMG_4694.jpg" } })],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(2)
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "w-100 py-5 bg-white-smoke",
+          attrs: { id: "bird-conservation" }
+        },
+        [
+          _c("div", { staticClass: "w-90 mx-auto py-2" }, [
+            _c("div", { staticClass: "w-100 xs:block flex" }, [
+              _vm._m(3),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "xl:w-45 xs:w-100",
+                  attrs: {
+                    "data-aos": "fade-left",
+                    "data-aos-duration": "1500"
+                  }
+                },
+                [
+                  _c("v-img", {
+                    staticClass: "w-100",
+                    attrs: { src: "/img/IMG_1600.jpg" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(4)
+            ])
           ])
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 py-5 bg-white-smoke" }, [
-        _c("div", { staticClass: "w-90 mx-auto py-2" }, [
-          _c("div", { staticClass: "w-100 xs:block flex" }, [
-            _vm._m(3),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "xl:w-45 xs:w-100",
-                attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
-              },
-              [
-                _c("v-img", {
-                  staticClass: "w-100",
-                  attrs: { src: "/img/IMG_1600.jpg" }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _vm._m(4)
+      _c(
+        "div",
+        { staticClass: "w-100 xl:py-5 xs:py-3", attrs: { id: "research" } },
+        [
+          _c("div", { staticClass: "w-90 py-2 mx-auto" }, [
+            _c("div", { staticClass: "w-100 xs:block flex" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "xl:w-45 xs:w-100",
+                  attrs: {
+                    "data-aos": "fade-right",
+                    "data-aos-duration": "1500"
+                  }
+                },
+                [_c("v-img", { attrs: { src: "/img/IMG_1734.jpg" } })],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(5)
+            ])
           ])
-        ])
-      ]),
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 xl:py-5 xs:py-3" }, [
-        _c("div", { staticClass: "w-90 py-2 mx-auto" }, [
-          _c("div", { staticClass: "w-100 xs:block flex" }, [
-            _c(
-              "div",
-              {
-                staticClass: "xl:w-45 xs:w-100",
-                attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
-              },
-              [_c("v-img", { attrs: { src: "/img/IMG_1734.jpg" } })],
-              1
-            ),
-            _vm._v(" "),
-            _vm._m(5)
+      _c(
+        "div",
+        { staticClass: "w-100 py-5 bg-white-smoke", attrs: { id: "events" } },
+        [
+          _c("div", { staticClass: "w-90 mx-auto py-2" }, [
+            _c("div", { staticClass: "w-100 xs:block flex" }, [
+              _vm._m(6),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "xl:w-45 xs:w-100",
+                  attrs: {
+                    "data-aos": "fade-left",
+                    "data-aos-duration": "1500"
+                  }
+                },
+                [
+                  _c("v-img", {
+                    staticClass: "w-100",
+                    attrs: { src: "/img/IMG_1600.jpg" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(7)
+            ])
           ])
-        ])
-      ]),
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "w-100 py-5 bg-white-smoke" }, [
-        _c("div", { staticClass: "w-90 mx-auto py-2" }, [
-          _c("div", { staticClass: "w-100 xs:block flex" }, [
-            _vm._m(6),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "xl:w-45 xs:w-100",
-                attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
-              },
-              [
-                _c("v-img", {
-                  staticClass: "w-100",
-                  attrs: { src: "/img/IMG_1600.jpg" }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _vm._m(7)
+      _c(
+        "div",
+        { staticClass: "w-100 py-5", attrs: { id: "daily-protection" } },
+        [
+          _c("div", { staticClass: "w-90 mx-auto py-2" }, [
+            _c("div", { staticClass: "w-100 xs:block flex" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "xl:w-45 xs:w-100",
+                  attrs: {
+                    "data-aos": "fade-right",
+                    "data-aos-duration": "1500"
+                  }
+                },
+                [_c("v-img", { attrs: { src: "/img/IMG_1608.jpg" } })],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(8)
+            ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "w-100 py-5" }, [
-        _c("div", { staticClass: "w-90 mx-auto py-2" }, [
-          _c("div", { staticClass: "w-100 xs:block flex" }, [
-            _c(
-              "div",
-              {
-                staticClass: "xl:w-45 xs:w-100",
-                attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
-              },
-              [_c("v-img", { attrs: { src: "/img/IMG_1608.jpg" } })],
-              1
-            ),
-            _vm._v(" "),
-            _vm._m(8)
-          ])
-        ])
-      ])
+        ]
+      )
     ])
   ])
 }
@@ -41327,54 +41449,78 @@ var render = function() {
               "div",
               { staticClass: "w-100 grid xl:grid-3 mb-12 " },
               _vm._l(_vm.activities, function(activity) {
-                return _c("div", { key: activity.id }, [
-                  _c("div", { staticClass: "w-100 mx-5" }, [
+                return _c(
+                  "div",
+                  {
+                    key: activity.id,
+                    attrs: {
+                      "data-aos": "zoom-in",
+                      "data-aos-duration": "2000"
+                    }
+                  },
+                  [
                     _c(
-                      "div",
-                      {},
+                      "a",
+                      {
+                        staticClass: "no-underline",
+                        attrs: { href: activity.href }
+                      },
                       [
+                        _c("div", { staticClass: "w-100 mx-5" }, [
+                          _c(
+                            "div",
+                            {},
+                            [
+                              _c(
+                                "v-avatar",
+                                {
+                                  staticClass: "bg-orange-dark shadow-lg",
+                                  attrs: { size: "60" }
+                                },
+                                [
+                                  _c("div", { staticClass: "w-80" }, [
+                                    _c("img", {
+                                      attrs: {
+                                        src: activity.svg,
+                                        alt: "svg-icon"
+                                      }
+                                    })
+                                  ])
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
                         _c(
-                          "v-avatar",
+                          "div",
                           {
-                            staticClass: "bg-orange-dark shadow-lg",
-                            attrs: { size: "60" }
+                            staticClass:
+                              "bg-white pb-4 -mt-6 shadow-sm mb-3 xl:mr-4 pt hover:shadow-md",
+                            staticStyle: {
+                              "border-radius": "40px 0px 40px 0px",
+                              "padding-top": "0px"
+                            }
                           },
                           [
-                            _c("div", { staticClass: "w-80" }, [
-                              _c("img", {
-                                attrs: { src: activity.svg, alt: "svg-icon" }
-                              })
+                            _c("div", { staticClass: " text-grey-darkest" }, [
+                              _c(
+                                "h2",
+                                { staticClass: "text-xl px-5 pt-8 pb-3" },
+                                [_vm._v(_vm._s(activity.head))]
+                              ),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "px-5 text-sm" }, [
+                                _vm._v(_vm._s(activity.body))
+                              ])
                             ])
                           ]
                         )
-                      ],
-                      1
+                      ]
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "bg-white pb-4 -mt-6 shadow-sm mb-3 xl:mr-4 pt hover:shadow-md",
-                      staticStyle: {
-                        "border-radius": "40px 0px 40px 0px",
-                        "padding-top": "0px"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: " text-grey-darkest" }, [
-                        _c("h2", { staticClass: "text-xl px-5 pt-8 pb-3" }, [
-                          _vm._v(_vm._s(activity.head))
-                        ]),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "px-5 text-sm" }, [
-                          _vm._v(_vm._s(activity.body))
-                        ])
-                      ])
-                    ]
-                  )
-                ])
+                  ]
+                )
               }),
               0
             )
@@ -41390,7 +41536,8 @@ var render = function() {
             "div",
             {
               staticClass: "w-50 xs:w-100 xl:mx-2",
-              staticStyle: { "margin-top": "0px" }
+              staticStyle: { "margin-top": "0px" },
+              attrs: { "data-aos": "fade-right", "data-aos-duration": "2000" }
             },
             [
               _c("v-img", {
@@ -41401,38 +41548,7 @@ var render = function() {
             1
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "w-50 xs:w-100 mx-2 my-auto" }, [
-            _vm._m(7),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-center pt-2" }, [
-              _c("p", { staticClass: "text-white xs:text-sm" }, [
-                _vm._v(
-                  "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "py-3 text-center" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "border-orange-dark w-35 btn text-sm text-white"
-                  },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "no-underline text-white",
-                        attrs: { to: { name: "join" } }
-                      },
-                      [_vm._v("Join Us")]
-                    )
-                  ],
-                  1
-                )
-              ])
-            ])
-          ])
+          _vm._m(7)
         ])
       ])
     ]),
@@ -41543,17 +41659,35 @@ var staticRenderFns = [
       _c("div", { staticClass: "xl:w-30 xs:w-60" }, [
         _c("div", { staticClass: "line" }),
         _vm._v(" "),
-        _c("div", { staticClass: "-ml-3 my-2" }, [
-          _c("img", { attrs: { src: "/img/svg/whitefb.svg", alt: "" } })
-        ]),
+        _c(
+          "a",
+          { attrs: { href: "https://web.facebook.com/", target: "_blank" } },
+          [
+            _c("div", { staticClass: "-ml-3 my-2" }, [
+              _c("img", { attrs: { src: "/img/svg/whitefb.svg", alt: "" } })
+            ])
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "-ml-3 my-4" }, [
-          _c("img", { attrs: { src: "/img/svg/whiteig.svg", alt: "" } })
-        ]),
+        _c(
+          "a",
+          { attrs: { href: "https://web.facebook.com/", target: "_blank" } },
+          [
+            _c("div", { staticClass: "-ml-3 my-4" }, [
+              _c("img", { attrs: { src: "/img/svg/whiteig.svg", alt: "" } })
+            ])
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "-ml-3 my-2" }, [
-          _c("img", { attrs: { src: "/img/svg/whitetwi.svg", alt: "" } })
-        ]),
+        _c(
+          "a",
+          { attrs: { href: "https://web.facebook.com/", target: "_blank" } },
+          [
+            _c("div", { staticClass: "-ml-3 my-2" }, [
+              _c("img", { attrs: { src: "/img/svg/whitetwi.svg", alt: "" } })
+            ])
+          ]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "line" }),
         _vm._v(" "),
@@ -41612,7 +41746,10 @@ var staticRenderFns = [
         [
           _c(
             "a",
-            { staticClass: "text-white no-underline", attrs: { href: "" } },
+            {
+              staticClass: "text-white no-underline",
+              attrs: { href: "#activity" }
+            },
             [_vm._v("Explore ")]
           )
         ]
@@ -41645,13 +41782,47 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pt-2" }, [
-      _c(
-        "h2",
-        { staticClass: "text-white xl:text-3xl xs:text-2xl text-center " },
-        [_vm._v("Who are we?")]
-      )
-    ])
+    return _c(
+      "div",
+      {
+        staticClass: "w-50 xs:w-100 mx-2 my-auto",
+        attrs: { "data-aos": "fade-left", "data-aos-duration": "2000" }
+      },
+      [
+        _c("div", { staticClass: "pt-2" }, [
+          _c(
+            "h2",
+            { staticClass: "text-white xl:text-3xl xs:text-2xl text-center " },
+            [_vm._v("Who are we?")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center pt-2" }, [
+          _c("p", { staticClass: "text-white xs:text-sm" }, [
+            _vm._v(
+              "\n                       Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                    "
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "py-3 text-center" }, [
+            _c(
+              "button",
+              { staticClass: "border-orange-dark w-35 btn text-sm text-white" },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "no-underline text-white",
+                    attrs: { href: "/join-us" }
+                  },
+                  [_vm._v("Join Us")]
+                )
+              ]
+            )
+          ])
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -41806,7 +41977,9 @@ var render = function() {
             _c(
               "div",
               [
-                _c("v-form", { ref: "form" }, [
+                _c("v-form", { ref: "form", on: { submit: _vm.addMember } }, [
+                  _c("div", [_c("p", { attrs: { id: "success" } })]),
+                  _vm._v(" "),
                   _c("div", { staticClass: "w-100 xs:block flex" }, [
                     _c(
                       "div",
@@ -42151,7 +42324,10 @@ var render = function() {
                           { staticClass: "w-40" },
                           [
                             _c("v-text-field", {
-                              attrs: { label: "No of birds" },
+                              attrs: {
+                                label: "No of birds",
+                                rules: _vm.nameRules
+                              },
                               model: {
                                 value: _vm.numBirds,
                                 callback: function($$v) {
@@ -42189,7 +42365,10 @@ var render = function() {
                         "div",
                         [
                           _c("v-textarea", {
-                            attrs: { label: "Some description here" },
+                            attrs: {
+                              label: "Some description here",
+                              rules: _vm.nameRules
+                            },
                             model: {
                               value: _vm.description,
                               callback: function($$v) {

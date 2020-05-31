@@ -23,14 +23,14 @@
                                     <v-text-field label="Bird Name" v-model="birdname" :rules="nameRules"></v-text-field>
                                 </div>
                                 <div class="w-40">
-                                    <v-text-field label="No of birds" v-model="numBirds"></v-text-field>
+                                    <v-text-field label="No of birds" v-model="numBirds" :rules="nameRules"></v-text-field>
                                 </div>
                             </div>
                             <div>
                                 <v-text-field label="Activity Birds are doing" v-model="activity" :rules="nameRules"></v-text-field>
                             </div>
                             <div>
-                                <v-textarea label="Some description here" v-model="description"></v-textarea>
+                                <v-textarea label="Some description here" v-model="description" :rules="nameRules"></v-textarea>
                             </div>
                             <div class="w-100 flex">
                                 <div class="w-50 mr-5">

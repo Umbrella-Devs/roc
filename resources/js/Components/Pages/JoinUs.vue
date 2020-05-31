@@ -18,7 +18,10 @@
                     </div>
                     <div class="w-90 mx-auto px-5">
                         <div>
-                            <v-form ref="form">
+                            <v-form ref="form" @submit="addMember">
+                                <div>
+                                    <p id="success"></p>
+                                </div>
                                 <div class="w-100 xs:block flex">
                                     <div class="xl:w-50 xs:w-100 mr-5">
                                         <v-text-field label="First Name" v-model="firstname" :rules="nameRules"></v-text-field>
@@ -53,7 +56,6 @@
                                 <div class="text-centered py-5">
                                     <input type="submit" v-on:click.prevent="validate" class="bg-orange-dark btn text-white" value="Join Us Now">
                                 </div>
-                                
                             </v-form>
                         </div>
                     </div>

@@ -4,12 +4,12 @@
             <div class="w-100 flex">
                 <div class="xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75" data-aos="fade-down" data-aos-duration="1500">
                     <div class="text-centered text-white">
-                        <h1 class="pb-3 xl:text-3xl xs:text-xl">What We Do</h1>
+                        <h1 class="pb-3 xl:text-3xl xs:text-xl">Rugezi Ornithology Center</h1>
                         <p class="xs:text-sm">Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us.</p>
                     </div>
                     <div class="text-centered py-3">
                         <button class="btn bg-orange-dark text-white hover:bg-green">
-                            <a class="no-underline text-white" href="#activities">Explore</a>  
+                            <a class="no-underline text-white" href="#our-story">Explore</a>  
                         </button>
                     </div>
                 </div>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div>
-            <div class="bg-white">
+            <div class="bg-white" id="our-story">
                 <div class="w-90 mx-auto py-5">
                     <div class="text-centered py-3 pb-4">
                         <h2 class="text-grey-darkest text-3xl xs:text-2xl">Our Great Story</h2>
