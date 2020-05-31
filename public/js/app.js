@@ -42390,28 +42390,25 @@ var render = function() {
                   _c(
                     "v-card-actions",
                     [
-                      _c(
-                        "h4",
-                        {
-                          directives: [
-                            {
-                              name: "show",
-                              rawName: "v-show",
-                              value: (_vm.submitted = _vm.submitted),
-                              expression: "submitted = submitted"
-                            }
-                          ],
-                          staticClass: "text-sm text-green"
-                        },
-                        [_vm._v("Data Succesfully submitted")]
-                      ),
+                      _c("h4", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: (_vm.submitted = _vm.submitted),
+                            expression: "submitted = submitted"
+                          }
+                        ],
+                        staticClass: "text-sm text-green",
+                        attrs: { id: "success" }
+                      }),
                       _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("input", {
                         staticClass:
                           "btn bg-orange-dark text-center text-white",
-                        attrs: { type: "submit", value: "Submit" },
+                        attrs: { type: "submit", value: "Snubmit" },
                         on: {
                           click: function($event) {
                             $event.preventDefault()
