@@ -3,14 +3,14 @@
     <div class="w-100 pt-5">
         <div class="text-grey-darkest text-center pt-4">
             <h1 class="xl:text-3xl xs:text-2xl">Our Gallery</h1>
-            <p class="text-xl -mt-3">This gallery contains our field work</p>
+            <p class="text-xl -mt-3 xs:text-sm">This gallery contains our field work</p>
         </div>
 
 
         <div class="w-90 mx-auto pb-5">
-            <div class="grid grid-4">
+            <div class="grid xl:grid-4">
                 @foreach ($images as $image)
-                    <div id="myImg" class="mx-2" style="height: 250px">
+                    <div id="myImg" class="mx-2 my-2" style="height: 250px">
                         <img class="clip-full" src="/storage/{{ $image->image }}" alt="{{ $image->caption }}">
                         
                     </div>

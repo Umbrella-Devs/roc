@@ -300,10 +300,10 @@
 </div>   
 
 <div class="w-100 relative z-999 bg-green-darkest md:hidden xl:hidden">
- <div class="w-95 mx-auto flex py-3">
+ <div class="w-95 mx-auto flex py-">
      <div class="w-50 text-white text-xs">
-        <h5 class="text-lg">Contact Us</h5>
-        <ul class="list pt-1 p-0">
+        <h5 class="text-lg line-height-small">Contact Us</h5>
+        <ul class="list pt- p-0">
             <li>
                 + 250 712 345 567
             </li>
@@ -316,7 +316,7 @@
     </div>
  </div>
  
- <div class="flex w-90 mx-auto text-sm pt-3 pb-4">
+ <div class="flex w-90 mx-auto text-sm pt-1 pb-2">
     <div class="w-50">
     <h4 class="text-xs text-white-50 text-left">All © 2020 ROC.</h4>
     </div>
@@ -331,6 +331,18 @@
 </div>
 
 @yield('extra-script')
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
+
 
 </body>
 </html>
