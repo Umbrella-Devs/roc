@@ -2,7 +2,7 @@
     <div>
         <div class="bg xs:h-84">
             <div class="w-100 flex">
-                <div class="xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75" data-aos="fade-down" data-aos-duration="1500">
+                <div class="xl:w-45 xs:w-90 md:w-50 md:py-3 md:mt-24 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75" data-aos="fade-down" data-aos-duration="1500">
                     <div class="text-centered text-white">
                         <h1 class="pb-3 xl:text-3xl xs:text-xl">Our Projects</h1>
                         <p class="xs:text-sm">Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us.</p>

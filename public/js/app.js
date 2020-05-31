@@ -2434,6 +2434,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var _ref;
@@ -2803,6 +2804,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -39950,7 +39952,7 @@ var render = function() {
         "div",
         { staticClass: "bg-green-darkest w-100 py-5 z-999 relative xs:hidden" },
         [
-          _c("div", { staticClass: "py-5 w-85 mx-auto" }, [
+          _c("div", { staticClass: "py-5 xl:w-85  md:w-90 mx-auto" }, [
             _c("div", { staticClass: "py-5" }, [
               _c("div", { staticClass: "w-100 flex" }, [
                 _c("div", { staticClass: "w-25" }, [
@@ -40261,14 +40263,16 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
+              "xl:w-45 xs:w-90 md:w-50 md:py-3 md:mt-24 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
             attrs: { "data-aos": "fade-down", "data-aos-duration": "1500" }
           },
           [
             _c("div", { staticClass: "text-centered text-white" }, [
-              _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
-                _vm._v("Rugezi Ornithology Center")
-              ]),
+              _c(
+                "h1",
+                { staticClass: "pb-3 xl:text-3xl md:text-2xl xs:text-xl" },
+                [_vm._v("Rugezi Ornithology Center")]
+              ),
               _vm._v(" "),
               _c("p", { staticClass: "xs:text-sm" }, [
                 _vm._v(
@@ -40583,7 +40587,7 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "xl:w-45 xs:w-100",
+                  staticClass: "xl:w-45 md:w-45 xs:w-100",
                   attrs: {
                     "data-aos": "fade-right",
                     "data-aos-duration": "1500"
@@ -40613,7 +40617,7 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "xl:w-45 xs:w-100",
+                  staticClass: "xl:w-45 md:w-50 xs:w-100",
                   attrs: {
                     "data-aos": "fade-left",
                     "data-aos-duration": "1500"
@@ -40643,7 +40647,7 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "xl:w-45 xs:w-100",
+                  staticClass: "xl:w-45 md:w-45 xs:w-100",
                   attrs: {
                     "data-aos": "fade-right",
                     "data-aos-duration": "1500"
@@ -40670,7 +40674,7 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "xl:w-45 xs:w-100",
+                  staticClass: "xl:w-45 md:w-45 xs:w-100",
                   attrs: {
                     "data-aos": "fade-left",
                     "data-aos-duration": "1500"
@@ -40700,7 +40704,7 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "xl:w-45 xs:w-100",
+                  staticClass: "xl:w-45 md:w-45 xs:w-100",
                   attrs: {
                     "data-aos": "fade-right",
                     "data-aos-duration": "1500"
@@ -40729,14 +40733,16 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
+              "xl:w-45 xs:w-90 md:w-50 md:py-3 md:mt-24 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
             attrs: { "data-aos": "fade-down", "data-aos-duration": "1500" }
           },
           [
             _c("div", { staticClass: "text-centered text-white" }, [
-              _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
-                _vm._v("What We Do")
-              ]),
+              _c(
+                "h1",
+                { staticClass: "pb-3 xl:text-3xl md:text-2xl xs:text-xl" },
+                [_vm._v("What We Do")]
+              ),
               _vm._v(" "),
               _c("p", { staticClass: "xs:text-sm" }, [
                 _vm._v(
@@ -40784,7 +40790,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "xl:w-50 xs:w-100 xl:px-3 mx-auto my-auto text-grey-darkest",
+          "xl:w-50 md:w-50 xs:w-100 xl:px-3 mx-auto my-auto text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
@@ -40810,7 +40816,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "xl:w-50 xs:w-100 my-auto px-5 xs:hidden" },
+      { staticClass: "xl:w-50 md:w-45 xs:w-100 my-auto px-5 xs:hidden" },
       [
         _c(
           "div",
@@ -40944,7 +40950,8 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "xl:w-50 xs:w-100 px-3 mx-auto my-auto  text-grey-darkest",
+        staticClass:
+          "xl:w-50  md:w-50 xs:w-100 px-3 mx-auto my-auto  text-grey-darkest",
         attrs: { "data-aos": "fade-left", "data-aos-duration": "1500" }
       },
       [
@@ -41082,6 +41089,24 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "w-100" },
+                    [
+                      _c("v-text-field", {
+                        attrs: { label: "Phone", rules: _vm.otherRules },
+                        model: {
+                          value: _vm.phone,
+                          callback: function($$v) {
+                            _vm.phone = $$v
+                          },
+                          expression: "phone"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
                   _c("div", { staticClass: "w-100 flex" }, [
                     _c(
                       "div",
@@ -41123,24 +41148,6 @@ var render = function() {
                       1
                     )
                   ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-100" },
-                    [
-                      _c("v-text-field", {
-                        attrs: { label: "Phone", rules: _vm.otherRules },
-                        model: {
-                          value: _vm.phone,
-                          callback: function($$v) {
-                            _vm.phone = $$v
-                          },
-                          expression: "phone"
-                        }
-                      })
-                    ],
-                    1
-                  ),
                   _vm._v(" "),
                   _c(
                     "div",
@@ -41219,11 +41226,13 @@ var staticRenderFns = [
           { staticClass: "flex w-90 mx-auto pt-5 text-xl font-weight-bold" },
           [
             _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
-              _c("p", {}, [_vm._v("Educating next generation")])
+              _c("p", { staticClass: "md:text-sm" }, [
+                _vm._v("Educating next generation")
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
-              _c("p", {}, [_vm._v("Bird Track")])
+              _c("p", { staticClass: "md:text-sm" }, [_vm._v("Bird Track")])
             ])
           ]
         ),
@@ -41233,11 +41242,13 @@ var staticRenderFns = [
           { staticClass: "flex w-90 mx-auto pt-5 text-xl font-weight-bold" },
           [
             _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
-              _c("p", {}, [_vm._v("Conservation of Birds")])
+              _c("p", { staticClass: "md:text-sm" }, [
+                _vm._v("Conservation of Birds")
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
-              _c("p", {}, [_vm._v("Green Birding")])
+              _c("p", { staticClass: "md:text-sm" }, [_vm._v("Green Birding")])
             ])
           ]
         )
@@ -41293,14 +41304,14 @@ var render = function() {
                 _c(
                   "div",
                   {
-                    staticClass: "xl:w-75 xs:w-85 pt-5",
+                    staticClass: "xl:w-75 md:w-70 xs:w-85 pt-5",
                     attrs: {
                       "data-aos": "fade-down",
                       "data-aos-duration": "1500"
                     }
                   },
                   [
-                    _c("div", { staticClass: "text-white xs:pt-5" }, [
+                    _c("div", { staticClass: "text-white xs:pt-5 md:pt-5" }, [
                       _vm._m(1),
                       _vm._v(" "),
                       _vm._m(2),
@@ -41309,7 +41320,7 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "flex xl:w-40 relative z-999" },
+                        { staticClass: "flex xl:w-40 md:w-50 relative z-999" },
                         [
                           _vm._m(4),
                           _vm._v(" "),
@@ -41328,12 +41339,12 @@ var render = function() {
                   ]
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "w-20 xs:hidden" })
+                _c("div", { staticClass: "xl:w-20 md:w-25 xs:hidden" })
               ])
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "w-100 flex -mt-24 xs:hidden" }, [
+          _c("div", { staticClass: "w-100 md:hidden flex -mt-24 xs:hidden" }, [
             _c("div", { staticClass: "w-50" }),
             _vm._v(" "),
             _c("div", [
@@ -41447,12 +41458,13 @@ var render = function() {
           _c("div", { staticClass: "w-90 mx-auto py-3" }, [
             _c(
               "div",
-              { staticClass: "w-100 grid xl:grid-3 mb-12 " },
+              { staticClass: "w-100 grid xl:grid-3 md:grid-2  mb-12 " },
               _vm._l(_vm.activities, function(activity) {
                 return _c(
                   "div",
                   {
                     key: activity.id,
+                    staticClass: "md:mx-2",
                     attrs: {
                       "data-aos": "zoom-in",
                       "data-aos-duration": "2000"
@@ -41559,7 +41571,7 @@ var render = function() {
           _vm._m(8),
           _vm._v(" "),
           _c("div", { staticClass: "py-5" }, [
-            _c("div", { staticClass: "w-100   text-grey-darkest" }, [
+            _c("div", { staticClass: "w-100 text-grey-darkest" }, [
               _c("div", { staticClass: "w-90 xs:block flex mx-auto" }, [
                 _c("div", { staticClass: "w-5 xs:hidden" }),
                 _vm._v(" "),
@@ -41567,7 +41579,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
+                      "bg-white xl:w-30 md:w-30 md:mx-1 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
                   },
                   [
                     _c(
@@ -41593,7 +41605,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
+                      "bg-white xl:w-30 md:w-30 md:mx-1 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
                   },
                   [
                     _c(
@@ -41619,7 +41631,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
+                      "bg-white xl:w-30 md:w-30 md:mx-1 xs:w-100 xl:mx-3 xs:my-2 shadow-md"
                   },
                   [
                     _c(
@@ -41655,8 +41667,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "xl:w-5 xs:w-10 pt-5 relative" }, [
-      _c("div", { staticClass: "xl:w-30 xs:w-60" }, [
+    return _c("div", { staticClass: "xl:w-5 md:w-5 xs:w-10 pt-5 relative" }, [
+      _c("div", { staticClass: "xl:w-30 md:w-60 xs:w-60" }, [
         _c("div", { staticClass: "line" }),
         _vm._v(" "),
         _c(
@@ -41725,7 +41737,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "xl:w-60 xs:w-100 py-2 pb-3" }, [
-      _c("p", { staticClass: "xl:text-lg xs:text-sm" }, [
+      _c("p", { staticClass: "xl:text-lg md:text-lg xs:text-sm" }, [
         _vm._v(
           "\n                                        Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.\n                                    "
         )
@@ -41792,7 +41804,10 @@ var staticRenderFns = [
         _c("div", { staticClass: "pt-2" }, [
           _c(
             "h2",
-            { staticClass: "text-white xl:text-3xl xs:text-2xl text-center " },
+            {
+              staticClass:
+                "text-white xl:text-3xl md:text-2xl xs:text-2xl text-center "
+            },
             [_vm._v("Who are we?")]
           )
         ]),
@@ -42021,7 +42036,7 @@ var render = function() {
                   _c("div", { staticClass: "w-100 flex xs:block" }, [
                     _c(
                       "div",
-                      { staticClass: "xl:w-100 xs:w-100  mr-5" },
+                      { staticClass: "xl:w-100  md:w-100 xs:w-100  " },
                       [
                         _c("v-text-field", {
                           attrs: { label: "Email", rules: _vm.emailRules },
@@ -42041,7 +42056,27 @@ var render = function() {
                   _c("div", { staticClass: "w-100 flex xs:block" }, [
                     _c(
                       "div",
-                      { staticClass: "xl:w-50 xs:w-100" },
+                      { staticClass: "xl:w-100  md:w-100  xs:w-100 " },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "Phone" },
+                          model: {
+                            value: _vm.phone,
+                            callback: function($$v) {
+                              _vm.phone = $$v
+                            },
+                            expression: "phone"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "w-100 flex xs:block" }, [
+                    _c(
+                      "div",
+                      { staticClass: "xl:w-50 xs:w-100 mr-5" },
                       [
                         _c("v-select", {
                           attrs: {
@@ -42073,26 +42108,6 @@ var render = function() {
                               _vm.city = $$v
                             },
                             expression: "city"
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-100 flex xs:block" }, [
-                    _c(
-                      "div",
-                      { staticClass: "xl:w-100 xs:w-100 " },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "Phone" },
-                          model: {
-                            value: _vm.phone,
-                            callback: function($$v) {
-                              _vm.phone = $$v
-                            },
-                            expression: "phone"
                           }
                         })
                       ],
@@ -42172,7 +42187,7 @@ var staticRenderFns = [
       {
         staticClass:
           "relative w-100 text-white  text-grey-darkest text-centered z-9999",
-        staticStyle: { "margin-top": "15em" }
+        staticStyle: { "margin-top": "14em" }
       },
       [
         _c("h1", [_vm._v("Your Support will be Highly appreciated")]),
@@ -42738,7 +42753,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
+              "xl:w-45 xs:w-90 md:w-50 md:py-3 md:mt-24 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75",
             attrs: { "data-aos": "fade-down", "data-aos-duration": "1500" }
           },
           [

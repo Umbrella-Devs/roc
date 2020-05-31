@@ -148,70 +148,71 @@
     </style>
 </head>
 <body class="w-100 overflow-x-hidden">
-    {{-- mobile nav --}}
-        <div class="topnav shadow-md bg-green-darkest fixed xs:w-100 xl:hidden md:hidden z-9999">
-            <a href="{{ route('home') }}" class="active  bg-green-darkest">ROC</a>
-            <div id="myLinks">
-            <a href="{{ route('home') }}">Home</a>
-            <a href="{{ route('activities') }}">Activities</a>
-            <a href="{{ route('projects') }}">Projects</a>
-            <a href="{{ route('about_us') }}">About Us</a>
-            <a href="{{ route('join_us') }}">Join us</a>
-            <a href="{{ route('join_us') }}">Gallery</a>
-            <a href="{{ route('donate') }}">Donate</a>
-            </div>
-            <a href="javascript:void(0);" class="icon bg-orange-dark" onclick="myFunction()">
-            <i class="fa fa-bars text-white"></i>
-            </a>
+     {{-- mobile nav --}}
+     <div class="topnav shadow-md bg-green-darkest fixed xs:w-100 xl:hidden md:hidden z-9999">
+        <a href="{{ route('home') }}" class="active  bg-green-darkest">ROC</a>
+        <div id="myLinks">
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('activities') }}">Activities</a>
+        <a href="{{ route('projects') }}">Projects</a>
+        <a href="{{ route('about_us') }}">About Us</a>
+        <a href="{{ route('join_us') }}">Join us</a>
+        <a href="{{ route('join_us') }}">Gallery</a>
+        <a href="{{ route('donate') }}">Donate</a>
         </div>
-    {{-- end mobile nav --}}
-    <div class="w-100 bg-green-darkest fixed z-9999 shadow-md xs:hidden">
-        <div class="w-90 flex mx-auto py-3">
-            <div class="w-30">
-                        <div class="">
-                            <a class="text-white no-underline" href="{{ route('home') }}">
-                                <span class="text-xl">Rugezi O.C</span></a>
-                        </div>
-                </div>
-                <div class="w-70 text-right pt-1">
-                    <div class="" style="margin-top:-10px">
-                        <ul class="list inline-block">
-                            <li class="mx-3 text-sm">
-                            <a class="text-white no-underline" href="{{ route('home') }}">Home</a>
-                            </li>
-                            <li class="mx-3 text-sm">
-                                <a class="text-white no-underline" href="{{ route('activities') }}">Activities</a>
-                            </li>
-                            <li class="mx-3 text-sm">
-                                <a class="text-white no-underline" href="{{ route('projects') }}">Projects</a>
-                            </li>
-                            <li class="mx-3 text-sm">
-                                <a class="text-white no-underline" href="{{ route('blog') }}">Blog</a>
-                            </li>
-                            <li class="mx-3 text-sm">
-                                <a class="text-white no-underline" href="{{ route('about_us') }}">About us</a>
-                            </li>
-                            <li class="mx-3 text-sm">
-                                <a class="text-white no-underline" href="{{ route('gallery') }}">Gallery</a>
-                            </li>
-                            <!-- <li class="mx-2 text-sm">
-                                <router-link :to="{ name: 'gallery' }" class="no-underline">
-                                    <span class="text-white hover:text-orange">Gallery</span>
-                                </router-link>
-                            </li>   -->
-                            <li class="mx-3 text-sm">
-                                <a class="text-white no-underline" href="{{ route('join_us') }}">Join Us</a>
-                            </li>
-                            <li class="mx-3 text-sm">
-                                    <a class="rounded-full bg-orange-dark px-3 py-2 text-white no-underline" href="{{ route('donate') }}">Donate</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
+        <a href="javascript:void(0);" class="icon bg-orange-dark" onclick="myFunction()">
+        <i class="fa fa-bars text-white"></i>
+        </a>
     </div>
+{{-- end mobile nav --}}
+<div class="w-100 bg-green-darkest fixed z-9999 shadow-md xs:hidden">
+    <div class="w-90 flex mx-auto py-3">
+        <div class="xl:w-30 md:w-20">
+                    <div class="">
+                        <a class="text-white no-underline" href="{{ route('home') }}">
+                            <span class="text-xl">Rugezi O.C</span></a>
+                    </div>
+            </div>
+            <div class="w-70 md:w-80 text-right pt-1">
+                <div class="" style="margin-top:-10px">
+                    <ul class="list inline-block">
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                        <a class="text-white no-underline" href="{{ route('home') }}">Home</a>
+                        </li>
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                            <a class="text-white no-underline" href="{{ route('activities') }}">Activities</a>
+                        </li>
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                            <a class="text-white no-underline" href="{{ route('projects') }}">Projects</a>
+                        </li>
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                            <a class="text-white no-underline" href="{{ route('blog') }}">Blog</a>
+                        </li>
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                            <a class="text-white no-underline" href="{{ route('about_us') }}">About us</a>
+                        </li>
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                            <a class="text-white no-underline" href="{{ route('gallery') }}">Gallery</a>
+                        </li>
+                        
+                        <!-- <li class="mx-2 text-sm">
+                            <router-link :to="{ name: 'gallery' }" class="no-underline">
+                                <span class="text-white hover:text-orange">Gallery</span>
+                            </router-link>
+                        </li>   -->
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                            <a class="text-white no-underline" href="{{ route('join_us') }}">Join Us</a>
+                        </li>
+                        <li class="xl:mx-3 md:mx-1 text-sm">
+                                <a class="rounded-full bg-orange-dark px-3 py-2 text-white no-underline" href="{{ route('donate') }}">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
     
-    <div class="md:hidden w-100" id="app">
+    <div class=" w-100" id="app">
         
         @yield('content')
         

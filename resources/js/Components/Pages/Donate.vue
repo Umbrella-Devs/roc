@@ -11,19 +11,19 @@
                     </div>
                     <div class="flex w-90 mx-auto pt-5 text-xl font-weight-bold">
                         <div class="w-50 bg-white mx-3 pt-5 pb-2">
-                            <p class="">Educating next generation</p>
+                            <p class="md:text-sm">Educating next generation</p>
                         </div>
                         <div class="w-50 bg-white mx-3 pt-5 pb-2">
-                            <p class="">Bird Track</p>
+                            <p class="md:text-sm">Bird Track</p>
                         </div>
                         
                     </div>
                     <div class="flex w-90 mx-auto pt-5 text-xl font-weight-bold">
                     <div class="w-50 bg-white mx-3 pt-5 pb-2">
-                        <p class="">Conservation of Birds</p>
+                        <p class="md:text-sm">Conservation of Birds</p>
                     </div>
                     <div class="w-50 bg-white mx-3 pt-5 pb-2">
-                        <p class="">Green Birding</p>
+                        <p class="md:text-sm">Green Birding</p>
                     </div>
                     </div>
                 </div>
@@ -51,6 +51,9 @@
                                     <v-text-field label="Email" v-model="email" :rules="emailRules"></v-text-field>
                                 </div>
                             </div>
+                            <div class="w-100">
+                                <v-text-field label="Phone" v-model="phone" :rules="otherRules"></v-text-field>
+                            </div>
                             <div class="w-100 flex">
                                 <div class="w-50 mr-2">
                                     <v-select v-model="country" label="Country" :items="countries" :rules="countryRules"></v-select>
@@ -59,9 +62,7 @@
                                     <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
                                 </div>
                             </div>
-                            <div class="w-100">
-                                <v-text-field label="Phone" v-model="phone" :rules="otherRules"></v-text-field>
-                            </div>
+                            
                             <div class="">
                                 <v-select v-model="project" chips attach multiple :items="projects" label="Where to donate"></v-select>
                             </div>

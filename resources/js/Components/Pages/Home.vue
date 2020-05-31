@@ -6,8 +6,8 @@
                     <div class="flex w-100 "></div>
                     <div class="mx-auto w-90 xs:mt-16" style=" margin-top: 120px;">
                         <div class="w-100 flex">
-                            <div class="xl:w-5 xs:w-10 pt-5 relative">
-                                <div class="xl:w-30 xs:w-60">
+                            <div class="xl:w-5 md:w-5 xs:w-10 pt-5 relative">
+                                <div class="xl:w-30 md:w-60 xs:w-60">
                                     <div class="line"></div>
                                     <a href="https://web.facebook.com/" target="_blank">
                                         <div class="-ml-3 my-2">
@@ -30,10 +30,10 @@
                                 </div>
                                 
                             </div>
-                            <div class="xl:w-75 xs:w-85 pt-5"
+                            <div class="xl:w-75 md:w-70 xs:w-85 pt-5"
                             data-aos="fade-down"
                             data-aos-duration="1500">
-                                <div class="text-white xs:pt-5">
+                                <div class="text-white xs:pt-5 md:pt-5">
                                     <div>
                                         <h1 class="xs:text-5xl" style="font-size:100px;">Rugezi</h1>
                                     </div>
@@ -41,11 +41,11 @@
                                         <span>Ornithology Center</span>
                                     </div>
                                     <div class="xl:w-60 xs:w-100 py-2 pb-3"> 
-                                        <p class="xl:text-lg xs:text-sm">
+                                        <p class="xl:text-lg md:text-lg xs:text-sm">
                                             Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
                                         </p>
                                     </div>
-                                    <div class="flex xl:w-40 relative z-999">
+                                    <div class="flex xl:w-40 md:w-50 relative z-999">
                                         <div class="xs:w-50 w-50 mx-1">
                                             <button class="btn xs:w-100 w-100 xl:px-5 border-white text-orange xl:mr-2">
                                                 <a class="text-white no-underline" href="#activity">Explore </a>
@@ -57,12 +57,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-20 xs:hidden">
+                            <div class="xl:w-20 md:w-25 xs:hidden">
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 flex -mt-24 xs:hidden">
+                    <div class="w-100 md:hidden flex -mt-24 xs:hidden">
                         <div class="w-50">
 
                         </div>
@@ -104,8 +104,8 @@
             </div>
             <div>
                 <div class="w-90 mx-auto py-3">
-                    <div class="w-100 grid xl:grid-3 mb-12 " style="">
-                        <div class="" v-for="activity in activities" :key="activity.id" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="w-100 grid xl:grid-3 md:grid-2  mb-12 " style="">
+                        <div class="md:mx-2" v-for="activity in activities" :key="activity.id" data-aos="zoom-in" data-aos-duration="2000">
                             <a :href="activity.href" class="no-underline">
                                 <div class="w-100 mx-5">
                                     <div class="">
@@ -145,7 +145,7 @@
                     </div>
                     <div class="w-50 xs:w-100 mx-2 my-auto" data-aos="fade-left" data-aos-duration="2000">
                         <div class="pt-2">
-                            <h2 class="text-white xl:text-3xl xs:text-2xl text-center ">Who are we?</h2>
+                            <h2 class="text-white xl:text-3xl md:text-2xl xs:text-2xl text-center ">Who are we?</h2>
                         </div>
                         <div class="text-center pt-2">
                             <p class="text-white xs:text-sm">
@@ -171,10 +171,10 @@
                         <h2 class="text-center xl:text-3xl xs:text-2xl text-white">Our Blog</h2>
                     </div>
                     <div class="py-5">
-                        <div class="w-100   text-grey-darkest">
+                        <div class="w-100 text-grey-darkest">
                             <div class="w-90 xs:block flex mx-auto">
                                 <div class="w-5 xs:hidden"></div>
-                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md" >
+                                <div class="bg-white xl:w-30 md:w-30 md:mx-1 xs:w-100 xl:mx-3 xs:my-2 shadow-md" >
                                     <div class="">
                                         <v-img src="img/IMG_2802.jpg" width="100%" height="200"></v-img>
                                     </div>
@@ -191,7 +191,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
+                                <div class="bg-white xl:w-30 md:w-30 md:mx-1 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
                                     <div class="">
                                         <v-img src="img/IMG_1600.jpg" width="100%" height="200"></v-img>
                                     </div>
@@ -208,7 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
+                                <div class="bg-white xl:w-30 md:w-30 md:mx-1 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
                                     <div class="">
                                         <v-img src="img/IMG_4782.jpg" width="100%" height="200"></v-img>
                                     </div>

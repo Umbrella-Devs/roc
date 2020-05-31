@@ -74,31 +74,31 @@
     {{-- end mobile nav --}}
     <div class="w-100 bg-green-darkest fixed z-9999 shadow-md xs:hidden">
         <div class="w-90 flex mx-auto py-3">
-            <div class="w-30">
+            <div class="xl:w-30 md:w-20">
                         <div class="">
                             <a class="text-white no-underline" href="{{ route('home') }}">
                                 <span class="text-xl">Rugezi O.C</span></a>
                         </div>
                 </div>
-                <div class="w-70 text-right pt-1">
+                <div class="w-70 md:w-80 text-right pt-1">
                     <div class="" style="margin-top:-10px">
                         <ul class="list inline-block">
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                             <a class="text-white no-underline" href="{{ route('home') }}">Home</a>
                             </li>
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                                 <a class="text-white no-underline" href="{{ route('activities') }}">Activities</a>
                             </li>
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                                 <a class="text-white no-underline" href="{{ route('projects') }}">Projects</a>
                             </li>
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                                 <a class="text-white no-underline" href="{{ route('blog') }}">Blog</a>
                             </li>
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                                 <a class="text-white no-underline" href="{{ route('about_us') }}">About us</a>
                             </li>
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                                 <a class="text-white no-underline" href="{{ route('gallery') }}">Gallery</a>
                             </li>
                             
@@ -107,10 +107,10 @@
                                     <span class="text-white hover:text-orange">Gallery</span>
                                 </router-link>
                             </li>   -->
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                                 <a class="text-white no-underline" href="{{ route('join_us') }}">Join Us</a>
                             </li>
-                            <li class="mx-3 text-sm">
+                            <li class="xl:mx-3 md:mx-1 text-sm">
                                     <a class="rounded-full bg-orange-dark px-3 py-2 text-white no-underline" href="{{ route('donate') }}">Donate</a>
                             </li>
                         </ul>
@@ -119,7 +119,7 @@
         </div>
     </div>
     
-    <div class="md:hidden w-100" id="app">
+    <div class="w-100" id="app">
         
         @yield('content')
         
