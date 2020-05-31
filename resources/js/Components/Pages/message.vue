@@ -74,6 +74,7 @@
                 message: this.message,
             }).then(response => {
                 $('#success').html(response.data.message)
+                this.$refs.form.reset()
             })
         }
     }

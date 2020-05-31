@@ -50,7 +50,6 @@
                         <h4 v-show="submitted = submitted" class="text-sm text-green">Data Succesfully submitted</h4>
                         <v-spacer></v-spacer>
                         <input type="submit" @click.prevent="validate" class="btn bg-orange-dark text-center text-white" value="Submit">       
-                        <button @click="reset" class="btn border-red text-center text-red mx-3">Reset Form</button>
                     </v-card-actions>
                 </div>
             </v-card>
@@ -97,6 +96,8 @@
                 description: this.description
             }).then(response =>{
                 $('#success').html(response.data.message)
+                this.$refs.form.reset()
+                this.submitted = false
             })
         }
     }

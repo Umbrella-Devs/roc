@@ -140,6 +140,7 @@ export default {
                 project_id: this.project_id
             }).then(response => {
                 $('#success').html(response.data.message)
+                this.$refs.form.reset()
             })
         },
     }

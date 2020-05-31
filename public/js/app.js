@@ -2474,6 +2474,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     },
     addDonate: function addDonate() {
+      var _this = this;
+
       axios.post('/donate', {
         first_name: this.firstname,
         last_name: this.lastname,
@@ -2484,6 +2486,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         project_id: this.project_id
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
       });
     }
   }
@@ -2897,6 +2901,8 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     addMember: function addMember() {
+      var _this = this;
+
       axios.post('/join-us', {
         first_name: this.firstname,
         last_name: this.lastname,
@@ -2906,6 +2912,8 @@ __webpack_require__.r(__webpack_exports__);
         country: this.country
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
       });
     }
   }
@@ -2922,7 +2930,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -3010,6 +3017,8 @@ __webpack_require__.r(__webpack_exports__);
       console.log('Resetted');
     },
     addBird: function addBird() {
+      var _this = this;
+
       axios.post('/', {
         username: this.username,
         name: this.birdname,
@@ -3019,6 +3028,10 @@ __webpack_require__.r(__webpack_exports__);
         description: this.description
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
+
+        _this.submitted = false;
       });
     }
   }
@@ -3507,12 +3520,16 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     sendMessage: function sendMessage() {
+      var _this = this;
+
       axios.post('/message', {
         name: this.name,
         email: this.email,
         message: this.message
       }).then(function (response) {
         $('#success').html(response.data.message);
+
+        _this.$refs.form.reset();
       });
     }
   }
@@ -42401,17 +42418,7 @@ var render = function() {
                             return _vm.validate($event)
                           }
                         }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn border-red text-center text-red mx-3",
-                          on: { click: _vm.reset }
-                        },
-                        [_vm._v("Reset Form")]
-                      )
+                      })
                     ],
                     1
                   )
