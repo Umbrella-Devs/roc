@@ -3506,13 +3506,17 @@ __webpack_require__.r(__webpack_exports__);
     submit: function submit() {
       if (this.$refs.form.validate()) {
         this.submitted = true;
-        console.log('Done');
+        this.sendMessage();
       }
     },
-    reset: function reset() {
-      this.$refs.form.reset();
-      this.submitted = false;
-      console.log('Resetted');
+    sendMessage: function sendMessage() {
+      axios.post('/message', {
+        name: this.name,
+        email: this.email,
+        message: this.message
+      }).then(function (response) {
+        $('#success').html(response.data.message);
+      });
     }
   }
 });
@@ -41991,7 +41995,12 @@ var render = function() {
               "div",
               [
                 _c("v-form", { ref: "form", on: { submit: _vm.addMember } }, [
-                  _c("div", [_c("p", { attrs: { id: "success" } })]),
+                  _c("div", [
+                    _c("p", {
+                      staticClass: "text-black",
+                      attrs: { id: "success" }
+                    })
+                  ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "w-100 xs:block flex" }, [
                     _c(
@@ -43224,89 +43233,102 @@ var render = function() {
               _c(
                 "v-card-text",
                 [
-                  _c("v-form", { ref: "form" }, [
-                    _c(
-                      "div",
-                      [
-                        _c("div", { staticClass: "flex xs:block w-100 mt-5" }, [
+                  _c(
+                    "v-form",
+                    { ref: "form", on: { submit: _vm.sendMessage } },
+                    [
+                      _c(
+                        "div",
+                        [
                           _c(
                             "div",
-                            { staticClass: "xl:w-50 xs:w-100  xl:mr-5 mr-5" },
+                            { staticClass: "flex xs:block w-100 mt-5" },
                             [
-                              _c("v-text-field", {
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "xl:w-50 xs:w-100  xl:mr-5 mr-5"
+                                },
+                                [
+                                  _c("v-text-field", {
+                                    attrs: {
+                                      label: "E-mail",
+                                      rules: _vm.emailRules
+                                    },
+                                    model: {
+                                      value: _vm.email,
+                                      callback: function($$v) {
+                                        _vm.email = $$v
+                                      },
+                                      expression: "email"
+                                    }
+                                  })
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "xl:w-50 xs:w-100 " },
+                                [
+                                  _c("v-text-field", {
+                                    attrs: {
+                                      label: "Name",
+                                      rules: _vm.nameRules
+                                    },
+                                    model: {
+                                      value: _vm.name,
+                                      callback: function($$v) {
+                                        _vm.name = $$v
+                                      },
+                                      expression: "name"
+                                    }
+                                  })
+                                ],
+                                1
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            [
+                              _c("v-textarea", {
                                 attrs: {
-                                  label: "E-mail",
-                                  rules: _vm.emailRules
+                                  label: "Message",
+                                  rules: _vm.nameRules
                                 },
                                 model: {
-                                  value: _vm.email,
+                                  value: _vm.message,
                                   callback: function($$v) {
-                                    _vm.email = $$v
+                                    _vm.message = $$v
                                   },
-                                  expression: "email"
+                                  expression: "message"
                                 }
                               })
                             ],
                             1
                           ),
                           _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "xl:w-50 xs:w-100 " },
-                            [
-                              _c("v-text-field", {
-                                attrs: { label: "Name", rules: _vm.nameRules },
-                                model: {
-                                  value: _vm.name,
-                                  callback: function($$v) {
-                                    _vm.name = $$v
-                                  },
-                                  expression: "name"
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          [
-                            _c("v-textarea", {
-                              attrs: { label: "Message", rules: _vm.nameRules },
-                              model: {
-                                value: _vm.message,
-                                callback: function($$v) {
-                                  _vm.message = $$v
-                                },
-                                expression: "message"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("v-divider"),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "text-centered py-3" }, [
-                          _c(
-                            "button",
-                            {
+                          _c("v-divider"),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "text-centered py-3" }, [
+                            _c("input", {
                               staticClass: "btn bg-orange-dark text-white",
+                              attrs: { type: "submit", value: "Send Now" },
                               on: {
                                 click: function($event) {
                                   $event.preventDefault()
                                   return _vm.submit($event)
                                 }
                               }
-                            },
-                            [_vm._v("Send Now")]
-                          )
-                        ])
-                      ],
-                      1
-                    )
-                  ])
+                            })
+                          ])
+                        ],
+                        1
+                      )
+                    ]
+                  )
                 ],
                 1
               ),
@@ -101561,8 +101583,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
