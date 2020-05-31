@@ -41782,7 +41782,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "xl:py-5 xs:py-2 text-centered text-grey-darkest" },
+      { staticClass: "xl:py-3 xs:py-2 text-centered text-grey-darkest" },
       [
         _c("h2", { staticClass: "text-3xl xs:text-2xl" }, [
           _vm._v("Our Special Activities")
@@ -43168,7 +43168,7 @@ var render = function() {
                         staticClass:
                           "text-centered headline text-white lighten-2 py-2"
                       },
-                      [_vm._v("Send A Message")]
+                      [_vm._v("Send Message")]
                     )
                   ]),
                   _vm._v(" "),

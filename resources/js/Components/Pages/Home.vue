@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="bg-white-smoke relative mx-auto pt-5" id="activity">
-            <div class="xl:py-5 xs:py-2 text-centered text-grey-darkest">
+            <div class="xl:py-3 xs:py-2 text-centered text-grey-darkest">
                 <h2 class="text-3xl xs:text-2xl">Our Special Activities</h2>
             </div>
             <div>

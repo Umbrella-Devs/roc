@@ -7,7 +7,7 @@
             <v-card>
                 <div class="flex bg-green-darkest">
                     <div class="w-100 bg-green-darkest">
-                        <h3 class="text-centered headline text-white lighten-2 py-2">Send A Message</h3>
+                        <h3 class="text-centered headline text-white lighten-2 py-2">Send Message</h3>
                     </div>
                     <v-spacer></v-spacer>
                     <div class="pt-3">
