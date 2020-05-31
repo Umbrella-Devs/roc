@@ -19,8 +19,8 @@
                     <div class="w-90 mx-auto px-5">
                         <div>
                             <v-form ref="form" @submit="addMember">
-                                <div>
-                                    <p id="success" class="text-black"></p>
+                                <div class="text-center">
+                                    <p class="px-3 bg-green-dark rounded-r-full text-white w-60" id="success"></p>
                                 </div>
                                 <div class="w-100 xs:block flex">
                                     <div class="xl:w-50 xs:w-100 mr-5">
@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="w-100 flex xs:block">
                                     <div class="xl:w-50 xs:w-100 mr-5">
-                                        <v-select label="Country" v-model="country" :items="items" class="" :rules="countryRules"></v-select>
+                                        <v-text-field label="Country" v-model="country" class="" :rules="countryRules"></v-text-field>
                                     </div>
                                     <div class="xl:w-50 xs:w-100 ">
                                         <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
@@ -80,7 +80,7 @@ export default {
             city:'',
             option:'',
             select:null,
-            items:['Rwanda','Uganda','United States of America'],
+            
             submitted: false,
             nameRules:[
                 v => !!v || 'Name is required',

@@ -2435,6 +2435,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var _ref;
@@ -2874,7 +2875,6 @@ __webpack_require__.r(__webpack_exports__);
       city: '',
       option: '',
       select: null,
-      items: ['Rwanda', 'Uganda', 'United States of America'],
       submitted: false,
       nameRules: [function (v) {
         return !!v || 'Name is required';
@@ -2930,6 +2930,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -3048,25 +3051,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3450,6 +3434,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8031,7 +8020,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.bg[data-v-78171b67]{\n    background-image: url('/img/IMG_1973.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}   \n", ""]);
+exports.push([module.i, "\n.bg[data-v-78171b67]{\n    background-image: url('/img/IMG_2004.jpg');\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    height: 470px;\n}   \n", ""]);
 
 // exports
 
@@ -41060,6 +41049,14 @@ var render = function() {
                   }
                 },
                 [
+                  _c("div", { staticClass: "text-center" }, [
+                    _c("p", {
+                      staticClass:
+                        "px-3 bg-green-dark rounded-r-full text-white w-60",
+                      attrs: { id: "success" }
+                    })
+                  ]),
+                  _vm._v(" "),
                   _c("div", { staticClass: "w-100 flex  mt-5" }, [
                     _c(
                       "div",
@@ -41216,9 +41213,7 @@ var render = function() {
                         }
                       }
                     })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [_c("p", { attrs: { id: "success" } })])
+                  ])
                 ]
               )
             ],
@@ -41793,7 +41788,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "xl:py-5 xs:py-2 text-centered text-grey-darkest" },
+      { staticClass: "xl:py-3 xs:py-2 text-centered text-grey-darkest" },
       [
         _c("h2", { staticClass: "text-3xl xs:text-2xl" }, [
           _vm._v("Our Special Activities")
@@ -41854,7 +41849,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pl-2 xl:py-5" }, [
+    return _c("div", { staticClass: "pl-2 xl:py-3" }, [
       _c(
         "h2",
         { staticClass: "text-center xl:text-3xl xs:text-2xl text-white" },
@@ -41924,9 +41919,10 @@ var render = function() {
               "div",
               [
                 _c("v-form", { ref: "form", on: { submit: _vm.addMember } }, [
-                  _c("div", [
+                  _c("div", { staticClass: "text-center" }, [
                     _c("p", {
-                      staticClass: "text-black",
+                      staticClass:
+                        "px-3 bg-green-dark rounded-r-full text-white w-60",
                       attrs: { id: "success" }
                     })
                   ]),
@@ -42014,12 +42010,8 @@ var render = function() {
                       "div",
                       { staticClass: "xl:w-50 xs:w-100 mr-5" },
                       [
-                        _c("v-select", {
-                          attrs: {
-                            label: "Country",
-                            items: _vm.items,
-                            rules: _vm.countryRules
-                          },
+                        _c("v-text-field", {
+                          attrs: { label: "Country", rules: _vm.countryRules },
                           model: {
                             value: _vm.country,
                             callback: function($$v) {
@@ -42247,6 +42239,25 @@ var render = function() {
                 "v-card-text",
                 [
                   _c("v-form", { ref: "form", on: { submit: _vm.addBird } }, [
+                    _c("div", { staticClass: "text-center mt-2" }, [
+                      _c(
+                        "p",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: (_vm.submitted = _vm.submitted),
+                              expression: "submitted = submitted"
+                            }
+                          ],
+                          staticClass:
+                            "px-3 bg-green-dark rounded-r-full text-white w-60"
+                        },
+                        [_vm._v("Added Succesfully !")]
+                      )
+                    ]),
+                    _vm._v(" "),
                     _c("div", [
                       _c("div", { staticClass: "w-100 flex" }, [
                         _c(
@@ -42458,32 +42469,106 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", [
-      _c(
-        "div",
-        {
-          staticClass: "w-100",
-          attrs: {
-            id: "projects",
-            "data-aos": "fade-right",
-            "data-aos-duration": "2000"
-          }
-        },
-        [
-          _vm._m(1),
-          _vm._v(" "),
-          _c("div", [
+      _c("div", { staticClass: "w-100", attrs: { id: "projects" } }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", [
+          _c("div", {}, [
             _c("div", {}, [
-              _c("div", {}, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "xs:w-90 md:90 xl:w-90 mx-auto shadow-sm rounded hover:shadow-md pl-3"
+                },
+                [
+                  _c(
+                    "v-card",
+                    { attrs: { flat: "" } },
+                    [
+                      _c(
+                        "v-tabs",
+                        { attrs: { vertical: "", color: "orange" } },
+                        [
+                          _vm._l(_vm.projects, function(project) {
+                            return _c("v-tab", { key: project }, [
+                              _c("h5", { staticClass: "text-none text-sm" }, [
+                                _vm._v(_vm._s(project.name))
+                              ])
+                            ])
+                          }),
+                          _vm._v(" "),
+                          _vm._l(_vm.projects, function(project) {
+                            return _c(
+                              "v-tab-item",
+                              { key: project },
+                              [
+                                _c(
+                                  "v-card",
+                                  { attrs: { flat: "" } },
+                                  [
+                                    _c("v-card-text", {}, [
+                                      _c("div", { staticClass: "w-100" }, [
+                                        _c(
+                                          "h2",
+                                          {
+                                            staticClass:
+                                              "text-centered text-2xl py-2"
+                                          },
+                                          [_vm._v(_vm._s(project.name))]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "w-85" },
+                                          [
+                                            _c("v-img", {
+                                              attrs: {
+                                                src:
+                                                  "/storage/" + project.image,
+                                                height: "400"
+                                              }
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "p",
+                                              {
+                                                staticClass: "px-5 text-sm pt-3"
+                                              },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(project.description)
+                                                )
+                                              ]
+                                            )
+                                          ],
+                                          1
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          })
+                        ],
+                        2
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: " w-90 mx-auto mb-12 xl:pt-4" }, [
+                _vm._m(2),
+                _vm._v(" "),
                 _c(
                   "div",
-                  {
-                    staticClass:
-                      " w-80 mx-auto shadow-sm rounded hover:shadow-md pl-3",
-                    attrs: {
-                      "data-aos": "zoom-in",
-                      "data-aos-duration": "2000"
-                    }
-                  },
+                  { staticClass: "rounded shadow-sm hover:shadow-lg" },
                   [
                     _c(
                       "v-card",
@@ -42491,163 +42576,68 @@ var render = function() {
                       [
                         _c(
                           "v-tabs",
-                          { attrs: { vertical: "", color: "orange" } },
+                          { attrs: { color: "orange" } },
                           [
-                            _vm._l(_vm.projects, function(project) {
-                              return _c("v-tab", { key: project }, [
-                                _c("h5", { staticClass: "text-none text-sm" }, [
-                                  _vm._v(_vm._s(project.name))
-                                ])
+                            _c("v-tab", [
+                              _c("h5", { staticClass: "text-none text-sm" }, [
+                                _vm._v("Bird Tracking")
                               ])
-                            }),
+                            ]),
                             _vm._v(" "),
-                            _vm._l(_vm.projects, function(project) {
-                              return _c(
-                                "v-tab-item",
-                                { key: project },
-                                [
-                                  _c(
-                                    "v-card",
-                                    { attrs: { flat: "" } },
-                                    [
-                                      _c("v-card-text", {}, [
-                                        _c("div", {}, [
-                                          _c(
-                                            "h2",
-                                            {
-                                              staticClass: "text-centered py-2"
-                                            },
-                                            [_vm._v(_vm._s(project.name))]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "p",
-                                            { staticClass: "px-5 text-sm" },
-                                            [
-                                              _vm._v(
-                                                _vm._s(project.description)
-                                              )
-                                            ]
+                            _c("v-tab", [
+                              _c("h5", { staticClass: "text-none text-sm" }, [
+                                _vm._v("Bird Recorded")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "v-tab-item",
+                              [
+                                _c(
+                                  "v-card",
+                                  { attrs: { flat: "" } },
+                                  [
+                                    _c("v-card-text", {}, [
+                                      _c("div", {}, [
+                                        _c(
+                                          "h2",
+                                          { staticClass: "text-centered py-3" },
+                                          [_vm._v("Bird Tracking")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("p", { staticClass: "px-5" }, [
+                                          _vm._v(
+                                            "\n                                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. \n                                                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, \n                                                            as opposed to using Content here, content here, making it look like readable English. \n                                                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,\n                                                            and a search for lorem ipsum will uncover many web sites still in their infancy. \n                                                            Various versions have evolved over the years, \n                                                            sometimes by accident, sometimes on purpose (injected humour and the like).\n                                                        "
                                           )
                                         ])
                                       ])
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            })
-                          ],
-                          2
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: " w-80 mx-auto mb-12",
-                    attrs: {
-                      "data-aos": "fade-down",
-                      "data-aos-duration": "2000"
-                    }
-                  },
-                  [
-                    _vm._m(2),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "rounded shadow-sm hover:shadow-lg",
-                        attrs: {
-                          "data-aos": "zoom-in",
-                          "data-aos-duration": "2000"
-                        }
-                      },
-                      [
-                        _c(
-                          "v-card",
-                          { attrs: { flat: "" } },
-                          [
-                            _c(
-                              "v-tabs",
-                              { attrs: { color: "orange" } },
-                              [
-                                _c("v-tab", [
-                                  _c(
-                                    "h5",
-                                    { staticClass: "text-none text-sm" },
-                                    [_vm._v("Bird Tracking")]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("v-tab", [
-                                  _c(
-                                    "h5",
-                                    { staticClass: "text-none text-sm" },
-                                    [_vm._v("Bird Recorded")]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c(
-                                  "v-tab-item",
-                                  [
-                                    _c(
-                                      "v-card",
-                                      { attrs: { flat: "" } },
-                                      [
-                                        _c("v-card-text", {}, [
-                                          _c("div", {}, [
-                                            _c(
-                                              "h2",
-                                              {
-                                                staticClass:
-                                                  "text-centered py-3"
-                                              },
-                                              [_vm._v("Bird Tracking")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", { staticClass: "px-5" }, [
-                                              _vm._v(
-                                                "\n                                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. \n                                                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, \n                                                            as opposed to using Content here, content here, making it look like readable English. \n                                                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,\n                                                            and a search for lorem ipsum will uncover many web sites still in their infancy. \n                                                            Various versions have evolved over the years, \n                                                            sometimes by accident, sometimes on purpose (injected humour and the like).\n                                                        "
-                                              )
-                                            ])
-                                          ])
-                                        ])
-                                      ],
-                                      1
-                                    )
+                                    ])
                                   ],
                                   1
-                                ),
-                                _vm._v(" "),
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-tab-item",
+                              [
                                 _c(
-                                  "v-tab-item",
+                                  "v-card",
+                                  { attrs: { flat: "" } },
                                   [
                                     _c(
-                                      "v-card",
-                                      { attrs: { flat: "" } },
+                                      "v-card-text",
+                                      {},
                                       [
-                                        _c(
-                                          "v-card-text",
-                                          {},
-                                          [
-                                            _c("v-data-table", {
-                                              staticClass: "elevation-1",
-                                              attrs: {
-                                                headers: _vm.headers,
-                                                items: _vm.birds,
-                                                "items-per-page": 5
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        )
+                                        _c("v-data-table", {
+                                          staticClass: "elevation-1",
+                                          attrs: {
+                                            headers: _vm.headers,
+                                            items: _vm.birds,
+                                            "items-per-page": 5
+                                          }
+                                        })
                                       ],
                                       1
                                     )
@@ -42663,13 +42653,14 @@ var render = function() {
                       ],
                       1
                     )
-                  ]
+                  ],
+                  1
                 )
               ])
             ])
           ])
-        ]
-      )
+        ])
+      ])
     ])
   ])
 }
@@ -42689,9 +42680,11 @@ var staticRenderFns = [
           },
           [
             _c("div", { staticClass: "text-centered text-white" }, [
-              _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
-                _vm._v("Our Projects")
-              ]),
+              _c(
+                "h1",
+                { staticClass: "pb-3 xl:text-3xl md:text-2xl xs:text-xl" },
+                [_vm._v("Our Projects")]
+              ),
               _vm._v(" "),
               _c("p", { staticClass: "xs:text-sm" }, [
                 _vm._v(
@@ -42725,10 +42718,13 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "xs:py-4" }, [
+    return _c("div", { staticClass: "xs:py-4 md:py-3" }, [
       _c(
         "h2",
-        { staticClass: "text-centered xl:p-5 xs:text-2xl text-grey-darkest" },
+        {
+          staticClass:
+            "text-centered text-3xl xl:py-4 xs:text-2xl text-grey-darkest"
+        },
         [_vm._v("Our Projects")]
       )
     ])
@@ -42737,8 +42733,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", {}, [
-      _c("h2", { staticClass: "text-grey-darker py-12 text-centered" }, [
+    return _c("div", { staticClass: "py-5" }, [
+      _c("h2", { staticClass: "text-grey-darkest text-3xl text-centered" }, [
         _vm._v("Bird Tracking Project")
       ])
     ])
@@ -43099,7 +43095,7 @@ var render = function() {
                         staticClass:
                           "text-centered headline text-white lighten-2 py-2"
                       },
-                      [_vm._v("Send A Message")]
+                      [_vm._v("Send Message")]
                     )
                   ]),
                   _vm._v(" "),
@@ -43130,6 +43126,25 @@ var render = function() {
                     "v-form",
                     { ref: "form", on: { submit: _vm.sendMessage } },
                     [
+                      _c("div", { staticClass: "text-center mt-2" }, [
+                        _c(
+                          "p",
+                          {
+                            directives: [
+                              {
+                                name: "show",
+                                rawName: "v-show",
+                                value: (_vm.submitted = _vm.submitted),
+                                expression: "submitted = submitted"
+                              }
+                            ],
+                            staticClass:
+                              "px-3 bg-green-dark rounded-r-full text-white w-60"
+                          },
+                          [_vm._v("Message Delivered")]
+                        )
+                      ]),
+                      _vm._v(" "),
                       _c(
                         "div",
                         [
@@ -43227,21 +43242,17 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("div", { staticClass: "text-centered py-2" }, [
-                _c(
-                  "h4",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: (_vm.submitted = _vm.submitted),
-                        expression: "submitted = submitted"
-                      }
-                    ],
-                    staticClass: "text-sm text-green"
-                  },
-                  [_vm._v("Message Delivered")]
-                )
+                _c("h4", {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: (_vm.submitted = _vm.submitted),
+                      expression: "submitted = submitted"
+                    }
+                  ],
+                  staticClass: "text-sm text-green"
+                })
               ])
             ],
             1

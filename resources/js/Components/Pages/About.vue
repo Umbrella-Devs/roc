@@ -128,7 +128,7 @@ export default {
 
 <style scoped>
     .bg{
-        background-image: url('/img/IMG_1973.jpg');
+        background-image: url('/img/IMG_2004.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;

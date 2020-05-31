@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="bg-white-smoke relative mx-auto pt-5" id="activity">
-            <div class="xl:py-5 xs:py-2 text-centered text-grey-darkest">
+            <div class="xl:py-3 xs:py-2 text-centered text-grey-darkest">
                 <h2 class="text-3xl xs:text-2xl">Our Special Activities</h2>
             </div>
             <div>
@@ -167,7 +167,7 @@
             <div class="opacity bg-green-darker opacity-80"></div> -->
             <div class="bg-pjt w-100  mx-auto xs:py-5">
                 <div class="py-5">
-                    <div class="pl-2 xl:py-5">
+                    <div class="pl-2 xl:py-3">
                         <h2 class="text-center xl:text-3xl xs:text-2xl text-white">Our Blog</h2>
                     </div>
                     <div class="py-5">

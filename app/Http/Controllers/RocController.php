@@ -67,7 +67,7 @@ class RocController extends Controller
 
 
         return response()->json([
-            'message' => 'Thanks for your Gift'
+            'message' => 'Thanks for your support !'
         ]);
 
     }
@@ -86,7 +86,7 @@ class RocController extends Controller
         $joiner->save();
 
         return response()->json([
-            'message' => 'New Joiner joined'
+            'message' => 'Thank you for joining us :)'
         ]);
 
     }
@@ -116,7 +116,7 @@ class RocController extends Controller
         $message->save();
         
         return response()->json([
-            'message' => 'Message Delivered'
+            'message' => 'Message Delivered !'
         ]);
     }
     /**

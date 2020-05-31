@@ -155,9 +155,10 @@
         <a href="{{ route('home') }}">Home</a>
         <a href="{{ route('activities') }}">Activities</a>
         <a href="{{ route('projects') }}">Projects</a>
+        <a href="{{ route('blog') }}">Blog</a>
         <a href="{{ route('about_us') }}">About Us</a>
         <a href="{{ route('join_us') }}">Join us</a>
-        <a href="{{ route('join_us') }}">Gallery</a>
+        <a href="{{ route('gallery') }}">Gallery</a>
         <a href="{{ route('donate') }}">Donate</a>
         </div>
         <a href="javascript:void(0);" class="icon bg-orange-dark" onclick="myFunction()">

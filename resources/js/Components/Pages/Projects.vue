@@ -4,7 +4,7 @@
             <div class="w-100 flex">
                 <div class="xl:w-45 xs:w-90 md:w-50 md:py-3 md:mt-24 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75" data-aos="fade-down" data-aos-duration="1500">
                     <div class="text-centered text-white">
-                        <h1 class="pb-3 xl:text-3xl xs:text-xl">Our Projects</h1>
+                        <h1 class="pb-3 xl:text-3xl md:text-2xl xs:text-xl">Our Projects</h1>
                         <p class="xs:text-sm">Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us.</p>
                     </div>
                     <div class="text-centered py-3">
@@ -17,39 +17,15 @@
             </div>
         </div>
         <div>
-            <div class="w-100" id="projects" data-aos="fade-right" data-aos-duration="2000">
-                <div class="xs:py-4">
-                    <h2 class="text-centered xl:p-5 xs:text-2xl text-grey-darkest">Our Projects</h2>
+            <div class="w-100" id="projects">
+                <div class="xs:py-4 md:py-3">
+                    <h2 class="text-centered text-3xl xl:py-4 xs:text-2xl text-grey-darkest">Our Projects</h2>
                 </div>
                 <div>
                     <div class="">
                         <div class="">
-                            <!--<div class="w-100 grid xl:grid-3 mb-5">
-                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg xl:mr-2 mb-3 rounded  text-grey-darkest" data-aos="zoom-in" data-aos-duration="2000">
-                                    <h3 class="text-xl">Bird Tracking</h3>
-                                    <p class="pt-4 text-sm">BirdTrack is a free and convenient way of storing your bird records online. View the latest trends...</p>
-                                    <div class="text-right">
-                                        <button class="py-1 px-1 bg-orange-dark text-white">
-                                            <router-link :to="{ name: 'birdTrack' }"     class="no-underline">
-                                                <span class="text-sm text-white hover:text-white">Read More</span>
-                                            </router-link>
-                                        </button>
-                                    </div>
-                                </div>
-                                
-                                <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest" v-for="project in projects" :key="project.id" data-aos="zoom-in" data-aos-duration="2000">
-                                    <h3 class="text-xl">{{project.name}}</h3>
-                                    <p class="pt-4 text-sm">{{project.description | snippet }}</p>
-                                    <div class="text-right">
-                                        <button class="py-1 px-1 bg-orange-dark text-white">
-                                            <router-link :to="'/projects/' + project.slug" class="no-underline">
-                                                <span class="text-sm text-white hover:text-white">Read More</span>
-                                            </router-link>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>-->
-                            <div class=" w-80 mx-auto shadow-sm rounded hover:shadow-md pl-3" data-aos="zoom-in" data-aos-duration="2000">
+                            
+                            <div class="xs:w-90 md:90 xl:w-90 mx-auto shadow-sm rounded hover:shadow-md pl-3">
                                 <v-card flat>
                                     <v-tabs vertical color="orange">
                                         <v-tab v-for="project in projects" :key="project">
@@ -60,22 +36,27 @@
                                             
                                             <v-card flat>
                                                 <v-card-text class="">
-                                                    
-                                                    <div class="">
-                                                        <h2 class="text-centered py-2">{{project.name}}</h2>
-                                                        <p class="px-5 text-sm">{{project.description}}</p>
+                                                    <div class="w-100">
+                                                        <h2 class="text-centered text-2xl py-2">{{project.name}}</h2>
+                                                        <div class="w-85">
+                                                                <v-img :src="'/storage/' + project.image" height="400"></v-img>
+                                                        <p class="px-5 text-sm pt-3">{{project.description}}</p>
+                                                        </div>    
+                                                        
                                                     </div>
                                                 </v-card-text>
+                                                
                                             </v-card>
+                                            
                                         </v-tab-item>
                                     </v-tabs>
                                 </v-card>
                             </div>
-                            <div class=" w-80 mx-auto mb-12" data-aos="fade-down" data-aos-duration="2000">
-                                <div class="">
-                                    <h2 class="text-grey-darker py-12 text-centered">Bird Tracking Project</h2>
+                            <div class=" w-90 mx-auto mb-12 xl:pt-4">
+                                <div class="py-5">
+                                    <h2 class="text-grey-darkest text-3xl text-centered">Bird Tracking Project</h2>
                                 </div>
-                                <div class="rounded shadow-sm hover:shadow-lg" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="rounded shadow-sm hover:shadow-lg">
                                     <v-card flat>
                                         <v-tabs color="orange">
                                             <v-tab>
@@ -132,7 +113,7 @@ export default {
             projects:[],
             birds: [],
             headers: [
-            { text: 'ID', value: 'id' },
+            { text: 'ID', value: 'id'},
           {
             text: 'Bird Name',
             align: 'start',

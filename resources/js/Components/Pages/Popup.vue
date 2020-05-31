@@ -17,6 +17,9 @@
                 </div>
                 <v-card-text>
                     <v-form ref="form" @submit="addBird">
+                        <div class="text-center mt-2">
+                            <p class="px-3 bg-green-dark rounded-r-full text-white w-60" v-show="submitted = submitted">Added Succesfully !</p>
+                        </div>
                         <div>
                             <div class="w-100 flex">
                                 <div class="w-60 mr-3">
