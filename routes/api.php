@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/birds', 'ApiController@bird')->name('bird.api');
 Route::get('/projects', 'ApiController@project')->name('project.api');
 Route::get('/gallery', 'ApiController@gallery')->name('gallery.api');
+Route::get('/posts', 'ApiController@gallery')->name('gallery.api');
