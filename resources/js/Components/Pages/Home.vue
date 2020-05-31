@@ -9,15 +9,21 @@
                             <div class="xl:w-5 xs:w-10 pt-5 relative">
                                 <div class="xl:w-30 xs:w-60">
                                     <div class="line"></div>
-                                    <div class="-ml-3 my-2">
-                                        <img src="/img/svg/whitefb.svg" alt="">
-                                    </div>
-                                    <div class="-ml-3 my-4">
-                                        <img src="/img/svg/whiteig.svg" alt="">
-                                    </div>
-                                    <div class="-ml-3 my-2">
-                                        <img src="/img/svg/whitetwi.svg" alt="">
-                                    </div>
+                                    <a href="https://web.facebook.com/" target="_blank">
+                                        <div class="-ml-3 my-2">
+                                            <img src="/img/svg/whitefb.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="https://web.facebook.com/" target="_blank">
+                                        <div class="-ml-3 my-4">
+                                            <img src="/img/svg/whiteig.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="https://web.facebook.com/" target="_blank">
+                                        <div class="-ml-3 my-2">
+                                            <img src="/img/svg/whitetwi.svg" alt="">
+                                        </div>
+                                    </a>
                                     <div class="line"></div>
                                     <div>
                                     </div> 
@@ -42,7 +48,7 @@
                                     <div class="flex xl:w-40 relative z-999">
                                         <div class="xs:w-50 w-50 mx-1">
                                             <button class="btn xs:w-100 w-100 xl:px-5 border-white text-orange xl:mr-2">
-                                                <a class="text-white no-underline" href="">Explore </a>
+                                                <a class="text-white no-underline" href="#activity">Explore </a>
                                             </button>
                                         </div>
                                         <div data-app class="xs:w-50 mx-1 w-50">
@@ -99,30 +105,32 @@
             <div>
                 <div class="w-90 mx-auto py-3">
                     <div class="w-100 grid xl:grid-3 mb-12 " style="">
-                        <div class="" v-for="activity in activities" :key="activity.id">
-                            <div class="w-100 mx-5">
-                                <div class="">
-                                    <v-avatar class="bg-orange-dark shadow-lg" size="60">
-                                        <div class="w-80">
-                                            <img :src="activity.svg" alt="svg-icon">
-                                        </div>
-                                    </v-avatar>
+                        <div class="" v-for="activity in activities" :key="activity.id" data-aos="zoom-in" data-aos-duration="2000">
+                            <a :href="activity.href" class="no-underline">
+                                <div class="w-100 mx-5">
+                                    <div class="">
+                                        <v-avatar class="bg-orange-dark shadow-lg" size="60">
+                                            <div class="w-80">
+                                                <img :src="activity.svg" alt="svg-icon">
+                                            </div>
+                                        </v-avatar>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bg-white pb-4 -mt-6 shadow-sm mb-3 xl:mr-4 pt hover:shadow-md" 
-                            style="border-radius: 40px 0px 40px 0px; padding-top: 0px;">
-                                <div class=" text-grey-darkest">
-                                    <h2 class="text-xl px-5 pt-8 pb-3">{{activity.head}}</h2>
-                                    <p class="px-5 text-sm">{{activity.body}}</p>
+                                <div class="bg-white pb-4 -mt-6 shadow-sm mb-3 xl:mr-4 pt hover:shadow-md" 
+                                    style="border-radius: 40px 0px 40px 0px; padding-top: 0px;">
+                                    <div class=" text-grey-darkest">
+                                        <h2 class="text-xl px-5 pt-8 pb-3">{{activity.head}}</h2>
+                                        <p class="px-5 text-sm">{{activity.body}}</p>
+                                    </div>
+                                        <!-- <div class="text-centered">
+                                            <button class="bg-orange-dark py-1 px-2 mb-2 text-sm text-white">
+                                                <router-link :to="{name: 'activity'}" class="no-underline">
+                                                    <span class="text-white">Read More</span>
+                                                </router-link>
+                                            </button>
+                                        </div> -->
                                 </div>
-                                <!-- <div class="text-centered">
-                                    <button class="bg-orange-dark py-1 px-2 mb-2 text-sm text-white">
-                                        <router-link :to="{name: 'activity'}" class="no-underline">
-                                            <span class="text-white">Read More</span>
-                                        </router-link>
-                                    </button>
-                                </div> -->
-                            </div>
+                            </a>
                         </div>     
                     </div> 		
                 </div>
@@ -132,10 +140,10 @@
             <div class="w-90 mx-auto py-5">
                 
                 <div class="w-100 xs:block flex pt-2 pb-2">
-                    <div class="w-50 xs:w-100 xl:mx-2" style="margin-top: 0px">
+                    <div class="w-50 xs:w-100 xl:mx-2" style="margin-top: 0px" data-aos="fade-right" data-aos-duration="2000">
                          <v-img src="/img/IMG_1600.jpg" class="w-100"></v-img>
                     </div>
-                    <div class="w-50 xs:w-100 mx-2 my-auto">
+                    <div class="w-50 xs:w-100 mx-2 my-auto" data-aos="fade-left" data-aos-duration="2000">
                         <div class="pt-2">
                             <h2 class="text-white xl:text-3xl xs:text-2xl text-center ">Who are we?</h2>
                         </div>
@@ -145,7 +153,7 @@
                         </p>
                         <div class="py-3 text-center">
                             <button class="border-orange-dark w-35 btn text-sm text-white">
-                                <router-link :to="{ name: 'join' }" class="no-underline text-white">Join Us</router-link>
+                                <a class="no-underline text-white" href="/join-us">Join Us</a>
                             </button>
                         </div>
                         </div>
@@ -236,12 +244,12 @@ export default {
     data(){
         return{
             activities:[
-                {id:'1', head:'Education', slug:'education', body:'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education.', svg:'/img/svg/hat.svg'},
-                {id:'2', head:'Research', slug:'research', body:'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share.', svg:'/img/svg/research.svg'},
-                {id:'3', head:'Bird Conservation', slug:'bird-conservation', body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim. Ullam placeat facere esse. Ipsum, a quidem. Error!', svg:'/img/svg/peace.svg'},
-                {id:'4', head:'Daily Protection', slug:'daily-protection', body:'The most-effective conservation strategy is direct, sustained protection of wild animal populations. This is the foundation of our work.', svg:'/img/svg/protection.svg'},
-                {id:'5', head:'Events', slug:'events', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/calendar.svg'},
-                {id:'6', head:'Helping Community', slug:'community', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/conservation.svg'},
+                {id:'1', head:'Education', slug:'education', body:'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education.', svg:'/img/svg/hat.svg', href:'/activities#education'},
+                {id:'2', head:'Research', slug:'research', body:'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share.', svg:'/img/svg/research.svg', href:'/activities#research'},
+                {id:'3', head:'Bird Conservation', slug:'bird-conservation', body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim. Ullam placeat facere esse. Ipsum, a quidem. Error!', svg:'/img/svg/peace.svg', href:'/activities#bird-conservation'},
+                {id:'4', head:'Daily Protection', slug:'daily-protection', body:'The most-effective conservation strategy is direct, sustained protection of wild animal populations. This is the foundation of our work.', svg:'/img/svg/protection.svg', href:'/activities#daily-protection'},
+                {id:'5', head:'Events', slug:'events', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/calendar.svg', href:'/activities#events'},
+                {id:'6', head:'Helping Community', slug:'community', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/conservation.svg', href:'/activities#education'},
             ],
         }
     }

@@ -17,7 +17,7 @@
                                                 + 250 712 345 567
                                             </li>
                                             <li>+ 250 712 345 567  </li>
-                                            <li>info@roc.rw</li>
+                                            <li>roc@gmail.com</li>
                                         </ul>
                                     </div>
                                     
@@ -30,7 +30,7 @@
                                                 <span>Musanze, Rwanda</span>
                                             </li>
                                             <li>NR 100 kv </li>
-                                            <li>info@roc.rw</li>
+                                            <li>roc@gmail.com</li>
                                         </ul>
                                     </div>
                                     
@@ -40,13 +40,17 @@
                                         <h5 class="text-lg">Quick links</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
-                                                Blog
+                                                <a class="text-white no-underline" href="/blog">Blog</a>
                                             </li>
                                             <li>
-                                                <a class="text-white no-underline" href="/about/">Team</a>
+                                                <a class="text-white no-underline" href="/about#team">Team</a>
                                             </li>
-                                            <li>Our story</li>
-                                            <li>Bird Track</li>
+                                            <li>
+                                                <a class="text-white no-underline" href="/about#our-story">Our story</a>
+                                            </li>
+                                            <li>
+                                                <a class="text-white no-underline" href="/projects#bird-track">Bird Track</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     
@@ -56,11 +60,17 @@
                                         <h5 class="text-lg">Activities</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
-                                                Education
+                                                <a class="text-white no-underline" href="/actvities#education">Education</a>
                                             </li>
-                                            <li>Research </li>
-                                            <li>Bird Conservation</li>
-                                            <li>Daily Protection</li>
+                                            <li>
+                                                <a class="text-white no-underline" href="/activities#research">Research</a>
+                                            </li>
+                                            <li>
+                                                <a class="text-white no-underline" href="/activities#bird-conservation">Bird Conservation</a>
+                                            </li>
+                                            <li>
+                                                <a class="text-white no-underline" href="/activities#daily-protection">Daily Protection</a>
+                                            </li>
 
                                         </ul>
                                     </div>
