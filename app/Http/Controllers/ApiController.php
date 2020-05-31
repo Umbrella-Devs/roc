@@ -13,6 +13,10 @@ use App\Http\Resources\Project as ProjectResource;
 use App\Gallery;
 use App\Http\Resources\Gallery as GalleryResource;
 
+use TCG\Voyager\Models\Post;
+use App\Http\Resources\Post as PostResource;
+
+
 class ApiController extends Controller
 {
     
@@ -34,6 +38,12 @@ class ApiController extends Controller
     public function gallery(){
         $gallery = Gallery::all();
         return GalleryResource::collection($gallery);
+    }
+
+
+    public function blog(){
+        $post = Post::inRandomOrder()->take(3)->get();
+        return PostResource::collection($post);
     }
 
 }
