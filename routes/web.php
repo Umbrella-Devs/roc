@@ -34,7 +34,7 @@ Route::get('/post/{id}', 'PostsController@show')->name('post.view');
 Route::post('/', 'RocController@bird_store')->name('bird');
 Route::post('/join-us', 'RocController@join_store')->name('join');
 Route::post('/donate', 'RocController@donate_store')->name('donate');
-
+Route::post('/message', 'RocController@message')->name('message');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

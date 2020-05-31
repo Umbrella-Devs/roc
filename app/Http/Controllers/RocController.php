@@ -10,6 +10,7 @@ use App\Donate;
 use App\JoinUs;
 use App\Project;
 use App\User;
+use App\Message;
 
 
 
@@ -82,7 +83,7 @@ class RocController extends Controller
         $joiner->phone = $request->phone;
         $joiner->city = $request->city;
         $joiner->country = $request->country;
-        
+        $joiner->project_id = $request->project_id;
         $joiner->save();
 
         return response()->json([
@@ -105,6 +106,19 @@ class RocController extends Controller
             'message' => 'New project added'
         ]);
 
+    }
+
+    public function message(Request $request){
+
+        $message = new Message;
+        $message->name = $request->name;
+        $message->email = $request->email;
+        $message->message = $request->message;
+        $message->save();
+        
+        return response()->json([
+            'message' => 'Message Delivered'
+        ]);
     }
     /**
      * Display the specified resource.
