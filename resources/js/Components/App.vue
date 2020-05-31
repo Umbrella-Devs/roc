@@ -42,7 +42,9 @@
                                             <li>
                                                 Blog
                                             </li>
-                                            <li>Team</li>
+                                            <li>
+                                                <a class="text-white no-underline" href="/about/">Team</a>
+                                            </li>
                                             <li>Our story</li>
                                             <li>Bird Track</li>
                                         </ul>

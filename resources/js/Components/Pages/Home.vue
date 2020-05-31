@@ -1,7 +1,6 @@
 <template>
     <div>
         <div>
-            
             <div class="w-100">
                 <div class="bg w-100 xs:h-px-300-i">
                     <div class="flex w-100 "></div>
