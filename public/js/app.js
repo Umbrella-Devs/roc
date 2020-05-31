@@ -2421,6 +2421,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     var _ref;
@@ -40789,12 +40790,12 @@ var render = function() {
           "div",
           {
             staticClass: "absolute bg-black z-0",
-            staticStyle: { height: "100vh" }
+            staticStyle: { height: "130vh" }
           },
           [
             _c("v-img", {
               staticClass: "w-100 opacity-50 clip-full",
-              attrs: { src: "/img/IMG_2663.jpg" }
+              attrs: { src: "/img/IMG_2663.jpg", height: "100%" }
             })
           ],
           1
@@ -40805,12 +40806,12 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "my-12 xl:w-50 xs:w-100 xl:mx-12 " }, [
         _c("div", [
-          _vm._m(1),
-          _vm._v(" "),
           _c(
             "div",
-            { staticClass: "mx-5 bg-white shadow-lg rounded p-3" },
+            { staticClass: "mx-5 p-3" },
             [
+              _vm._m(1),
+              _vm._v(" "),
               _c(
                 "v-form",
                 {
@@ -41003,8 +41004,8 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass:
-          "text-centered relative w-100 mx-auto text-grey-darkest mt-16"
+        staticClass: "text-centered relative w-100 mx-auto text-grey-darkest",
+        staticStyle: { "margin-top": "15em" }
       },
       [
         _c("div", { staticClass: "w-90 mx-auto text-centered text-white" }, [
@@ -41012,25 +41013,33 @@ var staticRenderFns = [
           _c("h3", [_vm._v(" we CAN prevent it.")])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "flex w-90 mx-auto pt-5" }, [
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Educating next generation")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Bird Track")])
-          ])
-        ]),
+        _c(
+          "div",
+          { staticClass: "flex w-90 mx-auto pt-5 text-xl font-weight-bold" },
+          [
+            _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
+              _c("p", {}, [_vm._v("Educating next generation")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
+              _c("p", {}, [_vm._v("Bird Track")])
+            ])
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "flex w-90 mx-auto pt-5" }, [
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Conservation of Birds")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "w-50 bg-white mx-3 py-4" }, [
-            _c("p", {}, [_vm._v("Green Birding")])
-          ])
-        ])
+        _c(
+          "div",
+          { staticClass: "flex w-90 mx-auto pt-5 text-xl font-weight-bold" },
+          [
+            _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
+              _c("p", {}, [_vm._v("Conservation of Birds")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "w-50 bg-white mx-3 pt-5 pb-2" }, [
+              _c("p", {}, [_vm._v("Green Birding")])
+            ])
+          ]
+        )
       ]
     )
   },
@@ -41701,7 +41710,7 @@ var render = function() {
           [
             _c("v-img", {
               staticClass: "w-100 opacity-50 clip-full",
-              attrs: { src: "/img/IMG_2663.jpg" }
+              attrs: { src: "/img/IMG_2663.jpg", height: "100%" }
             })
           ],
           1
@@ -41940,7 +41949,8 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "relative w-100 text-white mt-24 text-grey-darkest text-centered z-9999"
+          "relative w-100 text-white  text-grey-darkest text-centered z-9999",
+        staticStyle: { "margin-top": "15em" }
       },
       [
         _c("h1", [_vm._v("Your Support will be Highly appreciated")]),
@@ -41956,8 +41966,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-centered py-5" }, [
-      _c("h3", { staticClass: "text-grey-darkest xs:text-xl" }, [
-        _vm._v("Together We can protect the Birds ")
+      _c("h3", { staticClass: "text-grey-darkest xs:text-xl py-3" }, [
+        _vm._v("Join Us ")
       ])
     ])
   }

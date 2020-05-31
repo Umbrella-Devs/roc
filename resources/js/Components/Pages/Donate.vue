@@ -2,27 +2,27 @@
     <div class="pt-5">
         <div class=" w-100 xs:block flex">
             <div class="w-50 relative xs:hidden">
-                <div class="absolute bg-black z-0" style="height: 100vh">
-                     <v-img src="/img/IMG_2663.jpg" class="w-100 opacity-50 clip-full"></v-img>
+                <div class="absolute bg-black z-0" style="height: 130vh">
+                     <v-img src="/img/IMG_2663.jpg" height="100%" class="w-100 opacity-50 clip-full"></v-img>
                 </div>
-                <div class="text-centered relative w-100 mx-auto text-grey-darkest mt-16">
+                <div class="text-centered relative w-100 mx-auto text-grey-darkest" style="margin-top: 15em">
                     <div class="w-90 mx-auto text-centered text-white">
                     <h3>We cannot reverse extinction,but together,</h3><h3> we CAN prevent it.</h3>
                     </div>
-                    <div class="flex w-90 mx-auto pt-5">
-                        <div class="w-50 bg-white mx-3 py-4">
+                    <div class="flex w-90 mx-auto pt-5 text-xl font-weight-bold">
+                        <div class="w-50 bg-white mx-3 pt-5 pb-2">
                             <p class="">Educating next generation</p>
                         </div>
-                        <div class="w-50 bg-white mx-3 py-4">
+                        <div class="w-50 bg-white mx-3 pt-5 pb-2">
                             <p class="">Bird Track</p>
                         </div>
                         
                     </div>
-                    <div class="flex w-90 mx-auto pt-5">
-                    <div class="w-50 bg-white mx-3 py-4">
+                    <div class="flex w-90 mx-auto pt-5 text-xl font-weight-bold">
+                    <div class="w-50 bg-white mx-3 pt-5 pb-2">
                         <p class="">Conservation of Birds</p>
                     </div>
-                    <div class="w-50 bg-white mx-3 py-4">
+                    <div class="w-50 bg-white mx-3 pt-5 pb-2">
                         <p class="">Green Birding</p>
                     </div>
                     </div>
@@ -32,10 +32,11 @@
             <div class="my-12 xl:w-50 xs:w-100 xl:mx-12 ">
                
                 <div>
-                    <div class="py-3 text-centered">
+                    
+                    <div class="mx-5 p-3">
+                        <div class="py-3 text-centered">
                         <h3 class="text-grey-darkest">Donate Here</h3>
-                    </div>
-                    <div class="mx-5 bg-white shadow-lg rounded p-3">
+                        </div>
                         <v-form ref="form" @submit.once="addDonate">
                             <div class="w-100 flex  mt-5">
                                 <div class="w-50 mr-2">

@@ -3,9 +3,9 @@
         <div class="w-100 xs:block flex">
             <div class="relative w-50 z-0 xs:hidden">
                 <div class="absolute bg-black z-0" style="height: 100vh">
-                     <v-img src="/img/IMG_2663.jpg" class="w-100 opacity-50 clip-full"></v-img>
+                     <v-img src="/img/IMG_2663.jpg" height="100%" class="w-100 opacity-50 clip-full"></v-img>
                 </div>
-                <div class="relative w-100 text-white mt-24 text-grey-darkest text-centered z-9999">
+                <div class="relative w-100 text-white  text-grey-darkest text-centered z-9999" style="margin-top: 15em">
                     <h1>Your Support will be Highly appreciated</h1>
                     <p class="text-2xl">Together We can conserve birds</p>
                 </div>
@@ -14,7 +14,7 @@
             <div class="xl:w-50 xs:w-100 bg-white text-white py-5">
                 <div class="pt-5">
                     <div class="text-centered py-5">
-                        <h3 class="text-grey-darkest xs:text-xl">Together We can protect the Birds </h3>
+                        <h3 class="text-grey-darkest xs:text-xl py-3">Join Us </h3>
                     </div>
                     <div class="w-90 mx-auto px-5">
                         <div>
