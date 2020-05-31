@@ -61,7 +61,7 @@ const router = new VueRouter({
     ],
 });
 Vue.filter('snippet', function(value){
-    return value.slice(0,100)+ '...'
+    return value.slice(0,80)+ '...'
   });
 /**
  * Next, we will create a fresh Vue application instance and attach it to

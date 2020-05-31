@@ -20,7 +20,7 @@
                         <div>
                             <v-form ref="form" @submit="addMember">
                                 <div>
-                                    <p id="success"></p>
+                                    <p id="success" class="text-black"></p>
                                 </div>
                                 <div class="w-100 xs:block flex">
                                     <div class="xl:w-50 xs:w-100 mr-5">

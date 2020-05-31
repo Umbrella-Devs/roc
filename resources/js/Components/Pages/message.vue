@@ -15,7 +15,7 @@
                     </div> 
                 </div>
                 <v-card-text>
-                    <v-form ref="form">
+                    <v-form ref="form" @submit="sendMessage">
                         <div>
                             <div class="flex xs:block w-100 mt-5">
                                 <div class="xl:w-50 xs:w-100  xl:mr-5 mr-5">
@@ -30,7 +30,7 @@
                             </div>
                             <v-divider></v-divider>
                             <div class="text-centered py-3">
-                                <button @click.prevent="submit" class="btn bg-orange-dark text-white">Send Now</button>
+                                <input type="submit" @click.prevent="submit" value="Send Now" class="btn bg-orange-dark text-white"/>
                             </div>
                         </div>
                     </v-form>
@@ -64,14 +64,18 @@
         submit(){
             if(this.$refs.form.validate()){
                 this.submitted = true
-                console.log('Done')
+                this.sendMessage()
             }
         },
-        reset () {
-        this.$refs.form.reset()
-            this.submitted = false;
-            console.log('Resetted')  
-        },
+        sendMessage(){
+            axios.post('/message',{
+                name: this.name,
+                email: this.email,
+                message: this.message,
+            }).then(response => {
+                $('#success').html(response.data.message)
+            })
+        }
     }
   }
 </script>
