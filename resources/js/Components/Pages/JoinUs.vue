@@ -28,27 +28,23 @@
                                     </div>
                                 </div>
                                 <div class="w-100 flex xs:block">
-                                    <div class="xl:w-50 xs:w-100  mr-5">
+                                    <div class="xl:w-100 xs:w-100  mr-5">
                                         <v-text-field label="Email" v-model="email" :rules="emailRules"></v-text-field>
                                     </div>
-                                    <div class="xl:w-50 xs:w-100 ">
-                                        <v-text-field label="Phone" v-model="phone"></v-text-field>
-                                    </div>
-                                </div>
-                                <div>
-                                    <v-select label="Country" :items="items" class="" :rules="countryRules"></v-select>
                                 </div>
                                 <div class="w-100 flex xs:block">
-                                    <div class="xl:w-50 xs:w-100  mr-5">
-                                        <v-text-field label="State" v-model="state" :rules="otherRules" color="red"></v-text-field>
+                                    <div class="xl:w-50 xs:w-100">
+                                        <v-select label="Country" v-model="country" :items="items" class="" :rules="countryRules"></v-select>
                                     </div>
                                     <div class="xl:w-50 xs:w-100 ">
                                         <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
-                                    </div> 
+                                    </div>
+                                    
                                 </div>
-                                
-                                <div class="w-100 flex">
-                                    <v-text-field label="Phone" v-model="phone"></v-text-field>
+                                <div class="w-100 flex xs:block">
+                                    <div class="xl:w-100 xs:w-100 ">
+                                        <v-text-field label="Phone" v-model="phone"></v-text-field>
+                                    </div>
                                 </div>
                                 <div class="text-grey-darker">
                                     <input type="radio" v-model="option" value="Member" ><span class="px-2">Member</span>

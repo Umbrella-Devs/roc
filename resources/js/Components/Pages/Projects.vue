@@ -4,12 +4,12 @@
             <div class="w-100 flex">
                 <div class="xl:w-45 xs:w-90 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75" data-aos="fade-down" data-aos-duration="1500">
                     <div class="text-centered text-white">
-                        <h1 class="pb-3 xl:text-3xl xs:text-xl">What We Do</h1>
+                        <h1 class="pb-3 xl:text-3xl xs:text-xl">Our Projects</h1>
                         <p class="xs:text-sm">Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us.</p>
                     </div>
                     <div class="text-centered py-3">
                         <button class="btn bg-orange-dark text-white hover:bg-green">
-                            <a class="no-underline text-white" href="#activities">Explore</a>  
+                            <a class="no-underline text-white" href="#projects">Explore</a>  
                         </button>
                     </div>
                 </div>
@@ -17,14 +17,14 @@
             </div>
         </div>
         <div>
-            <div class="w-100 mb-24" id="projects">
+            <div class="w-100" id="projects">
                 <div class="xs:py-4">
                     <h2 class="text-centered xl:p-5 xs:text-2xl text-grey-darkest">Our Projects</h2>
                 </div>
                 <div>
                     <div class="">
-                        <div class="w-80 mx-auto">
-                            <div class="w-100 grid xl:grid-3 mb-5">
+                        <div class="">
+                            <!--<div class="w-100 grid xl:grid-3 mb-5">
                                 <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg xl:mr-2 mb-3 rounded  text-grey-darkest" data-aos="zoom-in" data-aos-duration="2000">
                                     <h3 class="text-xl">Bird Tracking</h3>
                                     <p class="pt-4 text-sm">BirdTrack is a free and convenient way of storing your bird records online. View the latest trends...</p>
@@ -36,6 +36,7 @@
                                         </button>
                                     </div>
                                 </div>
+                                
                                 <div class="bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest" v-for="project in projects" :key="project.id" data-aos="zoom-in" data-aos-duration="2000">
                                     <h3 class="text-xl">{{project.name}}</h3>
                                     <p class="pt-4 text-sm">{{project.description | snippet }}</p>
@@ -47,6 +48,68 @@
                                         </button>
                                     </div>
                                 </div>
+                            </div>-->
+                            <div class="" data-aos="zoom-in" data-aos-duration="2000">
+                                <v-card flat>
+                                    <v-tabs vertical>
+                                        <v-tab v-for="project in projects" :key="project">
+                                            <h5 class="text-none text-sm">{{project.name}}</h5>
+                                        </v-tab>
+                                        <v-tab-item v-for="project in projects" :key="project">
+                                            <v-card flat>
+                                                <v-card-text class="">
+                                                    <div class="">
+                                                        <h2 class="text-centered py-5">{{project.name}}</h2>
+                                                        <p class="px-5 text-sm">{{project.description}}</p>
+                                                    </div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-tab-item>
+                                    </v-tabs>
+                                </v-card>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <h2 class="text-grey-darker py-12 text-centered">Bird Tracking Project</h2>
+                                </div>
+                                <v-card flat>
+                                    <v-tabs>
+                                        <v-tab>
+                                            <h5 class="text-none text-sm">Bird Tracking</h5>
+                                        </v-tab>
+                                        <v-tab>
+                                            <h5 class="text-none text-sm">Bird Recorded</h5>
+                                        </v-tab>
+                                        <v-tab-item>
+                                            <v-card flat>
+                                                <v-card-text class="">
+                                                    <div class="">
+                                                        <h2 class="text-centered py-5">Bird Tracking</h2>
+                                                        <p class="px-5">Some Description here</p>
+                                                    </div>
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-tab-item>
+                                        <v-tab-item>
+                                            <v-card flat>
+                                                <v-card-text class="">
+                                                    <div class="w-90 mx-auto">
+                                                        <div class="w-100 grid grid-4">
+                                                            <div class="bg-white-smoke mr-3 rounded shadow-md" v-for="bird in birds" :key="bird">
+                                                                <h5 class="px-5 py-2">{{bird.name}}</h5>
+                                                                <p class="px-5">Activity: {{bird.activity}}</p>
+                                                                <p class="px-5 ">Description:{{bird.description}}</p>
+                                                                <p class="px-5">{{bird.location}}</p>
+                                                                <h6 class="text-right px-3 py-1">{{bird.username}}</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </v-card-text>
+                                            </v-card>
+                                        </v-tab-item>
+                                    </v-tabs>
+                                </v-card>
                             </div>
                         </div>
                     </div>
@@ -69,14 +132,22 @@ export default {
         }
     },
      created(){
+        this.fetchProjects()
         this.fetchBirds()
     },
     methods:{
-        fetchBirds(){
+        fetchProjects(){
             fetch('api/projects')
             .then(res => res.json())
             .then(res => {
                 this.projects = res.data
+            })
+        },
+        fetchBirds(){
+            fetch('api/birds')
+            .then(res => res.json())
+            .then(res => {
+                this.birds = res.data;
             })
         }
     }

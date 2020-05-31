@@ -2032,6 +2032,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2718,7 +2720,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2778,10 +2779,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -3083,6 +3080,69 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -3092,16 +3152,26 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   created: function created() {
+    this.fetchProjects();
     this.fetchBirds();
   },
   methods: {
-    fetchBirds: function fetchBirds() {
+    fetchProjects: function fetchProjects() {
       var _this = this;
 
       fetch('api/projects').then(function (res) {
         return res.json();
       }).then(function (res) {
         _this.projects = res.data;
+      });
+    },
+    fetchBirds: function fetchBirds() {
+      var _this2 = this;
+
+      fetch('api/birds').then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        _this2.birds = res.data;
       });
     }
   }
@@ -39904,7 +39974,16 @@ var render = function() {
                         )
                       ]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("Team")]),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "text-white no-underline",
+                            attrs: { href: "/about/" }
+                          },
+                          [_vm._v("Team")]
+                        )
+                      ]),
                       _vm._v(" "),
                       _c("li", [_vm._v("Our story")]),
                       _vm._v(" "),
@@ -41769,7 +41848,7 @@ var render = function() {
                   _c("div", { staticClass: "w-100 flex xs:block" }, [
                     _c(
                       "div",
-                      { staticClass: "xl:w-50 xs:w-100  mr-5" },
+                      { staticClass: "xl:w-100 xs:w-100  mr-5" },
                       [
                         _c("v-text-field", {
                           attrs: { label: "Email", rules: _vm.emailRules },
@@ -41783,58 +41862,26 @@ var render = function() {
                         })
                       ],
                       1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "xl:w-50 xs:w-100 " },
-                      [
-                        _c("v-text-field", {
-                          attrs: { label: "Phone" },
-                          model: {
-                            value: _vm.phone,
-                            callback: function($$v) {
-                              _vm.phone = $$v
-                            },
-                            expression: "phone"
-                          }
-                        })
-                      ],
-                      1
                     )
                   ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    [
-                      _c("v-select", {
-                        attrs: {
-                          label: "Country",
-                          items: _vm.items,
-                          rules: _vm.countryRules
-                        }
-                      })
-                    ],
-                    1
-                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "w-100 flex xs:block" }, [
                     _c(
                       "div",
-                      { staticClass: "xl:w-50 xs:w-100  mr-5" },
+                      { staticClass: "xl:w-50 xs:w-100" },
                       [
-                        _c("v-text-field", {
+                        _c("v-select", {
                           attrs: {
-                            label: "State",
-                            rules: _vm.otherRules,
-                            color: "red"
+                            label: "Country",
+                            items: _vm.items,
+                            rules: _vm.countryRules
                           },
                           model: {
-                            value: _vm.state,
+                            value: _vm.country,
                             callback: function($$v) {
-                              _vm.state = $$v
+                              _vm.country = $$v
                             },
-                            expression: "state"
+                            expression: "country"
                           }
                         })
                       ],
@@ -41860,23 +41907,25 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-100 flex" },
-                    [
-                      _c("v-text-field", {
-                        attrs: { label: "Phone" },
-                        model: {
-                          value: _vm.phone,
-                          callback: function($$v) {
-                            _vm.phone = $$v
-                          },
-                          expression: "phone"
-                        }
-                      })
-                    ],
-                    1
-                  ),
+                  _c("div", { staticClass: "w-100 flex xs:block" }, [
+                    _c(
+                      "div",
+                      { staticClass: "xl:w-100 xs:w-100 " },
+                      [
+                        _c("v-text-field", {
+                          attrs: { label: "Phone" },
+                          model: {
+                            value: _vm.phone,
+                            callback: function($$v) {
+                              _vm.phone = $$v
+                            },
+                            expression: "phone"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "text-grey-darker" }, [
                     _c("input", {
@@ -42292,122 +42341,205 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", [
-      _c("div", { staticClass: "w-100 mb-24", attrs: { id: "projects" } }, [
+      _c("div", { staticClass: "w-100", attrs: { id: "projects" } }, [
         _vm._m(1),
         _vm._v(" "),
         _c("div", [
           _c("div", {}, [
-            _c("div", { staticClass: "w-80 mx-auto" }, [
+            _c("div", {}, [
               _c(
                 "div",
-                { staticClass: "w-100 grid xl:grid-3 mb-5" },
+                {
+                  attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
+                },
                 [
                   _c(
-                    "div",
-                    {
-                      staticClass:
-                        "bg-white shadow-md px-4 py-3 hover:shadow-lg xl:mr-2 mb-3 rounded  text-grey-darkest",
-                      attrs: {
-                        "data-aos": "zoom-in",
-                        "data-aos-duration": "2000"
-                      }
-                    },
+                    "v-card",
+                    { attrs: { flat: "" } },
                     [
-                      _c("h3", { staticClass: "text-xl" }, [
-                        _vm._v("Bird Tracking")
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "pt-4 text-sm" }, [
-                        _vm._v(
-                          "BirdTrack is a free and convenient way of storing your bird records online. View the latest trends..."
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "text-right" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "py-1 px-1 bg-orange-dark text-white"
-                          },
-                          [
-                            _c(
-                              "router-link",
-                              {
-                                staticClass: "no-underline",
-                                attrs: { to: { name: "birdTrack" } }
-                              },
+                      _c(
+                        "v-tabs",
+                        { attrs: { vertical: "" } },
+                        [
+                          _vm._l(_vm.projects, function(project) {
+                            return _c("v-tab", { key: project }, [
+                              _c("h5", { staticClass: "text-none text-sm" }, [
+                                _vm._v(_vm._s(project.name))
+                              ])
+                            ])
+                          }),
+                          _vm._v(" "),
+                          _vm._l(_vm.projects, function(project) {
+                            return _c(
+                              "v-tab-item",
+                              { key: project },
                               [
                                 _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "text-sm text-white hover:text-white"
-                                  },
-                                  [_vm._v("Read More")]
+                                  "v-card",
+                                  { attrs: { flat: "" } },
+                                  [
+                                    _c("v-card-text", {}, [
+                                      _c("div", {}, [
+                                        _c(
+                                          "h2",
+                                          { staticClass: "text-centered py-5" },
+                                          [_vm._v(_vm._s(project.name))]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "p",
+                                          { staticClass: "px-5 text-sm" },
+                                          [_vm._v(_vm._s(project.description))]
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
                                 )
-                              ]
+                              ],
+                              1
                             )
-                          ],
-                          1
-                        )
-                      ])
-                    ]
-                  ),
+                          })
+                        ],
+                        2
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {},
+                [
+                  _vm._m(2),
                   _vm._v(" "),
-                  _vm._l(_vm.projects, function(project) {
-                    return _c(
-                      "div",
-                      {
-                        key: project.id,
-                        staticClass:
-                          "bg-white shadow-md px-4 py-3 hover:shadow-lg mr-2 mb-3 rounded  text-grey-darkest",
-                        attrs: {
-                          "data-aos": "zoom-in",
-                          "data-aos-duration": "2000"
-                        }
-                      },
-                      [
-                        _c("h3", { staticClass: "text-xl" }, [
-                          _vm._v(_vm._s(project.name))
-                        ]),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "pt-4 text-sm" }, [
-                          _vm._v(_vm._s(_vm._f("snippet")(project.description)))
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "text-right" }, [
+                  _c(
+                    "v-card",
+                    { attrs: { flat: "" } },
+                    [
+                      _c(
+                        "v-tabs",
+                        [
+                          _c("v-tab", [
+                            _c("h5", { staticClass: "text-none text-sm" }, [
+                              _vm._v("Bird Tracking")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("v-tab", [
+                            _c("h5", { staticClass: "text-none text-sm" }, [
+                              _vm._v("Bird Recorded")
+                            ])
+                          ]),
+                          _vm._v(" "),
                           _c(
-                            "button",
-                            {
-                              staticClass: "py-1 px-1 bg-orange-dark text-white"
-                            },
+                            "v-tab-item",
                             [
                               _c(
-                                "router-link",
-                                {
-                                  staticClass: "no-underline",
-                                  attrs: { to: "/projects/" + project.slug }
-                                },
+                                "v-card",
+                                { attrs: { flat: "" } },
                                 [
-                                  _c(
-                                    "span",
-                                    {
-                                      staticClass:
-                                        "text-sm text-white hover:text-white"
-                                    },
-                                    [_vm._v("Read More")]
-                                  )
-                                ]
+                                  _c("v-card-text", {}, [
+                                    _c("div", {}, [
+                                      _c(
+                                        "h2",
+                                        { staticClass: "text-centered py-5" },
+                                        [_vm._v("Bird Tracking")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "px-5" }, [
+                                        _vm._v("Some Description here")
+                                      ])
+                                    ])
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-tab-item",
+                            [
+                              _c(
+                                "v-card",
+                                { attrs: { flat: "" } },
+                                [
+                                  _c("v-card-text", {}, [
+                                    _c("div", { staticClass: "w-90 mx-auto" }, [
+                                      _c(
+                                        "div",
+                                        { staticClass: "w-100 grid grid-4" },
+                                        _vm._l(_vm.birds, function(bird) {
+                                          return _c(
+                                            "div",
+                                            {
+                                              key: bird,
+                                              staticClass:
+                                                "bg-white-smoke mr-3 rounded shadow-md"
+                                            },
+                                            [
+                                              _c(
+                                                "h5",
+                                                { staticClass: "px-5 py-2" },
+                                                [_vm._v(_vm._s(bird.name))]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("p", { staticClass: "px-5" }, [
+                                                _vm._v(
+                                                  "Activity: " +
+                                                    _vm._s(bird.activity)
+                                                )
+                                              ]),
+                                              _vm._v(" "),
+                                              _c(
+                                                "p",
+                                                { staticClass: "px-5 " },
+                                                [
+                                                  _vm._v(
+                                                    "Description:" +
+                                                      _vm._s(bird.description)
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("p", { staticClass: "px-5" }, [
+                                                _vm._v(_vm._s(bird.location))
+                                              ]),
+                                              _vm._v(" "),
+                                              _c(
+                                                "h6",
+                                                {
+                                                  staticClass:
+                                                    "text-right px-3 py-1"
+                                                },
+                                                [_vm._v(_vm._s(bird.username))]
+                                              )
+                                            ]
+                                          )
+                                        }),
+                                        0
+                                      )
+                                    ])
+                                  ])
+                                ],
+                                1
                               )
                             ],
                             1
                           )
-                        ])
-                      ]
-                    )
-                  })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
                 ],
-                2
+                1
               )
             ])
           ])
@@ -42433,7 +42565,7 @@ var staticRenderFns = [
           [
             _c("div", { staticClass: "text-centered text-white" }, [
               _c("h1", { staticClass: "pb-3 xl:text-3xl xs:text-xl" }, [
-                _vm._v("What We Do")
+                _vm._v("Our Projects")
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "xs:text-sm" }, [
@@ -42452,7 +42584,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass: "no-underline text-white",
-                      attrs: { href: "#activities" }
+                      attrs: { href: "#projects" }
                     },
                     [_vm._v("Explore")]
                   )
@@ -42474,6 +42606,16 @@ var staticRenderFns = [
         { staticClass: "text-centered xl:p-5 xs:text-2xl text-grey-darkest" },
         [_vm._v("Our Projects")]
       )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", {}, [
+      _c("h2", { staticClass: "text-grey-darker py-12 text-centered" }, [
+        _vm._v("Bird Tracking Project")
+      ])
     ])
   }
 ]
