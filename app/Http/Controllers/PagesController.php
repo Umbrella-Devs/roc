@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Gallery;
 
 class PagesController extends Controller
 {
@@ -30,6 +31,11 @@ class PagesController extends Controller
     }
     public function donate(){
         return view('donate');
+    }
+
+    public function gallery(){
+        $images = Gallery::orderBy('created_at', 'desc')->paginate('18');
+        return view('gallery')->with('images', $images);
     }
 
 

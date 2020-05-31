@@ -93,8 +93,15 @@
                                 <a class="text-white no-underline" href="{{ route('projects') }}">Projects</a>
                             </li>
                             <li class="mx-3 text-sm">
+                                <a class="text-white no-underline" href="{{ route('blog') }}">Blog</a>
+                            </li>
+                            <li class="mx-3 text-sm">
                                 <a class="text-white no-underline" href="{{ route('about_us') }}">About us</a>
                             </li>
+                            <li class="mx-3 text-sm">
+                                <a class="text-white no-underline" href="{{ route('gallery') }}">Gallery</a>
+                            </li>
+                            
                             <!-- <li class="mx-2 text-sm">
                                 <router-link :to="{ name: 'gallery' }" class="no-underline">
                                     <span class="text-white hover:text-orange">Gallery</span>
