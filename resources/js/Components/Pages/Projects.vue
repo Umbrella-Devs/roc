@@ -17,7 +17,7 @@
             </div>
         </div>
         <div>
-            <div class="w-100" id="projects">
+            <div class="w-100" id="projects" data-aos="fade-right" data-aos-duration="2000">
                 <div class="xs:py-4">
                     <h2 class="text-centered xl:p-5 xs:text-2xl text-grey-darkest">Our Projects</h2>
                 </div>
@@ -71,11 +71,11 @@
                                     </v-tabs>
                                 </v-card>
                             </div>
-                            <div class=" w-80 mx-auto mb-12">
+                            <div class=" w-80 mx-auto mb-12" data-aos="fade-down" data-aos-duration="2000">
                                 <div class="">
                                     <h2 class="text-grey-darker py-12 text-centered">Bird Tracking Project</h2>
                                 </div>
-                                <div class="rounded shadow-sm hover:shadow-lg">
+                                <div class="rounded shadow-sm hover:shadow-lg" data-aos="zoom-in" data-aos-duration="2000">
                                     <v-card flat>
                                         <v-tabs color="orange">
                                             <v-tab>
@@ -105,18 +105,7 @@
                                             <v-tab-item>
                                                 <v-card flat>
                                                     <v-card-text class="">
-                                                        <div class="w-90 mx-auto">
-                                                            <div class="w-100 grid grid-4">
-                                                                <div class="bg-white-smoke mr-3 rounded shadow-md" v-for="bird in birds" :key="bird">
-                                                                    <h5 class="px-5 py-2">{{bird.name}}</h5>
-                                                                    <p class="px-5">Activity: {{bird.activity}}</p>
-                                                                    <p class="px-5 ">Description:{{bird.description}}</p>
-                                                                    <p class="px-5">{{bird.location}}</p>
-                                                                    <h6 class="text-right px-3 py-1">{{bird.username}}</h6>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
+                                                        <v-data-table :headers="headers" :items="birds" :items-per-page="5" class="elevation-1"></v-data-table>
                                                     </v-card-text>
                                                 </v-card>
                                             </v-tab-item>
@@ -142,6 +131,21 @@ export default {
         return{
             projects:[],
             birds: [],
+            headers: [
+            { text: 'ID', value: 'id' },
+          {
+            text: 'Bird Name',
+            align: 'start',
+            sortable: false,
+            value: 'name',
+          },
+          { text: 'No of Birds', value: 'number' },
+          { text: 'Activity', value: 'activity' },
+          { text: 'Username', value: 'username' },
+          { text: 'Location', value: 'location' },
+          
+        ],
+        
         }
     },
      created(){

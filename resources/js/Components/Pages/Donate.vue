@@ -53,7 +53,7 @@
                             </div>
                             <div class="w-100 flex">
                                 <div class="w-50 mr-2">
-                                    <v-select v-model="country" label="Country" :items="countries" :rules="countryRules"></v-select>
+                                    <v-text-field v-model="country" label="Country"  :rules="countryRules"></v-text-field>
                                 </div>
                                 <div class="w-50">
                                     <v-text-field label="City" v-model="city" :rules="otherRules"></v-text-field>
@@ -99,7 +99,6 @@ export default {
             project_id:1,
             projects:[],
             select:null,
-            countries:['Rwanda','Uganda','United States of America'],
             projects:['Education','Bird Track','Conservation','Green Birding','Research','Bird Ringing',],
 
             submitted: false,
@@ -117,6 +116,9 @@ export default {
                 v => !!v || 'This field is required'
             ],
         }
+    },
+    created(){
+        
     },
     methods:{
         validate(){
@@ -138,8 +140,7 @@ export default {
             }).then(response => {
                 $('#success').html(response.data.message)
             })
-        }
-
+        },
     }
 }
 </script>

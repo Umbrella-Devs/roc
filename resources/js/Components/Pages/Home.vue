@@ -174,54 +174,24 @@
                         <div class="w-100   text-grey-darkest">
                             <div class="w-90 xs:block flex mx-auto">
                                 <div class="w-5 xs:hidden"></div>
-                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md" >
+                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md" 
+                                    v-for="post in posts" :key="post" 
+                                    data-aos="zoom-in" data-aos-duration="2000">
                                     <div class="">
-                                        <v-img src="img/IMG_2802.jpg" width="100%" height="200"></v-img>
+                                        <v-img :src="'/storage/' + post.image" width="100%" height="200"></v-img>
                                     </div>
                                     <div class="xs:pb-2">
                                         <div class="py-2">
                                             <h4 class="text-xs text-right px-2 text-orange-dark">Fri, May 23, 2020</h4>
                                         </div>
                                         <div class="px-4">
-                                            <h3 class="text-sm py-2">Birds Day in Rugezi Center</h3>
-                                            <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
+                                            <h3 class="text-sm py-2">{{post.title}}</h3>
+                                            <p class="text-sm">{{post.excerpt | snippet}}</p>
                                         </div>
                                         <div class="text-right mx-5 mb-4">
-                                            <button class="text-sm btn border-orange-darker">Read More</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
-                                    <div class="">
-                                        <v-img src="img/IMG_1600.jpg" width="100%" height="200"></v-img>
-                                    </div>
-                                    <div class="py-2">
-                                        <div>
-                                            <h4 class="text-xs text-right px-2 text-orange-dark">Thur, Jan 01, 2020</h4>
-                                        </div>
-                                        <div class="px-4">
-                                            <h3 class="text-sm py-2">Bird Watching the great thing</h3>
-                                            <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
-                                        </div>
-                                        <div class="text-right mx-5 mb-4">
-                                            <button class="text-sm btn border-orange-darker">Read More</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bg-white xl:w-30 xs:w-100 xl:mx-3 xs:my-2 shadow-md">
-                                    <div class="">
-                                        <v-img src="img/IMG_4782.jpg" width="100%" height="200"></v-img>
-                                    </div>
-                                    <div class="py-2">
-                                        <div>
-                                            <h4 class="text-xs text-right px-2 text-orange-dark">Wed, Jun 12, 2020</h4>
-                                        </div>
-                                        <div class="px-4">
-                                            <h3 class="text-sm py-2">Internship to students </h3>
-                                            <p class="text-sm">Just like in humans, birds communication can occur through a variety of methods—body postures...</p>
-                                        </div>
-                                        <div class="text-right mx-5 mb-4">
-                                            <button class="text-sm btn border-orange-darker">Read More</button>
+                                            <button class="">
+                                                <a :href="'/post/'+ post.id"  class="text-sm text-black btn border-orange-darker">Read More</a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -243,6 +213,7 @@ export default {
     components:{Popup},
     data(){
         return{
+            posts:[],
             activities:[
                 {id:'1', head:'Education', slug:'education', body:'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education.', svg:'/img/svg/hat.svg', href:'/activities#education'},
                 {id:'2', head:'Research', slug:'research', body:'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share.', svg:'/img/svg/research.svg', href:'/activities#research'},
@@ -251,6 +222,18 @@ export default {
                 {id:'5', head:'Events', slug:'events', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/calendar.svg', href:'/activities#events'},
                 {id:'6', head:'Helping Community', slug:'community', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/conservation.svg', href:'/activities#education'},
             ],
+        }
+    },
+    created(){
+        this.fectchPosts()
+    },
+    methods:{
+        fectchPosts(){
+            fetch('api/posts')
+            .then(res => res.json())
+            .then(res => {
+                this.posts = res.data
+            })
         }
     }
 }
