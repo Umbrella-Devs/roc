@@ -49,17 +49,20 @@
                                     </div>
                                 </div>
                             </div>-->
-                            <div class="" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class=" w-80 mx-auto shadow-sm rounded hover:shadow-md pl-3" data-aos="zoom-in" data-aos-duration="2000">
                                 <v-card flat>
-                                    <v-tabs vertical>
+                                    <v-tabs vertical color="orange">
                                         <v-tab v-for="project in projects" :key="project">
                                             <h5 class="text-none text-sm">{{project.name}}</h5>
                                         </v-tab>
+                                        
                                         <v-tab-item v-for="project in projects" :key="project">
+                                            
                                             <v-card flat>
                                                 <v-card-text class="">
+                                                    
                                                     <div class="">
-                                                        <h2 class="text-centered py-5">{{project.name}}</h2>
+                                                        <h2 class="text-centered py-2">{{project.name}}</h2>
                                                         <p class="px-5 text-sm">{{project.description}}</p>
                                                     </div>
                                                 </v-card-text>
@@ -68,48 +71,58 @@
                                     </v-tabs>
                                 </v-card>
                             </div>
-                            <div class="">
+                            <div class=" w-80 mx-auto mb-12">
                                 <div class="">
                                     <h2 class="text-grey-darker py-12 text-centered">Bird Tracking Project</h2>
                                 </div>
-                                <v-card flat>
-                                    <v-tabs>
-                                        <v-tab>
-                                            <h5 class="text-none text-sm">Bird Tracking</h5>
-                                        </v-tab>
-                                        <v-tab>
-                                            <h5 class="text-none text-sm">Bird Recorded</h5>
-                                        </v-tab>
-                                        <v-tab-item>
-                                            <v-card flat>
-                                                <v-card-text class="">
-                                                    <div class="">
-                                                        <h2 class="text-centered py-5">Bird Tracking</h2>
-                                                        <p class="px-5">Some Description here</p>
-                                                    </div>
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-tab-item>
-                                        <v-tab-item>
-                                            <v-card flat>
-                                                <v-card-text class="">
-                                                    <div class="w-90 mx-auto">
-                                                        <div class="w-100 grid grid-4">
-                                                            <div class="bg-white-smoke mr-3 rounded shadow-md" v-for="bird in birds" :key="bird">
-                                                                <h5 class="px-5 py-2">{{bird.name}}</h5>
-                                                                <p class="px-5">Activity: {{bird.activity}}</p>
-                                                                <p class="px-5 ">Description:{{bird.description}}</p>
-                                                                <p class="px-5">{{bird.location}}</p>
-                                                                <h6 class="text-right px-3 py-1">{{bird.username}}</h6>
+                                <div class="rounded shadow-sm hover:shadow-lg">
+                                    <v-card flat>
+                                        <v-tabs color="orange">
+                                            <v-tab>
+                                                <h5 class="text-none text-sm">Bird Tracking</h5>
+                                            </v-tab>
+                                            <v-tab>
+                                                <h5 class="text-none text-sm">Bird Recorded</h5>
+                                            </v-tab>
+                                            <v-tab-item>
+                                                <v-card flat>
+                                                    <v-card-text class="">
+                                                        <div class="">
+                                                            <h2 class="text-centered py-3">Bird Tracking</h2>
+                                                            <p class="px-5">
+                                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                                                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                                                                as opposed to using Content here, content here, making it look like readable English. 
+                                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                                                                and a search for lorem ipsum will uncover many web sites still in their infancy. 
+                                                                Various versions have evolved over the years, 
+                                                                sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                            </p>
+                                                        </div>
+                                                    </v-card-text>
+                                                </v-card>
+                                            </v-tab-item>
+                                            <v-tab-item>
+                                                <v-card flat>
+                                                    <v-card-text class="">
+                                                        <div class="w-90 mx-auto">
+                                                            <div class="w-100 grid grid-4">
+                                                                <div class="bg-white-smoke mr-3 rounded shadow-md" v-for="bird in birds" :key="bird">
+                                                                    <h5 class="px-5 py-2">{{bird.name}}</h5>
+                                                                    <p class="px-5">Activity: {{bird.activity}}</p>
+                                                                    <p class="px-5 ">Description:{{bird.description}}</p>
+                                                                    <p class="px-5">{{bird.location}}</p>
+                                                                    <h6 class="text-right px-3 py-1">{{bird.username}}</h6>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    
-                                                </v-card-text>
-                                            </v-card>
-                                        </v-tab-item>
-                                    </v-tabs>
-                                </v-card>
+                                                        
+                                                    </v-card-text>
+                                                </v-card>
+                                            </v-tab-item>
+                                        </v-tabs>
+                                    </v-card>
+                                </div>
                             </div>
                         </div>
                     </div>

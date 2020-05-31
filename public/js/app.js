@@ -3169,6 +3169,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -42529,6 +42542,8 @@ var render = function() {
               _c(
                 "div",
                 {
+                  staticClass:
+                    " w-80 mx-auto shadow-sm rounded hover:shadow-md pl-3",
                   attrs: { "data-aos": "zoom-in", "data-aos-duration": "2000" }
                 },
                 [
@@ -42538,7 +42553,7 @@ var render = function() {
                     [
                       _c(
                         "v-tabs",
-                        { attrs: { vertical: "" } },
+                        { attrs: { vertical: "", color: "orange" } },
                         [
                           _vm._l(_vm.projects, function(project) {
                             return _c("v-tab", { key: project }, [
@@ -42561,7 +42576,7 @@ var render = function() {
                                       _c("div", {}, [
                                         _c(
                                           "h2",
-                                          { staticClass: "text-centered py-5" },
+                                          { staticClass: "text-centered py-2" },
                                           [_vm._v(_vm._s(project.name))]
                                         ),
                                         _vm._v(" "),
@@ -42589,137 +42604,166 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c(
-                "div",
-                {},
-                [
-                  _vm._m(2),
-                  _vm._v(" "),
-                  _c(
-                    "v-card",
-                    { attrs: { flat: "" } },
-                    [
-                      _c(
-                        "v-tabs",
-                        [
-                          _c("v-tab", [
-                            _c("h5", { staticClass: "text-none text-sm" }, [
-                              _vm._v("Bird Tracking")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("v-tab", [
-                            _c("h5", { staticClass: "text-none text-sm" }, [
-                              _vm._v("Bird Recorded")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "v-tab-item",
-                            [
-                              _c(
-                                "v-card",
-                                { attrs: { flat: "" } },
-                                [
-                                  _c("v-card-text", {}, [
-                                    _c("div", {}, [
-                                      _c(
-                                        "h2",
-                                        { staticClass: "text-centered py-5" },
-                                        [_vm._v("Bird Tracking")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("p", { staticClass: "px-5" }, [
-                                        _vm._v("Some Description here")
+              _c("div", { staticClass: " w-80 mx-auto mb-12" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "rounded shadow-sm hover:shadow-lg" },
+                  [
+                    _c(
+                      "v-card",
+                      { attrs: { flat: "" } },
+                      [
+                        _c(
+                          "v-tabs",
+                          { attrs: { color: "orange" } },
+                          [
+                            _c("v-tab", [
+                              _c("h5", { staticClass: "text-none text-sm" }, [
+                                _vm._v("Bird Tracking")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("v-tab", [
+                              _c("h5", { staticClass: "text-none text-sm" }, [
+                                _vm._v("Bird Recorded")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "v-tab-item",
+                              [
+                                _c(
+                                  "v-card",
+                                  { attrs: { flat: "" } },
+                                  [
+                                    _c("v-card-text", {}, [
+                                      _c("div", {}, [
+                                        _c(
+                                          "h2",
+                                          { staticClass: "text-centered py-3" },
+                                          [_vm._v("Bird Tracking")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("p", { staticClass: "px-5" }, [
+                                          _vm._v(
+                                            "\n                                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. \n                                                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, \n                                                            as opposed to using Content here, content here, making it look like readable English. \n                                                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,\n                                                            and a search for lorem ipsum will uncover many web sites still in their infancy. \n                                                            Various versions have evolved over the years, \n                                                            sometimes by accident, sometimes on purpose (injected humour and the like).\n                                                        "
+                                          )
+                                        ])
                                       ])
                                     ])
-                                  ])
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-tab-item",
-                            [
-                              _c(
-                                "v-card",
-                                { attrs: { flat: "" } },
-                                [
-                                  _c("v-card-text", {}, [
-                                    _c("div", { staticClass: "w-90 mx-auto" }, [
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-tab-item",
+                              [
+                                _c(
+                                  "v-card",
+                                  { attrs: { flat: "" } },
+                                  [
+                                    _c("v-card-text", {}, [
                                       _c(
                                         "div",
-                                        { staticClass: "w-100 grid grid-4" },
-                                        _vm._l(_vm.birds, function(bird) {
-                                          return _c(
+                                        { staticClass: "w-90 mx-auto" },
+                                        [
+                                          _c(
                                             "div",
                                             {
-                                              key: bird,
-                                              staticClass:
-                                                "bg-white-smoke mr-3 rounded shadow-md"
+                                              staticClass: "w-100 grid grid-4"
                                             },
-                                            [
-                                              _c(
-                                                "h5",
-                                                { staticClass: "px-5 py-2" },
-                                                [_vm._v(_vm._s(bird.name))]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("p", { staticClass: "px-5" }, [
-                                                _vm._v(
-                                                  "Activity: " +
-                                                    _vm._s(bird.activity)
-                                                )
-                                              ]),
-                                              _vm._v(" "),
-                                              _c(
-                                                "p",
-                                                { staticClass: "px-5 " },
+                                            _vm._l(_vm.birds, function(bird) {
+                                              return _c(
+                                                "div",
+                                                {
+                                                  key: bird,
+                                                  staticClass:
+                                                    "bg-white-smoke mr-3 rounded shadow-md"
+                                                },
                                                 [
-                                                  _vm._v(
-                                                    "Description:" +
-                                                      _vm._s(bird.description)
+                                                  _c(
+                                                    "h5",
+                                                    {
+                                                      staticClass: "px-5 py-2"
+                                                    },
+                                                    [_vm._v(_vm._s(bird.name))]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "p",
+                                                    { staticClass: "px-5" },
+                                                    [
+                                                      _vm._v(
+                                                        "Activity: " +
+                                                          _vm._s(bird.activity)
+                                                      )
+                                                    ]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "p",
+                                                    { staticClass: "px-5 " },
+                                                    [
+                                                      _vm._v(
+                                                        "Description:" +
+                                                          _vm._s(
+                                                            bird.description
+                                                          )
+                                                      )
+                                                    ]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "p",
+                                                    { staticClass: "px-5" },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(bird.location)
+                                                      )
+                                                    ]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "h6",
+                                                    {
+                                                      staticClass:
+                                                        "text-right px-3 py-1"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(bird.username)
+                                                      )
+                                                    ]
                                                   )
                                                 ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("p", { staticClass: "px-5" }, [
-                                                _vm._v(_vm._s(bird.location))
-                                              ]),
-                                              _vm._v(" "),
-                                              _c(
-                                                "h6",
-                                                {
-                                                  staticClass:
-                                                    "text-right px-3 py-1"
-                                                },
-                                                [_vm._v(_vm._s(bird.username))]
                                               )
-                                            ]
+                                            }),
+                                            0
                                           )
-                                        }),
-                                        0
+                                        ]
                                       )
                                     ])
-                                  ])
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
             ])
           ])
         ])
