@@ -24,7 +24,7 @@ import About from './Components/Pages/About.vue'
 import Home from './Components/Pages/Home.vue'
 import Activites from './Components/Pages/Activities.vue'
 import Projects from './Components/Pages/Projects.vue'
-import Gallery from './Components/Pages/Gallery.vue'
+
 import Donate from './Components/Pages/Donate.vue'
 import Join from './Components/Pages/JoinUs.vue'
 /**
@@ -51,7 +51,6 @@ const router = new VueRouter({
         {path: '/about', name: 'about', component: About,},
         {path: '/activities', name: 'activity', component: Activites,},
         {path: '/projects', name: 'projects', component: Projects,},
-        {path: '/gallery', name: 'gallery', component: Gallery,},
         {path: '/donate', name: 'donate', component: Donate,},
         {path: '/join-us', name: 'join', component: Join,},
     ],
@@ -69,7 +68,7 @@ const app = new Vue({
     vuetify,
     el: '#app',
     render: h => h(App),
-    components: { App,About,Activites,Projects,Gallery,Home,Donate,Join, },
+    components: { App,About,Activites,Projects,Home,Donate,Join,},
     router,
     
 });

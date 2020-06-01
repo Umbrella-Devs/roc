@@ -100018,17 +100018,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Components/Pages/Gallery.vue":
-/*!***************************************************!*\
-  !*** ./resources/js/Components/Pages/Gallery.vue ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/vue-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Moi\\Documents\\Projects\\UpdatedROC\\roc\\resources\\js\\Components\\Pages\\Gallery.vue'");
-
-/***/ }),
-
 /***/ "./resources/js/Components/Pages/Home.vue":
 /*!************************************************!*\
   !*** ./resources/js/Components/Pages/Home.vue ***!
@@ -100426,9 +100415,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Components/Pages/Home.vue */ "./resources/js/Components/Pages/Home.vue");
 /* harmony import */ var _Components_Pages_Activities_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Components/Pages/Activities.vue */ "./resources/js/Components/Pages/Activities.vue");
 /* harmony import */ var _Components_Pages_Projects_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Components/Pages/Projects.vue */ "./resources/js/Components/Pages/Projects.vue");
-/* harmony import */ var _Components_Pages_Gallery_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Components/Pages/Gallery.vue */ "./resources/js/Components/Pages/Gallery.vue");
-/* harmony import */ var _Components_Pages_Donate_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Pages/Donate.vue */ "./resources/js/Components/Pages/Donate.vue");
-/* harmony import */ var _Components_Pages_JoinUs_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Components/Pages/JoinUs.vue */ "./resources/js/Components/Pages/JoinUs.vue");
+/* harmony import */ var _Components_Pages_Donate_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Components/Pages/Donate.vue */ "./resources/js/Components/Pages/Donate.vue");
+/* harmony import */ var _Components_Pages_JoinUs_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Pages/JoinUs.vue */ "./resources/js/Components/Pages/JoinUs.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -100444,7 +100432,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-
 
 
 
@@ -100482,17 +100469,13 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
     name: 'projects',
     component: _Components_Pages_Projects_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
   }, {
-    path: '/gallery',
-    name: 'gallery',
-    component: _Components_Pages_Gallery_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
-  }, {
     path: '/donate',
     name: 'donate',
-    component: _Components_Pages_Donate_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
+    component: _Components_Pages_Donate_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
   }, {
     path: '/join-us',
     name: 'join',
-    component: _Components_Pages_JoinUs_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
+    component: _Components_Pages_JoinUs_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
   }]
 });
 Vue.filter('snippet', function (value) {
@@ -100515,10 +100498,9 @@ var app = new Vue({
     About: _Components_Pages_About_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     Activites: _Components_Pages_Activities_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
     Projects: _Components_Pages_Projects_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
-    Gallery: _Components_Pages_Gallery_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
     Home: _Components_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    Donate: _Components_Pages_Donate_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
-    Join: _Components_Pages_JoinUs_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
+    Donate: _Components_Pages_Donate_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+    Join: _Components_Pages_JoinUs_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
   },
   router: router
 });
