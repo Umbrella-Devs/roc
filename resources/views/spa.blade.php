@@ -110,7 +110,9 @@
                             </li>
                             <li class="xl:mx-3 md:mx-1 text-sm">
                                 <div class="dropdown">
-                                    <a class="text-white no-underline" href="{{ route('about_us') }}">About us</a>
+                                    <a class="text-white no-underline" href="{{ route('about_us') }}">
+                                        About us<i class="fa fa-caret-down px-2"></i>
+                                    </a>
                                     <div class="dropdown-content bg-green-darkest">
                                         <a href="{{ route('activities') }}" class="hover:bg-green-darker">Activities</a>
                                         <a href="{{ route('gallery') }}" class="hover:bg-green-darker">Gallery</a>
