@@ -145,6 +145,26 @@
         width: 100%;
     }
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            border: none
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left
+        }
+        .dropdown-content a:hover {background-color: ;}
+        .dropdown:hover .dropdown-content {display: block;}
     </style>
 </head>
 <body class="w-100 overflow-x-hidden">
@@ -176,38 +196,32 @@
             </div>
             <div class="w-70 md:w-80 text-right pt-1">
                 <div class="" style="margin-top:-10px">
-                    <ul class="list inline-block">
-                        <li class="xl:mx-3 md:mx-1 text-sm">
+                <ul class="list inline-block">
+                    <li class="xl:mx-3 md:mx-1 text-sm">
                         <a class="text-white no-underline" href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li class="xl:mx-3 md:mx-1 text-sm">
-                            <a class="text-white no-underline" href="{{ route('activities') }}">Activities</a>
-                        </li>
-                        <li class="xl:mx-3 md:mx-1 text-sm">
-                            <a class="text-white no-underline" href="{{ route('projects') }}">Projects</a>
-                        </li>
-                        <li class="xl:mx-3 md:mx-1 text-sm">
-                            <a class="text-white no-underline" href="{{ route('blog') }}">Blog</a>
-                        </li>
-                        <li class="xl:mx-3 md:mx-1 text-sm">
+                    </li>
+                    <li class="xl:mx-3 md:mx-1 text-sm">
+                        <div class="dropdown">
                             <a class="text-white no-underline" href="{{ route('about_us') }}">About us</a>
-                        </li>
-                        <li class="xl:mx-3 md:mx-1 text-sm">
-                            <a class="text-white no-underline" href="{{ route('gallery') }}">Gallery</a>
-                        </li>
-                        
-                        <!-- <li class="mx-2 text-sm">
-                            <router-link :to="{ name: 'gallery' }" class="no-underline">
-                                <span class="text-white hover:text-orange">Gallery</span>
-                            </router-link>
-                        </li>   -->
-                        <li class="xl:mx-3 md:mx-1 text-sm">
-                            <a class="text-white no-underline" href="{{ route('join_us') }}">Join Us</a>
-                        </li>
-                        <li class="xl:mx-3 md:mx-1 text-sm">
-                                <a class="rounded-full bg-orange-dark px-3 py-2 text-white no-underline" href="{{ route('donate') }}">Donate</a>
-                        </li>
-                    </ul>
+                            <div class="dropdown-content bg-green-darkest">
+                                <a href="{{ route('activities') }}" class="hover:bg-green-darker">Activities</a>
+                                <a href="{{ route('gallery') }}" class="hover:bg-green-darker">Gallery</a>
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="xl:mx-3 md:mx-1 text-sm">
+                        <a class="text-white no-underline" href="{{ route('projects') }}">Projects</a>
+                    </li>
+                    <li class="xl:mx-3 md:mx-1 text-sm">
+                        <a class="text-white no-underline" href="{{ route('blog') }}">Blog</a>
+                    </li>    
+                    <li class="xl:mx-3 md:mx-1 text-sm">
+                        <a class="text-white no-underline" href="{{ route('join_us') }}">Join Us</a>
+                    </li>
+                    <li class="xl:mx-3 md:mx-1 text-sm">
+                        <a class="rounded-full bg-orange-dark px-3 py-2 text-white no-underline" href="{{ route('donate') }}">Donate</a>
+                    </li>
+                </ul>
                 </div>
             </div>
     </div>
