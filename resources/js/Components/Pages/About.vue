@@ -109,7 +109,9 @@
                             </div>
                         </div>
                         <div class="my-auto mx-auto">
-                            <button class="btn bg-orange-dark text-white">Contact Us</button>                          
+                            <button class="btn bg-orange-dark text-white">
+                                <a class="no-underline text-white" href="/about#footer">Contact Us</a>
+                            </button>                          
                         </div>
                     </div>
                 </div>

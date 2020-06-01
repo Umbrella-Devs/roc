@@ -5,7 +5,7 @@
                 <div>
                    <router-view></router-view>
                 </div>      
-                <div class="bg-green-darkest w-100 py-5 z-999 relative xs:hidden">
+                <div class="bg-green-darkest w-100 py-5 z-999 relative xs:hidden" id="footer">
                     <div class="py-5 xl:w-85  md:w-90 mx-auto">
                         <div class="py-5">
                             <div class="w-100 flex">
@@ -60,7 +60,7 @@
                                         <h5 class="text-lg">Activities</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
-                                                <a class="text-white no-underline" href="/actvities#education">Education</a>
+                                                <a class="text-white no-underline" href="/activities#education">Education</a>
                                             </li>
                                             <li>
                                                 <a class="text-white no-underline" href="/activities#research">Research</a>
