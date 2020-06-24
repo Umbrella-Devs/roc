@@ -14,10 +14,10 @@
                                         <h5 class="text-lg">Contact Us</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
-                                                + 250 712 345 567
+                                                + 250 784 556 850
                                             </li>
-                                            <li>+ 250 712 345 567  </li>
-                                            <li>roc@gmail.com</li>
+                                            <li>+ 250 783 772 300  </li>
+                                            <li>rocenter2020@gmail.com</li>
                                         </ul>
                                     </div>
                                     
@@ -30,7 +30,7 @@
                                                 <span>Musanze, Rwanda</span>
                                             </li>
                                             <li>NR 100 kv </li>
-                                            <li>roc@gmail.com</li>
+                                            <li>rocenter2020@gmail.com</li>
                                         </ul>
                                     </div>
                                     
@@ -106,10 +106,10 @@
                     <h5 class="text-lg">Contact Us</h5>
                     <ul class="list pt-1 p-0">
                         <li>
-                            + 250 712 345 567
+                            + 250 784 556 850
                         </li>
-                        <li>+ 250 712 345 567  </li>
-                        <li>info@roc.rw</li>
+                        <li>+ 250 783 772 300  </li>
+                        <li>rocenter2020@gmail.com</li>
                     </ul>
                 </div>
                 <div class="my-auto text-center w-50">

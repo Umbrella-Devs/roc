@@ -2708,14 +2708,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2728,42 +2720,42 @@ __webpack_require__.r(__webpack_exports__);
         id: '1',
         head: 'Education',
         slug: 'education',
-        body: 'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education.',
+        body: 'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education...',
         svg: '/img/svg/hat.svg',
         href: '/activities#education'
       }, {
         id: '2',
         head: 'Research',
         slug: 'research',
-        body: 'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share.',
+        body: 'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share...',
         svg: '/img/svg/research.svg',
         href: '/activities#research'
       }, {
         id: '3',
         head: 'Bird Conservation',
         slug: 'bird-conservation',
-        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim. Ullam placeat facere esse. Ipsum, a quidem. Error!',
+        body: 'We believe that working with and helping local communities is crucial to effective and sustainable conservation...',
         svg: '/img/svg/peace.svg',
         href: '/activities#bird-conservation'
       }, {
         id: '4',
         head: 'Daily Protection',
         slug: 'daily-protection',
-        body: 'The most-effective conservation strategy is direct, sustained protection of wild animal populations. This is the foundation of our work.',
+        body: 'We realized that the reality is found from the field. In that context, our best way of protecting bird’s species and conduct effective conservation... ',
         svg: '/img/svg/protection.svg',
         href: '/activities#daily-protection'
       }, {
         id: '5',
-        head: 'Events',
+        head: 'Conservation Events',
         slug: 'events',
-        body: 'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.',
+        body: 'We are dedicated to organize events with students and local communities to provide bird conservation messages...',
         svg: '/img/svg/calendar.svg',
         href: '/activities#events'
       }, {
         id: '6',
         head: 'Helping Community',
         slug: 'community',
-        body: 'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.',
+        body: 'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help...',
         svg: '/img/svg/conservation.svg',
         href: '/activities#education'
       }]
@@ -39692,13 +39684,13 @@ var render = function() {
                     _c("ul", { staticClass: "list pt-2 p-0" }, [
                       _c("li", [
                         _vm._v(
-                          "\n                                            + 250 712 345 567\n                                        "
+                          "\n                                            + 250 784 556 850\n                                        "
                         )
                       ]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("+ 250 712 345 567  ")]),
+                      _c("li", [_vm._v("+ 250 783 772 300  ")]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("roc@gmail.com")])
+                      _c("li", [_vm._v("rocenter2020@gmail.com")])
                     ])
                   ])
                 ]),
@@ -39712,7 +39704,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("li", [_vm._v("NR 100 kv ")]),
                       _vm._v(" "),
-                      _c("li", [_vm._v("roc@gmail.com")])
+                      _c("li", [_vm._v("rocenter2020@gmail.com")])
                     ])
                   ])
                 ]),
@@ -39873,13 +39865,13 @@ var render = function() {
             _c("ul", { staticClass: "list pt-1 p-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n                        + 250 712 345 567\n                    "
+                  "\n                        + 250 784 556 850\n                    "
                 )
               ]),
               _vm._v(" "),
-              _c("li", [_vm._v("+ 250 712 345 567  ")]),
+              _c("li", [_vm._v("+ 250 783 772 300  ")]),
               _vm._v(" "),
-              _c("li", [_vm._v("info@roc.rw")])
+              _c("li", [_vm._v("rocenter2020@gmail.com")])
             ])
           ]),
           _vm._v(" "),
@@ -40481,7 +40473,7 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("p", { staticClass: "xs:text-sm" }, [
                 _vm._v(
-                  "Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us."
+                  "Our effective bird’s conservation in Rugezi marshland and in other Important Birds Areas (IBA) found in Rwanda."
                 )
               ])
             ]),
@@ -40538,7 +40530,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3" }, [
             _vm._v(
-              "Education is key to empowering people and creating the next generation of conservationists. We work directly with local educational institutions and partner organizations to strengthen their programs and capacity, training hundreds of young scientists each year."
+              "Conservation education play a significant role to empower people and encourage young generation to take action in in biodiversity conservation through capacity building provision. Indeed, the shortage of awareness is the chief mean of biodiversity loss and degrades their habitat. We work together with local education institutions and partner organizations for having future conservationists through training young generations about bird’s science."
             )
           ])
         ])
@@ -40566,7 +40558,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("p", { staticClass: "pt-10" }, [
               _vm._v(
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quos impedit excepturi error placeat exercitationem atque, nulla odit reiciendis quis blanditiis obcaecati officiis vel perspiciatis fuga incidunt alias voluptate quo?"
+                "We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can birds, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”"
               )
             ])
           ]
@@ -40597,7 +40589,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("p", { staticClass: "pt-3" }, [
               _vm._v(
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quos impedit excepturi error placeat exercitationem atque, nulla odit reiciendis quis blanditiis obcaecati officiis vel perspiciatis fuga incidunt alias voluptate quo?"
+                "We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can birds, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”"
               )
             ])
           ]
@@ -40623,7 +40615,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
-              "We operate the longest-running gorilla research site in the world, the Karisoke Research Center. Most of what is known about gorillas is based on studies conducted at Karisoke over the past 50 years.  Our research also focuses on understanding many of the unique animals and plants that also call these forests home."
+              "We perform scientific research on birds to strengthen bird’s science. We are highly motivated to conduct and develop our uniqueness bird’s research based on birds ringing and banding in Rwanda. Our research also focuses on understanding the status of birds and their habitat within our working areas."
             )
           ])
         ])
@@ -40642,11 +40634,13 @@ var staticRenderFns = [
       },
       [
         _c("div", { staticClass: "text-grey-darkest" }, [
-          _c("h2", { staticClass: "text-2xl" }, [_vm._v("Events")]),
+          _c("h2", { staticClass: "text-2xl" }, [
+            _vm._v(" Conservation Events")
+          ]),
           _vm._v(" "),
           _c("p", { staticClass: "pt-10" }, [
             _vm._v(
-              "We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can gorillas, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”"
+              "We are dedicated to organize events with students and local communities to provide bird conservation messages about the value and importance of biodiversity conservation, particular birds in our working areas. These events act as bait to attract many people, help to communicate issues reflecting bird’s conservation while encouraging them to be our principal partners by participating in our conservation projects."
             )
           ])
         ])
@@ -40666,12 +40660,12 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "text-grey-darkest xs:pt-3" }, [
           _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
-            _vm._v("Events")
+            _vm._v(" Conservation Events")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
-              "We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can gorillas, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”"
+              "We are dedicated to organize events with students and local communities to provide bird conservation messages about the value and importance of biodiversity conservation, particular birds in our working areas. These events act as bait to attract many people, help to communicate issues reflecting bird’s conservation while encouraging them to be our principal partners by participating in our conservation projects."
             )
           ])
         ])
@@ -40697,7 +40691,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
-              "The best way to save endangered species and conduct effective conservation is with direct, sustained protection in the wild. This is the foundation of our work and why mountain gorillas are the only wild ape whose population is growing."
+              "We realized that the reality is found from the field. In that context, our best way of protecting bird’s species and conduct effective conservation is through direct field work and sustainable protection in the wild. This initiative is being carried out through bird watching with conservationists, birders and bird watching club members from schools and local communities surrounding IBA.  "
             )
           ])
         ])
@@ -100594,8 +100588,8 @@ var opts = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/wecode/PhpstormProjects/roc/roc/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Moi\Documents\Projects\UpdatedROC\roc\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

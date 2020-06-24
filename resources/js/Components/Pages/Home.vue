@@ -122,13 +122,6 @@
                                         <h2 class="text-xl px-5 pt-8 pb-3">{{activity.head}}</h2>
                                         <p class="px-5 text-sm">{{activity.body}}</p>
                                     </div>
-                                        <!-- <div class="text-centered">
-                                            <button class="bg-orange-dark py-1 px-2 mb-2 text-sm text-white">
-                                                <router-link :to="{name: 'activity'}" class="no-underline">
-                                                    <span class="text-white">Read More</span>
-                                                </router-link>
-                                            </button>
-                                        </div> -->
                                 </div>
                             </a>
                         </div>     
@@ -163,8 +156,7 @@
             </div>
         </div>
         <div>
-            <!-- <div class="w-100 bg-green-darker bg-pjt"> </div>
-            <div class="opacity bg-green-darker opacity-80"></div> -->
+
             <div class="bg-pjt w-100  mx-auto xs:py-5">
                 <div class="py-5">
                     <div class="pl-2 xl:py-3">
@@ -215,12 +207,12 @@ export default {
         return{
             posts:[],
             activities:[
-                {id:'1', head:'Education', slug:'education', body:'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education.', svg:'/img/svg/hat.svg', href:'/activities#education'},
-                {id:'2', head:'Research', slug:'research', body:'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share.', svg:'/img/svg/research.svg', href:'/activities#research'},
-                {id:'3', head:'Bird Conservation', slug:'bird-conservation', body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim. Ullam placeat facere esse. Ipsum, a quidem. Error!', svg:'/img/svg/peace.svg', href:'/activities#bird-conservation'},
-                {id:'4', head:'Daily Protection', slug:'daily-protection', body:'The most-effective conservation strategy is direct, sustained protection of wild animal populations. This is the foundation of our work.', svg:'/img/svg/protection.svg', href:'/activities#daily-protection'},
-                {id:'5', head:'Events', slug:'events', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/calendar.svg', href:'/activities#events'},
-                {id:'6', head:'Helping Community', slug:'community', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help.', svg:'/img/svg/conservation.svg', href:'/activities#education'},
+                {id:'1', head:'Education', slug:'education', body:'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education...', svg:'/img/svg/hat.svg', href:'/activities#education'},
+                {id:'2', head:'Research', slug:'research', body:'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share...', svg:'/img/svg/research.svg', href:'/activities#research'},
+                {id:'3', head:'Bird Conservation', slug:'bird-conservation', body:'We believe that working with and helping local communities is crucial to effective and sustainable conservation...', svg:'/img/svg/peace.svg', href:'/activities#bird-conservation'},
+                {id:'4', head:'Daily Protection', slug:'daily-protection', body:'We realized that the reality is found from the field. In that context, our best way of protecting bird’s species and conduct effective conservation... ', svg:'/img/svg/protection.svg', href:'/activities#daily-protection'},
+                {id:'5', head:'Conservation Events', slug:'events', body:'We are dedicated to organize events with students and local communities to provide bird conservation messages...', svg:'/img/svg/calendar.svg', href:'/activities#events'},
+                {id:'6', head:'Helping Community', slug:'community', body:'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help...', svg:'/img/svg/conservation.svg', href:'/activities#education'},
             ],
         }
     },

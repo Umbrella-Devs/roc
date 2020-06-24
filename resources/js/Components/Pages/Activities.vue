@@ -5,7 +5,7 @@
                 <div class="xl:w-45 xs:w-90 md:w-50 md:py-3 md:mt-24 mx-auto xl:mt-24 xs:mt-6 text-black xl:px-5 xs:px-3 xs:py-3 xl:py-4 rounded bg-black opacity-75" data-aos="fade-down" data-aos-duration="1500">
                     <div class="text-centered text-white">
                         <h1 class="pb-3 xl:text-3xl md:text-2xl xs:text-xl">What We Do</h1>
-                        <p class="xs:text-sm">Our 5 years of successful conservation work in  educating the next generation of scientists and conservationists in Africa so that communities can thrive and work together with us.</p>
+                        <p class="xs:text-sm">Our effective bird’s conservation in Rugezi marshland and in other Important Birds Areas (IBA) found in Rwanda.</p>
                     </div>
                     <div class="text-centered py-3">
                         <button class="btn bg-orange-dark text-white hover:bg-green">
@@ -28,7 +28,7 @@
                     <div class="xl:w-50 md:w-50 xs:w-100 xl:px-3 mx-auto my-auto text-grey-darkest" data-aos="fade-left" data-aos-duration="1500">
                         <div class="xl:pl-5 xs:pt-3">
                             <h2 class="xl:text-2xl xs:text-center xs:text-xl xs:pb-2">Education </h2>
-                            <p class="xl:pt-3">Education is key to empowering people and creating the next generation of conservationists. We work directly with local educational institutions and partner organizations to strengthen their programs and capacity, training hundreds of young scientists each year.</p>
+                            <p class="xl:pt-3">Conservation education play a significant role to empower people and encourage young generation to take action in in biodiversity conservation through capacity building provision. Indeed, the shortage of awareness is the chief mean of biodiversity loss and degrades their habitat. We work together with local education institutions and partner organizations for having future conservationists through training young generations about bird’s science.</p>
                         </div>
                         <!-- <div class="text-centered">
                             <button class="btn border-orange-dark text-orange-dark">View More</button>
@@ -42,7 +42,7 @@
                     <div class="xl:w-50 md:w-45 xs:w-100 my-auto px-5 xs:hidden">
                         <div class="text-grey-darkest px-3" data-aos="fade-right" data-aos-duration="1500">
                             <h2 class="text-2xl">Bird Conservation</h2>
-                            <p class="pt-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quos impedit excepturi error placeat exercitationem atque, nulla odit reiciendis quis blanditiis obcaecati officiis vel perspiciatis fuga incidunt alias voluptate quo?</p>
+                            <p class="pt-10">We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can birds, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”</p>
                         </div>
                         <!-- <div class="text-centered">
                             <button class="btn border-orange-dark text-orange-dark">View More</button>
@@ -56,7 +56,7 @@
                     <div class="xl:w-50 xs:w-100 my-auto xl:hidden md:hidden">
                         <div class="text-grey-darkest xs:pt-3" data-aos="fade-right" data-aos-duration="1500">
                             <h2 class="xl:text-2xl xs:text-center xs:text-xl xs:pb-2">Bird Conservation</h2>
-                            <p class="pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quos impedit excepturi error placeat exercitationem atque, nulla odit reiciendis quis blanditiis obcaecati officiis vel perspiciatis fuga incidunt alias voluptate quo?</p>
+                            <p class="pt-3">We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can birds, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”</p>
                         </div>
                         <!-- <div class="text-centered">
                             <button class="btn border-orange-dark text-orange-dark">View More</button>
@@ -75,7 +75,7 @@
                     <div class="w-50 xs:w-100 xl:px-3 mx-auto my-auto text-grey-darkest" data-aos="fade-left" data-aos-duration="1500">
                         <div class="xl:pl-5 xs:pt-3">
                             <h2 class="xl:text-2xl xs:text-xl xs:text-center">Research </h2>
-                            <p class="xl:pt-3 xs:pt-2">We operate the longest-running gorilla research site in the world, the Karisoke Research Center. Most of what is known about gorillas is based on studies conducted at Karisoke over the past 50 years.  Our research also focuses on understanding many of the unique animals and plants that also call these forests home.</p>
+                            <p class="xl:pt-3 xs:pt-2">We perform scientific research on birds to strengthen bird’s science. We are highly motivated to conduct and develop our uniqueness bird’s research based on birds ringing and banding in Rwanda. Our research also focuses on understanding the status of birds and their habitat within our working areas.</p>
                         </div>
                         <!-- <div class="text-centered">
                             <button class="btn border-orange-dark text-orange-dark">View More</button>
@@ -89,8 +89,8 @@
                     <div class="w-100 xs:block flex">
                     <div class="w-50 px-5 my-auto xs:hidden" data-aos="fade-right" data-aos-duration="1500">
                         <div class="text-grey-darkest">
-                            <h2 class="text-2xl">Events</h2>
-                            <p class="pt-10">We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can gorillas, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”</p>
+                            <h2 class="text-2xl"> Conservation Events</h2>
+                            <p class="pt-10">We are dedicated to organize events with students and local communities to provide bird conservation messages about the value and importance of biodiversity conservation, particular birds in our working areas. These events act as bait to attract many people, help to communicate issues reflecting bird’s conservation while encouraging them to be our principal partners by participating in our conservation projects.</p>
                         </div>
                         <!-- <div class="text-centered">
                             <button class="btn border-orange-dark text-orange-dark">View More</button>
@@ -103,8 +103,8 @@
                     <!-- for mobile -->
                      <div class="w-50 xs:w-100 xl:px-5 my-auto xl:hidden md:hidden" data-aos="fade-right" data-aos-duration="1500">
                         <div class="text-grey-darkest xs:pt-3">
-                            <h2 class="xl:text-2xl xs:text-xl xs:text-center">Events</h2>
-                            <p class="xl:pt-3 xs:pt-2">We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can gorillas, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”</p>
+                            <h2 class="xl:text-2xl xs:text-xl xs:text-center"> Conservation Events</h2>
+                            <p class="xl:pt-3 xs:pt-2">We are dedicated to organize events with students and local communities to provide bird conservation messages about the value and importance of biodiversity conservation, particular birds in our working areas. These events act as bait to attract many people, help to communicate issues reflecting bird’s conservation while encouraging them to be our principal partners by participating in our conservation projects.</p>
                         </div>
                         <!-- <div class="text-centered">
                             <button class="btn border-orange-dark text-orange-dark">View More</button>
@@ -123,7 +123,7 @@
                     <div class="xl:w-50  md:w-50 xs:w-100 px-3 mx-auto my-auto  text-grey-darkest" data-aos="fade-left" data-aos-duration="1500">
                         <div class="xl:pl-5 xs:pt-3">
                             <h2 class="xl:text-2xl xs:text-xl xs:text-center">Daily Protection</h2>
-                            <p class="xl:pt-3 xs:pt-2">The best way to save endangered species and conduct effective conservation is with direct, sustained protection in the wild. This is the foundation of our work and why mountain gorillas are the only wild ape whose population is growing.</p>
+                            <p class="xl:pt-3 xs:pt-2">We realized that the reality is found from the field. In that context, our best way of protecting bird’s species and conduct effective conservation is through direct field work and sustainable protection in the wild. This initiative is being carried out through bird watching with conservationists, birders and bird watching club members from schools and local communities surrounding IBA.  </p>
                         </div>
                         <!-- <div class="text-centered">
                             <button class="btn shadow-sm border-orange text-orange-dark">View More</button>
