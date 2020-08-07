@@ -52,7 +52,7 @@
                     <v-card-actions>
                         <h4 v-show="submitted = submitted" class="text-sm text-green" id="success"></h4>
                         <v-spacer></v-spacer>
-                        <input type="submit" @click.prevent="validate" class="btn bg-orange-dark text-center text-white" value="Snubmit">       
+                        <input type="submit" @click.prevent="validate" class="btn bg-orange-dark text-center text-white" value="Submit">       
                     </v-card-actions>
                 </div>
             </v-card>

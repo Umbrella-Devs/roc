@@ -41989,7 +41989,7 @@ var render = function() {
                       _c("input", {
                         staticClass:
                           "btn bg-orange-dark text-center text-white",
-                        attrs: { type: "submit", value: "Snubmit" },
+                        attrs: { type: "submit", value: "Submit" },
                         on: {
                           click: function($event) {
                             $event.preventDefault()
