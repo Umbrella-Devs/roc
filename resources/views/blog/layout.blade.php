@@ -312,9 +312,8 @@
                         </span>
                     </h4>
                 </div>
-            </div>
-    
-</div>
+            </div>  
+    </div>
 </div>   
 
 <div class="w-100 relative z-999 bg-green-darkest md:hidden xl:hidden">

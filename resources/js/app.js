@@ -24,9 +24,12 @@ import About from './Components/Pages/About.vue'
 import Home from './Components/Pages/Home.vue'
 import Activites from './Components/Pages/Activities.vue'
 import Projects from './Components/Pages/Projects.vue'
-
 import Donate from './Components/Pages/Donate.vue'
 import Join from './Components/Pages/JoinUs.vue'
+import Message from './Components/Pages/message.vue'
+import Popup from './Components/Pages/Popup.vue'
+import Services from './Components/Pages/services.vue'
+import Blog from './Components/Pages/blog.vue'
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -67,8 +70,6 @@ Vue.filter('snippet', function(value){
 const app = new Vue({
     vuetify,
     el: '#app',
-    render: h => h(App),
-    components: { App,About,Activites,Projects,Home,Donate,Join,},
+    components: { App,About,Activites,Projects,Home,Donate,Join,Message,Popup, Services,Blog},
     router,
-    
 });
