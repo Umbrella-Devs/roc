@@ -144,9 +144,9 @@
             </div>
             <div>
             <div>
-                <div class="bg-green-darkest w-100 py-4 z-999 relative xs:hidden" id="footer">
+                <div class="bg-green-darkest w-100 py-5 z-999 relative xs:hidden " id="footer">
                     <div class="xl:w-85  md:w-90 mx-auto">
-                        <div class="">
+                        <div class=" py-5">
                             <div class="w-100 flex">
                                 <div class="w-25">
                                     <div class="text-white text-xs">
