@@ -1,22 +1,33 @@
 @extends('spa')
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <style>
+    body{
+        border: 0ch;    
+    }
     .bg{
         background-image: url('/img/cropped_1973.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        height: 615px;  
+        height: 600px;
+        
     }
     .line{
         height: 150px;
         border-left: 2px solid white;
     }
+    .bg-pjt{
+        background-image: url('/img/lake.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+    }
 </style>
 @section('content')
 <div class="bg" style="margin-top:60px;">
     <div class="flex w-100 "></div>
-    <div class="mx-auto w-90 xs:mt-16" style=" margin-top: 120px;">
+    <div class="mx-auto w-90 xs:mt-16" style=" margin-top: 60px;">
         <div class="w-100 flex">
             <div class="xl:w-5 md:w-5 xs:w-10 pt-3 relative">
                 <div class="xl:w-30 md:w-60 xs:w-60">
@@ -69,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-100 md:hidden flex -mt-24 xs:hidden">
+        <div class="w-100 md:hidden flex xs:hidden" style="margin-top: -10em">
             <div class="w-50">
 
             </div>
@@ -142,8 +153,35 @@
         </div>
     </div>
 </div>
-<div class="">
-    <Blog/>
+
+<div class="w-100 bg-pjt">
+    <div class="w-90 mx-auto py-3">
+        <div class="pl-2 xl:py-3">
+            <h2 class="text-center xl:text-3xl xs:text-2xl text-white">Our Blog</h2>
+        </div>  
+        <div class="grid grid-3">
+            @foreach ($posts as $post)
+            <div class="bg-white xl:mx-3 md:mx-2 md:my-2 xl:my-3 xs:my-2 shadow-md" >
+                <div class="">
+                    <img src="/storage/{{ $post->image }}" width="100%" height="200">
+                </div>
+                <div class="xs:pb-2">
+                    <div class="">
+                        <h4 class="text-xs text-right px-2 text-orange-dark">Fri, May 23, 2020</h4>
+                    </div>
+                    <div class="px-4">
+                        <h3 class="text-sm py-1">{{ $post->title }}</h3>
+                        <p class="text-sm">{{ Illuminate\Support\Str::limit($post->excerpt, 80) }}</p>
+                    </div>
+                    <div class="text-right mx-5 mb-4">
+                        <a href="/post/{{ $post->id }}" class="text-sm btn border-orange-darker">Read More</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+        
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
