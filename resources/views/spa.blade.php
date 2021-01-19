@@ -99,7 +99,7 @@
             <div class="xl:w-30 md:w-20">
                         <div class="">
                             <a class="text-white no-underline" href="{{ route('home') }}">
-                                <span class="text-xl">Rugezi O.C</span></a>
+                                <span class="text-xl">Rugezi Ornithology Center</span></a>
                         </div>
                 </div>
                 <div class="w-70 md:w-80 text-right pt-1">
