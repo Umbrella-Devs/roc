@@ -2211,6 +2211,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -3306,7 +3336,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -3317,46 +3346,46 @@ __webpack_require__.r(__webpack_exports__);
       posts: [],
       activities: [{
         id: '1',
-        head: 'Education',
+        head: 'Workshop & Training',
         slug: 'education',
-        body: 'We are dedicated to providing young African birders with the skills they need to become future leaders in conservation and education...',
+        body: 'Education play a significant role to empower people and encourage young generation to take action in in biodiversity conservation through capacity building provision ... ',
         svg: '/img/svg/hat.svg',
-        href: '/activities#education'
+        href: '/programs#workshops&trainings'
       }, {
         id: '2',
-        head: 'Research',
+        head: 'Bird Research',
         slug: 'research',
-        body: 'Science is a critical part of our work, because it provides important information about the birds in the forest ecosystem they all share...',
+        body: 'We perform scientific research on birds to strengthen bird’s science. We are highly motivated to conduct and develop our uniqueness bird’s research and their habitats...',
         svg: '/img/svg/research.svg',
-        href: '/activities#research'
+        href: '/programs#research'
       }, {
         id: '3',
         head: 'Bird Conservation',
         slug: 'bird-conservation',
-        body: 'We believe that working with and helping local communities is crucial to effective and sustainable conservation...',
+        body: 'Biodiversity conservation is our critical part of work to ensure sustainable development of nature in our region. We committed to protect Rwanda birds’ habitats...',
         svg: '/img/svg/peace.svg',
-        href: '/activities#bird-conservation'
+        href: '/programs#bird-conservation'
       }, {
         id: '4',
-        head: 'Daily Protection',
+        head: 'Bird ringing & Banding',
         slug: 'daily-protection',
-        body: 'We realized that the reality is found from the field. In that context, our best way of protecting bird’s species and conduct effective conservation... ',
+        body: 'We believe Science is perilous way to get effective information about birdlife and their habitats, birds ringing and banding is critical part of our work to ensure effective birds monitoring...',
         svg: '/img/svg/protection.svg',
-        href: '/activities#daily-protection'
+        href: '/programs#bird-ringing&banding'
       }, {
         id: '5',
-        head: 'Conservation Events',
+        head: 'Bird Events',
         slug: 'events',
-        body: 'We are dedicated to organize events with students and local communities to provide bird conservation messages...',
+        body: 'Mass gatherings events like exhibition are great opportunity to communicate issues reflecting bird’s conservation as well as promoting birdwatching, by hosting events...',
         svg: '/img/svg/calendar.svg',
-        href: '/activities#events'
+        href: '/programs#events'
       }, {
         id: '6',
-        head: 'Helping Community',
+        head: 'Community Engagement',
         slug: 'community',
-        body: 'We believe that conservation succeeds best when it is a community effort.Many local people who live where we work need help...',
+        body: 'We believe that working with and helping local communities solving social security issues is crucial to effective and sustainable conservation. We are enthusiastic to improve and develop community...',
         svg: '/img/svg/conservation.svg',
-        href: '/activities#education'
+        href: '/programs#community-engagement'
       }]
     };
   }
@@ -40167,7 +40196,7 @@ var render = function() {
             "div",
             {
               staticClass: "w-100 flex xs:block pb-3",
-              attrs: { id: "education" }
+              attrs: { id: "workshops&trainings" }
             },
             [
               _c(
@@ -40283,7 +40312,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "w-100 py-5", attrs: { id: "daily-protection" } },
+        { staticClass: "w-100 py-5", attrs: { id: "bird-ringing&banding" } },
         [
           _c("div", { staticClass: "w-90 mx-auto py-2" }, [
             _c("div", { staticClass: "w-100 xs:block flex" }, [
@@ -40301,6 +40330,41 @@ var render = function() {
               ),
               _vm._v(" "),
               _vm._m(8)
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "w-100 py-5 bg-white-smoke",
+          attrs: { id: "communty-engagement" }
+        },
+        [
+          _c("div", { staticClass: "w-90 mx-auto py-2" }, [
+            _c("div", { staticClass: "w-100 xs:block flex" }, [
+              _vm._m(9),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "xl:w-45 md:w-45 xs:w-100",
+                  attrs: {
+                    "data-aos": "fade-left",
+                    "data-aos-duration": "1500"
+                  }
+                },
+                [
+                  _c("v-img", {
+                    staticClass: "w-100",
+                    attrs: { src: "/img/IMG_1600.jpg" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(10)
             ])
           ])
         ]
@@ -40364,7 +40428,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "text-centered py-5" }, [
       _c("h2", { staticClass: "xl:text-3xl xs:text-xl" }, [
-        _vm._v("Our Activities")
+        _vm._v("Our Programs")
       ])
     ])
   },
@@ -40384,12 +40448,12 @@ var staticRenderFns = [
           _c(
             "h2",
             { staticClass: "xl:text-2xl xs:text-center xs:text-xl xs:pb-2" },
-            [_vm._v("Education ")]
+            [_vm._v("Workshop & Trainings")]
           ),
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3" }, [
             _vm._v(
-              "Conservation education play a significant role to empower people and encourage young generation to take action in in biodiversity conservation through capacity building provision. Indeed, the shortage of awareness is the chief mean of biodiversity loss and degrades their habitat. We work together with local education institutions and partner organizations for having future conservationists through training young generations about bird’s science."
+              "Education play a significant role to empower people and encourage young generation to take action in in biodiversity conservation through capacity building provision. Indeed, trainings and workshops are our best way we are dedicated to provide birds skills and knowledge to bird lovers. "
             )
           ])
         ])
@@ -40417,7 +40481,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("p", { staticClass: "pt-10" }, [
               _vm._v(
-                "We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can birds, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”"
+                "Biodiversity conservation is our critical part of work to ensure sustainable development of nature in our region. We committed to protect Rwanda birds’ habitats lost and degradation in different parts of country, which affect most critical endangered species and endemics live in habitats local people can access easily."
               )
             ])
           ]
@@ -40448,7 +40512,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("p", { staticClass: "pt-3" }, [
               _vm._v(
-                "We believe that working with and helping local communities is crucial to effective and sustainable conservation. Only when people are thriving can birds, other wildlife and their habitats thrive, too. That’s why our motto is “Learning Birds. Keeping them safe.”"
+                "biodiversity conservation is our critical part of work to ensure sustainable development of nature in our region. We committed to protect Rwanda birds’ habitats lost and degradation in different parts of country, which affect most critical endangered species and endemics live in habitats local people can access easily."
               )
             ])
           ]
@@ -40469,12 +40533,12 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "xl:pl-5 xs:pt-3" }, [
           _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
-            _vm._v("Research ")
+            _vm._v("Bird Research ")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
-              "We perform scientific research on birds to strengthen bird’s science. We are highly motivated to conduct and develop our uniqueness bird’s research based on birds ringing and banding in Rwanda. Our research also focuses on understanding the status of birds and their habitat within our working areas."
+              "We perform scientific research on birds to strengthen bird’s science. We are highly motivated to conduct and develop our uniqueness bird’s research and their habitats, by understanding the status of birds and their habitat within our working areas."
             )
           ])
         ])
@@ -40493,13 +40557,11 @@ var staticRenderFns = [
       },
       [
         _c("div", { staticClass: "text-grey-darkest" }, [
-          _c("h2", { staticClass: "text-2xl" }, [
-            _vm._v(" Conservation Events")
-          ]),
+          _c("h2", { staticClass: "text-2xl" }, [_vm._v("Bird Events")]),
           _vm._v(" "),
           _c("p", { staticClass: "pt-10" }, [
             _vm._v(
-              "We are dedicated to organize events with students and local communities to provide bird conservation messages about the value and importance of biodiversity conservation, particular birds in our working areas. These events act as bait to attract many people, help to communicate issues reflecting bird’s conservation while encouraging them to be our principal partners by participating in our conservation projects."
+              "Mass gatherings events like exhibition are great opportunity to communicate issues reflecting bird’s conservation as well as promoting birdwatching, by hosting events many people get information about where they do go watching birds for the sake of nature joyfulness."
             )
           ])
         ])
@@ -40519,12 +40581,12 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "text-grey-darkest xs:pt-3" }, [
           _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
-            _vm._v(" Conservation Events")
+            _vm._v("Bird Events")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
-              "We are dedicated to organize events with students and local communities to provide bird conservation messages about the value and importance of biodiversity conservation, particular birds in our working areas. These events act as bait to attract many people, help to communicate issues reflecting bird’s conservation while encouraging them to be our principal partners by participating in our conservation projects."
+              "Mass gatherings events like exhibition are great opportunity to communicate issues reflecting bird’s conservation as well as promoting birdwatching, by hosting events many people get information about where they do go watching birds for the sake of nature joyfulness."
             )
           ])
         ])
@@ -40545,12 +40607,62 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "xl:pl-5 xs:pt-3" }, [
           _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
-            _vm._v("Daily Protection")
+            _vm._v("Bird Ringing & Banding")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
             _vm._v(
-              "We realized that the reality is found from the field. In that context, our best way of protecting bird’s species and conduct effective conservation is through direct field work and sustainable protection in the wild. This initiative is being carried out through bird watching with conservationists, birders and bird watching club members from schools and local communities surrounding IBA.  "
+              "We believe Science is perilous way to get effective information about birdlife and their habitats, birds ringing and banding is critical part of our work to ensure effective birds monitoring, from endangered, endemism to migrants’ passages which find in IBAs of Rwanda."
+            )
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "w-50 px-5 my-auto xs:hidden",
+        attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
+      },
+      [
+        _c("div", { staticClass: "text-grey-darkest" }, [
+          _c("h2", { staticClass: "text-2xl" }, [
+            _vm._v("Community Engagement")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "pt-10" }, [
+            _vm._v(
+              "We believe that working with and helping local communities solving social security issues is crucial to effective and sustainable conservation. We are enthusiastic to improve and develop community-based conservation approach within Important Bird Areas (IBA) in Rwanda."
+            )
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "w-50 xs:w-100 xl:px-5 my-auto xl:hidden md:hidden",
+        attrs: { "data-aos": "fade-right", "data-aos-duration": "1500" }
+      },
+      [
+        _c("div", { staticClass: "text-grey-darkest xs:pt-3" }, [
+          _c("h2", { staticClass: "xl:text-2xl xs:text-xl xs:text-center" }, [
+            _vm._v("Community Engagement")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "xl:pt-3 xs:pt-2" }, [
+            _vm._v(
+              "We believe that working with and helping local communities solving social security issues is crucial to effective and sustainable conservation. We are enthusiastic to improve and develop community-based conservation approach within Important Bird Areas (IBA) in Rwanda."
             )
           ])
         ])
@@ -42802,7 +42914,7 @@ var staticRenderFns = [
       { staticClass: "xl:py-3 xs:py-2 text-centered text-grey-darkest" },
       [
         _c("h2", { staticClass: "text-3xl xs:text-2xl" }, [
-          _vm._v("Our Special Activities")
+          _vm._v("Our Special Programs")
         ])
       ]
     )

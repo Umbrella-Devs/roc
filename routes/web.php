@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/{any}', 'SpaController@index')->where('any', '.*');
 
 Route::get('/', 'PagesController@index')->name('home');
-Route::get('/activities', 'PagesController@activities')->name('activities');
+Route::get('/programs', 'PagesController@activities')->name('activities');
 Route::get('/projects', 'PagesController@projects')->name('projects');
 Route::get('/about', 'PagesController@about_us')->name('about_us');
 Route::get('/join-us', 'PagesController@join_us')->name('join_us');

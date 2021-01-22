@@ -99,7 +99,7 @@
             <div class="xl:w-30 md:w-20">
                         <div class="">
                             <a class="text-white no-underline" href="{{ route('home') }}">
-                                <span class="text-xl">Rugezi Ornithology Center</span></a>
+                                <span class="text-xl">R.O.C</span></a>
                         </div>
                 </div>
                 <div class="w-70 md:w-80 text-right pt-1">
@@ -114,7 +114,7 @@
                                         About us<i class="fa fa-caret-down px-2"></i>
                                     </a>
                                     <div class="dropdown-content bg-green-darkest">
-                                        <a href="{{ route('activities') }}" class="hover:bg-green-darker">Activities</a>
+                                        <a href="{{ route('activities') }}" class="hover:bg-green-darker">Programs</a>
                                         <a href="{{ route('gallery') }}" class="hover:bg-green-darker">Gallery</a>
                                     </div>
                                 </div>  
@@ -152,9 +152,9 @@
                                     <div class="text-white text-xs">
                                         <h5 class="text-lg">Contact Us</h5>
                                         <ul class="list pt-2 p-0">
-                                            <li>+ 250 784 556 850</li>
                                             <li>+ 250 783 772 300  </li>
-                                            <li>rocenter2020@gmail.com</li>
+                                            <li>+ 250 784 556 850</li>
+                                            <li>info@roc.rw</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@
                                                 <span>Musanze, Rwanda</span>
                                             </li>
                                             <li>NR 100 kv </li>
-                                            <li>rocenter2020@gmail.com</li>
+                                            <li>info@roc.rw</li>
                                         </ul>
                                     </div>   
                                 </div>
@@ -191,19 +191,19 @@
                                 </div>
                                 <div class="w-25">
                                     <div class="text-white text-xs">
-                                        <h5 class="text-lg">Activities</h5>
+                                        <h5 class="text-lg">Programs</h5>
                                         <ul class="list pt-2 p-0">
                                             <li>
-                                                <a class="text-white no-underline" href="/activities#education">Education</a>
+                                                <a class="text-white no-underline" href="/activities#education">Workshop & Training</a>
                                             </li>
                                             <li>
-                                                <a class="text-white no-underline" href="/activities#research">Research</a>
+                                                <a class="text-white no-underline" href="/activities#research">Bird Research</a>
                                             </li>
                                             <li>
                                                 <a class="text-white no-underline" href="/activities#bird-conservation">Bird Conservation</a>
                                             </li>
                                             <li>
-                                                <a class="text-white no-underline" href="/activities#daily-protection">Daily Protection</a>
+                                                <a class="text-white no-underline" href="/activities#daily-protection">Bird Ringing & Banding</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -237,7 +237,7 @@
                                 + 250 784 556 850
                             </li>
                             <li>+ 250 783 772 300  </li>
-                            <li>rocenter2020@gmail.com</li>
+                            <li>info@roc.rw</li>
                         </ul>
                     </div>
                     <div class="my-auto text-center w-50">
