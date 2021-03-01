@@ -60,7 +60,7 @@
                         </div>
                         <div class="xl:w-60 xs:w-100 py-2 pb-3"> 
                             <p class="xl:text-lg md:text-lg xs:text-sm">
-                                Rugezi Ornithology Center is birders community, which intends to promote birdwatching in Rwanda and ensure sustainable conservation of birds in their habitats.
+                            Welcome to Rugezi Ornithology Center (ROC) birds conservation organization which intends to conduct bird’s research, conservation, trainings and workshops by strengthening ringing and banding scheme to carry out community awareness on birding services and ensuring avi-tourism promotion   through birdlife events hosting.  
                             </p>
                         </div>
                         <div class="flex xl:w-40 md:w-50 relative z-999">
